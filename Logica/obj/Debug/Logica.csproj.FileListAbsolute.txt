@@ -1,0 +1,110 @@
+C:\Users\Angie Zarate\source\repos\Parcial de Programacion III\Logica\bin\Debug\Logica.dll
+C:\Users\Angie Zarate\source\repos\Parcial de Programacion III\Logica\bin\Debug\Logica.pdb
+C:\Users\Angie Zarate\source\repos\Parcial de Programacion III\Logica\bin\Debug\Datos.dll
+C:\Users\Angie Zarate\source\repos\Parcial de Programacion III\Logica\bin\Debug\Entidad.dll
+C:\Users\Angie Zarate\source\repos\Parcial de Programacion III\Logica\bin\Debug\Datos.pdb
+C:\Users\Angie Zarate\source\repos\Parcial de Programacion III\Logica\bin\Debug\Entidad.pdb
+C:\Users\Angie Zarate\source\repos\Parcial de Programacion III\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\Angie Zarate\source\repos\Parcial de Programacion III\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Angie Zarate\source\repos\Parcial de Programacion III\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\Angie Zarate\source\repos\Parcial de Programacion III\Logica\obj\Debug\Logica.dll
+C:\Users\Angie Zarate\source\repos\Parcial de Programacion III\Logica\obj\Debug\Logica.pdb
+C:\Users\Angie Zarate\Source\Repos\ParcialSegundoCorte_\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\Angie Zarate\Source\Repos\ParcialSegundoCorte_\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Angie Zarate\Source\Repos\ParcialSegundoCorte_\Logica\obj\Debug\Logica.dll
+C:\Users\Angie Zarate\Source\Repos\ParcialSegundoCorte_\Logica\obj\Debug\Logica.pdb
+C:\Users\Angie Zarate\Source\Repos\ParcialSegundoCorte_\Logica\bin\Debug\Logica.dll
+C:\Users\Angie Zarate\Source\Repos\ParcialSegundoCorte_\Logica\bin\Debug\Logica.pdb
+C:\Users\Angie Zarate\Source\Repos\ParcialSegundoCorte_\Logica\bin\Debug\Datos.dll
+C:\Users\Angie Zarate\Source\Repos\ParcialSegundoCorte_\Logica\bin\Debug\Entidad.dll
+C:\Users\Angie Zarate\Source\Repos\ParcialSegundoCorte_\Logica\bin\Debug\Datos.pdb
+C:\Users\Angie Zarate\Source\Repos\ParcialSegundoCorte_\Logica\bin\Debug\Entidad.pdb
+C:\Users\Angie Zarate\Source\Repos\ParcialSegundoCorte_\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\Angie Zarate\Downloads\ParcialSegundoCorte_\Logica\bin\Debug\Logica.dll
+C:\Users\Angie Zarate\Downloads\ParcialSegundoCorte_\Logica\bin\Debug\Logica.pdb
+C:\Users\Angie Zarate\Downloads\ParcialSegundoCorte_\Logica\bin\Debug\Datos.dll
+C:\Users\Angie Zarate\Downloads\ParcialSegundoCorte_\Logica\bin\Debug\Entidad.dll
+C:\Users\Angie Zarate\Downloads\ParcialSegundoCorte_\Logica\bin\Debug\Datos.pdb
+C:\Users\Angie Zarate\Downloads\ParcialSegundoCorte_\Logica\bin\Debug\Entidad.pdb
+C:\Users\Angie Zarate\Downloads\ParcialSegundoCorte_\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\Angie Zarate\Downloads\ParcialSegundoCorte_\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Angie Zarate\Downloads\ParcialSegundoCorte_\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\Angie Zarate\Downloads\ParcialSegundoCorte_\Logica\obj\Debug\Logica.dll
+C:\Users\Angie Zarate\Downloads\ParcialSegundoCorte_\Logica\obj\Debug\Logica.pdb
+C:\Users\Angie Zarate\Downloads\Parcial 2do Corte\ParcialSegundoCorte_\Logica\bin\Debug\Logica.dll
+C:\Users\Angie Zarate\Downloads\Parcial 2do Corte\ParcialSegundoCorte_\Logica\bin\Debug\Logica.pdb
+C:\Users\Angie Zarate\Downloads\Parcial 2do Corte\ParcialSegundoCorte_\Logica\bin\Debug\Datos.dll
+C:\Users\Angie Zarate\Downloads\Parcial 2do Corte\ParcialSegundoCorte_\Logica\bin\Debug\Entidad.dll
+C:\Users\Angie Zarate\Downloads\Parcial 2do Corte\ParcialSegundoCorte_\Logica\bin\Debug\Datos.pdb
+C:\Users\Angie Zarate\Downloads\Parcial 2do Corte\ParcialSegundoCorte_\Logica\bin\Debug\Entidad.pdb
+C:\Users\Angie Zarate\Downloads\Parcial 2do Corte\ParcialSegundoCorte_\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\Angie Zarate\Downloads\Parcial 2do Corte\ParcialSegundoCorte_\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Angie Zarate\Downloads\Parcial 2do Corte\ParcialSegundoCorte_\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\Angie Zarate\Downloads\Parcial 2do Corte\ParcialSegundoCorte_\Logica\obj\Debug\Logica.dll
+C:\Users\Angie Zarate\Downloads\Parcial 2do Corte\ParcialSegundoCorte_\Logica\obj\Debug\Logica.pdb
+C:\Users\Angie Zarate\Desktop\ParcialSegundoCorte_\Logica\bin\Debug\Logica.dll
+C:\Users\Angie Zarate\Desktop\ParcialSegundoCorte_\Logica\bin\Debug\Logica.pdb
+C:\Users\Angie Zarate\Desktop\ParcialSegundoCorte_\Logica\bin\Debug\Datos.dll
+C:\Users\Angie Zarate\Desktop\ParcialSegundoCorte_\Logica\bin\Debug\Entidad.dll
+C:\Users\Angie Zarate\Desktop\ParcialSegundoCorte_\Logica\bin\Debug\Datos.pdb
+C:\Users\Angie Zarate\Desktop\ParcialSegundoCorte_\Logica\bin\Debug\Entidad.pdb
+C:\Users\Angie Zarate\Desktop\ParcialSegundoCorte_\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\Angie Zarate\Desktop\ParcialSegundoCorte_\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Angie Zarate\Desktop\ParcialSegundoCorte_\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\Angie Zarate\Desktop\ParcialSegundoCorte_\Logica\obj\Debug\Logica.dll
+C:\Users\Angie Zarate\Desktop\ParcialSegundoCorte_\Logica\obj\Debug\Logica.pdb
+C:\Users\Angie Zarate\Desktop\Proyecto de aula\Logica\bin\Debug\Logica.dll
+C:\Users\Angie Zarate\Desktop\Proyecto de aula\Logica\bin\Debug\Logica.pdb
+C:\Users\Angie Zarate\Desktop\Proyecto de aula\Logica\bin\Debug\Datos.dll
+C:\Users\Angie Zarate\Desktop\Proyecto de aula\Logica\bin\Debug\Entidad.dll
+C:\Users\Angie Zarate\Desktop\Proyecto de aula\Logica\bin\Debug\Datos.pdb
+C:\Users\Angie Zarate\Desktop\Proyecto de aula\Logica\bin\Debug\Entidad.pdb
+C:\Users\Angie Zarate\Desktop\Proyecto de aula\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\Angie Zarate\Desktop\Proyecto de aula\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Angie Zarate\Desktop\Proyecto de aula\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\Angie Zarate\Desktop\Proyecto de aula\Logica\obj\Debug\Logica.dll
+C:\Users\Angie Zarate\Desktop\Proyecto de aula\Logica\obj\Debug\Logica.pdb
+C:\Users\Angie Zarate\Desktop\Sistema de liquidacion\Logica\bin\Debug\Logica.dll
+C:\Users\Angie Zarate\Desktop\Sistema de liquidacion\Logica\bin\Debug\Logica.pdb
+C:\Users\Angie Zarate\Desktop\Sistema de liquidacion\Logica\bin\Debug\Datos.dll
+C:\Users\Angie Zarate\Desktop\Sistema de liquidacion\Logica\bin\Debug\Entidad.dll
+C:\Users\Angie Zarate\Desktop\Sistema de liquidacion\Logica\bin\Debug\Datos.pdb
+C:\Users\Angie Zarate\Desktop\Sistema de liquidacion\Logica\bin\Debug\Entidad.pdb
+C:\Users\Angie Zarate\Desktop\Sistema de liquidacion\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\Angie Zarate\Desktop\Sistema de liquidacion\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Angie Zarate\Desktop\Sistema de liquidacion\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\Angie Zarate\Desktop\Sistema de liquidacion\Logica\obj\Debug\Logica.dll
+C:\Users\Angie Zarate\Desktop\Sistema de liquidacion\Logica\obj\Debug\Logica.pdb
+C:\Users\Angie Zarate\Desktop\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\bin\Debug\Logica.dll
+C:\Users\Angie Zarate\Desktop\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\bin\Debug\Logica.pdb
+C:\Users\Angie Zarate\Desktop\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\bin\Debug\Datos.dll
+C:\Users\Angie Zarate\Desktop\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\bin\Debug\Entidad.dll
+C:\Users\Angie Zarate\Desktop\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\bin\Debug\Datos.pdb
+C:\Users\Angie Zarate\Desktop\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\bin\Debug\Entidad.pdb
+C:\Users\Angie Zarate\Desktop\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\Angie Zarate\Desktop\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Angie Zarate\Desktop\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\Angie Zarate\Desktop\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\obj\Debug\Logica.dll
+C:\Users\Angie Zarate\Desktop\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\obj\Debug\Logica.pdb
+C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\bin\Debug\Logica.dll
+C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\bin\Debug\Logica.pdb
+C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\bin\Debug\Datos.dll
+C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\bin\Debug\Entidad.dll
+C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\bin\Debug\Datos.pdb
+C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\bin\Debug\Entidad.pdb
+C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\obj\Debug\Logica.csprojAssemblyReference.cache
+C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\obj\Debug\Logica.dll
+C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema de liquidacion\Logica\obj\Debug\Logica.pdb
+C:\Users\Alfredo\Downloads\Sistema de liquidacion\Logica\bin\Debug\Logica.dll
+C:\Users\Alfredo\Downloads\Sistema de liquidacion\Logica\bin\Debug\Logica.pdb
+C:\Users\Alfredo\Downloads\Sistema de liquidacion\Logica\bin\Debug\Datos.dll
+C:\Users\Alfredo\Downloads\Sistema de liquidacion\Logica\bin\Debug\Entidad.dll
+C:\Users\Alfredo\Downloads\Sistema de liquidacion\Logica\bin\Debug\Datos.pdb
+C:\Users\Alfredo\Downloads\Sistema de liquidacion\Logica\bin\Debug\Entidad.pdb
+C:\Users\Alfredo\Downloads\Sistema de liquidacion\Logica\obj\Debug\Logica.csprojAssemblyReference.cache
+C:\Users\Alfredo\Downloads\Sistema de liquidacion\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Alfredo\Downloads\Sistema de liquidacion\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\Alfredo\Downloads\Sistema de liquidacion\Logica\obj\Debug\Logica.dll
+C:\Users\Alfredo\Downloads\Sistema de liquidacion\Logica\obj\Debug\Logica.pdb
