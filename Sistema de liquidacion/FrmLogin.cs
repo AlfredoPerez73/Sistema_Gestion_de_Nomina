@@ -31,7 +31,35 @@ namespace Sistema_de_liquidacion
 
         private void Ingresar()
         {
-
+            if (txtUsuario.Texts != "")
+            {
+                if (txtContraseña.Texts != "")
+                {
+                    List<Usuario> TEST = new UsuarioService().CargarRegistro();
+                    Usuario oUsuario = new UsuarioService().LoginUser(txtUsuario.Texts, txtContraseña.Texts).FirstOrDefault();
+                    if (oUsuario != null)
+                    {
+                        mdBienvenida bienvenida = new mdBienvenida(oUsuario);
+                        bienvenida.ShowDialog();
+                        FrmMenuPrincipal menu = new FrmMenuPrincipal(oUsuario);
+                        menu.Show();
+                        this.Hide();
+                        menu.FormClosing += frm_Closing;
+                    }
+                    else
+                    {
+                        msgError("Usuario u contraseña incorrectos. \n      verfique los datos.");
+                    }
+                }
+                else
+                {
+                    msgError("Por favor ingrese la contraseña.");
+                }
+            }
+            else
+            {
+                msgError("Por favor ingrese el usuario.");
+            }
         }
 
         private void msgError(string message)

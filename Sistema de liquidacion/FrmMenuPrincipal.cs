@@ -50,7 +50,13 @@ namespace Sistema_de_liquidacion
 
         private void Permisos()
         {
+            List<Permiso> permisoList = new PermisoService().ValidacionPermiso(Convert.ToString(oUsuario.IdUsuario));
 
+            bool index = permisoList.Any(m => m.NPermiso == btnGestionPermisos.Text);
+            if (index == false)
+            {
+                ButtonBlock();
+            }
         }
 
         private struct RGBColors

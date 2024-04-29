@@ -10,6 +10,11 @@ namespace Logica
 {
     public class RolService
     {
-      
+        RolRepository rolRepository = new RolRepository();
+
+        public List<Rol> CargarRegistro()
+        {
+            return rolRepository.CargarRegistro();
+        }
     }
 }

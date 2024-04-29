@@ -560,3 +560,5 @@ C:\Users\Alfredo\Downloads\Sistema de liquidacion\Sistema de liquidacion\obj\Deb
 C:\Users\Alfredo\Downloads\Sistema de liquidacion\Sistema de liquidacion\obj\Debug\Sistema de liquidacion GUI.csproj.CopyComplete
 C:\Users\Alfredo\Downloads\Sistema de liquidacion\Sistema de liquidacion\obj\Debug\Sistema de liquidacion.exe
 C:\Users\Alfredo\Downloads\Sistema de liquidacion\Sistema de liquidacion\obj\Debug\Sistema de liquidacion.pdb
+C:\Users\Alfredo\Downloads\Sistema de liquidacion\Sistema de liquidacion\bin\Debug\Datos.dll
+C:\Users\Alfredo\Downloads\Sistema de liquidacion\Sistema de liquidacion\bin\Debug\Datos.pdb
