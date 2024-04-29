@@ -8,8 +8,57 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    public class RolRepository
+    public class RolRepository : ConexionRepository
     {
+        public RolRepository() : base()
+        {
+
+        }
+
+        public List<Rol> CargarRegistro()
+        {
+            List<Rol> rolList = new List<Rol>();
+            string Consulta = "SELECT * FROM ROL";
+            try
+            {
+                SqlCommand command = new SqlCommand(Consulta, Connection);
+                AbrirConnection();
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    rolList.Add(Map(reader));
+                }
+                reader.Close();
+                CerrarConnection();
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            return rolList;
+        }
+
+        private Rol Map(SqlDataReader reader)
+        {
+            Rol rol = new Rol
+            {
+                IdRol = Convert.ToInt32(reader["IdRol"]),
+                NRol = Convert.ToString(reader["Rol"]),
+                FechaRegistro = Convert.ToDateTime(reader["FechaRegistro"])
+            };
+
+            return rol;
+        }
+
+        public Rol ObtenerRol(int IdRol, string rol)
+        {
+            return CargarRegistro().Find(c => c.IdRol == IdRol && c.NRol == rol);
+        }
+        public Rol ObtenerRol(int IdRol)
+        {
+            return CargarRegistro().Find(c => c.IdRol == IdRol);
+        }
 
     }
 }
