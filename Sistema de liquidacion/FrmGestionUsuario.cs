@@ -39,7 +39,23 @@ namespace Sistema_de_liquidacion
 
         private void GuardarRegistro()
         {
+            if (!ValidarCampos()) { return; }
 
+            var producto = RegistrarUsuario();
+
+            var ID = usuarioService.BuscarId(txtDocumento.Texts);
+            if (ID != true)
+            {
+                var msg = usuarioService.Guardar(producto);
+                MessageBox.Show(msg, "Gestion de usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CargarRegistroUsuario(usuarioService.CargarRegistro());
+                Nuevo();
+            }
+            else
+            {
+                MessageBox.Show($"El registro con la ID {txtDocumento.Texts} " +
+                    $"ya existe!", "Gestion de usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private bool ValidarCampos()
@@ -79,6 +95,31 @@ namespace Sistema_de_liquidacion
 
         public void EliminarRegistro()
         {
+            if (Convert.ToInt32(txtIdUsuario.Texts) != 0)
+            {
+                if (MessageBox.Show("¿Desea eliminar este producto?", "Gestion de usuarios", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    Usuario usuario = new Usuario
+                    {
+                        IdUsuario = Convert.ToInt32(txtIdUsuario.Texts)
+                    };
+                    if (usuario != null)
+                    {
+                        var msg = usuarioService.EliminarRegistros(usuario);
+                        MessageBox.Show(msg, "Gestion de usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        CargarRegistroUsuario(usuarioService.CargarRegistro());
+                        Nuevo();
+                        EnabledUpdate();
+                    }
+                    else
+                    {
+                        var msg = usuarioService.EliminarRegistros(usuario);
+                        MessageBox.Show(msg, "Gestion de usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Nuevo();
+                        EnabledUpdate();
+                    }
+                }
+            }
 
         }
 
@@ -92,6 +133,7 @@ namespace Sistema_de_liquidacion
 
             CargarRoles();
 
+            CargarRegistroUsuario(usuarioService.CargarRegistro());
         }
 
         private void Nuevo()
@@ -148,17 +190,39 @@ namespace Sistema_de_liquidacion
 
         private void FiltroUsuario()
         {
-
+            var filtro = txtBuscar.Texts;
+            var lista = usuarioService.BuscarX(filtro);
+            CargarRegistroUsuario(lista);
         }
 
         private void FiltroUsuarioRol()
         {
-
+            if (cboFiltroRol.SelectedIndex > 0)
+            {
+                string estadoSeleccionado = cboFiltroRol.SelectedItem.ToString();
+                var lista = usuarioService.FiltroRol(estadoSeleccionado.ToUpper());
+                CargarRegistroUsuario(lista);
+            }
+            else if (cboFiltroRol.SelectedIndex == 0)
+            { CargarRegistroUsuario(usuarioService.CargarRegistro()); }
         }
 
         private void CargarRoles()
         {
+            RolService rolService = new RolService();
+            cboRoles.DataSource = rolService.CargarRegistro();
+            cboFiltroRol.DataSource = rolService.CargarRegistro();
+            cboRoles.DisplayMember = "NRol";
+            cboRoles.ValueMember = "IdRol";
 
+            cboFiltroRol.DisplayMember = "NRol";
+            cboFiltroRol.ValueMember = "IdRol";
+
+            cboRoles.SelectedIndex = -1;
+            cboRoles.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            cboFiltroRol.SelectedIndex = -1;
+            cboFiltroRol.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
 
@@ -238,7 +302,11 @@ namespace Sistema_de_liquidacion
 
         private void txtBuscar__TextChanged(object sender, EventArgs e)
         {
-
+            if (txtBuscar.Texts == "Buscar:")
+            { CargarRegistroUsuario(usuarioService.CargarRegistro()); }
+            else if (txtBuscar.Texts == "") { CargarRegistroUsuario(usuarioService.CargarRegistro()); }
+            else
+            { FiltroUsuario(); }
         }
 
         private void txtBuscar_Enter(object sender, EventArgs e)
