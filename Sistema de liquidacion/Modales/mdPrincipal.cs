@@ -24,10 +24,30 @@ namespace Sistema_de_liquidacion.Modales
 
         private void CargarDashBoard()
         {
+            var results = graficoService.CargarDashBoard();
+            lblNumEmpleados.Text = Convert.ToString(results.Item1);
+            lblNumUsuarios.Text = Convert.ToString(results.Item2);
+            lblNumReportes.Text = Convert.ToString(results.Item3);
+            lblNominaTotal.Text = results.Item4.ToString("C");
         }
 
         private void CargarGraficos()
         {
+            var result = graficoService.CargarGraficos();
+            var result2 = graficoService.CargarGraficos2();
+
+            List<string> listaCargo = result.Item1;
+            List<int> listaCantEmp = result.Item2;
+
+            List<string> listaEmp = result2.Item1;
+            List<int> listaLiqui = result2.Item2;
+
+            chEmpXcategoria.Series[0].Points.DataBindXY(listaCargo, listaCantEmp);
+            chEmplMasLiquidados.Series[0].Points.DataBindXY(listaEmp, listaLiqui);
+
+
+            chEmpXcategoria.ChartAreas[0].AxisX.Interval = 1;  // Intervalo entre etiquetas
+            chEmpXcategoria.ChartAreas[0].AxisX.LabelStyle.Angle = -45;
         }
 
         private void Contenedor_Paint(object sender, PaintEventArgs e)
@@ -57,8 +77,6 @@ namespace Sistema_de_liquidacion.Modales
 
         private void mdPrincipal_Load(object sender, EventArgs e)
         {
-            timer1.Start();
-
             BorderRadiusPanel(panel1, 20);
             BorderRadiusPanel(panel2, 20);
             BorderRadiusPanel(panel3, 20);
