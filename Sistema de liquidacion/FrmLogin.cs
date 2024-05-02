@@ -192,5 +192,13 @@ namespace Sistema_de_liquidacion
         {
             PasswordChar();
         }
+
+        private void txtContraseña_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                Ingresar();
+            }
+        }
     }
 }

@@ -83,6 +83,51 @@ namespace Sistema_de_liquidacion
             return true;
         }
 
+        private void ModificarRegistro()
+        {
+            if (!ValidarCampos()) { return; }
+
+            Rol RolIdenx = (Rol)cboRoles.SelectedItem;
+            Permiso producto = new Permiso
+            {
+                NPermiso = cboHerramienta.Texts,
+                Rol = RolIdenx,
+                IdPermiso = Convert.ToInt32(txtIdPermiso.Texts),
+            };
+            if (producto != null)
+            {
+                var msg = permisoService.ModificarRegistros(producto);
+                MessageBox.Show(msg, "Gestion de empleado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CargarRegistro();
+                Nuevo();
+            }
+            else
+            {
+                MessageBox.Show("No se pudo", "Gestion de empleado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void EliminarRegistro()
+        {
+            if (!ValidarCampos()) { return; }
+
+            Permiso producto = new Permiso
+            {
+                IdPermiso = Convert.ToInt32(txtIdPermiso.Texts),
+            };
+            if (producto != null)
+            {
+                var msg = permisoService.EliminarRegistros(producto);
+                MessageBox.Show(msg, "Gestion de empleado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CargarRegistro();
+                Nuevo();
+            }
+            else
+            {
+                MessageBox.Show("No se pudo", "Gestion de empleado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
         private void CargarRegistro()
         {
             Visualizer(permisoService.CargarRegistro());
@@ -248,6 +293,16 @@ namespace Sistema_de_liquidacion
             GuardarPermiso();
         }
 
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            ModificarRegistro();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            EliminarRegistro();
+        }
+
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             Nuevo();
@@ -293,6 +348,22 @@ namespace Sistema_de_liquidacion
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tblRegistroPermiso_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (tblRegistroPermiso.Columns[e.ColumnIndex].Name == "btnSeleccionar")
+            {
+                int index = e.RowIndex;
+                if (index >= 0)
+                {
+                    btnGuardar.Enabled = false;
+                    txtIdPermiso.Texts = tblRegistroPermiso.Rows[index].Cells["IdPermiso"].Value.ToString();
+                    cboHerramienta.Texts = tblRegistroPermiso.Rows[index].Cells["Permisos"].Value.ToString();
+                    cboRoles.Texts = tblRegistroPermiso.Rows[index].Cells["Rol"].Value.ToString();
+
+                }
+            }
         }
     }
 }

@@ -164,11 +164,12 @@
             this.txtContraseña.PasswordChar = false;
             this.txtContraseña.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtContraseña.PlaceholderText = "";
-            this.txtContraseña.Size = new System.Drawing.Size(208, 35);
+            this.txtContraseña.Size = new System.Drawing.Size(208, 32);
             this.txtContraseña.TabIndex = 1;
             this.txtContraseña.Texts = "Contraseña";
             this.txtContraseña.UnderlinedStyle = false;
             this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter);
+            this.txtContraseña.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtContraseña_KeyDown);
             this.txtContraseña.Leave += new System.EventHandler(this.txtContraseña_Leave);
             // 
             // txtUsuario
@@ -188,7 +189,7 @@
             this.txtUsuario.PasswordChar = false;
             this.txtUsuario.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtUsuario.PlaceholderText = "";
-            this.txtUsuario.Size = new System.Drawing.Size(249, 35);
+            this.txtUsuario.Size = new System.Drawing.Size(249, 32);
             this.txtUsuario.TabIndex = 1;
             this.txtUsuario.Texts = "Usuario";
             this.txtUsuario.UnderlinedStyle = false;
@@ -238,7 +239,7 @@
             // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(546, 226);
             this.Controls.Add(this.panel1);

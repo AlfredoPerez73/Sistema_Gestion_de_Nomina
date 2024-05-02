@@ -88,7 +88,54 @@ namespace Datos
             {
                 return null;
             }
-            return $"Se ha registrado el producto {permiso.NPermiso}";
+            return $"Se ha registrado el permiso {permiso.NPermiso}";
+        }
+
+        public string ModificarRegisro(Permiso permiso)
+        {
+            try
+            {
+                string Actualizar = "ModificarPermiso";
+                SqlCommand command = new SqlCommand(Actualizar, Connection);
+                command.Parameters.AddWithValue("@Permiso", permiso.NPermiso);
+                command.Parameters.AddWithValue("@IdRol", permiso.Rol.IdRol);
+                command.Parameters.AddWithValue("@NRol", permiso.Rol.IdRol);
+                command.Parameters.AddWithValue("@IdPermiso", permiso.IdPermiso);
+                command.CommandType = CommandType.StoredProcedure;
+                AbrirConnection();
+                var index = command.ExecuteNonQuery();
+                CerrarConnection();
+            }
+            catch (Exception)
+            {
+                return "Error al modificar el permiso, " +
+                    "el permiso se encuentra relacionado";
+            }
+
+            return $"Se ha modificado el permiso {permiso.NPermiso} " +
+                $"con la ID {permiso.IdPermiso}";
+        }
+
+        public string EliminarRegistros(Permiso permiso)
+        {
+            try
+            {
+                string Eliminar = "EliminarPermiso";
+
+                SqlCommand command = new SqlCommand(Eliminar, Connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@IdPermiso", permiso.IdPermiso);
+                AbrirConnection();
+                var index = command.ExecuteNonQuery();
+                CerrarConnection();
+            }
+            catch (Exception)
+            {
+                return "Error al eliminar el permiso, " +
+                   "el permiso se encuentra relacionado";
+            }
+            return $"Se ha eliminado el permiso {permiso.NPermiso} " +
+                $"con la ID {permiso.IdPermiso}";
         }
 
         private Permiso Map(SqlDataReader reader)

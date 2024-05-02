@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
@@ -46,6 +46,8 @@
             this.Rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnEliminar = new RJCodeAdvance.RJControls.RJButton();
+            this.btnModificar = new RJCodeAdvance.RJControls.RJButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.rjTextBox1 = new RJCodeAdvance.RJControls.RJTextBox();
             this.rjTextBox2 = new RJCodeAdvance.RJControls.RJTextBox();
@@ -204,14 +206,14 @@
             this.tblRegistroPermiso.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblRegistroPermiso.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.tblRegistroPermiso.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblRegistroPermiso.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblRegistroPermiso.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.tblRegistroPermiso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblRegistroPermiso.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSeleccionar,
@@ -220,14 +222,14 @@
             this.IdRol,
             this.Rol,
             this.FechaRegistro});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tblRegistroPermiso.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tblRegistroPermiso.DefaultCellStyle = dataGridViewCellStyle2;
             this.tblRegistroPermiso.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblRegistroPermiso.EnableHeadersVisualStyles = false;
             this.tblRegistroPermiso.GridColor = System.Drawing.Color.White;
@@ -242,6 +244,7 @@
             this.tblRegistroPermiso.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.tblRegistroPermiso.Size = new System.Drawing.Size(966, 374);
             this.tblRegistroPermiso.TabIndex = 19;
+            this.tblRegistroPermiso.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblRegistroPermiso_CellContentClick);
             this.tblRegistroPermiso.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.tblRegistroPermiso_CellPainting);
             // 
             // btnSeleccionar
@@ -295,6 +298,8 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel2.Controls.Add(this.btnEliminar);
+            this.panel2.Controls.Add(this.btnModificar);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.label19);
@@ -306,6 +311,58 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(533, 634);
             this.panel2.TabIndex = 30;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEliminar.BackColor = System.Drawing.Color.Brown;
+            this.btnEliminar.BackgroundColor = System.Drawing.Color.Brown;
+            this.btnEliminar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnEliminar.BorderRadius = 17;
+            this.btnEliminar.BorderSize = 0;
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.Image = global::Sistema_de_liquidacion.Properties.Resources.circulo_marca_x;
+            this.btnEliminar.Location = new System.Drawing.Point(122, 438);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(272, 41);
+            this.btnEliminar.TabIndex = 30;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEliminar.TextColor = System.Drawing.Color.White;
+            this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnModificar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnModificar.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.btnModificar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnModificar.BorderRadius = 17;
+            this.btnModificar.BorderSize = 0;
+            this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnModificar.FlatAppearance.BorderSize = 0;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.White;
+            this.btnModificar.Image = global::Sistema_de_liquidacion.Properties.Resources.cuadrado_de_la_pluma;
+            this.btnModificar.Location = new System.Drawing.Point(119, 394);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(272, 41);
+            this.btnModificar.TabIndex = 29;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnModificar.TextColor = System.Drawing.Color.White;
+            this.btnModificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // panel3
             // 
@@ -638,7 +695,7 @@
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
             this.btnLimpiar.Image = global::Sistema_de_liquidacion.Properties.Resources.escoba;
-            this.btnLimpiar.Location = new System.Drawing.Point(122, 400);
+            this.btnLimpiar.Location = new System.Drawing.Point(122, 494);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(270, 41);
@@ -761,5 +818,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn IdRol;
         private System.Windows.Forms.DataGridViewTextBoxColumn Rol;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
+        private RJCodeAdvance.RJControls.RJButton btnEliminar;
+        private RJCodeAdvance.RJControls.RJButton btnModificar;
     }
 }

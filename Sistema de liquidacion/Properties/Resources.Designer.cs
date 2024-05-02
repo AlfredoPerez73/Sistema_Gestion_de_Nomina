@@ -19,7 +19,7 @@ namespace Sistema_de_liquidacion.Properties {
     // a través de una herramienta como ResGen o Visual Studio.
     // Para agregar o quitar un miembro, edite el archivo .ResX y, a continuación, vuelva a ejecutar ResGen
     // con la opción /str o recompile su proyecto de VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -206,6 +206,16 @@ namespace Sistema_de_liquidacion.Properties {
         internal static System.Drawing.Bitmap crisis_mas_grande_a_color {
             get {
                 object obj = ResourceManager.GetObject("crisis mas grande a color", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cuadrado_de_la_pluma {
+            get {
+                object obj = ResourceManager.GetObject("cuadrado-de-la-pluma", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -471,10 +481,8 @@ namespace Sistema_de_liquidacion.Properties {
         ///                padding: 5px;
         ///                border: 1px solid black;
         ///            }
-        ///    &lt;/style&gt;
-        ///&lt;/head&gt;
-        ///&lt;body&gt;
-        ///    &lt;table [resto de la cadena truncado]&quot;;.
+        ///
+        ///        @media p [resto de la cadena truncado]&quot;;.
         /// </summary>
         internal static string PlantillaLiquidacion {
             get {
@@ -504,9 +512,7 @@ namespace Sistema_de_liquidacion.Properties {
         ///                border: 1px solid black;
         ///            }
         ///    &lt;/style&gt;
-        ///&lt;/head&gt;
-        ///&lt;body&gt;
-        ///    &lt;table bor [resto de la cadena truncado]&quot;;.
+        ///&lt;/head&gt;        /// [resto de la cadena truncado]&quot;;.
         /// </summary>
         internal static string PlantillaLiquidacionTotal {
             get {

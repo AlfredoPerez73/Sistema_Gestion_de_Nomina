@@ -348,7 +348,7 @@
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.Image = global::Sistema_de_liquidacion.Properties.Resources.circulo_cruzado__1_;
+            this.btnModificar.Image = global::Sistema_de_liquidacion.Properties.Resources.cuadrado_de_la_pluma;
             this.btnModificar.Location = new System.Drawing.Point(51, 607);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(5);
             this.btnModificar.Name = "btnModificar";

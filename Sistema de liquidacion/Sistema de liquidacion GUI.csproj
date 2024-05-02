@@ -311,6 +311,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="BD\BDSISTEMA_LIQUIDACION.bacpac" />
+    <None Include="BD\BDSISTEMA_LIQUIDACION.rar" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -455,5 +457,9 @@
     <None Include="Resources\PlantillaLiquidacionTotal.html" />
     <None Include="Resources\PlantillaLiquidacion.html" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuadrado-de-la-pluma.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

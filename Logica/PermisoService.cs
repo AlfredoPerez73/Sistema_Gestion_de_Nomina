@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Logica
 {
-    public class PermisoService
+    public class PermisoService : ICrudService<Permiso>
     {
         PermisoRepository permisoRepository = new PermisoRepository();
 
@@ -26,6 +26,16 @@ namespace Logica
         {
             var msg = permisoRepository.GuardarRegistros(permiso);
             return msg;
+        }
+
+        public string ModificarRegistros(Permiso permiso)
+        {
+            return permisoRepository.ModificarRegisro(permiso);
+        }
+
+        public string EliminarRegistros(Permiso permiso)
+        {
+            return permisoRepository.EliminarRegistros(permiso);
         }
 
         public bool BuscarId(string permiso, string rol)
@@ -57,8 +67,5 @@ namespace Logica
         {
             return CargarRegistro().Where(p => p.Rol.NRol.Equals(nombreRol, StringComparison.OrdinalIgnoreCase)).ToList();
         }
-
-
-
     }
 }
