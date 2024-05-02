@@ -12,7 +12,7 @@ namespace Entidad
         public int IdDetalle { get; set; }
         public string Codigo { get; set; }
         public Liquidacion liquidacion { get; set; }
-        public Producto producto { get; set; }
+        public Empleado producto { get; set; }
         public Usuario usuario { get; set; }
         public int DiasTrabajados { get; set; }
         public int HorasExtras { get; set; }
@@ -27,7 +27,7 @@ namespace Entidad
         public decimal Devengado { get; set; }
         public DateTime FechaRegistro { get; set; }
 
-        public void ActualizarDetalles(Producto producto, Liquidacion liquidacion)
+        public void ActualizarDetalles(Empleado producto, Liquidacion liquidacion)
         {
             Salud = producto.Contrato.Salario * 0.05m;
             Pension = producto.Contrato.Salario * 0.1m;

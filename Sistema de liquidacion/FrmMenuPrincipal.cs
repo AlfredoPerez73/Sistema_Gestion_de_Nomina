@@ -50,7 +50,7 @@ namespace Sistema_de_liquidacion
 
         private void Permisos()
         {
-            List<Permiso> permisoList = new PermisoService().ValidacionPermiso(Convert.ToString(oUsuario.IdUsuario));
+            List<Permiso> permisoList = new PermisoService().ValidacionPermiso(Convert.ToString(oUsuario.IdPersona));
 
             bool index = permisoList.Any(m => m.NPermiso == btnGestionPermisos.Text);
             if (index == false)
@@ -128,7 +128,7 @@ namespace Sistema_de_liquidacion
 
         private void CargarUsuario()
         {
-            lblUsuario.Text = oUsuario.NombreUsuario.ToUpper();
+            lblUsuario.Text = oUsuario.Nombre.ToUpper();
 
         }
 

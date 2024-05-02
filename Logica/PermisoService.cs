@@ -33,5 +33,32 @@ namespace Logica
             return CargarRegistro().Any(p => p.NPermiso == permiso && p.Rol.NRol == rol);
         }
 
+        public List<Permiso> BuscarX(string x)
+        {
+            int idPermiso;
+
+            List<Permiso> permisos = CargarRegistro();
+            if (int.TryParse(x, out idPermiso))
+            {
+                permisos = permisos
+                    .Where(item => item.IdPermiso == idPermiso).ToList();
+            }
+            else
+            {
+                permisos = permisos
+                    .Where(item => item.NPermiso.IndexOf(x, StringComparison.OrdinalIgnoreCase) != -1 ||
+                                   item.Rol.NRol.IndexOf(x, StringComparison.OrdinalIgnoreCase) != -1)
+                    .ToList();
+            }
+            return permisos;
+        }
+
+        public List<Permiso> FiltroRol(string nombreRol)
+        {
+            return CargarRegistro().Where(p => p.Rol.NRol.Equals(nombreRol, StringComparison.OrdinalIgnoreCase)).ToList();
+        }
+
+
+
     }
 }

@@ -21,7 +21,12 @@ namespace Sistema_de_liquidacion
             InitializeComponent();
         }
 
-        private void CargarRegistro(List<Cargo> lista)
+        private void CargarRegistro()
+        {
+            Visualizer(cargoService.CargarRegistro());
+        }
+
+        private void Visualizer(List<Cargo> lista)
         {
             tblRegistroCargo.Rows.Clear();
 
@@ -40,7 +45,7 @@ namespace Sistema_de_liquidacion
 
         private void FrmGestionCargo_Load(object sender, EventArgs e)
         {
-            CargarRegistro(cargoService.CargarRegistro());
+            CargarRegistro();
         }
     }
 }

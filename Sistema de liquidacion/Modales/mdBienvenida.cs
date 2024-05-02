@@ -32,7 +32,7 @@ namespace Sistema_de_liquidacion.Modales
             circularProgressBar1.Maximum = 100;
             circularProgressBar1.Minimum = 0;
             timer1.Start();
-            lblUsuario.Text = usuario.NombreUsuario.ToUpper();
+            lblUsuario.Text = usuario.Nombre.ToUpper();
         }
 
         private void BorderRadiusPanel()

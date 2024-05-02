@@ -130,35 +130,35 @@ namespace Sistema_de_liquidacion
 
             if (lista != null)
             {
-                foreach (var producto in lista)
+                foreach (var item in lista)
                 {
                     int index = tblRegistroLiquidaciones.Rows.Add();
                     DataGridViewRow row = tblRegistroLiquidaciones.Rows[index];
-                    row.Cells["IdDetalle"].Value = producto.IdDetalle;
-                    row.Cells["Codigo"].Value = producto.Codigo;
-                    row.Cells["IdFactura2"].Value = producto.liquidacion.IdFactura;
-                    row.Cells["Año2"].Value = producto.liquidacion.Año;
-                    row.Cells["Mes2"].Value = producto.liquidacion.Mes;
-                    row.Cells["DiasTrabajados"].Value = producto.DiasTrabajados;
-                    row.Cells["HorasTrabajadas"].Value = producto.HorasExtras;
-                    row.Cells["ValHorasExtras"].Value = producto.ValorHorasExtra.ToString("C");
-                    row.Cells["IdProducto2"].Value = producto.producto.IdProducto;
-                    row.Cells["Documento2"].Value = producto.producto.Documento;
-                    row.Cells["Nombre"].Value = producto.producto.Nombre;
-                    row.Cells["Cargo2"].Value = producto.producto.Cargo.CargoDesempeñado;
-                    row.Cells["Salario2"].Value = producto.producto.Contrato.Salario.ToString("C");
-                    row.Cells["Estado2"].Value = producto.producto.Estado;
-                    row.Cells["Salud"].Value = producto.Salud.ToString("C");
-                    row.Cells["Pension"].Value = producto.Pension.ToString("C");
-                    row.Cells["AuxT"].Value = producto.AuxTransporte.ToString("C");
-                    row.Cells["Bonificacion"].Value = producto.BonificacionServicios.ToString("C");
-                    row.Cells["PrimaServicios"].Value = producto.PrimaServicios.ToString("C");
-                    row.Cells["AuxAlimentacion"].Value = producto.AuxAlimentacion.ToString("C");
-                    row.Cells["PrimaNavidad"].Value = producto.PrimaNavidad.ToString("C");
-                    row.Cells["Devengado"].Value = producto.Devengado.ToString("C");
-                    row.Cells["IdUsuario"].Value = producto.usuario.IdUsuario;
-                    row.Cells["Usuario"].Value = producto.usuario.NombreUsuario;
-                    row.Cells["FechaRegistro3"].Value = producto.FechaRegistro.ToString("d");
+                    row.Cells["IdDetalle"].Value = item.IdDetalle;
+                    row.Cells["Codigo"].Value = item.Codigo;
+                    row.Cells["IdFactura2"].Value = item.liquidacion.IdFactura;
+                    row.Cells["Año2"].Value = item.liquidacion.Año;
+                    row.Cells["Mes2"].Value = item.liquidacion.Mes;
+                    row.Cells["DiasTrabajados"].Value = item.DiasTrabajados;
+                    row.Cells["HorasTrabajadas"].Value = item.HorasExtras;
+                    row.Cells["ValHorasExtras"].Value = item.ValorHorasExtra.ToString("C");
+                    row.Cells["IdProducto2"].Value = item.producto.IdPersona;
+                    row.Cells["Documento2"].Value = item.producto.Documento;
+                    row.Cells["Nombre"].Value = item.producto.Nombre;
+                    row.Cells["Cargo2"].Value = item.producto.Cargo.CargoDesempeñado;
+                    row.Cells["Salario2"].Value = item.producto.Contrato.Salario.ToString("C");
+                    row.Cells["Estado2"].Value = item.producto.Estado;
+                    row.Cells["Salud"].Value = item.Salud.ToString("C");
+                    row.Cells["Pension"].Value = item.Pension.ToString("C");
+                    row.Cells["AuxT"].Value = item.AuxTransporte.ToString("C");
+                    row.Cells["Bonificacion"].Value = item.BonificacionServicios.ToString("C");
+                    row.Cells["PrimaServicios"].Value = item.PrimaServicios.ToString("C");
+                    row.Cells["AuxAlimentacion"].Value = item.AuxAlimentacion.ToString("C");
+                    row.Cells["PrimaNavidad"].Value = item.PrimaNavidad.ToString("C");
+                    row.Cells["Devengado"].Value = item.Devengado.ToString("C");
+                    row.Cells["IdUsuario"].Value = item.usuario.IdPersona;
+                    row.Cells["Usuario"].Value = item.usuario.Nombre;
+                    row.Cells["FechaRegistro3"].Value = item.FechaRegistro.ToString("d");
 
                 }
             }
@@ -281,12 +281,12 @@ namespace Sistema_de_liquidacion
 
         private void btnBuscarEmpleado_Click_1(object sender, EventArgs e)
         {
-            using (var modal = new mdProducto())
+            using (var modal = new mdEmpleado())
             {
                 var result = modal.ShowDialog();
                 if (result == DialogResult.OK)
                 {
-                    txtIdProducto.Texts = modal.producto.IdProducto.ToString();
+                    txtIdProducto.Texts = modal.producto.IdPersona.ToString();
                     txtDocumento2.Texts = modal.producto.Documento.ToString();
                     txtNombre.Texts = modal.producto.Nombre.ToString();
                     txtcargo.Texts = modal.producto.Cargo.IdCargo.ToString();

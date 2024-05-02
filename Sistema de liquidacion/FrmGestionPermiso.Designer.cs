@@ -28,9 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cboFiltroRol = new RJCodeAdvance.RJControls.RJComboBox();
+            this.txtBuscar = new RJCodeAdvance.RJControls.RJTextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.tblRegistroPermiso = new System.Windows.Forms.DataGridView();
+            this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.IdPermiso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Permisos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdRol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.rjTextBox1 = new RJCodeAdvance.RJControls.RJTextBox();
@@ -50,25 +64,14 @@
             this.btnLimpiar = new RJCodeAdvance.RJControls.RJButton();
             this.btnGuardar = new RJCodeAdvance.RJControls.RJButton();
             this.txtIdPermiso = new RJCodeAdvance.RJControls.RJTextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.tblRegistroPermiso = new System.Windows.Forms.DataGridView();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cboFiltroRol = new RJCodeAdvance.RJControls.RJComboBox();
-            this.txtBuscar = new RJCodeAdvance.RJControls.RJTextBox();
-            this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Permisos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdRol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tblRegistroPermiso)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tblRegistroPermiso)).BeginInit();
-            this.panel9.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -83,6 +86,209 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1443, 788);
             this.panel1.TabIndex = 0;
+            // 
+            // panel9
+            // 
+            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel9.Controls.Add(this.label8);
+            this.panel9.Controls.Add(this.panel6);
+            this.panel9.Controls.Add(this.txtBuscar);
+            this.panel9.Location = new System.Drawing.Point(108, 6);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1778, 51);
+            this.panel9.TabIndex = 49;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(72, 11);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(230, 26);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "Gestion de permisos";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel6.Controls.Add(this.label1);
+            this.panel6.Controls.Add(this.cboFiltroRol);
+            this.panel6.Location = new System.Drawing.Point(909, 6);
+            this.panel6.Margin = new System.Windows.Forms.Padding(5);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(331, 40);
+            this.panel6.TabIndex = 31;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 27);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Filtrar:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // cboFiltroRol
+            // 
+            this.cboFiltroRol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.cboFiltroRol.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.cboFiltroRol.BorderSize = 1;
+            this.cboFiltroRol.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cboFiltroRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboFiltroRol.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboFiltroRol.ForeColor = System.Drawing.Color.DimGray;
+            this.cboFiltroRol.IconColor = System.Drawing.Color.White;
+            this.cboFiltroRol.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.cboFiltroRol.ListTextColor = System.Drawing.Color.White;
+            this.cboFiltroRol.Location = new System.Drawing.Point(0, 0);
+            this.cboFiltroRol.Margin = new System.Windows.Forms.Padding(5);
+            this.cboFiltroRol.MinimumSize = new System.Drawing.Size(334, 44);
+            this.cboFiltroRol.Name = "cboFiltroRol";
+            this.cboFiltroRol.Padding = new System.Windows.Forms.Padding(1);
+            this.cboFiltroRol.Size = new System.Drawing.Size(334, 44);
+            this.cboFiltroRol.TabIndex = 23;
+            this.cboFiltroRol.Texts = "";
+            this.cboFiltroRol.OnSelectedIndexChanged += new System.EventHandler(this.cboFiltroRol_OnSelectedIndexChanged);
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.txtBuscar.BorderColor = System.Drawing.Color.Transparent;
+            this.txtBuscar.BorderFocusColor = System.Drawing.Color.Transparent;
+            this.txtBuscar.BorderRadius = 15;
+            this.txtBuscar.BorderSize = 2;
+            this.txtBuscar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscar.ForeColor = System.Drawing.Color.LightGray;
+            this.txtBuscar.Location = new System.Drawing.Point(371, 6);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(6);
+            this.txtBuscar.Multiline = false;
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
+            this.txtBuscar.PasswordChar = false;
+            this.txtBuscar.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtBuscar.PlaceholderText = "";
+            this.txtBuscar.Size = new System.Drawing.Size(487, 40);
+            this.txtBuscar.TabIndex = 28;
+            this.txtBuscar.Texts = "Buscar:";
+            this.txtBuscar.UnderlinedStyle = false;
+            this.txtBuscar._TextChanged += new System.EventHandler(this.txtBuscar__TextChanged);
+            this.txtBuscar.Enter += new System.EventHandler(this.txtBuscar_Enter);
+            this.txtBuscar.Leave += new System.EventHandler(this.txtBuscar_Leave);
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel4.Controls.Add(this.tblRegistroPermiso);
+            this.panel4.Location = new System.Drawing.Point(238, 207);
+            this.panel4.Margin = new System.Windows.Forms.Padding(5);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(966, 374);
+            this.panel4.TabIndex = 31;
+            // 
+            // tblRegistroPermiso
+            // 
+            this.tblRegistroPermiso.AllowUserToAddRows = false;
+            this.tblRegistroPermiso.AllowUserToDeleteRows = false;
+            this.tblRegistroPermiso.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.tblRegistroPermiso.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tblRegistroPermiso.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.tblRegistroPermiso.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblRegistroPermiso.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.tblRegistroPermiso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tblRegistroPermiso.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.btnSeleccionar,
+            this.IdPermiso,
+            this.Permisos,
+            this.IdRol,
+            this.Rol,
+            this.FechaRegistro});
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tblRegistroPermiso.DefaultCellStyle = dataGridViewCellStyle8;
+            this.tblRegistroPermiso.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblRegistroPermiso.EnableHeadersVisualStyles = false;
+            this.tblRegistroPermiso.GridColor = System.Drawing.Color.White;
+            this.tblRegistroPermiso.Location = new System.Drawing.Point(0, 0);
+            this.tblRegistroPermiso.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tblRegistroPermiso.Name = "tblRegistroPermiso";
+            this.tblRegistroPermiso.ReadOnly = true;
+            this.tblRegistroPermiso.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.tblRegistroPermiso.RowHeadersVisible = false;
+            this.tblRegistroPermiso.RowHeadersWidth = 51;
+            this.tblRegistroPermiso.RowTemplate.Height = 24;
+            this.tblRegistroPermiso.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.tblRegistroPermiso.Size = new System.Drawing.Size(966, 374);
+            this.tblRegistroPermiso.TabIndex = 19;
+            this.tblRegistroPermiso.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.tblRegistroPermiso_CellPainting);
+            // 
+            // btnSeleccionar
+            // 
+            this.btnSeleccionar.HeaderText = "";
+            this.btnSeleccionar.MinimumWidth = 6;
+            this.btnSeleccionar.Name = "btnSeleccionar";
+            this.btnSeleccionar.ReadOnly = true;
+            this.btnSeleccionar.Width = 30;
+            // 
+            // IdPermiso
+            // 
+            this.IdPermiso.HeaderText = "Id de permiso";
+            this.IdPermiso.Name = "IdPermiso";
+            this.IdPermiso.ReadOnly = true;
+            this.IdPermiso.Visible = false;
+            // 
+            // Permisos
+            // 
+            this.Permisos.HeaderText = "Permiso";
+            this.Permisos.MinimumWidth = 6;
+            this.Permisos.Name = "Permisos";
+            this.Permisos.ReadOnly = true;
+            this.Permisos.Width = 200;
+            // 
+            // IdRol
+            // 
+            this.IdRol.HeaderText = "Id del rol";
+            this.IdRol.MinimumWidth = 6;
+            this.IdRol.Name = "IdRol";
+            this.IdRol.ReadOnly = true;
+            this.IdRol.Visible = false;
+            this.IdRol.Width = 125;
+            // 
+            // Rol
+            // 
+            this.Rol.HeaderText = "Rol";
+            this.Rol.Name = "Rol";
+            this.Rol.ReadOnly = true;
+            this.Rol.Width = 200;
+            // 
+            // FechaRegistro
+            // 
+            this.FechaRegistro.HeaderText = "Fecha de registro";
+            this.FechaRegistro.Name = "FechaRegistro";
+            this.FechaRegistro.ReadOnly = true;
+            this.FechaRegistro.Width = 200;
             // 
             // panel2
             // 
@@ -403,6 +609,7 @@
             this.cboRoles.Size = new System.Drawing.Size(271, 50);
             this.cboRoles.TabIndex = 17;
             this.cboRoles.Texts = "Rol desempeñado";
+            this.cboRoles.OnSelectedIndexChanged += new System.EventHandler(this.cboRoles_OnSelectedIndexChanged);
             // 
             // label19
             // 
@@ -493,180 +700,6 @@
             this.txtIdPermiso.UnderlinedStyle = false;
             this.txtIdPermiso.Visible = false;
             // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel4.Controls.Add(this.tblRegistroPermiso);
-            this.panel4.Location = new System.Drawing.Point(238, 207);
-            this.panel4.Margin = new System.Windows.Forms.Padding(5);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(966, 374);
-            this.panel4.TabIndex = 31;
-            // 
-            // tblRegistroPermiso
-            // 
-            this.tblRegistroPermiso.AllowUserToAddRows = false;
-            this.tblRegistroPermiso.AllowUserToDeleteRows = false;
-            this.tblRegistroPermiso.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.tblRegistroPermiso.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tblRegistroPermiso.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.tblRegistroPermiso.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblRegistroPermiso.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
-            this.tblRegistroPermiso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tblRegistroPermiso.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.btnSeleccionar,
-            this.Permisos,
-            this.IdRol});
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tblRegistroPermiso.DefaultCellStyle = dataGridViewCellStyle16;
-            this.tblRegistroPermiso.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblRegistroPermiso.EnableHeadersVisualStyles = false;
-            this.tblRegistroPermiso.GridColor = System.Drawing.Color.White;
-            this.tblRegistroPermiso.Location = new System.Drawing.Point(0, 0);
-            this.tblRegistroPermiso.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.tblRegistroPermiso.Name = "tblRegistroPermiso";
-            this.tblRegistroPermiso.ReadOnly = true;
-            this.tblRegistroPermiso.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.tblRegistroPermiso.RowHeadersVisible = false;
-            this.tblRegistroPermiso.RowHeadersWidth = 51;
-            this.tblRegistroPermiso.RowTemplate.Height = 24;
-            this.tblRegistroPermiso.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tblRegistroPermiso.Size = new System.Drawing.Size(966, 374);
-            this.tblRegistroPermiso.TabIndex = 19;
-            this.tblRegistroPermiso.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.tblRegistroPermiso_CellPainting);
-            // 
-            // panel9
-            // 
-            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel9.Controls.Add(this.label8);
-            this.panel9.Controls.Add(this.panel6);
-            this.panel9.Controls.Add(this.txtBuscar);
-            this.panel9.Location = new System.Drawing.Point(108, 6);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1778, 51);
-            this.panel9.TabIndex = 49;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(72, 11);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(230, 26);
-            this.label8.TabIndex = 28;
-            this.label8.Text = "Gestion de permisos";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel6.Controls.Add(this.label1);
-            this.panel6.Controls.Add(this.cboFiltroRol);
-            this.panel6.Location = new System.Drawing.Point(909, 6);
-            this.panel6.Margin = new System.Windows.Forms.Padding(5);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(331, 40);
-            this.panel6.TabIndex = 31;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(15, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 27);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Filtrar:";
-            // 
-            // cboFiltroRol
-            // 
-            this.cboFiltroRol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.cboFiltroRol.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.cboFiltroRol.BorderSize = 1;
-            this.cboFiltroRol.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cboFiltroRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cboFiltroRol.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboFiltroRol.ForeColor = System.Drawing.Color.DimGray;
-            this.cboFiltroRol.IconColor = System.Drawing.Color.White;
-            this.cboFiltroRol.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.cboFiltroRol.ListTextColor = System.Drawing.Color.White;
-            this.cboFiltroRol.Location = new System.Drawing.Point(0, 0);
-            this.cboFiltroRol.Margin = new System.Windows.Forms.Padding(5);
-            this.cboFiltroRol.MinimumSize = new System.Drawing.Size(334, 44);
-            this.cboFiltroRol.Name = "cboFiltroRol";
-            this.cboFiltroRol.Padding = new System.Windows.Forms.Padding(1);
-            this.cboFiltroRol.Size = new System.Drawing.Size(334, 44);
-            this.cboFiltroRol.TabIndex = 23;
-            this.cboFiltroRol.Texts = "";
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.txtBuscar.BorderColor = System.Drawing.Color.Transparent;
-            this.txtBuscar.BorderFocusColor = System.Drawing.Color.Transparent;
-            this.txtBuscar.BorderRadius = 15;
-            this.txtBuscar.BorderSize = 2;
-            this.txtBuscar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscar.ForeColor = System.Drawing.Color.LightGray;
-            this.txtBuscar.Location = new System.Drawing.Point(371, 6);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(6);
-            this.txtBuscar.Multiline = false;
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtBuscar.PasswordChar = false;
-            this.txtBuscar.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtBuscar.PlaceholderText = "";
-            this.txtBuscar.Size = new System.Drawing.Size(487, 40);
-            this.txtBuscar.TabIndex = 28;
-            this.txtBuscar.Texts = "Buscar:";
-            this.txtBuscar.UnderlinedStyle = false;
-            // 
-            // btnSeleccionar
-            // 
-            this.btnSeleccionar.HeaderText = "";
-            this.btnSeleccionar.MinimumWidth = 6;
-            this.btnSeleccionar.Name = "btnSeleccionar";
-            this.btnSeleccionar.ReadOnly = true;
-            this.btnSeleccionar.Width = 30;
-            // 
-            // Permisos
-            // 
-            this.Permisos.HeaderText = "Permiso";
-            this.Permisos.MinimumWidth = 6;
-            this.Permisos.Name = "Permisos";
-            this.Permisos.ReadOnly = true;
-            this.Permisos.Width = 125;
-            // 
-            // IdRol
-            // 
-            this.IdRol.HeaderText = "Id del rol";
-            this.IdRol.MinimumWidth = 6;
-            this.IdRol.Name = "IdRol";
-            this.IdRol.ReadOnly = true;
-            this.IdRol.Visible = false;
-            this.IdRol.Width = 125;
-            // 
             // FrmGestionPermiso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -679,15 +712,15 @@
             this.Text = "Gestion de permisos";
             this.Load += new System.EventHandler(this.FrmGestionPermiso_Load);
             this.panel1.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tblRegistroPermiso)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tblRegistroPermiso)).EndInit();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -723,7 +756,10 @@
         private RJCodeAdvance.RJControls.RJComboBox cboFiltroRol;
         private RJCodeAdvance.RJControls.RJTextBox txtBuscar;
         private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdPermiso;
         private System.Windows.Forms.DataGridViewTextBoxColumn Permisos;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdRol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Rol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
     }
 }

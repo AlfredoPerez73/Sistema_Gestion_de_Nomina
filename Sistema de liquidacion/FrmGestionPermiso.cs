@@ -94,15 +94,15 @@ namespace Sistema_de_liquidacion
 
             if (lista != null)
             {
-                foreach (var producto in lista)
+                foreach (var item in lista)
                 {
                     int index = tblRegistroPermiso.Rows.Add();
                     DataGridViewRow row = tblRegistroPermiso.Rows[index];
-                    //row.Cells["IdPermiso"].Value = producto.IdPermiso;
-                    row.Cells["Permisos"].Value = producto.NPermiso;
-                    row.Cells["IdRol"].Value = producto.Rol.IdRol;
-                    //row.Cells["Rol"].Value = producto.Rol.NRol;
-                    //row.Cells["FechaRegistro"].Value = producto.FechaRegistro.ToString("d");
+                    row.Cells["IdPermiso"].Value = item.IdPermiso;
+                    row.Cells["Permisos"].Value = item.NPermiso;
+                    row.Cells["IdRol"].Value = item.Rol.IdRol;
+                    row.Cells["Rol"].Value = item.Rol.NRol;
+                    row.Cells["FechaRegistro"].Value = item.FechaRegistro.ToString("d");
                 }
             }
         }
@@ -111,6 +111,28 @@ namespace Sistema_de_liquidacion
         {
             cboHerramienta.Texts = "Permisos";
             cboRoles.Texts = "Rol desempeñado";
+        }
+
+        private void FiltroPermisos()
+        {
+            var filtro = txtBuscar.Texts;
+            var lista = permisoService.BuscarX(filtro);
+            Visualizer(lista);
+        }
+
+        private void FiltroRol()
+        {
+            if (cboFiltroRol.SelectedIndex > 0)
+            {
+                Rol rolSeleccionado = (Rol)cboFiltroRol.SelectedItem; // Obtener el objeto Rol seleccionado
+                string nombreRolSeleccionado = rolSeleccionado.NRol; // Obtener el nombre del rol del objeto Rol
+                var lista = permisoService.FiltroRol(nombreRolSeleccionado.ToUpper());
+                Visualizer(lista);
+            }
+            else if (cboFiltroRol.SelectedIndex == 0)
+            {
+                Visualizer(permisoService.CargarRegistro());
+            }
         }
 
         private void FrmGestionPermiso_Load(object sender, EventArgs e)
@@ -189,12 +211,32 @@ namespace Sistema_de_liquidacion
         private void CargarRoles()
         {
             RolService rolService = new RolService();
-            cboRoles.DataSource = rolService.CargarRegistro();
+            var roles = rolService.CargarRegistro();
+
+            // Crear una copia de la lista de roles para cada ComboBox
+            var rolesCbo1 = new List<Rol>(roles);
+            var rolesCbo2 = new List<Rol>(roles);
+
+            // Agregar un índice adicional a cada lista
+            rolesCbo1.Insert(0, new Rol { IdRol = -1, NRol = " " });
+            rolesCbo2.Insert(0, new Rol { IdRol = -1, NRol = " " });
+
+            cboRoles.DataSource = rolesCbo1;
+            cboFiltroRol.DataSource = rolesCbo2;
+
             cboRoles.DisplayMember = "NRol";
             cboRoles.ValueMember = "IdRol";
+
+            cboFiltroRol.DisplayMember = "NRol";
+            cboFiltroRol.ValueMember = "IdRol";
+
             cboRoles.SelectedIndex = -1;
             cboRoles.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            cboFiltroRol.SelectedIndex = -1;
+            cboFiltroRol.DropDownStyle = ComboBoxStyle.DropDownList;
         }
+
 
         private void cboHerramienta_OnSelectedIndexChanged(object sender, EventArgs e)
         {
@@ -209,6 +251,48 @@ namespace Sistema_de_liquidacion
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             Nuevo();
+        }
+
+        private void txtBuscar_Enter(object sender, EventArgs e)
+        {
+            if (txtBuscar.Texts == "Buscar:")
+            {
+                txtBuscar.Texts = "";
+                txtBuscar.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txtBuscar_Leave(object sender, EventArgs e)
+        {
+            if (txtBuscar.Texts == "")
+            {
+                txtBuscar.Texts = "Buscar:";
+                txtBuscar.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void cboFiltroRol_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            FiltroRol();
+        }
+
+        private void txtBuscar__TextChanged(object sender, EventArgs e)
+        {
+            if (txtBuscar.Texts == "Buscar:")
+            { Visualizer(permisoService.CargarRegistro()); }
+            else if (txtBuscar.Texts == "") { Visualizer(permisoService.CargarRegistro()); }
+            else
+            { FiltroPermisos(); }
+        }
+
+        private void cboRoles_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -29,7 +29,7 @@ namespace Sistema_de_liquidacion
             Usuario usuario = new Usuario
             {
                 Documento = txtDocumento.Texts,
-                NombreUsuario = txtNombreUsuario.Texts,
+                Nombre = txtNombreUsuario.Texts,
                 Rol = RoleIndex,
                 Contraseña = txtContraseña.Texts,
                 Correo = txtCorreo.Texts,
@@ -41,14 +41,14 @@ namespace Sistema_de_liquidacion
         {
             if (!ValidarCampos()) { return; }
 
-            var producto = RegistrarUsuario();
+            var usuario = RegistrarUsuario();
 
             var ID = usuarioService.BuscarId(txtDocumento.Texts);
             if (ID != true)
             {
-                var msg = usuarioService.Guardar(producto);
+                var msg = usuarioService.Guardar(usuario);
                 MessageBox.Show(msg, "Gestion de usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                CargarRegistroUsuario(usuarioService.CargarRegistro());
+                CargarRegistro();
                 Nuevo();
             }
             else
@@ -101,13 +101,13 @@ namespace Sistema_de_liquidacion
                 {
                     Usuario usuario = new Usuario
                     {
-                        IdUsuario = Convert.ToInt32(txtIdUsuario.Texts)
+                        IdPersona = Convert.ToInt32(txtIdUsuario.Texts)
                     };
                     if (usuario != null)
                     {
                         var msg = usuarioService.EliminarRegistros(usuario);
                         MessageBox.Show(msg, "Gestion de usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        CargarRegistroUsuario(usuarioService.CargarRegistro());
+                        CargarRegistro();
                         Nuevo();
                         EnabledUpdate();
                     }
@@ -133,7 +133,7 @@ namespace Sistema_de_liquidacion
 
             CargarRoles();
 
-            CargarRegistroUsuario(usuarioService.CargarRegistro());
+            CargarRegistro();
         }
 
         private void Nuevo()
@@ -165,24 +165,29 @@ namespace Sistema_de_liquidacion
             }
         }
 
-        private void CargarRegistroUsuario(List<Usuario> lista)
+        private void CargarRegistro()
+        {
+            Visualizer(usuarioService.CargarRegistro());
+        }
+
+        private void Visualizer(List<Usuario> lista)
         {
             tblRegistro.Rows.Clear();
 
             if (lista != null)
             {
-                foreach (var producto in lista)
+                foreach (var item in lista)
                 {
                     int index = tblRegistro.Rows.Add();
                     DataGridViewRow row = tblRegistro.Rows[index];
-                    row.Cells["IdUsuario"].Value = producto.IdUsuario;
-                    row.Cells["Documento"].Value = producto.Documento;
-                    row.Cells["Usuario"].Value = producto.NombreUsuario;
-                    row.Cells["Contraseña"].Value = producto.Contraseña;
-                    row.Cells["IdRol"].Value = producto.Rol.IdRol;
-                    row.Cells["Rol"].Value = producto.Rol.NRol;
-                    row.Cells["Correo"].Value = producto.Correo;
-                    row.Cells["FechaRegistro"].Value = producto.FechaRegistro.ToString("d");
+                    row.Cells["IdUsuario"].Value = item.IdPersona;
+                    row.Cells["Documento"].Value = item.Documento;
+                    row.Cells["Usuario"].Value = item.Nombre;
+                    row.Cells["Contraseña"].Value = item.Contraseña;
+                    row.Cells["IdRol"].Value = item.Rol.IdRol;
+                    row.Cells["Rol"].Value = item.Rol.NRol;
+                    row.Cells["Correo"].Value = item.Correo;
+                    row.Cells["FechaRegistro"].Value = item.FechaRegistro.ToString("d");
 
                 }
             }
@@ -192,26 +197,40 @@ namespace Sistema_de_liquidacion
         {
             var filtro = txtBuscar.Texts;
             var lista = usuarioService.BuscarX(filtro);
-            CargarRegistroUsuario(lista);
+            Visualizer(lista);
         }
 
         private void FiltroUsuarioRol()
         {
             if (cboFiltroRol.SelectedIndex > 0)
             {
-                string estadoSeleccionado = cboFiltroRol.SelectedItem.ToString();
-                var lista = usuarioService.FiltroRol(estadoSeleccionado.ToUpper());
-                CargarRegistroUsuario(lista);
+                Rol rolSeleccionado = (Rol)cboFiltroRol.SelectedItem; // Obtener el objeto Rol seleccionado
+                string nombreRolSeleccionado = rolSeleccionado.NRol; // Obtener el nombre del rol del objeto Rol
+                var lista = usuarioService.FiltroRol(nombreRolSeleccionado.ToUpper());
+                Visualizer(lista);
             }
             else if (cboFiltroRol.SelectedIndex == 0)
-            { CargarRegistroUsuario(usuarioService.CargarRegistro()); }
+            {
+                Visualizer(usuarioService.CargarRegistro());
+            }
         }
 
         private void CargarRoles()
         {
             RolService rolService = new RolService();
-            cboRoles.DataSource = rolService.CargarRegistro();
-            cboFiltroRol.DataSource = rolService.CargarRegistro();
+            var roles = rolService.CargarRegistro();
+
+            // Crear una copia de la lista de roles para cada ComboBox
+            var rolesCbo1 = new List<Rol>(roles);
+            var rolesCbo2 = new List<Rol>(roles);
+
+            // Agregar un índice adicional a cada lista
+            rolesCbo1.Insert(0, new Rol { IdRol = -1, NRol = " " });
+            rolesCbo2.Insert(0, new Rol { IdRol = -1, NRol = " " });
+
+            cboRoles.DataSource = rolesCbo1;
+            cboFiltroRol.DataSource = rolesCbo2;
+
             cboRoles.DisplayMember = "NRol";
             cboRoles.ValueMember = "IdRol";
 
@@ -224,7 +243,6 @@ namespace Sistema_de_liquidacion
             cboFiltroRol.SelectedIndex = -1;
             cboFiltroRol.DropDownStyle = ComboBoxStyle.DropDownList;
         }
-
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -303,8 +321,8 @@ namespace Sistema_de_liquidacion
         private void txtBuscar__TextChanged(object sender, EventArgs e)
         {
             if (txtBuscar.Texts == "Buscar:")
-            { CargarRegistroUsuario(usuarioService.CargarRegistro()); }
-            else if (txtBuscar.Texts == "") { CargarRegistroUsuario(usuarioService.CargarRegistro()); }
+            { Visualizer(usuarioService.CargarRegistro()); }
+            else if (txtBuscar.Texts == "") { Visualizer(usuarioService.CargarRegistro()); }
             else
             { FiltroUsuario(); }
         }

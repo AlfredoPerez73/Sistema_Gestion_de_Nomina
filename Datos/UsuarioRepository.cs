@@ -22,8 +22,8 @@ namespace Datos
         {
             try
             {
-                string Registro = "INSERT INTO USUARIO(Documento,Usuario,Contraseña,Correo,IdRol,Rol) VALUES " +
-                    "('" + usuario.Documento + "','" + usuario.NombreUsuario + "','" + usuario.Contraseña + "','" + usuario.Correo + "','" +
+                string Registro = "INSERT INTO USUARIO(Documento,Usuario,Contraseña,Correo,IdRol,NRol) VALUES " +
+                    "('" + usuario.Documento + "','" + usuario.Nombre + "','" + usuario.Contraseña + "','" + usuario.Correo + "','" +
                     usuario.Rol.IdRol + "','" + usuario.Rol.NRol + "');";
                 SqlCommand command = new SqlCommand(Registro, Connection);
                 AbrirConnection();
@@ -35,7 +35,7 @@ namespace Datos
                 return null;
             }
 
-            return $"Se ha registrado el producto {usuario.NombreUsuario}";
+            return $"Se ha registrado el producto {usuario.Nombre}";
         }
 
         public List<Usuario> CargarRegistro()
@@ -69,7 +69,7 @@ namespace Datos
                 string Eliminar = "EliminarUsuario";
                 SqlCommand command = new SqlCommand(Eliminar, Connection);
                 command.CommandType = CommandType.StoredProcedure;
-                command.Parameters.AddWithValue("@IdUsuario", usuario.IdUsuario);
+                command.Parameters.AddWithValue("@IdUsuario", usuario.IdPersona);
                 AbrirConnection();
                 var index = command.ExecuteNonQuery();
                 CerrarConnection();
@@ -80,17 +80,17 @@ namespace Datos
                     "el usuario se encuentra relacionada con una compra";
             }
 
-            return $"Se ha eliminado el usuario {usuario.NombreUsuario}" +
-                $"con la ID {usuario.IdUsuario}";
+            return $"Se ha eliminado el usuario {usuario.Nombre}" +
+                $"con la ID {usuario.IdPersona}";
         }
 
         private Usuario Map(SqlDataReader reader)
         {
             Usuario usuario = new Usuario
             {
-                IdUsuario = Convert.ToInt32(reader["IdUsuario"]),
+                IdPersona = Convert.ToInt32(reader["IdUsuario"]),
                 Documento = Convert.ToString(reader["Documento"]),
-                NombreUsuario = Convert.ToString(reader["Usuario"]),
+                Nombre = Convert.ToString(reader["Usuario"]),
                 Contraseña = Convert.ToString(reader["Contraseña"]),
                 Correo = Convert.ToString(reader["Correo"]),
                 FechaRegistro = Convert.ToDateTime(reader["FechaRegistro"])
@@ -104,7 +104,7 @@ namespace Datos
 
         public Usuario ObtenerUsuario(int id, string nombre)
         {
-            return CargarRegistro().Find(c => c.IdUsuario == id && c.NombreUsuario == nombre);
+            return CargarRegistro().Find(c => c.IdPersona == id && c.Nombre == nombre);
         }
 
     }

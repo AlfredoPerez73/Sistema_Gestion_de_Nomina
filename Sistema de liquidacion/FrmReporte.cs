@@ -53,8 +53,8 @@ namespace Sistema_de_liquidacion
                     int index = tblRegistroReporte.Rows.Add();
                     DataGridViewRow row = tblRegistroReporte.Rows[index];
                     row.Cells["IdReporte"].Value = producto.IdReporte;
-                    row.Cells["IdUsuario2"].Value = producto.Usuario.IdUsuario;
-                    row.Cells["Usuario2"].Value = producto.Usuario.NombreUsuario;
+                    row.Cells["IdUsuario2"].Value = producto.Usuario.IdPersona;
+                    row.Cells["Usuario2"].Value = producto.Usuario.Nombre;
                     row.Cells["Reporte2"].Value = producto.NombreReporte;
                     row.Cells["Documento"].Value = producto.Documento;
                     row.Cells["Extension"].Value = producto.Extension;

@@ -16,17 +16,17 @@ namespace Sistema_de_liquidacion
 {
     public partial class FrmMantenedorEmpleado : Form
     {
-        private ProductoService productoService = new ProductoService();
+        private EmpleadoService empleadoService = new EmpleadoService();
 
         public FrmMantenedorEmpleado()
         {
             InitializeComponent();
         }
 
-        private Producto RegistroProducto()
+        private Empleado RegistroProducto()
         {
             Cargo CargoIndex = (Cargo)cboCargos.SelectedItem;
-            Producto producto = new Producto
+            Empleado producto = new Empleado
             {
                 Documento = txtDocumento.Texts,
                 Nombre = txtNombreProducto.Texts.ToUpper(),
@@ -48,12 +48,12 @@ namespace Sistema_de_liquidacion
             if (!ValidarCampos()) { return; }
             var producto = RegistroProducto();
 
-            var ID = productoService.BuscarId(txtDocumento.Texts);
+            var ID = empleadoService.BuscarId(txtDocumento.Texts);
             if (ID != true)
             {
-                var msg = productoService.Guardar(producto);
+                var msg = empleadoService.Guardar(producto);
                 MessageBox.Show(msg, "Gestion de producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                CargarRegistroProducto(productoService.CargarRegistro());
+                CargarRegistro();
                 Nuevo();
             }
             else
@@ -67,7 +67,7 @@ namespace Sistema_de_liquidacion
         {
             if (!ValidarCampos()) { return; }
             Cargo CargoIndex = (Cargo)cboCargos.SelectedItem;
-            Producto producto = new Producto
+            Empleado producto = new Empleado
             {
                 Documento = txtDocumento.Texts,
                 Nombre = txtNombreProducto.Texts.ToUpper(),
@@ -81,13 +81,13 @@ namespace Sistema_de_liquidacion
                     Salario = Convert.ToInt32(txtSalario.Texts),
                     TipoContrato = txtContrato.Texts.ToUpper(),
                 },
-                IdProducto = Convert.ToInt32(txtIdProducto.Texts),
+                IdPersona = Convert.ToInt32(txtIdProducto.Texts),
             };
             if (producto != null)
             {
-                var msg = productoService.ModificarRegistros(producto);
+                var msg = empleadoService.ModificarRegistros(producto);
                 MessageBox.Show(msg, "Gestion de empleado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                CargarRegistroProducto(productoService.CargarRegistro());
+                CargarRegistro();
                 Nuevo();
             }
             else
@@ -150,28 +150,33 @@ namespace Sistema_de_liquidacion
             txtDocumento.Focus();
         }
 
-        private void CargarRegistroProducto(List<Producto> lista)
+        private void CargarRegistro()
+        {
+            Visualizer(empleadoService.CargarRegistro());
+        }
+
+        private void Visualizer(List<Empleado> lista)
         {
             tblRegistro.Rows.Clear();
 
             if (lista != null)
             {
-                foreach (var producto in lista)
+                foreach (var item in lista)
                 {
                     int index = tblRegistro.Rows.Add();
                     DataGridViewRow row = tblRegistro.Rows[index];
-                    row.Cells["IdProducto"].Value = producto.IdProducto;
-                    row.Cells["Documento"].Value = producto.Documento;
-                    row.Cells["NombreProducto"].Value = producto.Nombre;
-                    row.Cells["IdContrato"].Value = producto.Contrato.IdContrato;
-                    row.Cells["IdCargo"].Value = producto.Cargo.IdCargo;
-                    row.Cells["Cargo"].Value = producto.Cargo.CargoDesempeñado;
-                    row.Cells["FechaInicio"].Value = producto.Contrato.FechaInicio.ToString("d");
-                    row.Cells["FechaFin"].Value = producto.Contrato.FechaFin.ToString("d");
-                    row.Cells["TipoContrato"].Value = producto.Contrato.TipoContrato;
-                    row.Cells["Salario"].Value = producto.Contrato.Salario.ToString("C");
-                    row.Cells["Estado"].Value = producto.Estado;
-                    row.Cells["FechaRegistro2"].Value = producto.FechaRegistro.ToString("d");
+                    row.Cells["IdProducto"].Value = item.IdPersona;
+                    row.Cells["Documento"].Value = item.Documento;
+                    row.Cells["NombreProducto"].Value = item.Nombre;
+                    row.Cells["IdContrato"].Value = item.Contrato.IdContrato;
+                    row.Cells["IdCargo"].Value = item.Cargo.IdCargo;
+                    row.Cells["Cargo"].Value = item.Cargo.CargoDesempeñado;
+                    row.Cells["FechaInicio"].Value = item.Contrato.FechaInicio.ToString("d");
+                    row.Cells["FechaFin"].Value = item.Contrato.FechaFin.ToString("d");
+                    row.Cells["TipoContrato"].Value = item.Contrato.TipoContrato;
+                    row.Cells["Salario"].Value = item.Contrato.Salario.ToString("C");
+                    row.Cells["Estado"].Value = item.Estado;
+                    row.Cells["FechaRegistro2"].Value = item.FechaRegistro.ToString("d");
                 }
             }
         }
@@ -179,8 +184,8 @@ namespace Sistema_de_liquidacion
         private void FiltroProducto()
         {
             var filtro = txtBuscar.Texts;
-            var lista = productoService.BuscarX(filtro);
-            CargarRegistroProducto(lista);
+            var lista = empleadoService.BuscarX(filtro);
+            Visualizer(lista);
         }
 
         private void FiltroProductoEstado()
@@ -188,11 +193,11 @@ namespace Sistema_de_liquidacion
             if (cboFiltroEstado.SelectedIndex > 0)
             {
                 string estadoSeleccionado = cboFiltroEstado.SelectedItem.ToString();
-                var lista = productoService.FiltroEstado(estadoSeleccionado.ToUpper());
-                CargarRegistroProducto(lista);
+                var lista = empleadoService.FiltroEstadoConParametro(estadoSeleccionado.ToUpper());
+                Visualizer(lista);
             }
             else if (cboFiltroEstado.SelectedIndex == 0)
-            { CargarRegistroProducto(productoService.CargarRegistro()); }
+            { Visualizer(empleadoService.CargarRegistro()); }
         }
 
         private void CargarEstados()
@@ -241,7 +246,7 @@ namespace Sistema_de_liquidacion
             BorderRadiusPanel(panel5, 20);
             BorderRadiusPanel(panel9, 20);
 
-            CargarRegistroProducto(productoService.CargarRegistro());
+            CargarRegistro();
         }
 
         private void CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -312,8 +317,8 @@ namespace Sistema_de_liquidacion
         private void txtBuscar__TextChanged(object sender, EventArgs e)
         {
             if (txtBuscar.Texts == "Buscar:")
-            { CargarRegistroProducto(productoService.CargarRegistro()); }
-            else if (txtBuscar.Texts == "") { CargarRegistroProducto(productoService.CargarRegistro()); }
+            { Visualizer(empleadoService.CargarRegistro()); }
+            else if (txtBuscar.Texts == "") { Visualizer(empleadoService.CargarRegistro()); }
             else
             { FiltroProducto(); }
         }

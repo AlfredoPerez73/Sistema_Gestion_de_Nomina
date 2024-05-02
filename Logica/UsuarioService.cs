@@ -25,7 +25,7 @@ namespace Logica
 
         public List<Usuario> LoginUser(string user, string password)
         {
-            return CargarRegistro().Where(u => u.NombreUsuario == user && u.Contraseña == password).ToList();
+            return CargarRegistro().Where(u => u.Nombre == user && u.Contraseña == password).ToList();
         }
 
         public List<Usuario> CargarRegistro()
@@ -42,13 +42,15 @@ namespace Logica
             if (int.TryParse(x, out idUsuario))
             {
                 usuarios = usuarios
-                    .Where(item => item.IdUsuario == idUsuario).ToList();
+                    .Where(item => item.IdPersona == idUsuario).ToList();
             }
             else
             {
                 usuarios = usuarios
-                    .Where(item => item.Documento.Contains(x.ToUpper()) || item.NombreUsuario.Contains(x.ToUpper())
-                    || item.Rol.NRol.Contains(x.ToUpper())).ToList();
+                    .Where(item => item.Documento.IndexOf(x, StringComparison.OrdinalIgnoreCase) != -1 ||
+                                   item.Nombre.IndexOf(x, StringComparison.OrdinalIgnoreCase) != -1 ||
+                                   item.Correo.IndexOf(x, StringComparison.OrdinalIgnoreCase) != -1 ||
+                                   item.Rol.NRol.IndexOf(x, StringComparison.OrdinalIgnoreCase) != -1).ToList();
             }
             return usuarios;
         }

@@ -23,28 +23,33 @@ namespace Sistema_de_liquidacion
             InitializeComponent();
         }
 
-        private void CargarRegistroLiquidacion(List<Liquidacion> lista2)
+        private void CargarRegistro()
+        {
+
+        }
+
+        private void Visualizer(List<Liquidacion> lista2)
         {
             tblRegistroDetalleLiquidaciones.Rows.Clear();
             if (lista2 != null)
             {
-                foreach (var liquidacion in lista2)
+                foreach (var item in lista2)
                 {
                     int index = tblRegistroDetalleLiquidaciones.Rows.Add();
                     DataGridViewRow row = tblRegistroDetalleLiquidaciones.Rows[index];
-                    row.Cells["IdFactura"].Value = liquidacion.IdFactura;
-                    row.Cells["Año"].Value = liquidacion.Año;
-                    row.Cells["Mes"].Value = liquidacion.Mes;
-                    row.Cells["SalarioTotal"].Value = liquidacion.SalarioTotal.ToString("C");
-                    row.Cells["SaludTotal"].Value = liquidacion.SaludTotal.ToString("C");
-                    row.Cells["PensionTotal"].Value = liquidacion.PensionTotal.ToString("C");
-                    row.Cells["AuxTotal"].Value = liquidacion.AuxTransporte.ToString("C");
-                    row.Cells["BonificacionTotal"].Value = liquidacion.BonificacionServiciosTotal.ToString("C");
-                    row.Cells["PrimaSTotal"].Value = liquidacion.PrimaServiciosTotal.ToString("C");
-                    row.Cells["AuxATotal"].Value = liquidacion.AuxAlimentacionTotal.ToString("C");
-                    row.Cells["PrimaNTotal"].Value = liquidacion.PrimaNavidadTotal.ToString("C");
-                    row.Cells["TotalGeneral"].Value = liquidacion.Total.ToString("C");
-                    row.Cells["FechaRegistro"].Value = liquidacion.FechaRegistro.ToString("d");
+                    row.Cells["IdFactura"].Value = item.IdFactura;
+                    row.Cells["Año"].Value = item.Año;
+                    row.Cells["Mes"].Value = item.Mes;
+                    row.Cells["SalarioTotal"].Value = item.SalarioTotal.ToString("C");
+                    row.Cells["SaludTotal"].Value = item.SaludTotal.ToString("C");
+                    row.Cells["PensionTotal"].Value = item.PensionTotal.ToString("C");
+                    row.Cells["AuxTotal"].Value = item.AuxTransporte.ToString("C");
+                    row.Cells["BonificacionTotal"].Value = item.BonificacionServiciosTotal.ToString("C");
+                    row.Cells["PrimaSTotal"].Value = item.PrimaServiciosTotal.ToString("C");
+                    row.Cells["AuxATotal"].Value = item.AuxAlimentacionTotal.ToString("C");
+                    row.Cells["PrimaNTotal"].Value = item.PrimaNavidadTotal.ToString("C");
+                    row.Cells["TotalGeneral"].Value = item.Total.ToString("C");
+                    row.Cells["FechaRegistro"].Value = item.FechaRegistro.ToString("d");
                 }
             }
         }

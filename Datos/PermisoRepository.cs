@@ -95,7 +95,9 @@ namespace Datos
         {
             Permiso permiso = new Permiso
             {
+                IdPermiso = Convert.ToInt32(reader["IdPermiso"]),
                 NPermiso = Convert.ToString(reader["NPermiso"]),
+                FechaRegistro = Convert.ToDateTime(reader["FechaRegistro"])
             };
             int IdRol = Convert.ToInt32(reader["IdRol"]);
             string NRol = Convert.ToString(reader["NRol"]);
@@ -107,7 +109,6 @@ namespace Datos
         {
             Permiso permiso = new Permiso
             {
-                //IdPermiso = Convert.ToInt32(reader["IdPermiso"]),
                 NPermiso = Convert.ToString(reader["NPermiso"]),
             };
             int IdRol = Convert.ToInt32(reader["IdRol"]);
