@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Logica;
 using System.Drawing.Drawing2D;
+using System.Globalization;
 
 namespace Sistema_de_liquidacion
 {
@@ -65,11 +66,7 @@ namespace Sistema_de_liquidacion
         private void ModificarRegistro()
         {
             if (!ValidarCampos()) { return; }
-            // Remueve cualquier carácter que no sea dígito o punto decimal
-            string salarioSinFormato = txtSalario.Texts.Replace("$", "").Replace(",", "");
 
-            // Convierte el salario a decimal
-            decimal salario = Convert.ToDecimal(salarioSinFormato);
             Producto producto = new Producto
             {
                 Documento = txtDocumento.Texts,
@@ -82,10 +79,10 @@ namespace Sistema_de_liquidacion
                 Estado = cboEstado.Texts.ToUpper(),
                 Contrato = new Contrato
                 {
-                   IdContrato = Convert.ToInt32(txtIdContrato.Texts),
+                    IdContrato = Convert.ToInt32(txtIdContrato.Texts),
                     FechaInicio = Convert.ToDateTime(dpFechaInicial.Text),
                     FechaFin = Convert.ToDateTime(dpFechaFinal.Text),
-                    Salario = salario,
+                    Salario = Convert.ToInt32(txtSalario.Texts),
                     TipoContrato = txtContrato.Texts.ToUpper(),
                 },
                 IdProducto = Convert.ToInt32(txtIdProducto.Texts),
@@ -266,7 +263,13 @@ namespace Sistema_de_liquidacion
                     txtIdCargo.Texts = tblRegistro.Rows[index].Cells["IdCargo"].Value.ToString();
                     cboCargos.Texts = tblRegistro.Rows[index].Cells["Cargo"].Value.ToString();
                     cboEstado.Texts = tblRegistro.Rows[index].Cells["Estado"].Value.ToString();
-                    txtSalario.Texts = tblRegistro.Rows[index].Cells["Salario"].Value.ToString();
+
+                    // Limpia el formato del salario antes de asignarlo
+                    string salarioConFormato = tblRegistro.Rows[index].Cells["Salario"].Value.ToString();
+                    decimal salarioNumerico = decimal.Parse(salarioConFormato, NumberStyles.Currency);
+                    string salarioSinFormato = salarioNumerico.ToString("#,0.##").Replace(".",""); // Formatea el salario con dos decimales máximo
+                    txtSalario.Texts = salarioSinFormato;
+
                     txtContrato.Texts = tblRegistro.Rows[index].Cells["TipoContrato"].Value.ToString();
                     dpFechaInicial.Text = tblRegistro.Rows[index].Cells["FechaInicio"].Value.ToString();
                     dpFechaFinal.Text = tblRegistro.Rows[index].Cells["FechaFin"].Value.ToString();

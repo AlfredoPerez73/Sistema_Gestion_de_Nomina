@@ -108,3 +108,14 @@ C:\Users\Alfredo\Downloads\Sistema de liquidacion\Logica\obj\Debug\Logica.csproj
 C:\Users\Alfredo\Downloads\Sistema de liquidacion\Logica\obj\Debug\Logica.csproj.CopyComplete
 C:\Users\Alfredo\Downloads\Sistema de liquidacion\Logica\obj\Debug\Logica.dll
 C:\Users\Alfredo\Downloads\Sistema de liquidacion\Logica\obj\Debug\Logica.pdb
+C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Logica\obj\Debug\Logica.csprojAssemblyReference.cache
+C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Logica\obj\Debug\Logica.dll
+C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Logica\obj\Debug\Logica.pdb
+C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Logica\bin\Debug\Logica.dll
+C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Logica\bin\Debug\Logica.pdb
+C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Logica\bin\Debug\Datos.dll
+C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Logica\bin\Debug\Entidad.dll
+C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Logica\bin\Debug\Datos.pdb
+C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Logica\bin\Debug\Entidad.pdb
+C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Logica\obj\Debug\Logica.csproj.CopyComplete

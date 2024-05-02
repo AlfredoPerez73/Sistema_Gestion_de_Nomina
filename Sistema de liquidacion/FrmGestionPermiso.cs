@@ -41,7 +41,21 @@ namespace Sistema_de_liquidacion
 
         private void GuardarPermiso()
         {
+            if (!ValidarCampos()) { return; }
 
+            var permisos = RegistrarPermisos();
+            var ID = permisoService.BuscarId(cboHerramienta.Texts, cboRoles.Texts);
+            if (ID != true)
+            {
+                var msg = permisoService.Guardar(permisos);
+                MessageBox.Show(msg, "Gestion de usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Nuevo();
+            }
+            else
+            {
+                MessageBox.Show($"El registro con la ID {cboHerramienta.Texts} " +
+                    $"ya existe!", "Gestion de usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private bool ValidarCampos()
@@ -91,12 +105,20 @@ namespace Sistema_de_liquidacion
 
         private void CargarBotonesEnComboBox()
         {
-
+            foreach (Button boton in botones)
+            {
+                cboHerramienta.Items.Add(boton.Text);
+            }
         }
 
         private IEnumerable<Button> GetAllButtons(Control control)
         {
             var botones = control.Controls.OfType<Button>();
+
+            foreach (Control subControl in control.Controls)
+            {
+                botones = botones.Concat(GetAllButtons(subControl));
+            }
 
             return botones;
         }
@@ -119,7 +141,12 @@ namespace Sistema_de_liquidacion
 
         private void CargarRoles()
         {
-
+            RolService rolService = new RolService();
+            cboRoles.DataSource = rolService.CargarRegistro();
+            cboRoles.DisplayMember = "NRol";
+            cboRoles.ValueMember = "IdRol";
+            cboRoles.SelectedIndex = -1;
+            cboRoles.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void cboHerramienta_OnSelectedIndexChanged(object sender, EventArgs e)
