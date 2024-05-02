@@ -46,6 +46,9 @@ namespace Sistema_de_liquidacion.Modales
         }
         private void FiltroProducto()
         {
+            var filtro = txtBuscar.Texts;
+            var lista = productoService.BuscarX(filtro);
+            CargarRegistroProducto(lista);
         }
 
         private void FrmModalProductos_Load(object sender, EventArgs e)

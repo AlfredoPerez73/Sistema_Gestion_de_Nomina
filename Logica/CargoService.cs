@@ -10,17 +10,25 @@ namespace Logica
 {
     public class CargoService : ICrudService<Cargo>
     {
+        CargoRepository cargoRepository = new CargoRepository();
+
         public List<Cargo> CargarRegistro()
         {
-            throw new NotImplementedException();
+            var msg = cargoRepository.CargarRegistro();
+            return msg;
         }
 
-        public string Guardar(Cargo entidad)
+        public string EliminarRegistros(Cargo cargo)
         {
             throw new NotImplementedException();
         }
 
-        public string ModificarRegistros(Cargo entidad)
+        public string Guardar(Cargo cargo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string ModificarRegistros(Cargo cargo)
         {
             throw new NotImplementedException();
         }

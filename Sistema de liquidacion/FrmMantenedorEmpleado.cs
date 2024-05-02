@@ -44,53 +44,21 @@ namespace Sistema_de_liquidacion
 
         private void GuardarRegistro()
         {
-            if (txtDocumento.Texts == "")
+            if (!ValidarCampos()) { return; }
+            var producto = RegistroProducto();
+
+            var ID = productoService.BuscarId(txtDocumento.Texts);
+            if (ID != true)
             {
-                MessageBox.Show("Por favor llenar el campo de documento", "Gestion de empleado",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
+                var msg = productoService.Guardar(producto);
+                MessageBox.Show(msg, "Gestion de producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CargarRegistroProducto(productoService.CargarRegistro());
+                Nuevo();
             }
-            if (txtNombreProducto.Texts == "")
+            else
             {
-                MessageBox.Show("Por favor llenar el campo de empleado", "Gestion de empleado",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            if (txtSalario.Texts == "")
-            {
-                MessageBox.Show("Por favor llenar el campo de salario", "Gestion de empleado",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            if (cboEstado.Texts == "")
-            {
-                MessageBox.Show("Por favor llenar el campo de Estado", "Gestion de empleado",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            if (txtDocumento.Texts == "Documento")
-            {
-                MessageBox.Show("Por favor llenar el campo de documento", "Gestion de empleado",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            if (txtNombreProducto.Texts == "Nombre")
-            {
-                MessageBox.Show("Por favor llenar el campo de empleado", "Gestion de empleado",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            if (txtSalario.Texts == "Salario")
-            {
-                MessageBox.Show("Por favor llenar el campo de salario", "Gestion de empleado",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            if (cboEstado.Texts == "Estado")
-            {
-                MessageBox.Show("Por favor llenar el campo de Estado", "Gestion de empleado",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
+                MessageBox.Show($"El registro con la ID {txtDocumento.Texts} " +
+                    $"ya existe!", "Gestion de producto", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -217,12 +185,21 @@ namespace Sistema_de_liquidacion
 
         private void FiltroProducto()
         {
-
+            var filtro = txtBuscar.Texts;
+            var lista = productoService.BuscarX(filtro);
+            CargarRegistroProducto(lista);
         }
 
         private void FiltroProductoEstado()
         {
-
+            if (cboFiltroEstado.SelectedIndex > 0)
+            {
+                string estadoSeleccionado = cboFiltroEstado.SelectedItem.ToString();
+                var lista = productoService.FiltroEstado(estadoSeleccionado.ToUpper());
+                CargarRegistroProducto(lista);
+            }
+            else if (cboFiltroEstado.SelectedIndex == 0)
+            { CargarRegistroProducto(productoService.CargarRegistro()); }
         }
 
         private void CargarEstados()
