@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    public class GraficosRepository:ConexionRepository
+    public class GraficosRepository : ConexionRepository
     {
         public GraficosRepository() : base()
         {

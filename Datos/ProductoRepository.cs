@@ -10,8 +10,8 @@ using Entidad;
 
 namespace Datos
 {
-    public class ProductoRepository:ConexionRepository
-    {
+    public class ProductoRepository : ConexionRepository
+    {s
         private CargoRepository cargoRepository = new CargoRepository();
 
         public ProductoRepository() : base()
