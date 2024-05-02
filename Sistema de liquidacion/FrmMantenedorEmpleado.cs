@@ -66,16 +66,12 @@ namespace Sistema_de_liquidacion
         private void ModificarRegistro()
         {
             if (!ValidarCampos()) { return; }
-
+            Cargo CargoIndex = (Cargo)cboCargos.SelectedItem;
             Producto producto = new Producto
             {
                 Documento = txtDocumento.Texts,
                 Nombre = txtNombreProducto.Texts.ToUpper(),
-                Cargo = new Cargo
-                {
-                    IdCargo = Convert.ToInt32(txtIdCargo.Texts),
-                    CargoDesempeñado = cboCargos.Texts
-                },
+                Cargo = CargoIndex,
                 Estado = cboEstado.Texts.ToUpper(),
                 Contrato = new Contrato
                 {

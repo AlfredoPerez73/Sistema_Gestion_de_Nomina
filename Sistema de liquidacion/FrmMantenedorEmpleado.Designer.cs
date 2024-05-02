@@ -589,7 +589,6 @@
             this.txtIdContrato.TabIndex = 10;
             this.txtIdContrato.Texts = "";
             this.txtIdContrato.UnderlinedStyle = false;
-            this.txtIdContrato.Visible = false;
             this.txtIdContrato.Enter += new System.EventHandler(this.txtDocumento_Enter);
             this.txtIdContrato.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
             this.txtIdContrato.Leave += new System.EventHandler(this.txtDocumento_Leave);
@@ -616,7 +615,6 @@
             this.txtIdCargo.TabIndex = 10;
             this.txtIdCargo.Texts = "";
             this.txtIdCargo.UnderlinedStyle = false;
-            this.txtIdCargo.Visible = false;
             this.txtIdCargo.Enter += new System.EventHandler(this.txtDocumento_Enter);
             this.txtIdCargo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
             this.txtIdCargo.Leave += new System.EventHandler(this.txtDocumento_Leave);
@@ -643,7 +641,6 @@
             this.txtIdProducto.TabIndex = 10;
             this.txtIdProducto.Texts = "";
             this.txtIdProducto.UnderlinedStyle = false;
-            this.txtIdProducto.Visible = false;
             this.txtIdProducto.Enter += new System.EventHandler(this.txtDocumento_Enter);
             this.txtIdProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
             this.txtIdProducto.Leave += new System.EventHandler(this.txtDocumento_Leave);

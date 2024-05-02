@@ -68,7 +68,7 @@ namespace Datos
         {
             try
             {
-                string Actualizar = "ModificarProductos";
+                string Actualizar = "ModificarEmpleados";
                 SqlCommand command = new SqlCommand(Actualizar, Connection);
                 command.Parameters.AddWithValue("@Documento", producto.Documento);
                 command.Parameters.AddWithValue("@Nombre", producto.Nombre);
