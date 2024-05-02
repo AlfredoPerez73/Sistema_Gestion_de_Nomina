@@ -83,6 +83,30 @@ namespace Sistema_de_liquidacion
             return true;
         }
 
+        private void CargarRegistro()
+        {
+            Visualizer(permisoService.CargarRegistro());
+        }
+
+        private void Visualizer(List<Permiso> lista)
+        {
+            tblRegistroPermiso.Rows.Clear();
+
+            if (lista != null)
+            {
+                foreach (var producto in lista)
+                {
+                    int index = tblRegistroPermiso.Rows.Add();
+                    DataGridViewRow row = tblRegistroPermiso.Rows[index];
+                    //row.Cells["IdPermiso"].Value = producto.IdPermiso;
+                    row.Cells["Permisos"].Value = producto.NPermiso;
+                    row.Cells["IdRol"].Value = producto.Rol.IdRol;
+                    //row.Cells["Rol"].Value = producto.Rol.NRol;
+                    //row.Cells["FechaRegistro"].Value = producto.FechaRegistro.ToString("d");
+                }
+            }
+        }
+
         private void Nuevo()
         {
             cboHerramienta.Texts = "Permisos";
@@ -95,12 +119,16 @@ namespace Sistema_de_liquidacion
 
             BorderRadiusPanel(panel2, 20);
             BorderRadiusPanel(panel3, 20);
+            BorderRadiusPanel(panel4, 20);
             BorderRadiusPanel(panel5, 20);
+            BorderRadiusPanel(panel6, 15);
+            BorderRadiusPanel(panel9, 20);
 
             botones = GetAllButtons(frmMenuPrincipal).ToArray();
-
+            CargarRegistro();
             CargarRoles();
             CargarBotonesEnComboBox();
+            cboRoles.Texts = "Rol desempeñado";
         }
 
         private void CargarBotonesEnComboBox()
@@ -137,6 +165,25 @@ namespace Sistema_de_liquidacion
             path.CloseFigure();
 
             panel.Region = new Region(path);
+        }
+
+        private void tblRegistroPermiso_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            if (e.RowIndex < 0)
+            {
+                return;
+            }
+            if (e.ColumnIndex == 0)
+            {
+                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
+                var w = Properties.Resources.check_circle.Width;
+                var h = Properties.Resources.check_circle.Width;
+                var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2;
+                var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
+
+                e.Graphics.DrawImage(Properties.Resources.check_circle, new Rectangle(x, y, w, h));
+                e.Handled = true;
+            }
         }
 
         private void CargarRoles()

@@ -275,7 +275,7 @@
             this.panel1.Controls.Add(this.txtCorreo);
             this.panel1.Controls.Add(this.txtContraseña);
             this.panel1.Controls.Add(this.txtNombreUsuario);
-            this.panel1.Location = new System.Drawing.Point(766, 94);
+            this.panel1.Location = new System.Drawing.Point(789, 94);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(524, 812);
@@ -715,9 +715,9 @@
             this.panel9.Controls.Add(this.label8);
             this.panel9.Controls.Add(this.panel3);
             this.panel9.Controls.Add(this.txtBuscar);
-            this.panel9.Location = new System.Drawing.Point(91, 7);
+            this.panel9.Location = new System.Drawing.Point(99, 7);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1776, 51);
+            this.panel9.Size = new System.Drawing.Size(1792, 51);
             this.panel9.TabIndex = 48;
             // 
             // label8

@@ -107,6 +107,7 @@ namespace Datos
         {
             Permiso permiso = new Permiso
             {
+                //IdPermiso = Convert.ToInt32(reader["IdPermiso"]),
                 NPermiso = Convert.ToString(reader["NPermiso"]),
             };
             int IdRol = Convert.ToInt32(reader["IdRol"]);
