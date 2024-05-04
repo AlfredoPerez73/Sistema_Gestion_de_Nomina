@@ -575,7 +575,6 @@ C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\
 C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.FrmReporte.resources
 C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.Modales.mdArchivo.resources
 C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.Modales.mdBienvenida.resources
-C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.Modales.mdPrincipal.resources
 C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.Properties.Resources.resources
 C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema de liquidacion GUI.csproj.GenerateResource.cache
 C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema de liquidacion GUI.csproj.CoreCompileInputs.cache
@@ -661,3 +660,5 @@ C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\
 C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Datos.pdb
 C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema de liquidacion GUI.csproj.CopyComplete
 C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.Modales.mdEmpleado.resources
+C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\AlphaGradientPanel.dll
+C:\Users\Alfredo\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.Modales.mdPrincipal.resources

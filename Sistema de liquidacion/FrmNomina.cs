@@ -76,9 +76,8 @@ namespace Sistema_de_liquidacion
             var añosUnicos = liquidaciones.Select(liquidacion => liquidacion.Año).Distinct().ToList();
             var mesesUnicos = liquidaciones.Select(liquidacion => liquidacion.Mes).Distinct().ToList();
 
-            //añosUnicos.Insert(0, Convert.ToInt32(null));
-            //mesesUnicos.Insert(0, Convert.ToInt32(null));
-            //añosUnicos.Insert(0, -1);
+            añosUnicos.Insert(0, Convert.ToInt32(null));
+            mesesUnicos.Insert(0, Convert.ToInt32(null));
             cboFiltroAño.DataSource = añosUnicos;
             cboFiltroMes.DataSource = mesesUnicos;
 

@@ -107,7 +107,7 @@
             this.panel9.Controls.Add(this.panel6);
             this.panel9.Controls.Add(this.panel3);
             this.panel9.Controls.Add(this.panel2);
-            this.panel9.Location = new System.Drawing.Point(100, 5);
+            this.panel9.Location = new System.Drawing.Point(100, 67);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1791, 51);
             this.panel9.TabIndex = 51;
@@ -304,7 +304,7 @@
             this.panel7.Controls.Add(this.chGanancia);
             this.panel7.Controls.Add(this.icoGanancias);
             this.panel7.Controls.Add(this.label9);
-            this.panel7.Location = new System.Drawing.Point(1050, 119);
+            this.panel7.Location = new System.Drawing.Point(1050, 155);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(800, 687);
             this.panel7.TabIndex = 50;
@@ -437,7 +437,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel4.Controls.Add(this.tblRegistroDetalleLiquidaciones);
-            this.panel4.Location = new System.Drawing.Point(140, 259);
+            this.panel4.Location = new System.Drawing.Point(140, 295);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(835, 395);
             this.panel4.TabIndex = 43;
