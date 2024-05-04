@@ -164,17 +164,29 @@ namespace Sistema_de_liquidacion
 
         private void FiltroProducto()
         {
-
+            var filtro = txtBuscar.Texts;
+            var lista = detalleLiquidacionService.BuscarX(filtro);
+            Visualizer(lista);
         }
 
         private void FiltroProductoEstado()
         {
-
+            if (cboFiltroEstado.SelectedIndex > 0)
+            {
+                string estadoSeleccionado = cboFiltroEstado.SelectedItem.ToString();
+                var lista = detalleLiquidacionService.FiltroEstado(estadoSeleccionado.ToUpper());
+                Visualizer(lista);
+            }
+            else if (cboFiltroEstado.SelectedIndex == 0)
+            { Visualizer(detalleLiquidacionService.CargarRegistro()); }
         }
 
         private void FiltrarLiquidaciones()
         {
-
+            DateTime fechaInicio = dpFechaInicial.Value;
+            DateTime fechaFin = dpFechaFinal.Value;
+            var resultado = detalleLiquidacionService.FiltroLiquidaciones(fechaInicio, fechaFin);
+            Visualizer(resultado);
         }
 
         private void CargarRegistro()

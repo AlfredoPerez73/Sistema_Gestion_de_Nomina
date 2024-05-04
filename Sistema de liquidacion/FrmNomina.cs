@@ -61,12 +61,23 @@ namespace Sistema_de_liquidacion
 
         private void FiltroLiquidaciones()
         {
+            if (cboFiltroAño.SelectedIndex > 0 || cboFiltroMes.SelectedIndex > 0 || cboFiltroAño.SelectedIndex == 0 ||
+                cboFiltroMes.SelectedIndex == 0)
+            {
+                var listaFiltrada = liquidacionService.FiltroLiquidaciones(
+                    Convert.ToInt32(cboFiltroAño.SelectedItem),
+                    Convert.ToInt32(cboFiltroMes.SelectedItem));
 
+                Visualizer(listaFiltrada);
+            }
         }
 
         private void FiltrarLiquidaciones()
         {
-
+            DateTime fechaInicio = dpFechaInicial.Value;
+            DateTime fechaFin = dpFechaFinal.Value;
+            var resultado = liquidacionService.FiltroLiquidacionesPorRango(fechaInicio, fechaFin);
+            Visualizer(resultado);
         }
 
         private void CargarAños()
