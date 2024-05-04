@@ -20,7 +20,7 @@ namespace Logica
 
         public bool BuscarIdLiquidacion(int año, int mes, string idProducto, int idFactura)
         {
-            return CargarRegistro().Any(l => (l.empleado.IdProducto == Convert.ToInt32(idProducto) || l.liquidacion.IdFactura != idFactura)
+            return CargarRegistro().Any(l => (l.empleado.IdPersona == Convert.ToInt32(idProducto) || l.liquidacion.IdFactura != idFactura)
                                          && l.liquidacion.Año == año
                                          && l.liquidacion.Mes == mes);
         }

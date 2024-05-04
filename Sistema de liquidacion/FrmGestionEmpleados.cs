@@ -42,17 +42,75 @@ namespace Sistema_de_liquidacion
         {
             DetalleLiquidacion detalleLiquidacion = new DetalleLiquidacion
             {
-               
+                Codigo = txtCodigo.Texts,
+                empleado = new Empleado
+                {
+                    IdPersona = Convert.ToInt32(txtIdProducto.Texts),
+                    Documento = txtDocumento2.Texts,
+                    Nombre = txtNombre.Texts,
+                    Cargo = new Cargo
+                    {
+                        CargoDesempeñado = cboCargo.Texts,
+                    },
+                    Contrato = new Contrato
+                    {
+
+                        Salario = Convert.ToDecimal(txtSalario2.Texts),
+                    },
+                    Estado = txtEstado.Texts,
+                },
+                liquidacion = new Liquidacion
+                {
+                    IdFactura = Convert.ToInt32(txtLiquidacion.Texts),
+                    Año = Convert.ToInt32(txtAño.Texts),
+                    Mes = Convert.ToInt32(txtMes.Texts),
+
+                },
+                usuario = new Usuario
+                {
+                    IdPersona = oUsuario.IdPersona,
+                    Nombre = oUsuario.Nombre,
+                },
+                DiasTrabajados = Convert.ToInt32(txtDiasTrabajados.Texts),
+                HorasExtras = Convert.ToInt32(txtHorasExtras.Texts),
             };
 
-            detalleLiquidacion.ActualizarDetalles(detalleLiquidacion.producto, detalleLiquidacion.liquidacion);
+            detalleLiquidacion.ActualizarDetalles(detalleLiquidacion.empleado, detalleLiquidacion.liquidacion);
 
             return detalleLiquidacion;
         }
 
         private void GuardarRegistroDetalleLiquidacion()
         {
+            if (!ValidarCampos()) { return; }
 
+            var detalleLiquidacion = RegistroLiquidaciones();
+            if (detalleLiquidacion != null)
+            {
+                var VAL = detalleLiquidacionService.BuscarIdLiquidacion(Convert.ToInt32(txtAño.Texts),
+                                                                        Convert.ToInt32(txtMes.Texts),
+                                                                        txtIdProducto.Texts,
+                                                                        Convert.ToInt32(txtLiquidacion.Texts));
+                if (!VAL)
+                {
+                    var msg = detalleLiquidacionService.Guardar(detalleLiquidacion);
+                    MessageBox.Show(msg, "Gestion de liquidaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    CargarRegistro();
+                    Nuevo();
+                }
+                else
+                {
+                    MessageBox.Show($"La liquidacion con el producto identificado {txtIdProducto.Texts} " +
+                                    $"el mes {txtMes.Texts} en el año {txtAño.Texts} ya existe!",
+                                    "Gestion de liquidaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                var msg = detalleLiquidacionService.Guardar(detalleLiquidacion);
+                MessageBox.Show(msg, "Gestion de liquidaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Nuevo();
+            }
         }
 
         private bool ValidarCampos()
@@ -121,7 +179,7 @@ namespace Sistema_de_liquidacion
 
         private void CargarRegistro()
         {
-
+            Visualizer(detalleLiquidacionService.CargarRegistro());
         }
 
         private void Visualizer(List<DetalleLiquidacion> lista)
@@ -142,12 +200,12 @@ namespace Sistema_de_liquidacion
                     row.Cells["DiasTrabajados"].Value = item.DiasTrabajados;
                     row.Cells["HorasTrabajadas"].Value = item.HorasExtras;
                     row.Cells["ValHorasExtras"].Value = item.ValorHorasExtra.ToString("C");
-                    row.Cells["IdProducto2"].Value = item.producto.IdPersona;
-                    row.Cells["Documento2"].Value = item.producto.Documento;
-                    row.Cells["Nombre"].Value = item.producto.Nombre;
-                    row.Cells["Cargo2"].Value = item.producto.Cargo.CargoDesempeñado;
-                    row.Cells["Salario2"].Value = item.producto.Contrato.Salario.ToString("C");
-                    row.Cells["Estado2"].Value = item.producto.Estado;
+                    row.Cells["IdProducto2"].Value = item.empleado.IdPersona;
+                    row.Cells["Documento2"].Value = item.empleado.Documento;
+                    row.Cells["Nombre"].Value = item.empleado.Nombre;
+                    row.Cells["Cargo2"].Value = item.empleado.Cargo.CargoDesempeñado;
+                    row.Cells["Salario2"].Value = item.empleado.Contrato.Salario.ToString("C");
+                    row.Cells["Estado2"].Value = item.empleado.Estado;
                     row.Cells["Salud"].Value = item.Salud.ToString("C");
                     row.Cells["Pension"].Value = item.Pension.ToString("C");
                     row.Cells["AuxT"].Value = item.AuxTransporte.ToString("C");
@@ -194,7 +252,6 @@ namespace Sistema_de_liquidacion
 
         private void FrmGestionEmpleados_Load(object sender, EventArgs e)
         {
-            CargarEstados();
             BorderRadiusPanel(panel1, 20);
             BorderRadiusPanel(panel2, 15);
             BorderRadiusPanel(panel3, 20);
@@ -203,6 +260,8 @@ namespace Sistema_de_liquidacion
             BorderRadiusPanel(panel6, 20);
             BorderRadiusPanel(panel9, 20);
 
+            CargarEstados();
+            CargarRegistro();
 
         }
 
