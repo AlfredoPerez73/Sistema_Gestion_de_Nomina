@@ -12,7 +12,7 @@ namespace Entidad
         public int IdDetalle { get; set; }
         public string Codigo { get; set; }
         public Liquidacion liquidacion { get; set; }
-        public Empleado producto { get; set; }
+        public Empleado empleado { get; set; }
         public Usuario usuario { get; set; }
         public int DiasTrabajados { get; set; }
         public int HorasExtras { get; set; }
@@ -29,15 +29,15 @@ namespace Entidad
 
         public void ActualizarDetalles(Empleado producto, Liquidacion liquidacion)
         {
-            Salud = producto.Contrato.Salario * 0.05m;
-            Pension = producto.Contrato.Salario * 0.1m;
-            ValorHorasExtra = HorasExtras > 0 ? producto.Contrato.Salario / HorasExtras : 0;
-            AuxTransporte = producto.Contrato.Salario <= (1300000 * 2) ? 106454 : 0;
-            BonificacionServicios = producto.Contrato.Salario < 1400000 ? producto.Contrato.Salario * 0.5m : 0;
-            PrimaServicios = liquidacion.Mes == 6 ? (producto.Contrato.Salario * DiasTrabajados) / 180 :
-                             liquidacion.Mes == 12 ? (producto.Contrato.Salario * DiasTrabajados) / 360 : 0;
-            AuxAlimentacion = producto.Contrato.Salario / DiasTrabajados;
-            PrimaNavidad = liquidacion.Mes == 12 ? producto.Contrato.Salario * 0.5m : 0;
+            Salud = empleado.Contrato.Salario * 0.05m;
+            Pension = empleado.Contrato.Salario * 0.1m;
+            ValorHorasExtra = HorasExtras > 0 ? empleado.Contrato.Salario / HorasExtras : 0;
+            AuxTransporte = empleado.Contrato.Salario <= (1300000 * 2) ? 106454 : 0;
+            BonificacionServicios = empleado.Contrato.Salario < 1400000 ? empleado.Contrato.Salario * 0.5m : 0;
+            PrimaServicios = liquidacion.Mes == 6 ? (empleado.Contrato.Salario * DiasTrabajados) / 180 :
+                             liquidacion.Mes == 12 ? (empleado.Contrato.Salario * DiasTrabajados) / 360 : 0;
+            AuxAlimentacion = empleado.Contrato.Salario / DiasTrabajados;
+            PrimaNavidad = liquidacion.Mes == 12 ? empleado.Contrato.Salario * 0.5m : 0;
             Devengado = producto.Contrato.Salario - Salud - Pension + AuxTransporte + BonificacionServicios +
                         PrimaServicios + AuxAlimentacion + PrimaNavidad + ValorHorasExtra;
         }
