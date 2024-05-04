@@ -30,15 +30,62 @@ namespace Sistema_de_liquidacion
         {
             mdArchivo mdArchivo = new mdArchivo();
             mdArchivo.ShowDialog();
+            CargarRegistroReportes(reporteService.CargarRegistro());
+
         }
         
         private void VerArchio()
-        { 
+        {
+            if (Convert.ToInt32(txtIdReporte.Texts) != 0)
+            {
+                int IdReporte = Convert.ToInt32(txtIdReporte.Texts);
+                reporte.IdReporte = IdReporte;
 
+                var list = reporteService.CargarRegistroPorId(IdReporte);
+
+                foreach (Reporte reporte in list)
+                {
+                    string direccion = AppDomain.CurrentDomain.BaseDirectory;
+                    string carpeta = direccion + "/temp/";
+                    string UbiCompleta = carpeta + reporte.Extension;
+
+                    if (!Directory.Exists(carpeta))
+                    {
+                        Directory.CreateDirectory(carpeta);
+                    }
+                    if (File.Exists(UbiCompleta))
+                    {
+                        Directory.Delete(UbiCompleta);
+                    }
+                    File.WriteAllBytes(UbiCompleta, reporte.Documento);
+                    Process.Start(UbiCompleta);
+                }
+            }
         }
 
         private void EliminarArchivo()
         {
+            if (Convert.ToInt32(txtIdReporte.Texts) != 0)
+            {
+                if (MessageBox.Show("¿Desea eliminar este producto?", "Gestion de usuarios", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    Reporte reporte = new Reporte
+                    {
+                        IdReporte = Convert.ToInt32(txtIdReporte.Texts)
+                    };
+                    if (reporte != null)
+                    {
+                        var msg = reporteService.EliminarRegistros(reporte);
+                        MessageBox.Show(msg, "Gestion de reporte", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        CargarRegistroReportes(reporteService.CargarRegistro());
+                    }
+                    else
+                    {
+                        var msg = reporteService.EliminarRegistros(reporte);
+                        MessageBox.Show(msg, "Gestion de reporte", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
 
         }
 
@@ -71,6 +118,7 @@ namespace Sistema_de_liquidacion
             BorderRadiusPanel(panel5, 15);
             BorderRadiusPanel(panel7, 20);
             BorderRadiusPanel(panel9, 20);
+            CargarRegistroReportes(reporteService.CargarRegistro());
 
         }
 
