@@ -1,5 +1,4 @@
-﻿using Logica;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms.DataVisualization.Charting;
+using Logica;
 
 namespace Sistema_de_liquidacion.Modales
 {
@@ -20,6 +19,19 @@ namespace Sistema_de_liquidacion.Modales
         public mdPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void mdPrincipal_Load(object sender, EventArgs e)
+        {
+            BorderRadiusPanel(panel4, 15);
+            BorderRadiusPanel(panel6, 20);
+            BorderRadiusPanel(panel7, 20);
+            BorderRadiusPanel(panel8, 20);
+            BorderRadiusPanel(panel10, 20);
+            BorderRadiusPanel(panel11, 20);
+
+            CargarDashBoard();
+            CargarGraficos();
         }
 
         private void CargarDashBoard()
@@ -50,11 +62,6 @@ namespace Sistema_de_liquidacion.Modales
             chEmpXcategoria.ChartAreas[0].AxisX.LabelStyle.Angle = -45;
         }
 
-        private void Contenedor_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void BorderRadiusPanel(Panel panel, int radio)
         {
             GraphicsPath path = new GraphicsPath();
@@ -69,53 +76,6 @@ namespace Sistema_de_liquidacion.Modales
             path.CloseFigure();
 
             panel.Region = new Region(path);
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-        }
-
-        private void mdPrincipal_Load(object sender, EventArgs e)
-        {
-            BorderRadiusPanel(panel1, 20);
-            BorderRadiusPanel(panel2, 20);
-            BorderRadiusPanel(panel3, 20);
-            BorderRadiusPanel(panel4, 20);
-            BorderRadiusPanel(panel5, 20);
-            BorderRadiusPanel(panel7, 20);
-
-            CargarGraficos();
-            CargarDashBoard();
-        }
-
-        private void icoEmpleado_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void icoGraficoEmplXCargo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chEmpXcategoria_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

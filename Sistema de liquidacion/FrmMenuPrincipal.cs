@@ -38,14 +38,14 @@ namespace Sistema_de_liquidacion
         
         private void FrmMenuPrincipal_Load(object sender, EventArgs e)
         {
-            ContenedorPrincipal();
-            CargarUsuario();
-            Permisos();
-
             BorderRadiusPanel(panel1, 15);
             BorderRadiusPanel(panel2, 15);
             BorderRadiusPanel(panel5, 15);
             BorderRadiusPanel(panel9, 20);
+
+            ContenedorPrincipal();
+            CargarUsuario();
+            Permisos();
         }
 
         private void Permisos()
@@ -205,6 +205,11 @@ namespace Sistema_de_liquidacion
             }
         }
 
+        private void VisiblePanel()
+        {
+
+        }
+
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -281,6 +286,11 @@ namespace Sistema_de_liquidacion
         {
             ActivateButton(sender, RGBColors.color8);
             AbrirFormularios((Button)sender, new FrmGestionPermiso(oUsuario));
+        }
+
+        private void alphaGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -95,7 +95,7 @@
             this.panel9.Controls.Add(this.panel5);
             this.panel9.Controls.Add(this.txtBuscar);
             this.panel9.Controls.Add(this.label1);
-            this.panel9.Location = new System.Drawing.Point(101, 5);
+            this.panel9.Location = new System.Drawing.Point(101, 58);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1781, 51);
             this.panel9.TabIndex = 58;
@@ -206,7 +206,7 @@
             this.panel2.Controls.Add(this.txtFechaRegistro);
             this.panel2.Controls.Add(this.txtExtension);
             this.panel2.Controls.Add(this.txtDocumento);
-            this.panel2.Location = new System.Drawing.Point(876, 128);
+            this.panel2.Location = new System.Drawing.Point(876, 181);
             this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(524, 699);
@@ -430,7 +430,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel3.Controls.Add(this.tblRegistroReporte);
-            this.panel3.Location = new System.Drawing.Point(250, 259);
+            this.panel3.Location = new System.Drawing.Point(250, 312);
             this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(908, 311);
@@ -569,7 +569,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(995, 99);
+            this.label5.Location = new System.Drawing.Point(995, 152);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(109, 17);
             this.label5.TabIndex = 52;
@@ -580,7 +580,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel7.Controls.Add(this.drFechaActual);
-            this.panel7.Location = new System.Drawing.Point(987, 128);
+            this.panel7.Location = new System.Drawing.Point(987, 181);
             this.panel7.Margin = new System.Windows.Forms.Padding(5);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(147, 34);

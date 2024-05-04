@@ -94,6 +94,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnGenerarPDF = new RJCodeAdvance.RJControls.RJButton();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.colorWithAlpha5 = new System.Windows.Forms.ColorWithAlpha();
+            this.colorWithAlpha6 = new System.Windows.Forms.ColorWithAlpha();
+            this.colorWithAlpha3 = new System.Windows.Forms.ColorWithAlpha();
+            this.colorWithAlpha4 = new System.Windows.Forms.ColorWithAlpha();
+            this.colorWithAlpha1 = new System.Windows.Forms.ColorWithAlpha();
+            this.colorWithAlpha2 = new System.Windows.Forms.ColorWithAlpha();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistroLiquidaciones)).BeginInit();
@@ -521,7 +527,7 @@
             this.panel3.Controls.Add(this.txtCodigo);
             this.panel3.Controls.Add(this.txtLiquidacion);
             this.panel3.Controls.Add(this.txtAño);
-            this.panel3.Location = new System.Drawing.Point(1135, 100);
+            this.panel3.Location = new System.Drawing.Point(1135, 127);
             this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(756, 775);
@@ -926,7 +932,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel1.Controls.Add(this.tblRegistroLiquidaciones);
-            this.panel1.Location = new System.Drawing.Point(89, 230);
+            this.panel1.Location = new System.Drawing.Point(89, 257);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(982, 435);
@@ -1042,7 +1048,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel7.Controls.Add(this.drFechaActual);
-            this.panel7.Location = new System.Drawing.Point(821, 83);
+            this.panel7.Location = new System.Drawing.Point(821, 110);
             this.panel7.Margin = new System.Windows.Forms.Padding(5);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(147, 34);
@@ -1074,7 +1080,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(829, 54);
+            this.label5.Location = new System.Drawing.Point(829, 81);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(109, 17);
             this.label5.TabIndex = 43;
@@ -1096,7 +1102,7 @@
             this.btnGenerarPDF.ForeColor = System.Drawing.Color.White;
             this.btnGenerarPDF.Image = global::Sistema_de_liquidacion.Properties.Resources.archivo_pdf;
             this.btnGenerarPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGenerarPDF.Location = new System.Drawing.Point(890, 675);
+            this.btnGenerarPDF.Location = new System.Drawing.Point(890, 702);
             this.btnGenerarPDF.Margin = new System.Windows.Forms.Padding(5);
             this.btnGenerarPDF.Name = "btnGenerarPDF";
             this.btnGenerarPDF.Size = new System.Drawing.Size(181, 50);
@@ -1118,10 +1124,46 @@
             this.panel9.Controls.Add(this.panel2);
             this.panel9.Controls.Add(this.panel5);
             this.panel9.Controls.Add(this.panel4);
-            this.panel9.Location = new System.Drawing.Point(100, 5);
+            this.panel9.Location = new System.Drawing.Point(100, 46);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1791, 51);
             this.panel9.TabIndex = 46;
+            // 
+            // colorWithAlpha5
+            // 
+            this.colorWithAlpha5.Alpha = 255;
+            this.colorWithAlpha5.Color = System.Drawing.Color.Black;
+            this.colorWithAlpha5.Parent = null;
+            // 
+            // colorWithAlpha6
+            // 
+            this.colorWithAlpha6.Alpha = 255;
+            this.colorWithAlpha6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.colorWithAlpha6.Parent = null;
+            // 
+            // colorWithAlpha3
+            // 
+            this.colorWithAlpha3.Alpha = 255;
+            this.colorWithAlpha3.Color = System.Drawing.Color.Black;
+            this.colorWithAlpha3.Parent = null;
+            // 
+            // colorWithAlpha4
+            // 
+            this.colorWithAlpha4.Alpha = 255;
+            this.colorWithAlpha4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.colorWithAlpha4.Parent = null;
+            // 
+            // colorWithAlpha1
+            // 
+            this.colorWithAlpha1.Alpha = 255;
+            this.colorWithAlpha1.Color = System.Drawing.Color.Black;
+            this.colorWithAlpha1.Parent = null;
+            // 
+            // colorWithAlpha2
+            // 
+            this.colorWithAlpha2.Alpha = 255;
+            this.colorWithAlpha2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.colorWithAlpha2.Parent = null;
             // 
             // FrmGestionEmpleados
             // 
@@ -1228,6 +1270,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro3;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdUsuario;
         private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.ColorWithAlpha colorWithAlpha5;
+        private System.Windows.Forms.ColorWithAlpha colorWithAlpha6;
+        private System.Windows.Forms.ColorWithAlpha colorWithAlpha3;
+        private System.Windows.Forms.ColorWithAlpha colorWithAlpha4;
+        private System.Windows.Forms.ColorWithAlpha colorWithAlpha1;
+        private System.Windows.Forms.ColorWithAlpha colorWithAlpha2;
     }
 }
 

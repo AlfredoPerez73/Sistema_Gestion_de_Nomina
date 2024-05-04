@@ -52,6 +52,12 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.dpFechaActual = new RJCodeAdvance.RJControls.RJDatePicker();
             this.Contenedor = new System.Windows.Forms.Panel();
+            this.alphaGradientPanel1 = new System.Windows.Forms.AlphaGradientPanel();
+            this.colorWithAlpha1 = new System.Windows.Forms.ColorWithAlpha();
+            this.colorWithAlpha2 = new System.Windows.Forms.ColorWithAlpha();
+            this.alphaGradientPanel2 = new System.Windows.Forms.AlphaGradientPanel();
+            this.colorWithAlpha3 = new System.Windows.Forms.ColorWithAlpha();
+            this.colorWithAlpha4 = new System.Windows.Forms.ColorWithAlpha();
             this.SlideContenedor.SuspendLayout();
             this.SlideTitle.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -59,11 +65,12 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnEstadoFrm)).BeginInit();
             this.panel5.SuspendLayout();
+            this.Contenedor.SuspendLayout();
             this.SuspendLayout();
             // 
             // SlideTimer
             // 
-            this.SlideTimer.Interval = 10;
+            this.SlideTimer.Interval = 5;
             this.SlideTimer.Tick += new System.EventHandler(this.SlideTimer_Tick);
             // 
             // SlideContenedor
@@ -84,7 +91,7 @@
             this.SlideContenedor.MaximumSize = new System.Drawing.Size(338, 0);
             this.SlideContenedor.MinimumSize = new System.Drawing.Size(73, 675);
             this.SlideContenedor.Name = "SlideContenedor";
-            this.SlideContenedor.Size = new System.Drawing.Size(73, 857);
+            this.SlideContenedor.Size = new System.Drawing.Size(73, 1044);
             this.SlideContenedor.TabIndex = 1;
             this.SlideContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -289,12 +296,13 @@
             // 
             // SlideTitle
             // 
+            this.SlideTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.SlideTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.SlideTitle.Controls.Add(this.panel9);
-            this.SlideTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.SlideTitle.Location = new System.Drawing.Point(73, 0);
             this.SlideTitle.Name = "SlideTitle";
-            this.SlideTitle.Size = new System.Drawing.Size(1370, 97);
+            this.SlideTitle.Size = new System.Drawing.Size(1851, 97);
             this.SlideTitle.TabIndex = 2;
             // 
             // panel9
@@ -307,7 +315,7 @@
             this.panel9.Controls.Add(this.panel5);
             this.panel9.Location = new System.Drawing.Point(27, 22);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1314, 51);
+            this.panel9.Size = new System.Drawing.Size(1795, 51);
             this.panel9.TabIndex = 47;
             // 
             // panel2
@@ -315,7 +323,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panel2.Controls.Add(this.lblUsuario);
-            this.panel2.Location = new System.Drawing.Point(1037, 5);
+            this.panel2.Location = new System.Drawing.Point(1518, 5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(261, 40);
             this.panel2.TabIndex = 3;
@@ -408,18 +416,107 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Contenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.Contenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Contenedor.Controls.Add(this.alphaGradientPanel1);
+            this.Contenedor.Controls.Add(this.alphaGradientPanel2);
             this.Contenedor.Location = new System.Drawing.Point(0, 95);
             this.Contenedor.Name = "Contenedor";
-            this.Contenedor.Size = new System.Drawing.Size(1672, 860);
+            this.Contenedor.Size = new System.Drawing.Size(2153, 1047);
             this.Contenedor.TabIndex = 0;
             this.Contenedor.Tag = "";
             this.Contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.Contenedor_Paint);
+            // 
+            // alphaGradientPanel1
+            // 
+            this.alphaGradientPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.alphaGradientPanel1.BackColor = System.Drawing.Color.Black;
+            this.alphaGradientPanel1.Border = true;
+            this.alphaGradientPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.alphaGradientPanel1.Colors.Add(this.colorWithAlpha1);
+            this.alphaGradientPanel1.Colors.Add(this.colorWithAlpha2);
+            this.alphaGradientPanel1.ContentPadding = new System.Windows.Forms.Padding(0);
+            this.alphaGradientPanel1.CornerRadius = 1;
+            this.alphaGradientPanel1.Corners = ((System.Windows.Forms.Corner)((((System.Windows.Forms.Corner.TopLeft | System.Windows.Forms.Corner.TopRight) 
+            | System.Windows.Forms.Corner.BottomLeft) 
+            | System.Windows.Forms.Corner.BottomRight)));
+            this.alphaGradientPanel1.Gradient = true;
+            this.alphaGradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
+            this.alphaGradientPanel1.GradientOffset = 1F;
+            this.alphaGradientPanel1.GradientSize = new System.Drawing.Size(0, 0);
+            this.alphaGradientPanel1.GradientWrapMode = System.Drawing.Drawing2D.WrapMode.Tile;
+            this.alphaGradientPanel1.Grayscale = false;
+            this.alphaGradientPanel1.Image = null;
+            this.alphaGradientPanel1.ImageAlpha = 75;
+            this.alphaGradientPanel1.ImagePadding = new System.Windows.Forms.Padding(5);
+            this.alphaGradientPanel1.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
+            this.alphaGradientPanel1.ImageSize = new System.Drawing.Size(48, 48);
+            this.alphaGradientPanel1.Location = new System.Drawing.Point(2, -92);
+            this.alphaGradientPanel1.Name = "alphaGradientPanel1";
+            this.alphaGradientPanel1.Rounded = true;
+            this.alphaGradientPanel1.Size = new System.Drawing.Size(106, 1228);
+            this.alphaGradientPanel1.TabIndex = 0;
+            this.alphaGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.alphaGradientPanel1_Paint);
+            // 
+            // colorWithAlpha1
+            // 
+            this.colorWithAlpha1.Alpha = 255;
+            this.colorWithAlpha1.Color = System.Drawing.Color.Black;
+            this.colorWithAlpha1.Parent = this.alphaGradientPanel2;
+            // 
+            // colorWithAlpha2
+            // 
+            this.colorWithAlpha2.Alpha = 255;
+            this.colorWithAlpha2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.colorWithAlpha2.Parent = this.alphaGradientPanel2;
+            // 
+            // alphaGradientPanel2
+            // 
+            this.alphaGradientPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.alphaGradientPanel2.BackColor = System.Drawing.Color.Black;
+            this.alphaGradientPanel2.Border = true;
+            this.alphaGradientPanel2.BorderColor = System.Drawing.Color.Transparent;
+            this.alphaGradientPanel2.Colors.Add(this.colorWithAlpha1);
+            this.alphaGradientPanel2.Colors.Add(this.colorWithAlpha2);
+            this.alphaGradientPanel2.ContentPadding = new System.Windows.Forms.Padding(0);
+            this.alphaGradientPanel2.CornerRadius = 1;
+            this.alphaGradientPanel2.Corners = ((System.Windows.Forms.Corner)((((System.Windows.Forms.Corner.TopLeft | System.Windows.Forms.Corner.TopRight) 
+            | System.Windows.Forms.Corner.BottomLeft) 
+            | System.Windows.Forms.Corner.BottomRight)));
+            this.alphaGradientPanel2.Gradient = true;
+            this.alphaGradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.alphaGradientPanel2.GradientOffset = 1F;
+            this.alphaGradientPanel2.GradientSize = new System.Drawing.Size(0, 0);
+            this.alphaGradientPanel2.GradientWrapMode = System.Drawing.Drawing2D.WrapMode.Tile;
+            this.alphaGradientPanel2.Grayscale = false;
+            this.alphaGradientPanel2.Image = null;
+            this.alphaGradientPanel2.ImageAlpha = 75;
+            this.alphaGradientPanel2.ImagePadding = new System.Windows.Forms.Padding(5);
+            this.alphaGradientPanel2.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
+            this.alphaGradientPanel2.ImageSize = new System.Drawing.Size(48, 48);
+            this.alphaGradientPanel2.Location = new System.Drawing.Point(-3, -92);
+            this.alphaGradientPanel2.Name = "alphaGradientPanel2";
+            this.alphaGradientPanel2.Rounded = true;
+            this.alphaGradientPanel2.Size = new System.Drawing.Size(1937, 126);
+            this.alphaGradientPanel2.TabIndex = 1;
+            // 
+            // colorWithAlpha3
+            // 
+            this.colorWithAlpha3.Alpha = 255;
+            this.colorWithAlpha3.Color = System.Drawing.Color.Black;
+            this.colorWithAlpha3.Parent = null;
+            // 
+            // colorWithAlpha4
+            // 
+            this.colorWithAlpha4.Alpha = 255;
+            this.colorWithAlpha4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.colorWithAlpha4.Parent = null;
             // 
             // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1443, 857);
+            this.ClientSize = new System.Drawing.Size(1924, 1044);
             this.Controls.Add(this.SlideTitle);
             this.Controls.Add(this.SlideContenedor);
             this.Controls.Add(this.Contenedor);
@@ -437,6 +534,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnEstadoFrm)).EndInit();
             this.panel5.ResumeLayout(false);
+            this.Contenedor.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -465,5 +563,11 @@
         private System.Windows.Forms.Panel panel5;
         private RJCodeAdvance.RJControls.RJDatePicker dpFechaActual;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ColorWithAlpha colorWithAlpha1;
+        private System.Windows.Forms.ColorWithAlpha colorWithAlpha2;
+        private System.Windows.Forms.ColorWithAlpha colorWithAlpha3;
+        private System.Windows.Forms.ColorWithAlpha colorWithAlpha4;
+        private System.Windows.Forms.AlphaGradientPanel alphaGradientPanel2;
+        private System.Windows.Forms.AlphaGradientPanel alphaGradientPanel1;
     }
 }

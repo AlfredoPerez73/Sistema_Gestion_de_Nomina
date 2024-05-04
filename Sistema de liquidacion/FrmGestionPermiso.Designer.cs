@@ -97,7 +97,7 @@
             this.panel9.Controls.Add(this.label8);
             this.panel9.Controls.Add(this.panel6);
             this.panel9.Controls.Add(this.txtBuscar);
-            this.panel9.Location = new System.Drawing.Point(108, 6);
+            this.panel9.Location = new System.Drawing.Point(108, 51);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1778, 51);
             this.panel9.TabIndex = 49;
@@ -192,7 +192,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel4.Controls.Add(this.tblRegistroPermiso);
-            this.panel4.Location = new System.Drawing.Point(238, 207);
+            this.panel4.Location = new System.Drawing.Point(238, 235);
             this.panel4.Margin = new System.Windows.Forms.Padding(5);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(966, 374);
@@ -306,7 +306,7 @@
             this.panel2.Controls.Add(this.btnLimpiar);
             this.panel2.Controls.Add(this.btnGuardar);
             this.panel2.Controls.Add(this.txtIdPermiso);
-            this.panel2.Location = new System.Drawing.Point(862, 102);
+            this.panel2.Location = new System.Drawing.Point(862, 130);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(533, 634);
