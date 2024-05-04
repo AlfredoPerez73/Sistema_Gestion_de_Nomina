@@ -25,7 +25,7 @@ namespace Sistema_de_liquidacion
 
         private void CargarRegistro()
         {
-
+            Visualizer(liquidacionService.CargarRegistro());
         }
 
         private void Visualizer(List<Liquidacion> lista2)
@@ -71,12 +71,25 @@ namespace Sistema_de_liquidacion
 
         private void CargarAños()
         {
+            LiquidacionService liquidacionService = new LiquidacionService();
+            var liquidaciones = liquidacionService.CargarRegistro();
+            var añosUnicos = liquidaciones.Select(liquidacion => liquidacion.Año).Distinct().ToList();
+            var mesesUnicos = liquidaciones.Select(liquidacion => liquidacion.Mes).Distinct().ToList();
 
+            //añosUnicos.Insert(0, Convert.ToInt32(null));
+            //mesesUnicos.Insert(0, Convert.ToInt32(null));
+            //añosUnicos.Insert(0, -1);
+            cboFiltroAño.DataSource = añosUnicos;
+            cboFiltroMes.DataSource = mesesUnicos;
+
+            cboFiltroMes.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboFiltroMes.SelectedIndex = 0;
+            cboFiltroAño.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboFiltroAño.SelectedIndex = 0;
         }
 
         private void FrmLiquidacionTotal_Load(object sender, EventArgs e)
         {
-            CargarAños();
             BorderRadiusPanel(panel2, 15);
             BorderRadiusPanel(panel3, 15);
             BorderRadiusPanel(panel4, 20);
@@ -88,7 +101,9 @@ namespace Sistema_de_liquidacion
             cboFiltroAño.OnSelectedIndexChanged += cboFiltroAño_OnSelectedIndexChanged;
             cboFiltroMes.OnSelectedIndexChanged += cboFiltroMes_OnSelectedIndexChanged;
 
+            CargarAños();
             CargarGraficos();
+            CargarRegistro();
         }
 
         private void BorderRadiusPanel(Panel panel, int radio)

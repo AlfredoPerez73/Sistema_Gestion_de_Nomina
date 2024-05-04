@@ -69,17 +69,17 @@ namespace Datos
                 commandDetalle.Parameters.AddWithValue("@AuxAlimentacion", detalle.AuxAlimentacion);
                 commandDetalle.Parameters.AddWithValue("@PrimaNavidad", detalle.PrimaNavidad);
                 commandDetalle.Parameters.AddWithValue("@Devengado", detalle.Devengado);
-                commandDetalle.Parameters.AddWithValue("@IdProducto", detalle.producto.IdProducto);
-                commandDetalle.Parameters.AddWithValue("@Documento", detalle.producto.Documento);
-                commandDetalle.Parameters.AddWithValue("@Nombre", detalle.producto.Nombre);
-                commandDetalle.Parameters.AddWithValue("@NCargo", detalle.producto.Cargo.CargoDesempeñado);
-                commandDetalle.Parameters.AddWithValue("@Salario", detalle.producto.Contrato.Salario);
-                commandDetalle.Parameters.AddWithValue("@Estado", detalle.producto.Estado);
+                commandDetalle.Parameters.AddWithValue("@IdProducto", detalle.empleado.IdPersona);
+                commandDetalle.Parameters.AddWithValue("@Documento", detalle.empleado.Documento);
+                commandDetalle.Parameters.AddWithValue("@Nombre", detalle.empleado.Nombre);
+                commandDetalle.Parameters.AddWithValue("@NCargo", detalle.empleado.Cargo.CargoDesempeñado);
+                commandDetalle.Parameters.AddWithValue("@Salario", detalle.empleado.Contrato.Salario);
+                commandDetalle.Parameters.AddWithValue("@Estado", detalle.empleado.Estado);
                 commandDetalle.Parameters.AddWithValue("@IdFactura", detalle.liquidacion.IdFactura);
                 commandDetalle.Parameters.AddWithValue("@AñoDetalle", detalle.liquidacion.Año);
                 commandDetalle.Parameters.AddWithValue("@MesDetalle", detalle.liquidacion.Mes);
-                commandDetalle.Parameters.AddWithValue("@IdUsuario", detalle.usuario.IdUsuario);
-                commandDetalle.Parameters.AddWithValue("@NombreUsuario", detalle.usuario.NombreUsuario);
+                commandDetalle.Parameters.AddWithValue("@IdUsuario", detalle.usuario.IdPersona);
+                commandDetalle.Parameters.AddWithValue("@NombreUsuario", detalle.usuario.Nombre);
 
                 AbrirConnection();
                 var index = commandDetalle.ExecuteNonQuery();
