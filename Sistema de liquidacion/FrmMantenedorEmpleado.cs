@@ -33,8 +33,8 @@ namespace Sistema_de_liquidacion
                 Cargo = CargoIndex,
                 Contrato = new Contrato
                 {
-                    FechaInicio = dpFechaInicial.Value,
-                    FechaFin = dpFechaFinal.Value,
+                    FechaInicio = Convert.ToDateTime(dpFechaInicial.Value.ToString("yyyy-M-d")),
+                    FechaFin = Convert.ToDateTime(dpFechaFinal.Value.ToString("yyyy-M-d")),
                     Salario = Convert.ToDecimal(txtSalario.Texts),
                     TipoContrato = txtContrato.Texts.ToUpper(),
                 },

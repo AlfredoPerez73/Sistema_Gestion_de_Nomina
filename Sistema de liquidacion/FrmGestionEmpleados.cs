@@ -10,27 +10,20 @@ using System.Windows.Forms;
 using Logica;
 using Entidad;
 using Sistema_de_liquidacion.Modales;
-using System.Collections;
-using static Logica.LiquidacionService;
 using System.Drawing.Drawing2D;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.Drawing.Printing;
 using System.IO;
-using System.Xml.Linq;
-using iTextSharp.text;
-using iTextSharp.text.pdf;
-using iTextSharp.tool.xml;
-using System.Windows.Shapes;
 
 namespace Sistema_de_liquidacion
 {
     public partial class FrmGestionEmpleados : Form
     {
         private Usuario oUsuario;
-        ReporteService reporteService = new ReporteService();
-        Reporte oReporte = new Reporte();
+        private Reporte oReporte = new Reporte();
+        private bool allowEdit = false;
 
         private DetalleLiquidacionService detalleLiquidacionService = new DetalleLiquidacionService();
+        private ReporteService reporteService = new ReporteService();
+        private EmpleadoService empleadoService = new EmpleadoService();
 
         public FrmGestionEmpleados(Usuario oUsuario)
         {
@@ -62,8 +55,8 @@ namespace Sistema_de_liquidacion
                 liquidacion = new Liquidacion
                 {
                     IdFactura = Convert.ToInt32(txtLiquidacion.Texts),
-                    Año = Convert.ToInt32(txtAño.Texts),
-                    Mes = Convert.ToInt32(txtMes.Texts),
+                    Año = dpFechaActual.Value.Year,
+                    Mes = dpFechaActual.Value.Month,
 
                 },
                 usuario = new Usuario
@@ -87,8 +80,8 @@ namespace Sistema_de_liquidacion
             var detalleLiquidacion = RegistroLiquidaciones();
             if (detalleLiquidacion != null)
             {
-                var VAL = detalleLiquidacionService.BuscarIdLiquidacion(Convert.ToInt32(txtAño.Texts),
-                                                                        Convert.ToInt32(txtMes.Texts),
+                var VAL = detalleLiquidacionService.BuscarIdLiquidacion(dpFechaActual.Value.Year,
+                                                                        dpFechaActual.Value.Month,
                                                                         txtIdProducto.Texts,
                                                                         Convert.ToInt32(txtLiquidacion.Texts));
                 if (!VAL)
@@ -101,7 +94,7 @@ namespace Sistema_de_liquidacion
                 else
                 {
                     MessageBox.Show($"La liquidacion con el producto identificado {txtIdProducto.Texts} " +
-                                    $"el mes {txtMes.Texts} en el año {txtAño.Texts} ya existe!",
+                                    $"el mes {dpFechaActual.Value.Month} en el año {dpFechaActual.Value.Year} ya existe!",
                                     "Gestion de liquidaciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
@@ -126,17 +119,6 @@ namespace Sistema_de_liquidacion
                 MessageBox.Show("Por favor llenar el campo de salario", "Gestion de liquidacion",MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return false;
             }
-
-            if (txtAño.Texts == "" || txtAño.Texts == "Año")
-            {
-                MessageBox.Show("Por favor llenar el campo de año", "Gestion de liquidacion",MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return false;
-            }
-            if (txtMes.Texts == "" || txtMes.Texts == "Mes")
-            {
-                MessageBox.Show("Por favor llenar el campo de mes", "Gestion de liquidacion",MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return false;
-            }
             return true;
         }
 
@@ -149,8 +131,6 @@ namespace Sistema_de_liquidacion
             txtDetalle.Focus();
             txtLiquidacion.Texts = "Id de liquidacion";
             txtDetalle.Texts = "Id de detalle";
-            txtAño.Texts = "Año";
-            txtMes.Texts = "Mes";
         }
 
         private void CargarEstados()
@@ -187,6 +167,37 @@ namespace Sistema_de_liquidacion
             DateTime fechaFin = dpFechaFinal.Value;
             var resultado = detalleLiquidacionService.FiltroLiquidaciones(fechaInicio, fechaFin);
             Visualizer(resultado);
+        }
+
+        private void BuscarEmpleado(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                var oEmpleado = empleadoService.BuscarEmpleado(textBox1.Text);
+                if (oEmpleado != null)
+                {
+                    textBox1.BackColor = Color.Honeydew;
+
+                    txtDocumento2.BackColor = Color.Honeydew;
+                    txtDocumento2.BorderColor = Color.Honeydew;
+                    txtIdProducto.Texts = oEmpleado.IdPersona.ToString();
+                    txtDocumento2.Texts = oEmpleado.Documento.ToString();
+                    txtNombre.Texts = oEmpleado.Nombre.ToString();
+                    txtcargo.Texts = oEmpleado.Cargo.IdCargo.ToString();
+                    cboCargo.Texts = oEmpleado.Cargo.CargoDesempeñado.ToString();
+                    fecha.Texts = oEmpleado.Cargo.FechaRegistro.ToString("d");
+                    txtSalario2.Texts = oEmpleado.Contrato.Salario.ToString();
+                    txtEstado.Texts = oEmpleado.Estado.ToString();
+                    fecha2.Texts = oEmpleado.FechaRegistro.ToString("d");
+                }
+                else
+                {
+                    textBox1.BackColor = Color.MistyRose;
+
+                    txtDocumento2.BackColor = Color.MistyRose;
+                    txtDocumento2.BorderColor = Color.MistyRose;
+                }
+            }
         }
 
         private void CargarRegistro()
@@ -406,42 +417,6 @@ namespace Sistema_de_liquidacion
             }
         }
 
-        private void txtAño_Enter(object sender, EventArgs e)
-        {
-            if (txtAño.Texts == "Año")
-            {
-                txtAño.Texts = "";
-                txtAño.ForeColor = Color.LightGray;
-            }
-        }
-
-        private void txtAño_Leave(object sender, EventArgs e)
-        {
-            if (txtAño.Texts == "")
-            {
-                txtAño.Texts = "Año";
-                txtAño.ForeColor = Color.LightGray;
-            }
-        }
-
-        private void txtMes_Enter(object sender, EventArgs e)
-        {
-            if (txtMes.Texts == "Mes")
-            {
-                txtMes.Texts = "";
-                txtMes.ForeColor = Color.LightGray;
-            }
-        }
-
-        private void txtMes_Leave(object sender, EventArgs e)
-        {
-            if (txtMes.Texts == "")
-            {
-                txtMes.Texts = "Mes";
-                txtMes.ForeColor = Color.LightGray;
-            }
-        }
-
         private void txtDiasTrabajados_Enter(object sender, EventArgs e)
         {
             if (txtDiasTrabajados.Texts == "Dias trabajados")
@@ -493,6 +468,25 @@ namespace Sistema_de_liquidacion
             {
                 txtDocumento2.Texts = "Documento";
                 txtDocumento2.ForeColor = Color.LightGray;
+            }
+        }
+
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "Documento")
+            {
+                textBox1.Text = "";
+                textBox1.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                textBox1.Text = "Documento";
+                textBox1.ForeColor = Color.LightGray;
             }
         }
 
@@ -573,5 +567,31 @@ namespace Sistema_de_liquidacion
         {
             FiltrarLiquidaciones();
         }
+
+        private void txtDocumento2_KeyDown(object sender, KeyEventArgs e)
+        {
+            BuscarEmpleado(sender, e);
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !allowEdit;
+        }
+
+        private void txtSalario2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !allowEdit;
+        }
+
+        private void txtEstado_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !allowEdit;
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            BuscarEmpleado(sender, e);
+        }
+
     }
 }

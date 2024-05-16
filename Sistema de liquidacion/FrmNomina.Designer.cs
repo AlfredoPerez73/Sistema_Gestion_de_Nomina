@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -48,15 +44,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.cboFiltroAño = new RJCodeAdvance.RJControls.RJComboBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.chGanancia = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.icoGanancias = new FontAwesome.Sharp.IconPictureBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.tblRegistroDetalleLiquidaciones = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
             this.IdFactura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Año = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Mes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SalarioTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,9 +67,6 @@
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chGanancia)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icoGanancias)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistroDetalleLiquidaciones)).BeginInit();
             this.SuspendLayout();
@@ -85,14 +74,15 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.panel9);
-            this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1456, 895);
+            this.panel1.Size = new System.Drawing.Size(1924, 1055);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -101,7 +91,6 @@
             this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel9.Controls.Add(this.label10);
             this.panel9.Controls.Add(this.txtBuscar);
             this.panel9.Controls.Add(this.panel5);
             this.panel9.Controls.Add(this.panel6);
@@ -109,7 +98,7 @@
             this.panel9.Controls.Add(this.panel2);
             this.panel9.Location = new System.Drawing.Point(100, 67);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1791, 51);
+            this.panel9.Size = new System.Drawing.Size(1774, 51);
             this.panel9.TabIndex = 51;
             // 
             // label10
@@ -117,7 +106,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(72, 11);
+            this.label10.Location = new System.Drawing.Point(95, 38);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(96, 26);
@@ -133,7 +122,7 @@
             this.txtBuscar.BorderSize = 2;
             this.txtBuscar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.ForeColor = System.Drawing.Color.LightGray;
-            this.txtBuscar.Location = new System.Drawing.Point(266, 4);
+            this.txtBuscar.Location = new System.Drawing.Point(163, 4);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(6);
             this.txtBuscar.Multiline = false;
             this.txtBuscar.Name = "txtBuscar";
@@ -150,7 +139,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panel5.Controls.Add(this.dpFechaFinal);
-            this.panel5.Location = new System.Drawing.Point(1628, 9);
+            this.panel5.Location = new System.Drawing.Point(1597, 9);
             this.panel5.Margin = new System.Windows.Forms.Padding(5);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(146, 34);
@@ -181,7 +170,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panel6.Controls.Add(this.dpFechaInicial);
-            this.panel6.Location = new System.Drawing.Point(1471, 8);
+            this.panel6.Location = new System.Drawing.Point(1440, 8);
             this.panel6.Margin = new System.Windows.Forms.Padding(5);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(150, 34);
@@ -213,7 +202,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.cboFiltroMes);
-            this.panel3.Location = new System.Drawing.Point(1093, 5);
+            this.panel3.Location = new System.Drawing.Point(990, 5);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(293, 40);
             this.panel3.TabIndex = 42;
@@ -256,7 +245,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.cboFiltroAño);
-            this.panel2.Location = new System.Drawing.Point(784, 5);
+            this.panel2.Location = new System.Drawing.Point(681, 5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(293, 40);
             this.panel2.TabIndex = 41;
@@ -294,152 +283,13 @@
             this.cboFiltroAño.Texts = "";
             this.cboFiltroAño.OnSelectedIndexChanged += new System.EventHandler(this.cboFiltroAño_OnSelectedIndexChanged_1);
             // 
-            // panel7
-            // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel7.Controls.Add(this.label7);
-            this.panel7.Controls.Add(this.label8);
-            this.panel7.Controls.Add(this.chGanancia);
-            this.panel7.Controls.Add(this.icoGanancias);
-            this.panel7.Controls.Add(this.label9);
-            this.panel7.Location = new System.Drawing.Point(1050, 155);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(800, 687);
-            this.panel7.TabIndex = 50;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label7.Location = new System.Drawing.Point(118, 639);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(247, 32);
-            this.label7.TabIndex = 0;
-            this.label7.Text = " y año de nomina";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label8.Location = new System.Drawing.Point(127, 597);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(273, 32);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Ganancias por mes";
-            // 
-            // chGanancia
-            // 
-            this.chGanancia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.chGanancia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.chGanancia.BorderlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.chGanancia.BorderlineWidth = 0;
-            chartArea1.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea1.AxisX.IsLabelAutoFit = false;
-            chartArea1.AxisX.LabelStyle.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro;
-            chartArea1.AxisX.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea1.AxisX.LineWidth = 2;
-            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea1.AxisX.MajorGrid.LineWidth = 0;
-            chartArea1.AxisX.MajorTickMark.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea1.AxisX.MajorTickMark.LineWidth = 2;
-            chartArea1.AxisX.MinorGrid.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea1.AxisX.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea1.AxisX.TitleForeColor = System.Drawing.Color.Gainsboro;
-            chartArea1.AxisX2.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea1.AxisX2.LineWidth = 0;
-            chartArea1.AxisX2.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea1.AxisX2.TitleForeColor = System.Drawing.Color.Gainsboro;
-            chartArea1.AxisY.IsLabelAutoFit = false;
-            chartArea1.AxisY.LabelStyle.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro;
-            chartArea1.AxisY.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea1.AxisY.LineWidth = 2;
-            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea1.AxisY.MajorGrid.LineWidth = 0;
-            chartArea1.AxisY.MajorTickMark.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea1.AxisY.MajorTickMark.LineWidth = 2;
-            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea1.AxisY.TitleForeColor = System.Drawing.Color.Gainsboro;
-            chartArea1.AxisY2.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea1.AxisY2.LineWidth = 0;
-            chartArea1.AxisY2.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea1.AxisY2.TitleForeColor = System.Drawing.Color.Gainsboro;
-            chartArea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            chartArea1.BorderColor = System.Drawing.Color.White;
-            chartArea1.BorderWidth = 0;
-            chartArea1.Name = "ChartArea1";
-            this.chGanancia.ChartAreas.Add(chartArea1);
-            this.chGanancia.Enabled = false;
-            legend1.BackColor = System.Drawing.Color.Transparent;
-            legend1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend1.ForeColor = System.Drawing.Color.Gainsboro;
-            legend1.IsTextAutoFit = false;
-            legend1.Name = "Legend1";
-            this.chGanancia.Legends.Add(legend1);
-            this.chGanancia.Location = new System.Drawing.Point(2, 2);
-            this.chGanancia.Name = "chGanancia";
-            this.chGanancia.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
-            series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series1.BackSecondaryColor = System.Drawing.Color.MediumPurple;
-            series1.BorderWidth = 0;
-            series1.ChartArea = "ChartArea1";
-            series1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.IsVisibleInLegend = false;
-            series1.LabelBackColor = System.Drawing.Color.Transparent;
-            series1.LabelBorderColor = System.Drawing.Color.Transparent;
-            series1.LabelBorderWidth = 0;
-            series1.LabelForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            series1.Legend = "Legend1";
-            series1.MarkerSize = 6;
-            series1.Name = "Series1";
-            series1.YValuesPerPoint = 2;
-            this.chGanancia.Series.Add(series1);
-            this.chGanancia.Size = new System.Drawing.Size(846, 569);
-            this.chGanancia.TabIndex = 2;
-            title1.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.ForeColor = System.Drawing.Color.Gainsboro;
-            title1.Name = "Title1";
-            title1.Text = "Ganancias Nomina";
-            this.chGanancia.Titles.Add(title1);
-            // 
-            // icoGanancias
-            // 
-            this.icoGanancias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.icoGanancias.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.icoGanancias.IconChar = FontAwesome.Sharp.IconChar.PuzzlePiece;
-            this.icoGanancias.IconColor = System.Drawing.Color.DarkSlateBlue;
-            this.icoGanancias.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.icoGanancias.IconSize = 76;
-            this.icoGanancias.Location = new System.Drawing.Point(45, 597);
-            this.icoGanancias.Name = "icoGanancias";
-            this.icoGanancias.Size = new System.Drawing.Size(76, 81);
-            this.icoGanancias.TabIndex = 0;
-            this.icoGanancias.TabStop = false;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(-275, -31);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(115, 28);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "NOMINA";
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel4.Controls.Add(this.tblRegistroDetalleLiquidaciones);
-            this.panel4.Location = new System.Drawing.Point(140, 295);
+            this.panel4.Location = new System.Drawing.Point(100, 235);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(835, 395);
+            this.panel4.Size = new System.Drawing.Size(1774, 395);
             this.panel4.TabIndex = 43;
             // 
             // tblRegistroDetalleLiquidaciones
@@ -461,6 +311,7 @@
             this.tblRegistroDetalleLiquidaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblRegistroDetalleLiquidaciones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdFactura,
+            this.Column1,
             this.Año,
             this.Mes,
             this.SalarioTotal,
@@ -492,9 +343,21 @@
             this.tblRegistroDetalleLiquidaciones.RowHeadersVisible = false;
             this.tblRegistroDetalleLiquidaciones.RowHeadersWidth = 51;
             this.tblRegistroDetalleLiquidaciones.RowTemplate.Height = 24;
-            this.tblRegistroDetalleLiquidaciones.Size = new System.Drawing.Size(835, 395);
+            this.tblRegistroDetalleLiquidaciones.Size = new System.Drawing.Size(1774, 395);
             this.tblRegistroDetalleLiquidaciones.TabIndex = 21;
             this.tblRegistroDetalleLiquidaciones.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblRegistroDetalleLiquidaciones_CellContentClick);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(94, 172);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(299, 32);
+            this.label3.TabIndex = 52;
+            this.label3.Text = "Registro de la nomina";
             // 
             // IdFactura
             // 
@@ -504,6 +367,13 @@
             this.IdFactura.ReadOnly = true;
             this.IdFactura.Visible = false;
             this.IdFactura.Width = 170;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 50;
             // 
             // Año
             // 
@@ -605,23 +475,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1456, 895);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmNomina";
             this.Text = "Nomina";
             this.Load += new System.EventHandler(this.FrmLiquidacionTotal_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chGanancia)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icoGanancias)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistroDetalleLiquidaciones)).EndInit();
             this.ResumeLayout(false);
@@ -644,13 +510,11 @@
         private System.Windows.Forms.Panel panel6;
         private RJCodeAdvance.RJControls.RJDatePicker dpFechaInicial;
         private RJCodeAdvance.RJControls.RJTextBox txtBuscar;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private FontAwesome.Sharp.IconPictureBox icoGanancias;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chGanancia;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdFactura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Año;
         private System.Windows.Forms.DataGridViewTextBoxColumn Mes;
         private System.Windows.Forms.DataGridViewTextBoxColumn SalarioTotal;
@@ -663,7 +527,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PrimaNTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalGeneral;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label10;
     }
 }

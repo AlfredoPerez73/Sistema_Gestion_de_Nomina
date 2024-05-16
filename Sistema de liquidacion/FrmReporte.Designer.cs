@@ -40,18 +40,29 @@
             this.txtBuscar = new RJCodeAdvance.RJControls.RJTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnVerArchivo = new RJCodeAdvance.RJControls.RJButton();
             this.label19 = new System.Windows.Forms.Label();
             this.txtIdReporte = new RJCodeAdvance.RJControls.RJTextBox();
-            this.btnEliminarReporte = new RJCodeAdvance.RJControls.RJButton();
-            this.txtReporte = new RJCodeAdvance.RJControls.RJTextBox();
             this.btnGuardarReporte = new RJCodeAdvance.RJControls.RJButton();
             this.txtFechaRegistro = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtExtension = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtDocumento = new RJCodeAdvance.RJControls.RJTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tblRegistroReporte = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.drFechaActual = new RJCodeAdvance.RJControls.RJDatePicker();
+            this.txtReporte = new RJCodeAdvance.RJControls.RJTextBox();
+            this.btnEliminarReporte = new RJCodeAdvance.RJControls.RJButton();
+            this.btnVerArchivo = new RJCodeAdvance.RJControls.RJButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnSeleccionar2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IdReporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Reporte2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IdUsuario2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,9 +70,6 @@
             this.Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Extension = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.drFechaActual = new RJCodeAdvance.RJControls.RJDatePicker();
             this.panel1.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -75,15 +83,16 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.panel9);
+            this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1456, 895);
+            this.panel1.Size = new System.Drawing.Size(1924, 1055);
             this.panel1.TabIndex = 0;
             // 
             // panel9
@@ -94,10 +103,9 @@
             this.panel9.Controls.Add(this.panel4);
             this.panel9.Controls.Add(this.panel5);
             this.panel9.Controls.Add(this.txtBuscar);
-            this.panel9.Controls.Add(this.label1);
-            this.panel9.Location = new System.Drawing.Point(101, 58);
+            this.panel9.Location = new System.Drawing.Point(98, 68);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1781, 51);
+            this.panel9.Size = new System.Drawing.Size(1770, 51);
             this.panel9.TabIndex = 58;
             // 
             // panel4
@@ -185,7 +193,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(72, 11);
+            this.label1.Location = new System.Drawing.Point(96, 33);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(222, 26);
@@ -198,58 +206,32 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel2.Controls.Add(this.btnVerArchivo);
-            this.panel2.Controls.Add(this.label19);
             this.panel2.Controls.Add(this.txtIdReporte);
             this.panel2.Controls.Add(this.btnEliminarReporte);
+            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.txtReporte);
+            this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.btnGuardarReporte);
             this.panel2.Controls.Add(this.txtFechaRegistro);
             this.panel2.Controls.Add(this.txtExtension);
             this.panel2.Controls.Add(this.txtDocumento);
-            this.panel2.Location = new System.Drawing.Point(876, 181);
+            this.panel2.Location = new System.Drawing.Point(101, 192);
             this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(524, 699);
+            this.panel2.Size = new System.Drawing.Size(1766, 245);
             this.panel2.TabIndex = 57;
-            // 
-            // btnVerArchivo
-            // 
-            this.btnVerArchivo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnVerArchivo.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnVerArchivo.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.btnVerArchivo.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnVerArchivo.BorderRadius = 17;
-            this.btnVerArchivo.BorderSize = 0;
-            this.btnVerArchivo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVerArchivo.FlatAppearance.BorderSize = 0;
-            this.btnVerArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerArchivo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerArchivo.ForeColor = System.Drawing.Color.White;
-            this.btnVerArchivo.Image = global::Sistema_de_liquidacion.Properties.Resources.busqueda;
-            this.btnVerArchivo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVerArchivo.Location = new System.Drawing.Point(95, 623);
-            this.btnVerArchivo.Margin = new System.Windows.Forms.Padding(5);
-            this.btnVerArchivo.Name = "btnVerArchivo";
-            this.btnVerArchivo.Size = new System.Drawing.Size(334, 59);
-            this.btnVerArchivo.TabIndex = 56;
-            this.btnVerArchivo.Text = "Ver Archvio";
-            this.btnVerArchivo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVerArchivo.TextColor = System.Drawing.Color.White;
-            this.btnVerArchivo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnVerArchivo.UseVisualStyleBackColor = false;
-            this.btnVerArchivo.Click += new System.EventHandler(this.btnVerArchivo_Click);
             // 
             // label19
             // 
             this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(144, 58);
+            this.label19.Location = new System.Drawing.Point(95, 144);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(200, 25);
+            this.label19.Size = new System.Drawing.Size(258, 32);
             this.label19.TabIndex = 9;
             this.label19.Text = "Detalle del reporte";
             // 
@@ -263,7 +245,7 @@
             this.txtIdReporte.BorderSize = 2;
             this.txtIdReporte.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdReporte.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtIdReporte.Location = new System.Drawing.Point(95, 184);
+            this.txtIdReporte.Location = new System.Drawing.Point(991, 50);
             this.txtIdReporte.Margin = new System.Windows.Forms.Padding(6);
             this.txtIdReporte.Multiline = false;
             this.txtIdReporte.Name = "txtIdReporte";
@@ -276,56 +258,6 @@
             this.txtIdReporte.Texts = "Id de reporte";
             this.txtIdReporte.UnderlinedStyle = false;
             this.txtIdReporte.Visible = false;
-            // 
-            // btnEliminarReporte
-            // 
-            this.btnEliminarReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEliminarReporte.BackColor = System.Drawing.Color.Brown;
-            this.btnEliminarReporte.BackgroundColor = System.Drawing.Color.Brown;
-            this.btnEliminarReporte.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnEliminarReporte.BorderRadius = 17;
-            this.btnEliminarReporte.BorderSize = 0;
-            this.btnEliminarReporte.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminarReporte.FlatAppearance.BorderSize = 0;
-            this.btnEliminarReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarReporte.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarReporte.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarReporte.Image = global::Sistema_de_liquidacion.Properties.Resources.circulo_marca_x;
-            this.btnEliminarReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEliminarReporte.Location = new System.Drawing.Point(95, 554);
-            this.btnEliminarReporte.Margin = new System.Windows.Forms.Padding(5);
-            this.btnEliminarReporte.Name = "btnEliminarReporte";
-            this.btnEliminarReporte.Size = new System.Drawing.Size(334, 59);
-            this.btnEliminarReporte.TabIndex = 56;
-            this.btnEliminarReporte.Text = "Eliminar";
-            this.btnEliminarReporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarReporte.TextColor = System.Drawing.Color.White;
-            this.btnEliminarReporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEliminarReporte.UseVisualStyleBackColor = false;
-            this.btnEliminarReporte.Click += new System.EventHandler(this.btnEliminar_Click);
-            // 
-            // txtReporte
-            // 
-            this.txtReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtReporte.BackColor = System.Drawing.SystemColors.Window;
-            this.txtReporte.BorderColor = System.Drawing.Color.White;
-            this.txtReporte.BorderFocusColor = System.Drawing.Color.White;
-            this.txtReporte.BorderRadius = 15;
-            this.txtReporte.BorderSize = 2;
-            this.txtReporte.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtReporte.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtReporte.Location = new System.Drawing.Point(95, 239);
-            this.txtReporte.Margin = new System.Windows.Forms.Padding(6);
-            this.txtReporte.Multiline = false;
-            this.txtReporte.Name = "txtReporte";
-            this.txtReporte.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtReporte.PasswordChar = false;
-            this.txtReporte.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtReporte.PlaceholderText = "";
-            this.txtReporte.Size = new System.Drawing.Size(334, 42);
-            this.txtReporte.TabIndex = 10;
-            this.txtReporte.Texts = "Nombre de reporte";
-            this.txtReporte.UnderlinedStyle = false;
             // 
             // btnGuardarReporte
             // 
@@ -342,10 +274,10 @@
             this.btnGuardarReporte.ForeColor = System.Drawing.Color.White;
             this.btnGuardarReporte.Image = global::Sistema_de_liquidacion.Properties.Resources.disk;
             this.btnGuardarReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardarReporte.Location = new System.Drawing.Point(95, 483);
+            this.btnGuardarReporte.Location = new System.Drawing.Point(1506, 25);
             this.btnGuardarReporte.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardarReporte.Name = "btnGuardarReporte";
-            this.btnGuardarReporte.Size = new System.Drawing.Size(334, 59);
+            this.btnGuardarReporte.Size = new System.Drawing.Size(204, 51);
             this.btnGuardarReporte.TabIndex = 56;
             this.btnGuardarReporte.Text = "Guardar";
             this.btnGuardarReporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -364,7 +296,7 @@
             this.txtFechaRegistro.BorderSize = 2;
             this.txtFechaRegistro.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFechaRegistro.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtFechaRegistro.Location = new System.Drawing.Point(95, 417);
+            this.txtFechaRegistro.Location = new System.Drawing.Point(545, 104);
             this.txtFechaRegistro.Margin = new System.Windows.Forms.Padding(6);
             this.txtFechaRegistro.Multiline = false;
             this.txtFechaRegistro.Name = "txtFechaRegistro";
@@ -387,7 +319,7 @@
             this.txtExtension.BorderSize = 2;
             this.txtExtension.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExtension.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtExtension.Location = new System.Drawing.Point(95, 361);
+            this.txtExtension.Location = new System.Drawing.Point(891, 104);
             this.txtExtension.Margin = new System.Windows.Forms.Padding(6);
             this.txtExtension.Multiline = false;
             this.txtExtension.Name = "txtExtension";
@@ -410,7 +342,7 @@
             this.txtDocumento.BorderSize = 2;
             this.txtDocumento.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDocumento.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtDocumento.Location = new System.Drawing.Point(95, 297);
+            this.txtDocumento.Location = new System.Drawing.Point(645, 50);
             this.txtDocumento.Margin = new System.Windows.Forms.Padding(6);
             this.txtDocumento.Multiline = false;
             this.txtDocumento.Name = "txtDocumento";
@@ -430,10 +362,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel3.Controls.Add(this.tblRegistroReporte);
-            this.panel3.Location = new System.Drawing.Point(250, 312);
+            this.panel3.Location = new System.Drawing.Point(98, 584);
             this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(908, 311);
+            this.panel3.Size = new System.Drawing.Size(1755, 308);
             this.panel3.TabIndex = 47;
             // 
             // tblRegistroReporte
@@ -455,6 +387,13 @@
             this.tblRegistroReporte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblRegistroReporte.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSeleccionar2,
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
             this.IdReporte,
             this.Reporte2,
             this.IdUsuario2,
@@ -490,10 +429,144 @@
             this.tblRegistroReporte.RowHeadersWidth = 51;
             this.tblRegistroReporte.RowTemplate.Height = 24;
             this.tblRegistroReporte.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tblRegistroReporte.Size = new System.Drawing.Size(908, 311);
+            this.tblRegistroReporte.Size = new System.Drawing.Size(1755, 308);
             this.tblRegistroReporte.TabIndex = 27;
             this.tblRegistroReporte.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblRegistroReporte_CellContentClick);
             this.tblRegistroReporte.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.tblRegistroReporte_CellPainting);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(1343, 40);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 17);
+            this.label5.TabIndex = 52;
+            this.label5.Text = "FECHA ACTUAL";
+            this.label5.Visible = false;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel7.Controls.Add(this.drFechaActual);
+            this.panel7.Location = new System.Drawing.Point(1335, 69);
+            this.panel7.Margin = new System.Windows.Forms.Padding(5);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(147, 34);
+            this.panel7.TabIndex = 49;
+            this.panel7.Visible = false;
+            // 
+            // drFechaActual
+            // 
+            this.drFechaActual.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.drFechaActual.BorderSize = 0;
+            this.drFechaActual.CalendarForeColor = System.Drawing.Color.White;
+            this.drFechaActual.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.drFechaActual.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.drFechaActual.CalendarTitleForeColor = System.Drawing.Color.White;
+            this.drFechaActual.CalendarTrailingForeColor = System.Drawing.Color.White;
+            this.drFechaActual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.drFechaActual.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drFechaActual.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.drFechaActual.Location = new System.Drawing.Point(0, 0);
+            this.drFechaActual.MinimumSize = new System.Drawing.Size(4, 35);
+            this.drFechaActual.Name = "drFechaActual";
+            this.drFechaActual.Size = new System.Drawing.Size(147, 35);
+            this.drFechaActual.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.drFechaActual.TabIndex = 0;
+            this.drFechaActual.TextColor = System.Drawing.Color.White;
+            // 
+            // txtReporte
+            // 
+            this.txtReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtReporte.BackColor = System.Drawing.SystemColors.Window;
+            this.txtReporte.BorderColor = System.Drawing.Color.White;
+            this.txtReporte.BorderFocusColor = System.Drawing.Color.White;
+            this.txtReporte.BorderRadius = 15;
+            this.txtReporte.BorderSize = 2;
+            this.txtReporte.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReporte.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtReporte.Location = new System.Drawing.Point(299, 50);
+            this.txtReporte.Margin = new System.Windows.Forms.Padding(6);
+            this.txtReporte.Multiline = false;
+            this.txtReporte.Name = "txtReporte";
+            this.txtReporte.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
+            this.txtReporte.PasswordChar = false;
+            this.txtReporte.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtReporte.PlaceholderText = "";
+            this.txtReporte.Size = new System.Drawing.Size(334, 42);
+            this.txtReporte.TabIndex = 10;
+            this.txtReporte.Texts = "Nombre de reporte";
+            this.txtReporte.UnderlinedStyle = false;
+            // 
+            // btnEliminarReporte
+            // 
+            this.btnEliminarReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEliminarReporte.BackColor = System.Drawing.Color.Brown;
+            this.btnEliminarReporte.BackgroundColor = System.Drawing.Color.Brown;
+            this.btnEliminarReporte.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnEliminarReporte.BorderRadius = 17;
+            this.btnEliminarReporte.BorderSize = 0;
+            this.btnEliminarReporte.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarReporte.FlatAppearance.BorderSize = 0;
+            this.btnEliminarReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarReporte.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarReporte.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarReporte.Image = global::Sistema_de_liquidacion.Properties.Resources.circulo_marca_x;
+            this.btnEliminarReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEliminarReporte.Location = new System.Drawing.Point(1506, 84);
+            this.btnEliminarReporte.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEliminarReporte.Name = "btnEliminarReporte";
+            this.btnEliminarReporte.Size = new System.Drawing.Size(204, 51);
+            this.btnEliminarReporte.TabIndex = 56;
+            this.btnEliminarReporte.Text = "Eliminar";
+            this.btnEliminarReporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminarReporte.TextColor = System.Drawing.Color.White;
+            this.btnEliminarReporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEliminarReporte.UseVisualStyleBackColor = false;
+            this.btnEliminarReporte.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnVerArchivo
+            // 
+            this.btnVerArchivo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVerArchivo.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnVerArchivo.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.btnVerArchivo.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnVerArchivo.BorderRadius = 17;
+            this.btnVerArchivo.BorderSize = 0;
+            this.btnVerArchivo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVerArchivo.FlatAppearance.BorderSize = 0;
+            this.btnVerArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerArchivo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerArchivo.ForeColor = System.Drawing.Color.White;
+            this.btnVerArchivo.Image = global::Sistema_de_liquidacion.Properties.Resources.busqueda;
+            this.btnVerArchivo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVerArchivo.Location = new System.Drawing.Point(1506, 142);
+            this.btnVerArchivo.Margin = new System.Windows.Forms.Padding(5);
+            this.btnVerArchivo.Name = "btnVerArchivo";
+            this.btnVerArchivo.Size = new System.Drawing.Size(204, 51);
+            this.btnVerArchivo.TabIndex = 56;
+            this.btnVerArchivo.Text = "Ver Archvio";
+            this.btnVerArchivo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVerArchivo.TextColor = System.Drawing.Color.White;
+            this.btnVerArchivo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnVerArchivo.UseVisualStyleBackColor = false;
+            this.btnVerArchivo.Click += new System.EventHandler(this.btnVerArchivo_Click);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(95, 538);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(276, 32);
+            this.label2.TabIndex = 59;
+            this.label2.Text = "Registro de reportes";
             // 
             // btnSeleccionar2
             // 
@@ -502,6 +575,48 @@
             this.btnSeleccionar2.Name = "btnSeleccionar2";
             this.btnSeleccionar2.ReadOnly = true;
             this.btnSeleccionar2.Width = 30;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             // 
             // IdReporte
             // 
@@ -564,54 +679,11 @@
             this.FechaRegistro.ReadOnly = true;
             this.FechaRegistro.Width = 200;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(995, 152);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 17);
-            this.label5.TabIndex = 52;
-            this.label5.Text = "FECHA ACTUAL";
-            this.label5.Visible = false;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel7.Controls.Add(this.drFechaActual);
-            this.panel7.Location = new System.Drawing.Point(987, 181);
-            this.panel7.Margin = new System.Windows.Forms.Padding(5);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(147, 34);
-            this.panel7.TabIndex = 49;
-            this.panel7.Visible = false;
-            // 
-            // drFechaActual
-            // 
-            this.drFechaActual.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.drFechaActual.BorderSize = 0;
-            this.drFechaActual.CalendarForeColor = System.Drawing.Color.White;
-            this.drFechaActual.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.drFechaActual.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.drFechaActual.CalendarTitleForeColor = System.Drawing.Color.White;
-            this.drFechaActual.CalendarTrailingForeColor = System.Drawing.Color.White;
-            this.drFechaActual.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.drFechaActual.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.drFechaActual.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.drFechaActual.Location = new System.Drawing.Point(0, 0);
-            this.drFechaActual.MinimumSize = new System.Drawing.Size(4, 35);
-            this.drFechaActual.Name = "drFechaActual";
-            this.drFechaActual.Size = new System.Drawing.Size(147, 35);
-            this.drFechaActual.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.drFechaActual.TabIndex = 0;
-            this.drFechaActual.TextColor = System.Drawing.Color.White;
-            // 
             // FrmReporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1456, 895);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmReporte";
@@ -620,7 +692,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -646,15 +717,26 @@
         private System.Windows.Forms.DataGridView tblRegistroReporte;
         private RJCodeAdvance.RJControls.RJTextBox txtBuscar;
         private RJCodeAdvance.RJControls.RJButton btnGuardarReporte;
-        private RJCodeAdvance.RJControls.RJButton btnVerArchivo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label19;
         private RJCodeAdvance.RJControls.RJTextBox txtIdReporte;
-        private RJCodeAdvance.RJControls.RJTextBox txtReporte;
         private RJCodeAdvance.RJControls.RJTextBox txtFechaRegistro;
         private RJCodeAdvance.RJControls.RJTextBox txtExtension;
         private RJCodeAdvance.RJControls.RJTextBox txtDocumento;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private RJCodeAdvance.RJControls.RJButton btnVerArchivo;
+        public RJCodeAdvance.RJControls.RJButton btnEliminarReporte;
+        private RJCodeAdvance.RJControls.RJTextBox txtReporte;
         private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdReporte;
         private System.Windows.Forms.DataGridViewTextBoxColumn Reporte2;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdUsuario2;
@@ -662,8 +744,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Documento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Extension;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
-        public RJCodeAdvance.RJControls.RJButton btnEliminarReporte;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label1;
     }
 }

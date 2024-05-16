@@ -66,5 +66,12 @@ namespace Logica
             return CargarRegistro().Where(e => e.Estado == "ACTIVO").ToList();
         }
 
+        public Empleado BuscarEmpleado(string Documento)
+        {
+            Empleado oEmpleado = new EmpleadoService().CargarRegistro().
+                    Where(oe => oe.Documento == Documento).FirstOrDefault();
+            return oEmpleado;
+        }
+
     }
 }
