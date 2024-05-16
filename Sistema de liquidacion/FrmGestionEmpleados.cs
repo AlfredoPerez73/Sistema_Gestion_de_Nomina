@@ -10,8 +10,15 @@ using System.Windows.Forms;
 using Logica;
 using Entidad;
 using Sistema_de_liquidacion.Modales;
+using System.Collections;
 using System.Drawing.Drawing2D;
+using System.Drawing.Printing;
 using System.IO;
+using System.Xml.Linq;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using iTextSharp.tool.xml;
+using System.Windows.Shapes;
 
 namespace Sistema_de_liquidacion
 {
@@ -247,7 +254,53 @@ namespace Sistema_de_liquidacion
 
         public string GenerarContenidoHTML()
         {
-            string read_Html = null;
+            string read_Html = Properties.Resources.PlantillaLiquidacion.ToString();
+            string NombreNegocio = "NOMI";
+            string NitNegocio = "35342-212";
+            string CorreoNegocio = "alfredojoseperez@unicesar.edu.co";
+            string liquidacion = "LIQUIDACION";
+
+            read_Html = read_Html.Replace("@nombrenegocio", NombreNegocio);
+            read_Html = read_Html.Replace("@docnegocio", NitNegocio);
+            read_Html = read_Html.Replace("@direcnegocio", CorreoNegocio.ToLower());
+
+            read_Html = read_Html.Replace("@tipodocumento", liquidacion.ToUpper());
+            read_Html = read_Html.Replace("@numerodocumento", txtDetalle.Texts);
+
+            read_Html = read_Html.Replace("@fecharegistro", dpFechaActual.Value.ToString("d"));
+            read_Html = read_Html.Replace("@nombreusuario", oUsuario.Nombre.ToUpper());
+
+            string fils = string.Empty;
+            int contadorFilas = 0;
+
+            foreach (DataGridViewRow row in tblRegistroLiquidaciones.Rows)
+            {
+                contadorFilas++;
+                fils += "<tr class='fila-a-imprimir'>";
+                fils += "<td>" + row.Cells["Año2"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["Mes2"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["Usuario"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["Documento2"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["Nombre"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["Cargo2"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["Estado2"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["DiasTrabajados"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["HorasTrabajadas"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["ValHorasExtras"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["Salario2"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["Salud"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["Pension"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["AuxT"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["AuxAlimentacion"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["Bonificacion"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["PrimaServicios"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["PrimaNavidad"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["Devengado"].Value.ToString() + "</td>";
+                fils += "</tr>";
+
+            }
+
+            read_Html = read_Html.Replace("@filas", fils);
             return read_Html;
         }
 
@@ -255,23 +308,97 @@ namespace Sistema_de_liquidacion
         {
             using (MemoryStream stream = new MemoryStream())
             {
+                Document PDFdoc = new Document(PageSize.A1, 25, 25, 25, 25);
+                PdfWriter writer = PdfWriter.GetInstance(PDFdoc, stream);
+                PDFdoc.Open();
+                Bitmap bitmap = Properties.Resources.crisis__1_;
+                ImageConverter converter = new ImageConverter();
+                byte[] imageBytes = (byte[])converter.ConvertTo(bitmap, typeof(byte[]));
 
+                iTextSharp.text.Image image = iTextSharp.text.Image.GetInstance(imageBytes);
+                image.ScaleToFit(64, 64);
+                image.Alignment = iTextSharp.text.Image.UNDERLYING;
+                image.SetAbsolutePosition(PDFdoc.Left, PDFdoc.GetTop(40));
+                PDFdoc.Add(image);
+
+                using (StringReader reader = new StringReader(contenidoHtml))
+                {
+                    XMLWorkerHelper.GetInstance().ParseXHtml(writer, PDFdoc, reader);
+                }
+
+                PDFdoc.Close();
                 return stream.ToArray();
             }
         }
 
         public void GuardarPDFBD()
         {
+            string contenidoHtml = GenerarContenidoHTML();
 
+            // Generar el PDF
+            byte[] pdfBytes = GenerarPDF(contenidoHtml);
+
+            // Obtener la extensión del archivo local
+            string extensionArchivo = GuardarPDFLocal(pdfBytes);
+
+            Reporte oReporte = new Reporte
+            {
+                NombreReporte = string.Format("RegistroLiquidacion{0}", dpFechaActual.Value.ToString("ddMMyyyy")),
+                Documento = pdfBytes,
+                
+                Extension = extensionArchivo,
+                Usuario = new Usuario
+                {
+                    IdPersona = oUsuario.IdPersona,
+                    Nombre = oUsuario.Nombre
+                },
+            };
+            var msg = reporteService.Guardar(oReporte);
+            MessageBox.Show(msg, "Gestión de liquidacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public string GuardarPDFLocal(byte[] pdfBytes)
         {
+            SaveFileDialog guardarPDF = new SaveFileDialog();
+            guardarPDF.FileName = string.Format("RegistroLiquidacion{0}.pdf", dpFechaActual.Value.ToString("ddMMyyyy"));
+            guardarPDF.Filter = "Pdf Files|*.pdf";
 
+            if (guardarPDF.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    File.WriteAllBytes(guardarPDF.FileName, pdfBytes);
+                    MessageBox.Show("Informe generado con éxito y guardado localmente!",
+                                    "Gestión de liquidacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    DialogResult result = MessageBox.Show("¿Deseas abrir la liquidacion?",
+                        "Gestión de liquidacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        try
+                        {
+                            System.Diagnostics.Process.Start(guardarPDF.FileName);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("No se pudo abrir el archivo. Error: " + ex.Message,
+                                            "Error al abrir archivo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+
+                    // Devolver la extensión del archivo local
+                    return System.IO.Path.GetFileName(guardarPDF.FileName);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al guardar el archivo localmente. Error: " + ex.Message,
+                                    "Error al guardar archivo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
 
             return null;
         }
-
 
         private void FrmGestionEmpleados_Load(object sender, EventArgs e)
         {
@@ -295,7 +422,13 @@ namespace Sistema_de_liquidacion
 
         private void btnGenerarPDF_Click(object sender, EventArgs e)
         {
-
+            if (tblRegistroLiquidaciones.Rows.Count < 0)
+            {
+                MessageBox.Show("No hay datos en la tabla!",
+                    "Gestión de liquidacion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            GuardarPDFBD();
         }
 
         private void tblRegistroLiquidaciones_CellPainting_1(object sender, DataGridViewCellPaintingEventArgs e)
