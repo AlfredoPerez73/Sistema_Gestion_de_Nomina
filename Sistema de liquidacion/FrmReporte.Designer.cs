@@ -92,7 +92,11 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
+<<<<<<< HEAD
             this.panel1.Size = new System.Drawing.Size(1924, 1055);
+=======
+            this.panel1.Size = new System.Drawing.Size(1386, 788);
+>>>>>>> 2818e49f6a1d08ed877be59d6ac781457847331d
             this.panel1.TabIndex = 0;
             // 
             // panel9
@@ -105,7 +109,11 @@
             this.panel9.Controls.Add(this.txtBuscar);
             this.panel9.Location = new System.Drawing.Point(98, 68);
             this.panel9.Name = "panel9";
+<<<<<<< HEAD
             this.panel9.Size = new System.Drawing.Size(1770, 51);
+=======
+            this.panel9.Size = new System.Drawing.Size(1711, 51);
+>>>>>>> 2818e49f6a1d08ed877be59d6ac781457847331d
             this.panel9.TabIndex = 58;
             // 
             // panel4
@@ -215,10 +223,17 @@
             this.panel2.Controls.Add(this.txtFechaRegistro);
             this.panel2.Controls.Add(this.txtExtension);
             this.panel2.Controls.Add(this.txtDocumento);
+<<<<<<< HEAD
             this.panel2.Location = new System.Drawing.Point(101, 192);
             this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1766, 245);
+=======
+            this.panel2.Location = new System.Drawing.Point(806, 181);
+            this.panel2.Margin = new System.Windows.Forms.Padding(5);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(524, 592);
+>>>>>>> 2818e49f6a1d08ed877be59d6ac781457847331d
             this.panel2.TabIndex = 57;
             // 
             // label19
@@ -365,7 +380,11 @@
             this.panel3.Location = new System.Drawing.Point(98, 584);
             this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
+<<<<<<< HEAD
             this.panel3.Size = new System.Drawing.Size(1755, 308);
+=======
+            this.panel3.Size = new System.Drawing.Size(838, 204);
+>>>>>>> 2818e49f6a1d08ed877be59d6ac781457847331d
             this.panel3.TabIndex = 47;
             // 
             // tblRegistroReporte
@@ -429,7 +448,11 @@
             this.tblRegistroReporte.RowHeadersWidth = 51;
             this.tblRegistroReporte.RowTemplate.Height = 24;
             this.tblRegistroReporte.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+<<<<<<< HEAD
             this.tblRegistroReporte.Size = new System.Drawing.Size(1755, 308);
+=======
+            this.tblRegistroReporte.Size = new System.Drawing.Size(838, 204);
+>>>>>>> 2818e49f6a1d08ed877be59d6ac781457847331d
             this.tblRegistroReporte.TabIndex = 27;
             this.tblRegistroReporte.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblRegistroReporte_CellContentClick);
             this.tblRegistroReporte.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.tblRegistroReporte_CellPainting);
@@ -683,7 +706,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+=======
+            this.ClientSize = new System.Drawing.Size(1386, 788);
+>>>>>>> 2818e49f6a1d08ed877be59d6ac781457847331d
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmReporte";

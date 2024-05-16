@@ -96,13 +96,18 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
+<<<<<<< HEAD
             this.panel1.Size = new System.Drawing.Size(1924, 1055);
+=======
+            this.panel1.Size = new System.Drawing.Size(1386, 788);
+>>>>>>> 2818e49f6a1d08ed877be59d6ac781457847331d
             this.panel1.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+<<<<<<< HEAD
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
@@ -111,6 +116,16 @@
             this.label2.Size = new System.Drawing.Size(285, 32);
             this.label2.TabIndex = 50;
             this.label2.Text = "Registro de permisos";
+=======
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel9.Controls.Add(this.label8);
+            this.panel9.Controls.Add(this.panel6);
+            this.panel9.Controls.Add(this.txtBuscar);
+            this.panel9.Location = new System.Drawing.Point(108, 51);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1721, 51);
+            this.panel9.TabIndex = 49;
+>>>>>>> 2818e49f6a1d08ed877be59d6ac781457847331d
             // 
             // label8
             // 
@@ -217,7 +232,11 @@
             this.panel4.Location = new System.Drawing.Point(108, 524);
             this.panel4.Margin = new System.Windows.Forms.Padding(5);
             this.panel4.Name = "panel4";
+<<<<<<< HEAD
             this.panel4.Size = new System.Drawing.Size(1778, 453);
+=======
+            this.panel4.Size = new System.Drawing.Size(909, 374);
+>>>>>>> 2818e49f6a1d08ed877be59d6ac781457847331d
             this.panel4.TabIndex = 31;
             // 
             // tblRegistroPermiso
@@ -270,7 +289,11 @@
             this.tblRegistroPermiso.RowHeadersWidth = 51;
             this.tblRegistroPermiso.RowTemplate.Height = 24;
             this.tblRegistroPermiso.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+<<<<<<< HEAD
             this.tblRegistroPermiso.Size = new System.Drawing.Size(1778, 453);
+=======
+            this.tblRegistroPermiso.Size = new System.Drawing.Size(909, 374);
+>>>>>>> 2818e49f6a1d08ed877be59d6ac781457847331d
             this.tblRegistroPermiso.TabIndex = 19;
             this.tblRegistroPermiso.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblRegistroPermiso_CellContentClick);
             this.tblRegistroPermiso.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.tblRegistroPermiso_CellPainting);
@@ -369,7 +392,11 @@
             this.panel2.Controls.Add(this.btnLimpiar);
             this.panel2.Controls.Add(this.btnGuardar);
             this.panel2.Controls.Add(this.txtIdPermiso);
+<<<<<<< HEAD
             this.panel2.Location = new System.Drawing.Point(108, 194);
+=======
+            this.panel2.Location = new System.Drawing.Point(805, 130);
+>>>>>>> 2818e49f6a1d08ed877be59d6ac781457847331d
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1766, 240);
@@ -824,7 +851,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+=======
+            this.ClientSize = new System.Drawing.Size(1386, 788);
+>>>>>>> 2818e49f6a1d08ed877be59d6ac781457847331d
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
