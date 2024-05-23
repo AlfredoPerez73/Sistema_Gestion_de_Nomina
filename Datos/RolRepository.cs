@@ -39,6 +39,24 @@ namespace Datos
             return rolList;
         }
 
+        public string GuardarRegistros(Rol rol)
+        {
+            try
+            {
+                string Registro = "INSERT INTO ROL(Rol) VALUES" +
+                    "('" + rol.NRol + "');";
+                SqlCommand command = new SqlCommand(Registro, Connection);
+                AbrirConnection();
+                var index = command.ExecuteNonQuery();
+                CerrarConnection();
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            return $"Se ha registrado el producto {rol.NRol}";
+        }
+
         private Rol Map(SqlDataReader reader)
         {
             Rol rol = new Rol

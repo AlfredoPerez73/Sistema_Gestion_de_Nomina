@@ -74,11 +74,11 @@ namespace Datos
             }
             catch (Exception)
             {
-                return "Error al modificar el producto, " +
-                    "el producto se encuentra relacionada con una compra o venta";
+                return "Error al modificar el cargo, " +
+                    "el cargo se encuentra relacionado con un empleado";
             }
 
-            return $"Se ha modificado el producto {cargo.CargoDesempeñado} " +
+            return $"Se ha modificado el cargo {cargo.CargoDesempeñado} " +
                 $"con la ID {cargo.IdCargo}";
         }
 
@@ -97,8 +97,8 @@ namespace Datos
             }
             catch (Exception)
             {
-                return "Error al eliminar el producto, " +
-                    "el producto se encuentra relacionada con una compra o venta";
+                return "Error al eliminar el cargo, " +
+                    "el cargo se encuentra relacionado con un empleado";
             }
             return $"Se ha eliminado el producto {cargo.CargoDesempeñado} " +
                 $"con la ID {cargo.IdCargo}";

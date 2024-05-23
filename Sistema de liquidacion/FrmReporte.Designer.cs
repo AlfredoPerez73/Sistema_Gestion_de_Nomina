@@ -43,7 +43,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnVerArchivo = new RJCodeAdvance.RJControls.RJButton();
             this.txtIdReporte = new RJCodeAdvance.RJControls.RJTextBox();
-            this.btnEliminarReporte = new RJCodeAdvance.RJControls.RJButton();
             this.label5 = new System.Windows.Forms.Label();
             this.txtReporte = new RJCodeAdvance.RJControls.RJTextBox();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -55,6 +54,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.tblRegistroReporte = new System.Windows.Forms.DataGridView();
             this.btnSeleccionar2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnSEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -223,7 +223,6 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel2.Controls.Add(this.btnVerArchivo);
             this.panel2.Controls.Add(this.txtIdReporte);
-            this.panel2.Controls.Add(this.btnEliminarReporte);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.txtReporte);
             this.panel2.Controls.Add(this.panel7);
@@ -252,7 +251,7 @@
             this.btnVerArchivo.ForeColor = System.Drawing.Color.White;
             this.btnVerArchivo.Image = global::Sistema_de_liquidacion.Properties.Resources.busqueda;
             this.btnVerArchivo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVerArchivo.Location = new System.Drawing.Point(1506, 142);
+            this.btnVerArchivo.Location = new System.Drawing.Point(1506, 111);
             this.btnVerArchivo.Margin = new System.Windows.Forms.Padding(5);
             this.btnVerArchivo.Name = "btnVerArchivo";
             this.btnVerArchivo.Size = new System.Drawing.Size(204, 51);
@@ -287,33 +286,6 @@
             this.txtIdReporte.Texts = "Id de reporte";
             this.txtIdReporte.UnderlinedStyle = false;
             this.txtIdReporte.Visible = false;
-            // 
-            // btnEliminarReporte
-            // 
-            this.btnEliminarReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEliminarReporte.BackColor = System.Drawing.Color.Brown;
-            this.btnEliminarReporte.BackgroundColor = System.Drawing.Color.Brown;
-            this.btnEliminarReporte.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnEliminarReporte.BorderRadius = 17;
-            this.btnEliminarReporte.BorderSize = 0;
-            this.btnEliminarReporte.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminarReporte.FlatAppearance.BorderSize = 0;
-            this.btnEliminarReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarReporte.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarReporte.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarReporte.Image = global::Sistema_de_liquidacion.Properties.Resources.circulo_marca_x;
-            this.btnEliminarReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEliminarReporte.Location = new System.Drawing.Point(1506, 84);
-            this.btnEliminarReporte.Margin = new System.Windows.Forms.Padding(5);
-            this.btnEliminarReporte.Name = "btnEliminarReporte";
-            this.btnEliminarReporte.Size = new System.Drawing.Size(204, 51);
-            this.btnEliminarReporte.TabIndex = 56;
-            this.btnEliminarReporte.Text = "Eliminar";
-            this.btnEliminarReporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarReporte.TextColor = System.Drawing.Color.White;
-            this.btnEliminarReporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEliminarReporte.UseVisualStyleBackColor = false;
-            this.btnEliminarReporte.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label5
             // 
@@ -396,7 +368,7 @@
             this.btnGuardarReporte.ForeColor = System.Drawing.Color.White;
             this.btnGuardarReporte.Image = global::Sistema_de_liquidacion.Properties.Resources.disk;
             this.btnGuardarReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardarReporte.Location = new System.Drawing.Point(1506, 25);
+            this.btnGuardarReporte.Location = new System.Drawing.Point(1506, 50);
             this.btnGuardarReporte.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardarReporte.Name = "btnGuardarReporte";
             this.btnGuardarReporte.Size = new System.Drawing.Size(204, 51);
@@ -509,6 +481,7 @@
             this.tblRegistroReporte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblRegistroReporte.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSeleccionar2,
+            this.btnSEliminar,
             this.Column1,
             this.Column2,
             this.Column3,
@@ -563,6 +536,13 @@
             this.btnSeleccionar2.Name = "btnSeleccionar2";
             this.btnSeleccionar2.ReadOnly = true;
             this.btnSeleccionar2.Width = 30;
+            // 
+            // btnSEliminar
+            // 
+            this.btnSEliminar.HeaderText = "";
+            this.btnSEliminar.Name = "btnSEliminar";
+            this.btnSEliminar.ReadOnly = true;
+            this.btnSEliminar.Width = 30;
             // 
             // Column1
             // 
@@ -714,7 +694,6 @@
         private System.Windows.Forms.Panel panel4;
         private RJCodeAdvance.RJControls.RJDatePicker dpFechaInicial;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView tblRegistroReporte;
         private RJCodeAdvance.RJControls.RJTextBox txtBuscar;
         private RJCodeAdvance.RJControls.RJButton btnGuardarReporte;
         private System.Windows.Forms.Panel panel2;
@@ -727,9 +706,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private RJCodeAdvance.RJControls.RJButton btnVerArchivo;
-        public RJCodeAdvance.RJControls.RJButton btnEliminarReporte;
         private RJCodeAdvance.RJControls.RJTextBox txtReporte;
         private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar2;
+        private System.Windows.Forms.DataGridViewButtonColumn btnSEliminar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -744,5 +723,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Documento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Extension;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
+        public System.Windows.Forms.DataGridView tblRegistroReporte;
     }
 }

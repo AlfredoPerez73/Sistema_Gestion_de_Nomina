@@ -10,7 +10,7 @@ namespace Datos
     public class ConexionRepository
     {
         protected SqlConnection Connection;
-        protected string StringConnection = "Data Source=.\\SQLEXPRESS;Initial Catalog=BDSISTEMA_LIQUIDACION;Integrated Security=True";
+        protected string StringConnection = "Server=.\\SQLEXPRESS;DataBase=BDSISTEMA_LIQUIDACION;Integrated Security=True";
 
         public ConexionRepository()
         {
@@ -19,14 +19,28 @@ namespace Datos
 
         public string AbrirConnection()
         {
-            Connection.Open();
-            return Connection.State.ToString();
+            try
+            {
+                Connection.Open();
+                return Connection.State.ToString();
+            }
+            catch (SqlException ex)
+            {
+                return $"Error: {ex.Message} REVISA LA CONEXION...";
+            }
         }
 
         public string CerrarConnection()
         {
-            Connection.Close();
-            return Connection.State.ToString();
+            try
+            {
+                Connection.Close();
+                return Connection.State.ToString();
+            }
+            catch (SqlException ex)
+            {
+                return $"Error: {ex.Message} REVISA LA CONEXION...";
+            }
         }
     }
 }

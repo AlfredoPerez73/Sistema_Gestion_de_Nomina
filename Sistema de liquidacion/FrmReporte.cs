@@ -138,6 +138,46 @@ namespace Sistema_de_liquidacion
             panel.Region = new Region(path);
         }
 
+        private void CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (tblRegistroReporte.Columns[e.ColumnIndex].Name == "btnSeleccionar2")
+            {
+                int index = e.RowIndex;
+                if (index >= 0)
+                {
+                    btnGuardarReporte.Enabled = false;
+                    txtIdReporte.Texts = tblRegistroReporte.Rows[index].Cells["IdReporte"].Value.ToString();
+                    txtReporte.Texts = tblRegistroReporte.Rows[index].Cells["Reporte2"].Value.ToString();
+                    txtDocumento.Texts = tblRegistroReporte.Rows[index].Cells["Documento"].Value.ToString();
+                    txtExtension.Texts = tblRegistroReporte.Rows[index].Cells["Extension"].Value.ToString();
+                    txtFechaRegistro.Texts = tblRegistroReporte.Rows[index].Cells["FechaRegistro"].Value.ToString();
+                }
+            }
+
+            if (tblRegistroReporte.Columns[e.ColumnIndex].Name == "btnSEliminar")
+            {
+                int index = e.RowIndex;
+                if (index >= 0)
+                {
+                    DialogResult result = MessageBox.Show("¿Estás seguro de que deseas eliminar este registro?", "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        int IdReporte = Convert.ToInt32(tblRegistroReporte.Rows[index].Cells["IdReporte"].Value);
+
+                        Reporte reporte = new Reporte
+                        {
+                            IdReporte = IdReporte,
+                        };
+
+                        var msg = reporteService.EliminarRegistros(reporte);
+                        MessageBox.Show(msg, "Gestion de reporte", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        tblRegistroReporte.Rows.RemoveAt(index);
+                    }
+                }
+            }
+        }
+
         private void tblRegistroReporte_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
             if (e.RowIndex < 0)
@@ -174,19 +214,7 @@ namespace Sistema_de_liquidacion
 
         private void tblRegistroReporte_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (tblRegistroReporte.Columns[e.ColumnIndex].Name == "btnSeleccionar2")
-            {
-                int index = e.RowIndex;
-                if (index >= 0)
-                {
-                    btnGuardarReporte.Enabled = false;
-                    txtIdReporte.Texts = tblRegistroReporte.Rows[index].Cells["IdReporte"].Value.ToString();
-                    txtReporte.Texts = tblRegistroReporte.Rows[index].Cells["Reporte2"].Value.ToString();
-                    txtDocumento.Texts = tblRegistroReporte.Rows[index].Cells["Documento"].Value.ToString();
-                    txtExtension.Texts = tblRegistroReporte.Rows[index].Cells["Extension"].Value.ToString();
-                    txtFechaRegistro.Texts = tblRegistroReporte.Rows[index].Cells["FechaRegistro"].Value.ToString();
-                }
-            }
+            CellContentClick(sender, e);
         }
     }
 }
