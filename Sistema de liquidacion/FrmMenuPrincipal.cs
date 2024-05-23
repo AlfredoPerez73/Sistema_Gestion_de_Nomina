@@ -122,7 +122,8 @@ namespace Sistema_de_liquidacion
             btnGestionRol.Visible = false;
             btnGestionUsuario.Visible = false;
             btnGestionCargo.Visible = false;
-            FrmReporte.btnEliminarReporte.Visible = false;
+            if (FrmReporte.tblRegistroReporte.Columns.Contains("btnSEliminar"))
+                FrmReporte.tblRegistroReporte.Columns["btnSEliminar"].Visible = false;
 
         }
 

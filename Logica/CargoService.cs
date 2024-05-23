@@ -20,17 +20,42 @@ namespace Logica
 
         public string EliminarRegistros(Cargo cargo)
         {
-            throw new NotImplementedException();
+            var msg = cargoRepository.EliminarRegistros(cargo);
+            return msg;
         }
 
         public string Guardar(Cargo cargo)
         {
-            throw new NotImplementedException();
+            var msg = cargoRepository.GuardarRegistros(cargo);
+            return msg;
         }
 
         public string ModificarRegistros(Cargo cargo)
         {
-            throw new NotImplementedException();
+            var msg = cargoRepository.ModificarRegistros(cargo);
+            return msg;
+        }
+
+        public bool BuscarId(string cargo)
+        {
+            return CargarRegistro().Any(p => p.CargoDesempeñado == cargo);
+        }
+
+        public List<Cargo> BuscarX(string x)
+        {
+            int idCargo;
+
+            List<Cargo> permisos = CargarRegistro();
+            if (int.TryParse(x, out idCargo))
+            {
+                permisos = permisos
+                    .Where(item => item.IdCargo == idCargo).ToList();
+            }
+            else
+            { 
+                permisos = permisos.Where(item => item.CargoDesempeñado.IndexOf(x, StringComparison.OrdinalIgnoreCase) != -1).ToList();
+            }
+            return permisos;
         }
     }
 }

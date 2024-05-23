@@ -314,8 +314,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="BD\BDSISTEMA_LIQUIDACION.bacpac" />
-    <None Include="BD\BDSISTEMA_LIQUIDACION.rar" />
+    <None Include="BD\DBSISTEMA_LIQUIDACION.bacpac" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

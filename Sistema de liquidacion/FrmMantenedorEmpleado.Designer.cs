@@ -28,38 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.cboFiltroEstado = new RJCodeAdvance.RJControls.RJComboBox();
             this.txtBuscar = new RJCodeAdvance.RJControls.RJTextBox();
             this.tblRegistro = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnModificar = new RJCodeAdvance.RJControls.RJButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.dpFechaFinal = new RJCodeAdvance.RJControls.RJDatePicker();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.dpFechaInicial = new RJCodeAdvance.RJControls.RJDatePicker();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.cboCargos = new RJCodeAdvance.RJControls.RJComboBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.cboEstado = new RJCodeAdvance.RJControls.RJComboBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.btnLimpiar = new RJCodeAdvance.RJControls.RJButton();
-            this.btnGuardar = new RJCodeAdvance.RJControls.RJButton();
-            this.txtIdContrato = new RJCodeAdvance.RJControls.RJTextBox();
-            this.txtIdCargo = new RJCodeAdvance.RJControls.RJTextBox();
-            this.txtIdProducto = new RJCodeAdvance.RJControls.RJTextBox();
-            this.txtDocumento = new RJCodeAdvance.RJControls.RJTextBox();
-            this.txtContrato = new RJCodeAdvance.RJControls.RJTextBox();
-            this.txtSalario = new RJCodeAdvance.RJControls.RJTextBox();
-            this.txtNombreProducto = new RJCodeAdvance.RJControls.RJTextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
             this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,6 +49,32 @@
             this.Salario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaRegistro2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnModificar = new RJCodeAdvance.RJControls.RJButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.dpFechaFinal = new RJCodeAdvance.RJControls.RJDatePicker();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.dpFechaInicial = new RJCodeAdvance.RJControls.RJDatePicker();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.cboCargos = new RJCodeAdvance.RJControls.RJComboBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.cboEstado = new RJCodeAdvance.RJControls.RJComboBox();
+            this.btnLimpiar = new RJCodeAdvance.RJControls.RJButton();
+            this.btnGuardar = new RJCodeAdvance.RJControls.RJButton();
+            this.txtDocumento = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtContrato = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtSalario = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtNombreProducto = new RJCodeAdvance.RJControls.RJTextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtIdContrato = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtIdCargo = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtIdProducto = new RJCodeAdvance.RJControls.RJTextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistro)).BeginInit();
             this.panel1.SuspendLayout();
@@ -155,14 +155,14 @@
             this.tblRegistro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblRegistro.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.tblRegistro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblRegistro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblRegistro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.tblRegistro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblRegistro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSeleccionar,
@@ -180,14 +180,14 @@
             this.Salario,
             this.Estado,
             this.FechaRegistro2});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tblRegistro.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tblRegistro.DefaultCellStyle = dataGridViewCellStyle2;
             this.tblRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblRegistro.EnableHeadersVisualStyles = false;
             this.tblRegistro.GridColor = System.Drawing.Color.White;
@@ -204,6 +204,125 @@
             this.tblRegistro.TabIndex = 19;
             this.tblRegistro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblRegistro_CellContentClick);
             this.tblRegistro.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.tblRegistro_CellPainting);
+            // 
+            // btnSeleccionar
+            // 
+            this.btnSeleccionar.HeaderText = "";
+            this.btnSeleccionar.MinimumWidth = 6;
+            this.btnSeleccionar.Name = "btnSeleccionar";
+            this.btnSeleccionar.ReadOnly = true;
+            this.btnSeleccionar.Width = 30;
+            // 
+            // IdProducto
+            // 
+            this.IdProducto.HeaderText = "Id del producto";
+            this.IdProducto.MinimumWidth = 6;
+            this.IdProducto.Name = "IdProducto";
+            this.IdProducto.ReadOnly = true;
+            this.IdProducto.Visible = false;
+            this.IdProducto.Width = 170;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Documento
+            // 
+            this.Documento.HeaderText = "Documento";
+            this.Documento.MinimumWidth = 6;
+            this.Documento.Name = "Documento";
+            this.Documento.ReadOnly = true;
+            this.Documento.Width = 125;
+            // 
+            // NombreProducto
+            // 
+            this.NombreProducto.HeaderText = "Nombre del producto";
+            this.NombreProducto.MinimumWidth = 6;
+            this.NombreProducto.Name = "NombreProducto";
+            this.NombreProducto.ReadOnly = true;
+            this.NombreProducto.Width = 250;
+            // 
+            // IdContrato
+            // 
+            this.IdContrato.HeaderText = "Id de contrato";
+            this.IdContrato.MinimumWidth = 6;
+            this.IdContrato.Name = "IdContrato";
+            this.IdContrato.ReadOnly = true;
+            this.IdContrato.Visible = false;
+            this.IdContrato.Width = 125;
+            // 
+            // IdCargo
+            // 
+            this.IdCargo.HeaderText = "Id del cargo";
+            this.IdCargo.MinimumWidth = 6;
+            this.IdCargo.Name = "IdCargo";
+            this.IdCargo.ReadOnly = true;
+            this.IdCargo.Visible = false;
+            this.IdCargo.Width = 160;
+            // 
+            // Cargo
+            // 
+            this.Cargo.HeaderText = "Cargo";
+            this.Cargo.MinimumWidth = 6;
+            this.Cargo.Name = "Cargo";
+            this.Cargo.ReadOnly = true;
+            this.Cargo.Width = 125;
+            // 
+            // FechaInicio
+            // 
+            this.FechaInicio.HeaderText = "Fecha de incio";
+            this.FechaInicio.MinimumWidth = 6;
+            this.FechaInicio.Name = "FechaInicio";
+            this.FechaInicio.ReadOnly = true;
+            this.FechaInicio.Width = 125;
+            // 
+            // FechaFin
+            // 
+            this.FechaFin.HeaderText = "Fecha de vencimiento";
+            this.FechaFin.MinimumWidth = 6;
+            this.FechaFin.Name = "FechaFin";
+            this.FechaFin.ReadOnly = true;
+            this.FechaFin.Width = 125;
+            // 
+            // TipoContrato
+            // 
+            this.TipoContrato.HeaderText = "Contrato";
+            this.TipoContrato.MinimumWidth = 6;
+            this.TipoContrato.Name = "TipoContrato";
+            this.TipoContrato.ReadOnly = true;
+            this.TipoContrato.Width = 125;
+            // 
+            // Salario
+            // 
+            this.Salario.HeaderText = "Salario";
+            this.Salario.MinimumWidth = 6;
+            this.Salario.Name = "Salario";
+            this.Salario.ReadOnly = true;
+            this.Salario.Width = 125;
+            // 
+            // Estado
+            // 
+            this.Estado.HeaderText = "Estado";
+            this.Estado.MinimumWidth = 6;
+            this.Estado.Name = "Estado";
+            this.Estado.ReadOnly = true;
+            this.Estado.Width = 125;
+            // 
+            // FechaRegistro2
+            // 
+            this.FechaRegistro2.HeaderText = "Fecha de registro";
+            this.FechaRegistro2.MinimumWidth = 6;
+            this.FechaRegistro2.Name = "FechaRegistro2";
+            this.FechaRegistro2.ReadOnly = true;
+            this.FechaRegistro2.Width = 200;
             // 
             // panel1
             // 
@@ -397,20 +516,6 @@
             this.cboEstado.TabIndex = 13;
             this.cboEstado.Texts = "Estado";
             // 
-            // label19
-            // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(103, 135);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(299, 32);
-            this.label19.TabIndex = 9;
-            this.label19.Text = "Detalle del empleado";
-            // 
             // btnLimpiar
             // 
             this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -462,87 +567,6 @@
             this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // txtIdContrato
-            // 
-            this.txtIdContrato.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIdContrato.BackColor = System.Drawing.SystemColors.Window;
-            this.txtIdContrato.BorderColor = System.Drawing.Color.White;
-            this.txtIdContrato.BorderFocusColor = System.Drawing.Color.White;
-            this.txtIdContrato.BorderRadius = 15;
-            this.txtIdContrato.BorderSize = 2;
-            this.txtIdContrato.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdContrato.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtIdContrato.Location = new System.Drawing.Point(533, 944);
-            this.txtIdContrato.Margin = new System.Windows.Forms.Padding(6);
-            this.txtIdContrato.Multiline = false;
-            this.txtIdContrato.Name = "txtIdContrato";
-            this.txtIdContrato.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtIdContrato.PasswordChar = false;
-            this.txtIdContrato.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtIdContrato.PlaceholderText = "";
-            this.txtIdContrato.Size = new System.Drawing.Size(334, 42);
-            this.txtIdContrato.TabIndex = 10;
-            this.txtIdContrato.Texts = "";
-            this.txtIdContrato.UnderlinedStyle = false;
-            this.txtIdContrato.Visible = false;
-            this.txtIdContrato.Enter += new System.EventHandler(this.txtDocumento_Enter);
-            this.txtIdContrato.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
-            this.txtIdContrato.Leave += new System.EventHandler(this.txtDocumento_Leave);
-            // 
-            // txtIdCargo
-            // 
-            this.txtIdCargo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIdCargo.BackColor = System.Drawing.SystemColors.Window;
-            this.txtIdCargo.BorderColor = System.Drawing.Color.White;
-            this.txtIdCargo.BorderFocusColor = System.Drawing.Color.White;
-            this.txtIdCargo.BorderRadius = 15;
-            this.txtIdCargo.BorderSize = 2;
-            this.txtIdCargo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdCargo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtIdCargo.Location = new System.Drawing.Point(878, 998);
-            this.txtIdCargo.Margin = new System.Windows.Forms.Padding(6);
-            this.txtIdCargo.Multiline = false;
-            this.txtIdCargo.Name = "txtIdCargo";
-            this.txtIdCargo.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtIdCargo.PasswordChar = false;
-            this.txtIdCargo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtIdCargo.PlaceholderText = "";
-            this.txtIdCargo.Size = new System.Drawing.Size(334, 42);
-            this.txtIdCargo.TabIndex = 10;
-            this.txtIdCargo.Texts = "";
-            this.txtIdCargo.UnderlinedStyle = false;
-            this.txtIdCargo.Visible = false;
-            this.txtIdCargo.Enter += new System.EventHandler(this.txtDocumento_Enter);
-            this.txtIdCargo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
-            this.txtIdCargo.Leave += new System.EventHandler(this.txtDocumento_Leave);
-            // 
-            // txtIdProducto
-            // 
-            this.txtIdProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIdProducto.BackColor = System.Drawing.SystemColors.Window;
-            this.txtIdProducto.BorderColor = System.Drawing.Color.White;
-            this.txtIdProducto.BorderFocusColor = System.Drawing.Color.White;
-            this.txtIdProducto.BorderRadius = 15;
-            this.txtIdProducto.BorderSize = 2;
-            this.txtIdProducto.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdProducto.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtIdProducto.Location = new System.Drawing.Point(532, 998);
-            this.txtIdProducto.Margin = new System.Windows.Forms.Padding(6);
-            this.txtIdProducto.Multiline = false;
-            this.txtIdProducto.Name = "txtIdProducto";
-            this.txtIdProducto.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtIdProducto.PasswordChar = false;
-            this.txtIdProducto.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtIdProducto.PlaceholderText = "";
-            this.txtIdProducto.Size = new System.Drawing.Size(334, 42);
-            this.txtIdProducto.TabIndex = 10;
-            this.txtIdProducto.Texts = "";
-            this.txtIdProducto.UnderlinedStyle = false;
-            this.txtIdProducto.Visible = false;
-            this.txtIdProducto.Enter += new System.EventHandler(this.txtDocumento_Enter);
-            this.txtIdProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
-            this.txtIdProducto.Leave += new System.EventHandler(this.txtDocumento_Leave);
             // 
             // txtDocumento
             // 
@@ -647,6 +671,101 @@
             this.txtNombreProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreProducto_KeyPress);
             this.txtNombreProducto.Leave += new System.EventHandler(this.txtNombreProducto_Leave);
             // 
+            // label19
+            // 
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(103, 135);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(299, 32);
+            this.label19.TabIndex = 9;
+            this.label19.Text = "Detalle del empleado";
+            // 
+            // txtIdContrato
+            // 
+            this.txtIdContrato.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtIdContrato.BackColor = System.Drawing.SystemColors.Window;
+            this.txtIdContrato.BorderColor = System.Drawing.Color.White;
+            this.txtIdContrato.BorderFocusColor = System.Drawing.Color.White;
+            this.txtIdContrato.BorderRadius = 15;
+            this.txtIdContrato.BorderSize = 2;
+            this.txtIdContrato.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdContrato.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtIdContrato.Location = new System.Drawing.Point(533, 944);
+            this.txtIdContrato.Margin = new System.Windows.Forms.Padding(6);
+            this.txtIdContrato.Multiline = false;
+            this.txtIdContrato.Name = "txtIdContrato";
+            this.txtIdContrato.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
+            this.txtIdContrato.PasswordChar = false;
+            this.txtIdContrato.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtIdContrato.PlaceholderText = "";
+            this.txtIdContrato.Size = new System.Drawing.Size(334, 42);
+            this.txtIdContrato.TabIndex = 10;
+            this.txtIdContrato.Texts = "";
+            this.txtIdContrato.UnderlinedStyle = false;
+            this.txtIdContrato.Visible = false;
+            this.txtIdContrato.Enter += new System.EventHandler(this.txtDocumento_Enter);
+            this.txtIdContrato.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
+            this.txtIdContrato.Leave += new System.EventHandler(this.txtDocumento_Leave);
+            // 
+            // txtIdCargo
+            // 
+            this.txtIdCargo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtIdCargo.BackColor = System.Drawing.SystemColors.Window;
+            this.txtIdCargo.BorderColor = System.Drawing.Color.White;
+            this.txtIdCargo.BorderFocusColor = System.Drawing.Color.White;
+            this.txtIdCargo.BorderRadius = 15;
+            this.txtIdCargo.BorderSize = 2;
+            this.txtIdCargo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdCargo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtIdCargo.Location = new System.Drawing.Point(878, 998);
+            this.txtIdCargo.Margin = new System.Windows.Forms.Padding(6);
+            this.txtIdCargo.Multiline = false;
+            this.txtIdCargo.Name = "txtIdCargo";
+            this.txtIdCargo.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
+            this.txtIdCargo.PasswordChar = false;
+            this.txtIdCargo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtIdCargo.PlaceholderText = "";
+            this.txtIdCargo.Size = new System.Drawing.Size(334, 42);
+            this.txtIdCargo.TabIndex = 10;
+            this.txtIdCargo.Texts = "";
+            this.txtIdCargo.UnderlinedStyle = false;
+            this.txtIdCargo.Visible = false;
+            this.txtIdCargo.Enter += new System.EventHandler(this.txtDocumento_Enter);
+            this.txtIdCargo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
+            this.txtIdCargo.Leave += new System.EventHandler(this.txtDocumento_Leave);
+            // 
+            // txtIdProducto
+            // 
+            this.txtIdProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtIdProducto.BackColor = System.Drawing.SystemColors.Window;
+            this.txtIdProducto.BorderColor = System.Drawing.Color.White;
+            this.txtIdProducto.BorderFocusColor = System.Drawing.Color.White;
+            this.txtIdProducto.BorderRadius = 15;
+            this.txtIdProducto.BorderSize = 2;
+            this.txtIdProducto.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdProducto.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtIdProducto.Location = new System.Drawing.Point(532, 998);
+            this.txtIdProducto.Margin = new System.Windows.Forms.Padding(6);
+            this.txtIdProducto.Multiline = false;
+            this.txtIdProducto.Name = "txtIdProducto";
+            this.txtIdProducto.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
+            this.txtIdProducto.PasswordChar = false;
+            this.txtIdProducto.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtIdProducto.PlaceholderText = "";
+            this.txtIdProducto.Size = new System.Drawing.Size(334, 42);
+            this.txtIdProducto.TabIndex = 10;
+            this.txtIdProducto.Texts = "";
+            this.txtIdProducto.UnderlinedStyle = false;
+            this.txtIdProducto.Visible = false;
+            this.txtIdProducto.Enter += new System.EventHandler(this.txtDocumento_Enter);
+            this.txtIdProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
+            this.txtIdProducto.Leave += new System.EventHandler(this.txtDocumento_Leave);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
@@ -691,125 +810,6 @@
             this.label8.Size = new System.Drawing.Size(247, 26);
             this.label8.TabIndex = 28;
             this.label8.Text = "Gestion de empleado";
-            // 
-            // btnSeleccionar
-            // 
-            this.btnSeleccionar.HeaderText = "";
-            this.btnSeleccionar.MinimumWidth = 6;
-            this.btnSeleccionar.Name = "btnSeleccionar";
-            this.btnSeleccionar.ReadOnly = true;
-            this.btnSeleccionar.Width = 30;
-            // 
-            // IdProducto
-            // 
-            this.IdProducto.HeaderText = "Id del producto";
-            this.IdProducto.MinimumWidth = 6;
-            this.IdProducto.Name = "IdProducto";
-            this.IdProducto.ReadOnly = true;
-            this.IdProducto.Visible = false;
-            this.IdProducto.Width = 170;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Documento
-            // 
-            this.Documento.HeaderText = "Documento";
-            this.Documento.MinimumWidth = 6;
-            this.Documento.Name = "Documento";
-            this.Documento.ReadOnly = true;
-            this.Documento.Width = 125;
-            // 
-            // NombreProducto
-            // 
-            this.NombreProducto.HeaderText = "Nombre del producto";
-            this.NombreProducto.MinimumWidth = 6;
-            this.NombreProducto.Name = "NombreProducto";
-            this.NombreProducto.ReadOnly = true;
-            this.NombreProducto.Width = 250;
-            // 
-            // IdContrato
-            // 
-            this.IdContrato.HeaderText = "Id de contrato";
-            this.IdContrato.MinimumWidth = 6;
-            this.IdContrato.Name = "IdContrato";
-            this.IdContrato.ReadOnly = true;
-            this.IdContrato.Visible = false;
-            this.IdContrato.Width = 125;
-            // 
-            // IdCargo
-            // 
-            this.IdCargo.HeaderText = "Id del cargo";
-            this.IdCargo.MinimumWidth = 6;
-            this.IdCargo.Name = "IdCargo";
-            this.IdCargo.ReadOnly = true;
-            this.IdCargo.Visible = false;
-            this.IdCargo.Width = 160;
-            // 
-            // Cargo
-            // 
-            this.Cargo.HeaderText = "Cargo";
-            this.Cargo.MinimumWidth = 6;
-            this.Cargo.Name = "Cargo";
-            this.Cargo.ReadOnly = true;
-            this.Cargo.Width = 125;
-            // 
-            // FechaInicio
-            // 
-            this.FechaInicio.HeaderText = "Fecha de incio";
-            this.FechaInicio.MinimumWidth = 6;
-            this.FechaInicio.Name = "FechaInicio";
-            this.FechaInicio.ReadOnly = true;
-            this.FechaInicio.Width = 125;
-            // 
-            // FechaFin
-            // 
-            this.FechaFin.HeaderText = "Fecha de vencimiento";
-            this.FechaFin.MinimumWidth = 6;
-            this.FechaFin.Name = "FechaFin";
-            this.FechaFin.ReadOnly = true;
-            this.FechaFin.Width = 125;
-            // 
-            // TipoContrato
-            // 
-            this.TipoContrato.HeaderText = "Contrato";
-            this.TipoContrato.MinimumWidth = 6;
-            this.TipoContrato.Name = "TipoContrato";
-            this.TipoContrato.ReadOnly = true;
-            this.TipoContrato.Width = 125;
-            // 
-            // Salario
-            // 
-            this.Salario.HeaderText = "Salario";
-            this.Salario.MinimumWidth = 6;
-            this.Salario.Name = "Salario";
-            this.Salario.ReadOnly = true;
-            this.Salario.Width = 125;
-            // 
-            // Estado
-            // 
-            this.Estado.HeaderText = "Estado";
-            this.Estado.MinimumWidth = 6;
-            this.Estado.Name = "Estado";
-            this.Estado.ReadOnly = true;
-            this.Estado.Width = 125;
-            // 
-            // FechaRegistro2
-            // 
-            this.FechaRegistro2.HeaderText = "Fecha de registro";
-            this.FechaRegistro2.MinimumWidth = 6;
-            this.FechaRegistro2.Name = "FechaRegistro2";
-            this.FechaRegistro2.ReadOnly = true;
-            this.FechaRegistro2.Width = 200;
             // 
             // label2
             // 

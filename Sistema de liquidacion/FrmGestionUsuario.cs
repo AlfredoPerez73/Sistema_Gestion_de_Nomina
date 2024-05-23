@@ -292,6 +292,29 @@ namespace Sistema_de_liquidacion
                     txtContraseña.PasswordChar = true;
                 }
             }
+
+            if (tblRegistro.Columns[e.ColumnIndex].Name == "btnSEliminar")
+            {
+                int index = e.RowIndex;
+                if (index >= 0)
+                {
+                    DialogResult result = MessageBox.Show("¿Estás seguro de que deseas eliminar este registro?", "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        int IdPersona = Convert.ToInt32(tblRegistro.Rows[index].Cells["IdUsuario"].Value);
+
+                        Usuario usuario = new Usuario
+                        {
+                            IdPersona = IdPersona
+                        };
+
+                        var msg = usuarioService.EliminarRegistros(usuario);
+                        MessageBox.Show(msg, "Gestion de usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        tblRegistro.Rows.RemoveAt(index);
+                    }
+                }
+            }
         }
 
         private void tblRegistro_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
@@ -309,6 +332,17 @@ namespace Sistema_de_liquidacion
                 var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
 
                 e.Graphics.DrawImage(Properties.Resources.check_circle, new Rectangle(x, y, w, h));
+                e.Handled = true;
+            }
+            if (e.ColumnIndex == 1)
+            {
+                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
+                var w = Properties.Resources.circulo_marca_x_sin_findo.Width;
+                var h = Properties.Resources.circulo_marca_x_sin_findo.Width;
+                var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2;
+                var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
+
+                e.Graphics.DrawImage(Properties.Resources.circulo_marca_x_sin_findo, new Rectangle(x, y, w, h));
                 e.Handled = true;
             }
         }
