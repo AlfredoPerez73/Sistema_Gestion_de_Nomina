@@ -45,17 +45,18 @@ namespace Sistema_de_liquidacion.Modales
 
         private void CargarGraficos()
         {
-            var result = graficoService.CargarGraficos2();
-            var result2 = graficoService.CargarGraficos3();
+            var result2 = graficoService.GraficoGanancia();
 
-            List<string> listaEmp = result.Item1;
-            List<int> listaLiqui = result.Item2;
+            var result = graficoService.CargarGraficoEmplMasLiquidados();
 
-            List<string> Año = result2.Item1;
+            List<string> listaEmpl = result.Item1;
+            List<int> listaLiquid = result.Item2;
+
+            List<string> AñoMes = result2.Item1;
             List<decimal> Total = result2.Item2;
 
-            chGanancia.Series[0].Points.DataBindXY(Año, Total);
-            chEmplMasLiquidados.Series[0].Points.DataBindXY(listaEmp, listaLiqui);
+            chGanancia.Series[0].Points.DataBindXY(AñoMes, Total);
+            chEmplMasLiquidados.Series[0].Points.DataBindXY(listaEmpl, listaLiquid);
         }
 
         private void BorderRadiusPanel(Panel panel, int radio)
