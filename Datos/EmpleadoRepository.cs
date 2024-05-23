@@ -51,7 +51,7 @@ namespace Datos
                     "Salario,TipoContrato) VALUES" +
                     "('" + producto.Documento + "','" + producto.Nombre + "', '" +
                     producto.Estado + "', '" + producto.Cargo.IdCargo + "', '" + producto.Cargo.CargoDesempeñado + "', '" +
-                    producto.Contrato.FechaInicio + "', '" + producto.Contrato.FechaFin + "', '" + producto.Contrato.Salario + "', '" + producto.Contrato.TipoContrato + "'); ";
+                    producto.Contrato.FechaInicio.ToString("yyy-M-d") + "', '" + producto.Contrato.FechaFin.ToString("yyy-M-d") + "', '" + producto.Contrato.Salario + "', '" + producto.Contrato.TipoContrato + "'); ";
                 SqlCommand command = new SqlCommand(Registro, Connection);
                 AbrirConnection();
                 var index = command.ExecuteNonQuery();

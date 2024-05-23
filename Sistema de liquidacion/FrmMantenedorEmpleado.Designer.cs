@@ -28,25 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.cboFiltroEstado = new RJCodeAdvance.RJControls.RJComboBox();
             this.txtBuscar = new RJCodeAdvance.RJControls.RJTextBox();
             this.tblRegistro = new System.Windows.Forms.DataGridView();
-            this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdContrato = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdCargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaFin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TipoContrato = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Salario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaRegistro2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnModificar = new RJCodeAdvance.RJControls.RJButton();
             this.label4 = new System.Windows.Forms.Label();
@@ -73,6 +60,22 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdContrato = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdCargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaFin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TipoContrato = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Salario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaRegistro2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistro)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -152,18 +155,20 @@
             this.tblRegistro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblRegistro.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.tblRegistro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblRegistro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblRegistro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.tblRegistro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblRegistro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSeleccionar,
             this.IdProducto,
+            this.Column2,
+            this.Column3,
             this.Documento,
             this.NombreProducto,
             this.IdContrato,
@@ -175,14 +180,14 @@
             this.Salario,
             this.Estado,
             this.FechaRegistro2});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tblRegistro.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tblRegistro.DefaultCellStyle = dataGridViewCellStyle6;
             this.tblRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblRegistro.EnableHeadersVisualStyles = false;
             this.tblRegistro.GridColor = System.Drawing.Color.White;
@@ -195,10 +200,497 @@
             this.tblRegistro.RowHeadersWidth = 51;
             this.tblRegistro.RowTemplate.Height = 24;
             this.tblRegistro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tblRegistro.Size = new System.Drawing.Size(908, 434);
+            this.tblRegistro.Size = new System.Drawing.Size(1776, 283);
             this.tblRegistro.TabIndex = 19;
             this.tblRegistro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblRegistro_CellContentClick);
             this.tblRegistro.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.tblRegistro_CellPainting);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel1.Controls.Add(this.btnModificar);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.btnLimpiar);
+            this.panel1.Controls.Add(this.btnGuardar);
+            this.panel1.Controls.Add(this.txtDocumento);
+            this.panel1.Controls.Add(this.txtContrato);
+            this.panel1.Controls.Add(this.txtSalario);
+            this.panel1.Controls.Add(this.txtNombreProducto);
+            this.panel1.Location = new System.Drawing.Point(96, 183);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1776, 263);
+            this.panel1.TabIndex = 24;
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnModificar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnModificar.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.btnModificar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnModificar.BorderRadius = 17;
+            this.btnModificar.BorderSize = 0;
+            this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnModificar.FlatAppearance.BorderSize = 0;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.White;
+            this.btnModificar.Image = global::Sistema_de_liquidacion.Properties.Resources.cuadrado_de_la_pluma;
+            this.btnModificar.Location = new System.Drawing.Point(1538, 96);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(203, 51);
+            this.btnModificar.TabIndex = 49;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnModificar.TextColor = System.Drawing.Color.White;
+            this.btnModificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(978, 136);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(106, 17);
+            this.label4.TabIndex = 47;
+            this.label4.Text = "FECHA INICIAL";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(1254, 134);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(94, 17);
+            this.label3.TabIndex = 48;
+            this.label3.Text = "FECHA FINAL";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel6.Controls.Add(this.dpFechaFinal);
+            this.panel6.Location = new System.Drawing.Point(1243, 163);
+            this.panel6.Margin = new System.Windows.Forms.Padding(5);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(239, 35);
+            this.panel6.TabIndex = 45;
+            // 
+            // dpFechaFinal
+            // 
+            this.dpFechaFinal.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.dpFechaFinal.BorderSize = 0;
+            this.dpFechaFinal.CalendarForeColor = System.Drawing.Color.White;
+            this.dpFechaFinal.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.dpFechaFinal.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.dpFechaFinal.CalendarTitleForeColor = System.Drawing.Color.White;
+            this.dpFechaFinal.CalendarTrailingForeColor = System.Drawing.Color.White;
+            this.dpFechaFinal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dpFechaFinal.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dpFechaFinal.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dpFechaFinal.Location = new System.Drawing.Point(0, 0);
+            this.dpFechaFinal.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dpFechaFinal.Name = "dpFechaFinal";
+            this.dpFechaFinal.Size = new System.Drawing.Size(239, 35);
+            this.dpFechaFinal.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.dpFechaFinal.TabIndex = 0;
+            this.dpFechaFinal.TextColor = System.Drawing.Color.White;
+            this.dpFechaFinal.Value = new System.DateTime(2024, 5, 16, 0, 0, 0, 0);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel7.Controls.Add(this.dpFechaInicial);
+            this.panel7.Location = new System.Drawing.Point(961, 164);
+            this.panel7.Margin = new System.Windows.Forms.Padding(5);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(242, 34);
+            this.panel7.TabIndex = 46;
+            // 
+            // dpFechaInicial
+            // 
+            this.dpFechaInicial.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.dpFechaInicial.BorderSize = 0;
+            this.dpFechaInicial.CalendarForeColor = System.Drawing.Color.White;
+            this.dpFechaInicial.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.dpFechaInicial.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.dpFechaInicial.CalendarTitleForeColor = System.Drawing.Color.White;
+            this.dpFechaInicial.CalendarTrailingForeColor = System.Drawing.Color.White;
+            this.dpFechaInicial.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dpFechaInicial.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dpFechaInicial.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dpFechaInicial.Location = new System.Drawing.Point(0, 0);
+            this.dpFechaInicial.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dpFechaInicial.Name = "dpFechaInicial";
+            this.dpFechaInicial.Size = new System.Drawing.Size(242, 35);
+            this.dpFechaInicial.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.dpFechaInicial.TabIndex = 0;
+            this.dpFechaInicial.TextColor = System.Drawing.Color.White;
+            this.dpFechaInicial.Value = new System.DateTime(2024, 5, 16, 0, 0, 0, 0);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.cboCargos);
+            this.panel5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel5.Location = new System.Drawing.Point(269, 136);
+            this.panel5.Margin = new System.Windows.Forms.Padding(5);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(331, 50);
+            this.panel5.TabIndex = 28;
+            // 
+            // cboCargos
+            // 
+            this.cboCargos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.cboCargos.BorderColor = System.Drawing.Color.Transparent;
+            this.cboCargos.BorderSize = 0;
+            this.cboCargos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cboCargos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboCargos.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboCargos.ForeColor = System.Drawing.Color.Gainsboro;
+            this.cboCargos.IconColor = System.Drawing.Color.White;
+            this.cboCargos.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.cboCargos.ListTextColor = System.Drawing.Color.Gainsboro;
+            this.cboCargos.Location = new System.Drawing.Point(0, 0);
+            this.cboCargos.Margin = new System.Windows.Forms.Padding(5);
+            this.cboCargos.MinimumSize = new System.Drawing.Size(334, 44);
+            this.cboCargos.Name = "cboCargos";
+            this.cboCargos.Size = new System.Drawing.Size(334, 50);
+            this.cboCargos.TabIndex = 17;
+            this.cboCargos.Texts = "Cargo desempeñado";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.cboEstado);
+            this.panel4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel4.Location = new System.Drawing.Point(613, 137);
+            this.panel4.Margin = new System.Windows.Forms.Padding(5);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(334, 51);
+            this.panel4.TabIndex = 27;
+            // 
+            // cboEstado
+            // 
+            this.cboEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.cboEstado.BorderColor = System.Drawing.Color.Transparent;
+            this.cboEstado.BorderSize = 0;
+            this.cboEstado.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cboEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboEstado.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboEstado.ForeColor = System.Drawing.Color.Gainsboro;
+            this.cboEstado.IconColor = System.Drawing.Color.White;
+            this.cboEstado.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.cboEstado.ListTextColor = System.Drawing.Color.Gainsboro;
+            this.cboEstado.Location = new System.Drawing.Point(0, 0);
+            this.cboEstado.Margin = new System.Windows.Forms.Padding(5);
+            this.cboEstado.MinimumSize = new System.Drawing.Size(334, 44);
+            this.cboEstado.Name = "cboEstado";
+            this.cboEstado.Size = new System.Drawing.Size(334, 51);
+            this.cboEstado.TabIndex = 13;
+            this.cboEstado.Texts = "Estado";
+            // 
+            // label19
+            // 
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(103, 135);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(299, 32);
+            this.label19.TabIndex = 9;
+            this.label19.Text = "Detalle del empleado";
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLimpiar.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnLimpiar.BackgroundColor = System.Drawing.Color.LightSteelBlue;
+            this.btnLimpiar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnLimpiar.BorderRadius = 17;
+            this.btnLimpiar.BorderSize = 0;
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpiar.FlatAppearance.BorderSize = 0;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiar.Image = global::Sistema_de_liquidacion.Properties.Resources.escoba;
+            this.btnLimpiar.Location = new System.Drawing.Point(1535, 154);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(206, 51);
+            this.btnLimpiar.TabIndex = 15;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLimpiar.TextColor = System.Drawing.Color.White;
+            this.btnLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnGuardar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.btnGuardar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnGuardar.BorderRadius = 17;
+            this.btnGuardar.BorderSize = 0;
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Image = global::Sistema_de_liquidacion.Properties.Resources.disk;
+            this.btnGuardar.Location = new System.Drawing.Point(1537, 40);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(204, 51);
+            this.btnGuardar.TabIndex = 14;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.TextColor = System.Drawing.Color.White;
+            this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // txtIdContrato
+            // 
+            this.txtIdContrato.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtIdContrato.BackColor = System.Drawing.SystemColors.Window;
+            this.txtIdContrato.BorderColor = System.Drawing.Color.White;
+            this.txtIdContrato.BorderFocusColor = System.Drawing.Color.White;
+            this.txtIdContrato.BorderRadius = 15;
+            this.txtIdContrato.BorderSize = 2;
+            this.txtIdContrato.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdContrato.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtIdContrato.Location = new System.Drawing.Point(533, 944);
+            this.txtIdContrato.Margin = new System.Windows.Forms.Padding(6);
+            this.txtIdContrato.Multiline = false;
+            this.txtIdContrato.Name = "txtIdContrato";
+            this.txtIdContrato.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
+            this.txtIdContrato.PasswordChar = false;
+            this.txtIdContrato.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtIdContrato.PlaceholderText = "";
+            this.txtIdContrato.Size = new System.Drawing.Size(334, 42);
+            this.txtIdContrato.TabIndex = 10;
+            this.txtIdContrato.Texts = "";
+            this.txtIdContrato.UnderlinedStyle = false;
+            this.txtIdContrato.Visible = false;
+            this.txtIdContrato.Enter += new System.EventHandler(this.txtDocumento_Enter);
+            this.txtIdContrato.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
+            this.txtIdContrato.Leave += new System.EventHandler(this.txtDocumento_Leave);
+            // 
+            // txtIdCargo
+            // 
+            this.txtIdCargo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtIdCargo.BackColor = System.Drawing.SystemColors.Window;
+            this.txtIdCargo.BorderColor = System.Drawing.Color.White;
+            this.txtIdCargo.BorderFocusColor = System.Drawing.Color.White;
+            this.txtIdCargo.BorderRadius = 15;
+            this.txtIdCargo.BorderSize = 2;
+            this.txtIdCargo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdCargo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtIdCargo.Location = new System.Drawing.Point(878, 998);
+            this.txtIdCargo.Margin = new System.Windows.Forms.Padding(6);
+            this.txtIdCargo.Multiline = false;
+            this.txtIdCargo.Name = "txtIdCargo";
+            this.txtIdCargo.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
+            this.txtIdCargo.PasswordChar = false;
+            this.txtIdCargo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtIdCargo.PlaceholderText = "";
+            this.txtIdCargo.Size = new System.Drawing.Size(334, 42);
+            this.txtIdCargo.TabIndex = 10;
+            this.txtIdCargo.Texts = "";
+            this.txtIdCargo.UnderlinedStyle = false;
+            this.txtIdCargo.Visible = false;
+            this.txtIdCargo.Enter += new System.EventHandler(this.txtDocumento_Enter);
+            this.txtIdCargo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
+            this.txtIdCargo.Leave += new System.EventHandler(this.txtDocumento_Leave);
+            // 
+            // txtIdProducto
+            // 
+            this.txtIdProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtIdProducto.BackColor = System.Drawing.SystemColors.Window;
+            this.txtIdProducto.BorderColor = System.Drawing.Color.White;
+            this.txtIdProducto.BorderFocusColor = System.Drawing.Color.White;
+            this.txtIdProducto.BorderRadius = 15;
+            this.txtIdProducto.BorderSize = 2;
+            this.txtIdProducto.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdProducto.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtIdProducto.Location = new System.Drawing.Point(532, 998);
+            this.txtIdProducto.Margin = new System.Windows.Forms.Padding(6);
+            this.txtIdProducto.Multiline = false;
+            this.txtIdProducto.Name = "txtIdProducto";
+            this.txtIdProducto.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
+            this.txtIdProducto.PasswordChar = false;
+            this.txtIdProducto.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtIdProducto.PlaceholderText = "";
+            this.txtIdProducto.Size = new System.Drawing.Size(334, 42);
+            this.txtIdProducto.TabIndex = 10;
+            this.txtIdProducto.Texts = "";
+            this.txtIdProducto.UnderlinedStyle = false;
+            this.txtIdProducto.Visible = false;
+            this.txtIdProducto.Enter += new System.EventHandler(this.txtDocumento_Enter);
+            this.txtIdProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
+            this.txtIdProducto.Leave += new System.EventHandler(this.txtDocumento_Leave);
+            // 
+            // txtDocumento
+            // 
+            this.txtDocumento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDocumento.BackColor = System.Drawing.SystemColors.Window;
+            this.txtDocumento.BorderColor = System.Drawing.Color.White;
+            this.txtDocumento.BorderFocusColor = System.Drawing.Color.White;
+            this.txtDocumento.BorderRadius = 15;
+            this.txtDocumento.BorderSize = 2;
+            this.txtDocumento.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDocumento.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtDocumento.Location = new System.Drawing.Point(750, 83);
+            this.txtDocumento.Margin = new System.Windows.Forms.Padding(6);
+            this.txtDocumento.Multiline = false;
+            this.txtDocumento.Name = "txtDocumento";
+            this.txtDocumento.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
+            this.txtDocumento.PasswordChar = false;
+            this.txtDocumento.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtDocumento.PlaceholderText = "";
+            this.txtDocumento.Size = new System.Drawing.Size(334, 42);
+            this.txtDocumento.TabIndex = 10;
+            this.txtDocumento.Texts = "Documento";
+            this.txtDocumento.UnderlinedStyle = false;
+            this.txtDocumento.Enter += new System.EventHandler(this.txtDocumento_Enter);
+            this.txtDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
+            this.txtDocumento.Leave += new System.EventHandler(this.txtDocumento_Leave);
+            // 
+            // txtContrato
+            // 
+            this.txtContrato.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtContrato.BackColor = System.Drawing.SystemColors.Window;
+            this.txtContrato.BorderColor = System.Drawing.Color.White;
+            this.txtContrato.BorderFocusColor = System.Drawing.Color.White;
+            this.txtContrato.BorderRadius = 15;
+            this.txtContrato.BorderSize = 2;
+            this.txtContrato.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContrato.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtContrato.Location = new System.Drawing.Point(1096, 83);
+            this.txtContrato.Margin = new System.Windows.Forms.Padding(6);
+            this.txtContrato.Multiline = false;
+            this.txtContrato.Name = "txtContrato";
+            this.txtContrato.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
+            this.txtContrato.PasswordChar = false;
+            this.txtContrato.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtContrato.PlaceholderText = "";
+            this.txtContrato.Size = new System.Drawing.Size(334, 42);
+            this.txtContrato.TabIndex = 12;
+            this.txtContrato.Texts = "Tipo de contrato";
+            this.txtContrato.UnderlinedStyle = false;
+            this.txtContrato.Enter += new System.EventHandler(this.txtContrato_Enter);
+            this.txtContrato.Leave += new System.EventHandler(this.txtContrato_Leave);
+            // 
+            // txtSalario
+            // 
+            this.txtSalario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSalario.BackColor = System.Drawing.SystemColors.Window;
+            this.txtSalario.BorderColor = System.Drawing.Color.White;
+            this.txtSalario.BorderFocusColor = System.Drawing.Color.White;
+            this.txtSalario.BorderRadius = 15;
+            this.txtSalario.BorderSize = 2;
+            this.txtSalario.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalario.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtSalario.Location = new System.Drawing.Point(404, 83);
+            this.txtSalario.Margin = new System.Windows.Forms.Padding(6);
+            this.txtSalario.Multiline = false;
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
+            this.txtSalario.PasswordChar = false;
+            this.txtSalario.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSalario.PlaceholderText = "";
+            this.txtSalario.Size = new System.Drawing.Size(334, 42);
+            this.txtSalario.TabIndex = 12;
+            this.txtSalario.Texts = "Salario";
+            this.txtSalario.UnderlinedStyle = false;
+            this.txtSalario.Enter += new System.EventHandler(this.txtSalario_Enter);
+            this.txtSalario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSalario_KeyPress);
+            this.txtSalario.Leave += new System.EventHandler(this.txtSalario_Leave);
+            // 
+            // txtNombreProducto
+            // 
+            this.txtNombreProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNombreProducto.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNombreProducto.BorderColor = System.Drawing.Color.White;
+            this.txtNombreProducto.BorderFocusColor = System.Drawing.Color.White;
+            this.txtNombreProducto.BorderRadius = 15;
+            this.txtNombreProducto.BorderSize = 2;
+            this.txtNombreProducto.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreProducto.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtNombreProducto.Location = new System.Drawing.Point(58, 83);
+            this.txtNombreProducto.Margin = new System.Windows.Forms.Padding(6);
+            this.txtNombreProducto.Multiline = false;
+            this.txtNombreProducto.Name = "txtNombreProducto";
+            this.txtNombreProducto.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
+            this.txtNombreProducto.PasswordChar = false;
+            this.txtNombreProducto.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNombreProducto.PlaceholderText = "";
+            this.txtNombreProducto.Size = new System.Drawing.Size(334, 42);
+            this.txtNombreProducto.TabIndex = 11;
+            this.txtNombreProducto.Texts = "Nombre";
+            this.txtNombreProducto.UnderlinedStyle = false;
+            this.txtNombreProducto.Enter += new System.EventHandler(this.txtNombreProducto_Enter);
+            this.txtNombreProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreProducto_KeyPress);
+            this.txtNombreProducto.Leave += new System.EventHandler(this.txtNombreProducto_Leave);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel2.Controls.Add(this.tblRegistro);
+            this.panel2.Location = new System.Drawing.Point(109, 585);
+            this.panel2.Margin = new System.Windows.Forms.Padding(5);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1776, 283);
+            this.panel2.TabIndex = 25;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.cboFiltroEstado);
+            this.panel3.Location = new System.Drawing.Point(1299, 5);
+            this.panel3.Margin = new System.Windows.Forms.Padding(5);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(331, 40);
+            this.panel3.TabIndex = 26;
+            // 
+            // panel9
+            // 
+            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel9.Controls.Add(this.panel3);
+            this.panel9.Controls.Add(this.txtBuscar);
+            this.panel9.Location = new System.Drawing.Point(109, 62);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1776, 51);
+            this.panel9.TabIndex = 47;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(119, 24);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(247, 26);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "Gestion de empleado";
             // 
             // btnSeleccionar
             // 
@@ -216,6 +708,18 @@
             this.IdProducto.ReadOnly = true;
             this.IdProducto.Visible = false;
             this.IdProducto.Width = 170;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Documento
             // 
@@ -307,498 +811,19 @@
             this.FechaRegistro2.ReadOnly = true;
             this.FechaRegistro2.Width = 200;
             // 
-            // panel1
+            // label2
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel1.Controls.Add(this.btnModificar);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.label19);
-            this.panel1.Controls.Add(this.btnLimpiar);
-            this.panel1.Controls.Add(this.btnGuardar);
-            this.panel1.Controls.Add(this.txtIdContrato);
-            this.panel1.Controls.Add(this.txtIdCargo);
-            this.panel1.Controls.Add(this.txtIdProducto);
-            this.panel1.Controls.Add(this.txtDocumento);
-            this.panel1.Controls.Add(this.txtContrato);
-            this.panel1.Controls.Add(this.txtSalario);
-            this.panel1.Controls.Add(this.txtNombreProducto);
-            this.panel1.Location = new System.Drawing.Point(1128, 133);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(748, 874);
-            this.panel1.TabIndex = 24;
-            // 
-            // btnModificar
-            // 
-            this.btnModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnModificar.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnModificar.BackgroundColor = System.Drawing.Color.RoyalBlue;
-            this.btnModificar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnModificar.BorderRadius = 17;
-            this.btnModificar.BorderSize = 0;
-            this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnModificar.FlatAppearance.BorderSize = 0;
-            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.Image = global::Sistema_de_liquidacion.Properties.Resources.cuadrado_de_la_pluma;
-            this.btnModificar.Location = new System.Drawing.Point(51, 607);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(654, 51);
-            this.btnModificar.TabIndex = 49;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnModificar.TextColor = System.Drawing.Color.White;
-            this.btnModificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnModificar.UseVisualStyleBackColor = false;
-            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(424, 275);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 17);
-            this.label4.TabIndex = 47;
-            this.label4.Text = "FECHA INICIAL";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(424, 365);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 17);
-            this.label3.TabIndex = 48;
-            this.label3.Text = "FECHA FINAL";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel6.Controls.Add(this.dpFechaFinal);
-            this.panel6.Location = new System.Drawing.Point(413, 398);
-            this.panel6.Margin = new System.Windows.Forms.Padding(5);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(296, 35);
-            this.panel6.TabIndex = 45;
-            // 
-            // dpFechaFinal
-            // 
-            this.dpFechaFinal.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.dpFechaFinal.BorderSize = 0;
-            this.dpFechaFinal.CalendarForeColor = System.Drawing.Color.White;
-            this.dpFechaFinal.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.dpFechaFinal.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.dpFechaFinal.CalendarTitleForeColor = System.Drawing.Color.White;
-            this.dpFechaFinal.CalendarTrailingForeColor = System.Drawing.Color.White;
-            this.dpFechaFinal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dpFechaFinal.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dpFechaFinal.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dpFechaFinal.Location = new System.Drawing.Point(0, 0);
-            this.dpFechaFinal.MinimumSize = new System.Drawing.Size(4, 35);
-            this.dpFechaFinal.Name = "dpFechaFinal";
-            this.dpFechaFinal.Size = new System.Drawing.Size(296, 35);
-            this.dpFechaFinal.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.dpFechaFinal.TabIndex = 0;
-            this.dpFechaFinal.TextColor = System.Drawing.Color.White;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel7.Controls.Add(this.dpFechaInicial);
-            this.panel7.Location = new System.Drawing.Point(407, 299);
-            this.panel7.Margin = new System.Windows.Forms.Padding(5);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(302, 34);
-            this.panel7.TabIndex = 46;
-            // 
-            // dpFechaInicial
-            // 
-            this.dpFechaInicial.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.dpFechaInicial.BorderSize = 0;
-            this.dpFechaInicial.CalendarForeColor = System.Drawing.Color.White;
-            this.dpFechaInicial.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.dpFechaInicial.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.dpFechaInicial.CalendarTitleForeColor = System.Drawing.Color.White;
-            this.dpFechaInicial.CalendarTrailingForeColor = System.Drawing.Color.White;
-            this.dpFechaInicial.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dpFechaInicial.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dpFechaInicial.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dpFechaInicial.Location = new System.Drawing.Point(0, 0);
-            this.dpFechaInicial.MinimumSize = new System.Drawing.Size(4, 35);
-            this.dpFechaInicial.Name = "dpFechaInicial";
-            this.dpFechaInicial.Size = new System.Drawing.Size(302, 35);
-            this.dpFechaInicial.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.dpFechaInicial.TabIndex = 0;
-            this.dpFechaInicial.TextColor = System.Drawing.Color.White;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.cboCargos);
-            this.panel5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel5.Location = new System.Drawing.Point(48, 323);
-            this.panel5.Margin = new System.Windows.Forms.Padding(5);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(331, 50);
-            this.panel5.TabIndex = 28;
-            // 
-            // cboCargos
-            // 
-            this.cboCargos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.cboCargos.BorderColor = System.Drawing.Color.Transparent;
-            this.cboCargos.BorderSize = 0;
-            this.cboCargos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cboCargos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cboCargos.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboCargos.ForeColor = System.Drawing.Color.Gainsboro;
-            this.cboCargos.IconColor = System.Drawing.Color.White;
-            this.cboCargos.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.cboCargos.ListTextColor = System.Drawing.Color.Gainsboro;
-            this.cboCargos.Location = new System.Drawing.Point(0, 0);
-            this.cboCargos.Margin = new System.Windows.Forms.Padding(5);
-            this.cboCargos.MinimumSize = new System.Drawing.Size(334, 44);
-            this.cboCargos.Name = "cboCargos";
-            this.cboCargos.Size = new System.Drawing.Size(334, 50);
-            this.cboCargos.TabIndex = 17;
-            this.cboCargos.Texts = "Cargo desempeñado";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.cboEstado);
-            this.panel4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel4.Location = new System.Drawing.Point(51, 473);
-            this.panel4.Margin = new System.Windows.Forms.Padding(5);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(334, 51);
-            this.panel4.TabIndex = 27;
-            // 
-            // cboEstado
-            // 
-            this.cboEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.cboEstado.BorderColor = System.Drawing.Color.Transparent;
-            this.cboEstado.BorderSize = 0;
-            this.cboEstado.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cboEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cboEstado.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboEstado.ForeColor = System.Drawing.Color.Gainsboro;
-            this.cboEstado.IconColor = System.Drawing.Color.White;
-            this.cboEstado.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.cboEstado.ListTextColor = System.Drawing.Color.Gainsboro;
-            this.cboEstado.Location = new System.Drawing.Point(0, 0);
-            this.cboEstado.Margin = new System.Windows.Forms.Padding(5);
-            this.cboEstado.MinimumSize = new System.Drawing.Size(334, 44);
-            this.cboEstado.Name = "cboEstado";
-            this.cboEstado.Size = new System.Drawing.Size(334, 51);
-            this.cboEstado.TabIndex = 13;
-            this.cboEstado.Texts = "Estado";
-            // 
-            // label19
-            // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(288, 51);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(233, 25);
-            this.label19.TabIndex = 9;
-            this.label19.Text = "Detalle del empleado";
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLimpiar.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnLimpiar.BackgroundColor = System.Drawing.Color.LightSteelBlue;
-            this.btnLimpiar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnLimpiar.BorderRadius = 17;
-            this.btnLimpiar.BorderSize = 0;
-            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpiar.FlatAppearance.BorderSize = 0;
-            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiar.Image = global::Sistema_de_liquidacion.Properties.Resources.escoba;
-            this.btnLimpiar.Location = new System.Drawing.Point(48, 665);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(661, 51);
-            this.btnLimpiar.TabIndex = 15;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLimpiar.TextColor = System.Drawing.Color.White;
-            this.btnLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLimpiar.UseVisualStyleBackColor = false;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.btnGuardar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.btnGuardar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnGuardar.BorderRadius = 17;
-            this.btnGuardar.BorderSize = 0;
-            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardar.FlatAppearance.BorderSize = 0;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Image = global::Sistema_de_liquidacion.Properties.Resources.disk;
-            this.btnGuardar.Location = new System.Drawing.Point(49, 547);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(660, 51);
-            this.btnGuardar.TabIndex = 14;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardar.TextColor = System.Drawing.Color.White;
-            this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // txtIdContrato
-            // 
-            this.txtIdContrato.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIdContrato.BackColor = System.Drawing.SystemColors.Window;
-            this.txtIdContrato.BorderColor = System.Drawing.Color.White;
-            this.txtIdContrato.BorderFocusColor = System.Drawing.Color.White;
-            this.txtIdContrato.BorderRadius = 15;
-            this.txtIdContrato.BorderSize = 2;
-            this.txtIdContrato.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdContrato.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtIdContrato.Location = new System.Drawing.Point(237, 84);
-            this.txtIdContrato.Margin = new System.Windows.Forms.Padding(6);
-            this.txtIdContrato.Multiline = false;
-            this.txtIdContrato.Name = "txtIdContrato";
-            this.txtIdContrato.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtIdContrato.PasswordChar = false;
-            this.txtIdContrato.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtIdContrato.PlaceholderText = "";
-            this.txtIdContrato.Size = new System.Drawing.Size(334, 42);
-            this.txtIdContrato.TabIndex = 10;
-            this.txtIdContrato.Texts = "";
-            this.txtIdContrato.UnderlinedStyle = false;
-            this.txtIdContrato.Visible = false;
-            this.txtIdContrato.Enter += new System.EventHandler(this.txtDocumento_Enter);
-            this.txtIdContrato.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
-            this.txtIdContrato.Leave += new System.EventHandler(this.txtDocumento_Leave);
-            // 
-            // txtIdCargo
-            // 
-            this.txtIdCargo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIdCargo.BackColor = System.Drawing.SystemColors.Window;
-            this.txtIdCargo.BorderColor = System.Drawing.Color.White;
-            this.txtIdCargo.BorderFocusColor = System.Drawing.Color.White;
-            this.txtIdCargo.BorderRadius = 15;
-            this.txtIdCargo.BorderSize = 2;
-            this.txtIdCargo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdCargo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtIdCargo.Location = new System.Drawing.Point(391, 126);
-            this.txtIdCargo.Margin = new System.Windows.Forms.Padding(6);
-            this.txtIdCargo.Multiline = false;
-            this.txtIdCargo.Name = "txtIdCargo";
-            this.txtIdCargo.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtIdCargo.PasswordChar = false;
-            this.txtIdCargo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtIdCargo.PlaceholderText = "";
-            this.txtIdCargo.Size = new System.Drawing.Size(334, 42);
-            this.txtIdCargo.TabIndex = 10;
-            this.txtIdCargo.Texts = "";
-            this.txtIdCargo.UnderlinedStyle = false;
-            this.txtIdCargo.Visible = false;
-            this.txtIdCargo.Enter += new System.EventHandler(this.txtDocumento_Enter);
-            this.txtIdCargo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
-            this.txtIdCargo.Leave += new System.EventHandler(this.txtDocumento_Leave);
-            // 
-            // txtIdProducto
-            // 
-            this.txtIdProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIdProducto.BackColor = System.Drawing.SystemColors.Window;
-            this.txtIdProducto.BorderColor = System.Drawing.Color.White;
-            this.txtIdProducto.BorderFocusColor = System.Drawing.Color.White;
-            this.txtIdProducto.BorderRadius = 15;
-            this.txtIdProducto.BorderSize = 2;
-            this.txtIdProducto.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdProducto.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtIdProducto.Location = new System.Drawing.Point(45, 126);
-            this.txtIdProducto.Margin = new System.Windows.Forms.Padding(6);
-            this.txtIdProducto.Multiline = false;
-            this.txtIdProducto.Name = "txtIdProducto";
-            this.txtIdProducto.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtIdProducto.PasswordChar = false;
-            this.txtIdProducto.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtIdProducto.PlaceholderText = "";
-            this.txtIdProducto.Size = new System.Drawing.Size(334, 42);
-            this.txtIdProducto.TabIndex = 10;
-            this.txtIdProducto.Texts = "";
-            this.txtIdProducto.UnderlinedStyle = false;
-            this.txtIdProducto.Visible = false;
-            this.txtIdProducto.Enter += new System.EventHandler(this.txtDocumento_Enter);
-            this.txtIdProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
-            this.txtIdProducto.Leave += new System.EventHandler(this.txtDocumento_Leave);
-            // 
-            // txtDocumento
-            // 
-            this.txtDocumento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDocumento.BackColor = System.Drawing.SystemColors.Window;
-            this.txtDocumento.BorderColor = System.Drawing.Color.White;
-            this.txtDocumento.BorderFocusColor = System.Drawing.Color.White;
-            this.txtDocumento.BorderRadius = 15;
-            this.txtDocumento.BorderSize = 2;
-            this.txtDocumento.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDocumento.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtDocumento.Location = new System.Drawing.Point(45, 182);
-            this.txtDocumento.Margin = new System.Windows.Forms.Padding(6);
-            this.txtDocumento.Multiline = false;
-            this.txtDocumento.Name = "txtDocumento";
-            this.txtDocumento.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtDocumento.PasswordChar = false;
-            this.txtDocumento.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtDocumento.PlaceholderText = "";
-            this.txtDocumento.Size = new System.Drawing.Size(334, 42);
-            this.txtDocumento.TabIndex = 10;
-            this.txtDocumento.Texts = "Documento";
-            this.txtDocumento.UnderlinedStyle = false;
-            this.txtDocumento.Enter += new System.EventHandler(this.txtDocumento_Enter);
-            this.txtDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
-            this.txtDocumento.Leave += new System.EventHandler(this.txtDocumento_Leave);
-            // 
-            // txtContrato
-            // 
-            this.txtContrato.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtContrato.BackColor = System.Drawing.SystemColors.Window;
-            this.txtContrato.BorderColor = System.Drawing.Color.White;
-            this.txtContrato.BorderFocusColor = System.Drawing.Color.White;
-            this.txtContrato.BorderRadius = 15;
-            this.txtContrato.BorderSize = 2;
-            this.txtContrato.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContrato.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtContrato.Location = new System.Drawing.Point(391, 182);
-            this.txtContrato.Margin = new System.Windows.Forms.Padding(6);
-            this.txtContrato.Multiline = false;
-            this.txtContrato.Name = "txtContrato";
-            this.txtContrato.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtContrato.PasswordChar = false;
-            this.txtContrato.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtContrato.PlaceholderText = "";
-            this.txtContrato.Size = new System.Drawing.Size(334, 42);
-            this.txtContrato.TabIndex = 12;
-            this.txtContrato.Texts = "Tipo de contrato";
-            this.txtContrato.UnderlinedStyle = false;
-            this.txtContrato.Enter += new System.EventHandler(this.txtContrato_Enter);
-            this.txtContrato.Leave += new System.EventHandler(this.txtContrato_Leave);
-            // 
-            // txtSalario
-            // 
-            this.txtSalario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSalario.BackColor = System.Drawing.SystemColors.Window;
-            this.txtSalario.BorderColor = System.Drawing.Color.White;
-            this.txtSalario.BorderFocusColor = System.Drawing.Color.White;
-            this.txtSalario.BorderRadius = 15;
-            this.txtSalario.BorderSize = 2;
-            this.txtSalario.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtSalario.Location = new System.Drawing.Point(51, 403);
-            this.txtSalario.Margin = new System.Windows.Forms.Padding(6);
-            this.txtSalario.Multiline = false;
-            this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtSalario.PasswordChar = false;
-            this.txtSalario.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSalario.PlaceholderText = "";
-            this.txtSalario.Size = new System.Drawing.Size(334, 42);
-            this.txtSalario.TabIndex = 12;
-            this.txtSalario.Texts = "Salario";
-            this.txtSalario.UnderlinedStyle = false;
-            this.txtSalario.Enter += new System.EventHandler(this.txtSalario_Enter);
-            this.txtSalario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSalario_KeyPress);
-            this.txtSalario.Leave += new System.EventHandler(this.txtSalario_Leave);
-            // 
-            // txtNombreProducto
-            // 
-            this.txtNombreProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombreProducto.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNombreProducto.BorderColor = System.Drawing.Color.White;
-            this.txtNombreProducto.BorderFocusColor = System.Drawing.Color.White;
-            this.txtNombreProducto.BorderRadius = 15;
-            this.txtNombreProducto.BorderSize = 2;
-            this.txtNombreProducto.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreProducto.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtNombreProducto.Location = new System.Drawing.Point(45, 259);
-            this.txtNombreProducto.Margin = new System.Windows.Forms.Padding(6);
-            this.txtNombreProducto.Multiline = false;
-            this.txtNombreProducto.Name = "txtNombreProducto";
-            this.txtNombreProducto.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtNombreProducto.PasswordChar = false;
-            this.txtNombreProducto.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNombreProducto.PlaceholderText = "";
-            this.txtNombreProducto.Size = new System.Drawing.Size(334, 42);
-            this.txtNombreProducto.TabIndex = 11;
-            this.txtNombreProducto.Texts = "Nombre";
-            this.txtNombreProducto.UnderlinedStyle = false;
-            this.txtNombreProducto.Enter += new System.EventHandler(this.txtNombreProducto_Enter);
-            this.txtNombreProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreProducto_KeyPress);
-            this.txtNombreProducto.Leave += new System.EventHandler(this.txtNombreProducto_Leave);
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel2.Controls.Add(this.tblRegistro);
-            this.panel2.Location = new System.Drawing.Point(153, 282);
-            this.panel2.Margin = new System.Windows.Forms.Padding(5);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(908, 434);
-            this.panel2.TabIndex = 25;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.cboFiltroEstado);
-            this.panel3.Location = new System.Drawing.Point(1299, 5);
-            this.panel3.Margin = new System.Windows.Forms.Padding(5);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(331, 40);
-            this.panel3.TabIndex = 26;
-            // 
-            // panel9
-            // 
-            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel9.Controls.Add(this.label8);
-            this.panel9.Controls.Add(this.panel3);
-            this.panel9.Controls.Add(this.txtBuscar);
-            this.panel9.Location = new System.Drawing.Point(109, 62);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1776, 51);
-            this.panel9.TabIndex = 47;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(72, 11);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(247, 26);
-            this.label8.TabIndex = 28;
-            this.label8.Text = "Gestion de empleado";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(104, 539);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(317, 32);
+            this.label2.TabIndex = 50;
+            this.label2.Text = "Registro de empleados";
             // 
             // FrmMantenedorEmpleado
             // 
@@ -806,9 +831,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.txtIdContrato);
+            this.Controls.Add(this.txtIdCargo);
+            this.Controls.Add(this.txtIdProducto);
+            this.Controls.Add(this.label19);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
@@ -825,8 +856,8 @@
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -860,8 +891,12 @@
         private RJCodeAdvance.RJControls.RJButton btnModificar;
         private RJCodeAdvance.RJControls.RJTextBox txtIdContrato;
         private RJCodeAdvance.RJControls.RJTextBox txtIdCargo;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Documento;
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdContrato;
@@ -873,7 +908,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Salario;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro2;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label2;
     }
 }

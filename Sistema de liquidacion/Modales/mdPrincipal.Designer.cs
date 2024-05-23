@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
@@ -47,51 +47,49 @@
             this.icoGraficoEmpleadoMasLiquidado = new FontAwesome.Sharp.IconPictureBox();
             this.chEmplMasLiquidados = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.chEmpXcategoria = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.icoGraficoEmplXCargo = new FontAwesome.Sharp.IconPictureBox();
             this.alphaGradientPanel7 = new System.Windows.Forms.AlphaGradientPanel();
+            this.colorWithAlpha9 = new System.Windows.Forms.ColorWithAlpha();
+            this.colorWithAlpha10 = new System.Windows.Forms.ColorWithAlpha();
             this.alphaGradientPanel8 = new System.Windows.Forms.AlphaGradientPanel();
+            this.colorWithAlpha11 = new System.Windows.Forms.ColorWithAlpha();
+            this.colorWithAlpha12 = new System.Windows.Forms.ColorWithAlpha();
             this.panel4 = new System.Windows.Forms.Panel();
             this.icoEmpleado = new FontAwesome.Sharp.IconPictureBox();
             this.lblNumEmpleados = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.alphaGradientPanel3 = new System.Windows.Forms.AlphaGradientPanel();
+            this.colorWithAlpha1 = new System.Windows.Forms.ColorWithAlpha();
+            this.colorWithAlpha2 = new System.Windows.Forms.ColorWithAlpha();
             this.panel8 = new System.Windows.Forms.Panel();
             this.icoUsuarios = new FontAwesome.Sharp.IconPictureBox();
             this.lblNumUsuarios = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.alphaGradientPanel4 = new System.Windows.Forms.AlphaGradientPanel();
+            this.colorWithAlpha3 = new System.Windows.Forms.ColorWithAlpha();
+            this.colorWithAlpha4 = new System.Windows.Forms.ColorWithAlpha();
             this.panel7 = new System.Windows.Forms.Panel();
             this.icoReportes = new FontAwesome.Sharp.IconPictureBox();
             this.lblNumReportes = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.alphaGradientPanel5 = new System.Windows.Forms.AlphaGradientPanel();
+            this.colorWithAlpha5 = new System.Windows.Forms.ColorWithAlpha();
+            this.colorWithAlpha6 = new System.Windows.Forms.ColorWithAlpha();
             this.panel6 = new System.Windows.Forms.Panel();
             this.icoNominaTotal = new FontAwesome.Sharp.IconPictureBox();
             this.lblNominaTotal = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.alphaGradientPanel6 = new System.Windows.Forms.AlphaGradientPanel();
-            this.colorWithAlpha1 = new System.Windows.Forms.ColorWithAlpha();
-            this.colorWithAlpha2 = new System.Windows.Forms.ColorWithAlpha();
-            this.colorWithAlpha3 = new System.Windows.Forms.ColorWithAlpha();
-            this.colorWithAlpha4 = new System.Windows.Forms.ColorWithAlpha();
-            this.colorWithAlpha5 = new System.Windows.Forms.ColorWithAlpha();
-            this.colorWithAlpha6 = new System.Windows.Forms.ColorWithAlpha();
             this.colorWithAlpha7 = new System.Windows.Forms.ColorWithAlpha();
             this.colorWithAlpha8 = new System.Windows.Forms.ColorWithAlpha();
-            this.colorWithAlpha9 = new System.Windows.Forms.ColorWithAlpha();
-            this.colorWithAlpha10 = new System.Windows.Forms.ColorWithAlpha();
-            this.colorWithAlpha11 = new System.Windows.Forms.ColorWithAlpha();
-            this.colorWithAlpha12 = new System.Windows.Forms.ColorWithAlpha();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.chGanancia = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.icoGanancias = new FontAwesome.Sharp.IconPictureBox();
             this.panel3.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icoGraficoEmpleadoMasLiquidado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chEmplMasLiquidados)).BeginInit();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chEmpXcategoria)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icoGraficoEmplXCargo)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icoEmpleado)).BeginInit();
             this.panel8.SuspendLayout();
@@ -100,6 +98,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.icoReportes)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icoNominaTotal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chGanancia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icoGanancias)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -231,41 +231,41 @@
             // 
             this.chEmplMasLiquidados.BackColor = System.Drawing.Color.Transparent;
             this.chEmplMasLiquidados.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea5.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic;
-            chartArea5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            chartArea5.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            chartArea5.Name = "ChartArea1";
-            this.chEmplMasLiquidados.ChartAreas.Add(chartArea5);
+            chartArea1.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic;
+            chartArea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            chartArea1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            chartArea1.Name = "ChartArea1";
+            this.chEmplMasLiquidados.ChartAreas.Add(chartArea1);
             this.chEmplMasLiquidados.Enabled = false;
-            legend5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            legend5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend5.ForeColor = System.Drawing.Color.Gainsboro;
-            legend5.IsTextAutoFit = false;
-            legend5.Name = "Legend1";
-            this.chEmplMasLiquidados.Legends.Add(legend5);
+            legend1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            legend1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend1.ForeColor = System.Drawing.Color.Gainsboro;
+            legend1.IsTextAutoFit = false;
+            legend1.Name = "Legend1";
+            this.chEmplMasLiquidados.Legends.Add(legend1);
             this.chEmplMasLiquidados.Location = new System.Drawing.Point(3, 0);
             this.chEmplMasLiquidados.Name = "chEmplMasLiquidados";
             this.chEmplMasLiquidados.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series5.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
-            series5.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series5.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series5.IsValueShownAsLabel = true;
-            series5.LabelBackColor = System.Drawing.Color.Transparent;
-            series5.LabelForeColor = System.Drawing.Color.Gainsboro;
-            series5.Legend = "Legend1";
-            series5.MarkerBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            series5.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            series5.Name = "Series1";
-            this.chEmplMasLiquidados.Series.Add(series5);
+            series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
+            series1.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.IsValueShownAsLabel = true;
+            series1.LabelBackColor = System.Drawing.Color.Transparent;
+            series1.LabelForeColor = System.Drawing.Color.Gainsboro;
+            series1.Legend = "Legend1";
+            series1.MarkerBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            series1.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            series1.Name = "Series1";
+            this.chEmplMasLiquidados.Series.Add(series1);
             this.chEmplMasLiquidados.Size = new System.Drawing.Size(899, 600);
             this.chEmplMasLiquidados.TabIndex = 2;
-            title5.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title5.ForeColor = System.Drawing.Color.Gainsboro;
-            title5.Name = "Title1";
-            title5.Text = "Empleados liquidados";
-            this.chEmplMasLiquidados.Titles.Add(title5);
+            title1.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.ForeColor = System.Drawing.Color.Gainsboro;
+            title1.Name = "Title1";
+            title1.Text = "Empleados liquidados";
+            this.chEmplMasLiquidados.Titles.Add(title1);
             // 
             // panel11
             // 
@@ -273,126 +273,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.panel11.Controls.Add(this.label5);
+            this.panel11.Controls.Add(this.label7);
             this.panel11.Controls.Add(this.label2);
-            this.panel11.Controls.Add(this.chEmpXcategoria);
-            this.panel11.Controls.Add(this.icoGraficoEmplXCargo);
+            this.panel11.Controls.Add(this.chGanancia);
+            this.panel11.Controls.Add(this.icoGanancias);
             this.panel11.Location = new System.Drawing.Point(95, 181);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(846, 741);
             this.panel11.TabIndex = 1;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label5.Location = new System.Drawing.Point(118, 649);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(166, 32);
-            this.label5.TabIndex = 0;
-            this.label5.Text = " por cargos";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(127, 607);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(337, 32);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Cantidad de empleados";
-            // 
-            // chEmpXcategoria
-            // 
-            this.chEmpXcategoria.BackColor = System.Drawing.Color.Transparent;
-            this.chEmpXcategoria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.chEmpXcategoria.BorderlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.chEmpXcategoria.BorderlineWidth = 0;
-            chartArea6.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea6.AxisX.IsLabelAutoFit = false;
-            chartArea6.AxisX.LabelStyle.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea6.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro;
-            chartArea6.AxisX.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea6.AxisX.LineWidth = 2;
-            chartArea6.AxisX.MajorGrid.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea6.AxisX.MajorGrid.LineWidth = 0;
-            chartArea6.AxisX.MajorTickMark.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea6.AxisX.MajorTickMark.LineWidth = 2;
-            chartArea6.AxisX.MinorGrid.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea6.AxisX.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea6.AxisX.TitleForeColor = System.Drawing.Color.Gainsboro;
-            chartArea6.AxisX2.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea6.AxisX2.LineWidth = 0;
-            chartArea6.AxisX2.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea6.AxisX2.TitleForeColor = System.Drawing.Color.Gainsboro;
-            chartArea6.AxisY.IsLabelAutoFit = false;
-            chartArea6.AxisY.LabelStyle.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea6.AxisY.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro;
-            chartArea6.AxisY.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea6.AxisY.LineWidth = 2;
-            chartArea6.AxisY.MajorGrid.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea6.AxisY.MajorGrid.LineWidth = 0;
-            chartArea6.AxisY.MajorTickMark.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea6.AxisY.MajorTickMark.LineWidth = 2;
-            chartArea6.AxisY.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea6.AxisY.TitleForeColor = System.Drawing.Color.Gainsboro;
-            chartArea6.AxisY2.LineColor = System.Drawing.Color.Gainsboro;
-            chartArea6.AxisY2.LineWidth = 0;
-            chartArea6.AxisY2.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea6.AxisY2.TitleForeColor = System.Drawing.Color.Gainsboro;
-            chartArea6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            chartArea6.BorderColor = System.Drawing.Color.White;
-            chartArea6.BorderWidth = 0;
-            chartArea6.Name = "ChartArea1";
-            this.chEmpXcategoria.ChartAreas.Add(chartArea6);
-            this.chEmpXcategoria.Enabled = false;
-            legend6.BackColor = System.Drawing.Color.Transparent;
-            legend6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend6.ForeColor = System.Drawing.Color.Gainsboro;
-            legend6.IsTextAutoFit = false;
-            legend6.Name = "Legend1";
-            this.chEmpXcategoria.Legends.Add(legend6);
-            this.chEmpXcategoria.Location = new System.Drawing.Point(-8, 0);
-            this.chEmpXcategoria.Name = "chEmpXcategoria";
-            this.chEmpXcategoria.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series6.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
-            series6.BackSecondaryColor = System.Drawing.Color.DarkSlateBlue;
-            series6.BorderWidth = 0;
-            series6.ChartArea = "ChartArea1";
-            series6.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series6.IsVisibleInLegend = false;
-            series6.LabelBackColor = System.Drawing.Color.Transparent;
-            series6.LabelBorderColor = System.Drawing.Color.Transparent;
-            series6.LabelBorderWidth = 0;
-            series6.LabelForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            series6.Legend = "Legend1";
-            series6.MarkerSize = 6;
-            series6.Name = "Series1";
-            series6.YValuesPerPoint = 2;
-            this.chEmpXcategoria.Series.Add(series6);
-            this.chEmpXcategoria.Size = new System.Drawing.Size(846, 569);
-            this.chEmpXcategoria.TabIndex = 2;
-            title6.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title6.ForeColor = System.Drawing.Color.Gainsboro;
-            title6.Name = "Title1";
-            title6.Text = "Empleados por cargos";
-            this.chEmpXcategoria.Titles.Add(title6);
-            // 
-            // icoGraficoEmplXCargo
-            // 
-            this.icoGraficoEmplXCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.icoGraficoEmplXCargo.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.icoGraficoEmplXCargo.IconChar = FontAwesome.Sharp.IconChar.PuzzlePiece;
-            this.icoGraficoEmplXCargo.IconColor = System.Drawing.Color.DarkSlateBlue;
-            this.icoGraficoEmplXCargo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.icoGraficoEmplXCargo.IconSize = 76;
-            this.icoGraficoEmplXCargo.Location = new System.Drawing.Point(45, 607);
-            this.icoGraficoEmplXCargo.Name = "icoGraficoEmplXCargo";
-            this.icoGraficoEmplXCargo.Size = new System.Drawing.Size(76, 81);
-            this.icoGraficoEmplXCargo.TabIndex = 0;
-            this.icoGraficoEmplXCargo.TabStop = false;
             // 
             // alphaGradientPanel7
             // 
@@ -423,6 +311,18 @@
             this.alphaGradientPanel7.Size = new System.Drawing.Size(840, 810);
             this.alphaGradientPanel7.TabIndex = 6;
             // 
+            // colorWithAlpha9
+            // 
+            this.colorWithAlpha9.Alpha = 255;
+            this.colorWithAlpha9.Color = System.Drawing.Color.Black;
+            this.colorWithAlpha9.Parent = this.alphaGradientPanel7;
+            // 
+            // colorWithAlpha10
+            // 
+            this.colorWithAlpha10.Alpha = 255;
+            this.colorWithAlpha10.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.colorWithAlpha10.Parent = this.alphaGradientPanel7;
+            // 
             // alphaGradientPanel8
             // 
             this.alphaGradientPanel8.BackColor = System.Drawing.Color.Black;
@@ -451,6 +351,18 @@
             this.alphaGradientPanel8.Rounded = true;
             this.alphaGradientPanel8.Size = new System.Drawing.Size(923, 810);
             this.alphaGradientPanel8.TabIndex = 7;
+            // 
+            // colorWithAlpha11
+            // 
+            this.colorWithAlpha11.Alpha = 255;
+            this.colorWithAlpha11.Color = System.Drawing.Color.Black;
+            this.colorWithAlpha11.Parent = this.alphaGradientPanel8;
+            // 
+            // colorWithAlpha12
+            // 
+            this.colorWithAlpha12.Alpha = 255;
+            this.colorWithAlpha12.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.colorWithAlpha12.Parent = this.alphaGradientPanel8;
             // 
             // panel4
             // 
@@ -531,6 +443,18 @@
             this.alphaGradientPanel3.Size = new System.Drawing.Size(429, 128);
             this.alphaGradientPanel3.TabIndex = 5;
             // 
+            // colorWithAlpha1
+            // 
+            this.colorWithAlpha1.Alpha = 255;
+            this.colorWithAlpha1.Color = System.Drawing.Color.Black;
+            this.colorWithAlpha1.Parent = this.alphaGradientPanel3;
+            // 
+            // colorWithAlpha2
+            // 
+            this.colorWithAlpha2.Alpha = 255;
+            this.colorWithAlpha2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.colorWithAlpha2.Parent = this.alphaGradientPanel3;
+            // 
             // panel8
             // 
             this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -609,6 +533,18 @@
             this.alphaGradientPanel4.Rounded = true;
             this.alphaGradientPanel4.Size = new System.Drawing.Size(429, 128);
             this.alphaGradientPanel4.TabIndex = 6;
+            // 
+            // colorWithAlpha3
+            // 
+            this.colorWithAlpha3.Alpha = 255;
+            this.colorWithAlpha3.Color = System.Drawing.Color.Black;
+            this.colorWithAlpha3.Parent = this.alphaGradientPanel4;
+            // 
+            // colorWithAlpha4
+            // 
+            this.colorWithAlpha4.Alpha = 255;
+            this.colorWithAlpha4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.colorWithAlpha4.Parent = this.alphaGradientPanel4;
             // 
             // panel7
             // 
@@ -689,6 +625,18 @@
             this.alphaGradientPanel5.Size = new System.Drawing.Size(429, 128);
             this.alphaGradientPanel5.TabIndex = 7;
             // 
+            // colorWithAlpha5
+            // 
+            this.colorWithAlpha5.Alpha = 255;
+            this.colorWithAlpha5.Color = System.Drawing.Color.Black;
+            this.colorWithAlpha5.Parent = this.alphaGradientPanel5;
+            // 
+            // colorWithAlpha6
+            // 
+            this.colorWithAlpha6.Alpha = 255;
+            this.colorWithAlpha6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.colorWithAlpha6.Parent = this.alphaGradientPanel5;
+            // 
             // panel6
             // 
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -768,42 +716,6 @@
             this.alphaGradientPanel6.Size = new System.Drawing.Size(429, 128);
             this.alphaGradientPanel6.TabIndex = 8;
             // 
-            // colorWithAlpha1
-            // 
-            this.colorWithAlpha1.Alpha = 255;
-            this.colorWithAlpha1.Color = System.Drawing.Color.Black;
-            this.colorWithAlpha1.Parent = this.alphaGradientPanel3;
-            // 
-            // colorWithAlpha2
-            // 
-            this.colorWithAlpha2.Alpha = 255;
-            this.colorWithAlpha2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.colorWithAlpha2.Parent = this.alphaGradientPanel3;
-            // 
-            // colorWithAlpha3
-            // 
-            this.colorWithAlpha3.Alpha = 255;
-            this.colorWithAlpha3.Color = System.Drawing.Color.Black;
-            this.colorWithAlpha3.Parent = this.alphaGradientPanel4;
-            // 
-            // colorWithAlpha4
-            // 
-            this.colorWithAlpha4.Alpha = 255;
-            this.colorWithAlpha4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.colorWithAlpha4.Parent = this.alphaGradientPanel4;
-            // 
-            // colorWithAlpha5
-            // 
-            this.colorWithAlpha5.Alpha = 255;
-            this.colorWithAlpha5.Color = System.Drawing.Color.Black;
-            this.colorWithAlpha5.Parent = this.alphaGradientPanel5;
-            // 
-            // colorWithAlpha6
-            // 
-            this.colorWithAlpha6.Alpha = 255;
-            this.colorWithAlpha6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.colorWithAlpha6.Parent = this.alphaGradientPanel5;
-            // 
             // colorWithAlpha7
             // 
             this.colorWithAlpha7.Alpha = 255;
@@ -816,29 +728,117 @@
             this.colorWithAlpha8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.colorWithAlpha8.Parent = this.alphaGradientPanel6;
             // 
-            // colorWithAlpha9
+            // label7
             // 
-            this.colorWithAlpha9.Alpha = 255;
-            this.colorWithAlpha9.Color = System.Drawing.Color.Black;
-            this.colorWithAlpha9.Parent = this.alphaGradientPanel7;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label7.Location = new System.Drawing.Point(116, 639);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(247, 32);
+            this.label7.TabIndex = 3;
+            this.label7.Text = " y año de nomina";
             // 
-            // colorWithAlpha10
+            // label2
             // 
-            this.colorWithAlpha10.Alpha = 255;
-            this.colorWithAlpha10.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.colorWithAlpha10.Parent = this.alphaGradientPanel7;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label2.Location = new System.Drawing.Point(125, 597);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(273, 32);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Ganancias por mes";
             // 
-            // colorWithAlpha11
+            // chGanancia
             // 
-            this.colorWithAlpha11.Alpha = 255;
-            this.colorWithAlpha11.Color = System.Drawing.Color.Black;
-            this.colorWithAlpha11.Parent = this.alphaGradientPanel8;
+            this.chGanancia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.chGanancia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.chGanancia.BorderlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.chGanancia.BorderlineWidth = 0;
+            chartArea2.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea2.AxisX.IsLabelAutoFit = false;
+            chartArea2.AxisX.LabelStyle.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea2.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro;
+            chartArea2.AxisX.LineColor = System.Drawing.Color.Gainsboro;
+            chartArea2.AxisX.LineWidth = 2;
+            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.Gainsboro;
+            chartArea2.AxisX.MajorGrid.LineWidth = 0;
+            chartArea2.AxisX.MajorTickMark.LineColor = System.Drawing.Color.Gainsboro;
+            chartArea2.AxisX.MajorTickMark.LineWidth = 2;
+            chartArea2.AxisX.MinorGrid.LineColor = System.Drawing.Color.Gainsboro;
+            chartArea2.AxisX.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea2.AxisX.TitleForeColor = System.Drawing.Color.Gainsboro;
+            chartArea2.AxisX2.LineColor = System.Drawing.Color.Gainsboro;
+            chartArea2.AxisX2.LineWidth = 0;
+            chartArea2.AxisX2.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea2.AxisX2.TitleForeColor = System.Drawing.Color.Gainsboro;
+            chartArea2.AxisY.IsLabelAutoFit = false;
+            chartArea2.AxisY.LabelStyle.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea2.AxisY.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro;
+            chartArea2.AxisY.LineColor = System.Drawing.Color.Gainsboro;
+            chartArea2.AxisY.LineWidth = 2;
+            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.Gainsboro;
+            chartArea2.AxisY.MajorGrid.LineWidth = 0;
+            chartArea2.AxisY.MajorTickMark.LineColor = System.Drawing.Color.Gainsboro;
+            chartArea2.AxisY.MajorTickMark.LineWidth = 2;
+            chartArea2.AxisY.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea2.AxisY.TitleForeColor = System.Drawing.Color.Gainsboro;
+            chartArea2.AxisY2.LineColor = System.Drawing.Color.Gainsboro;
+            chartArea2.AxisY2.LineWidth = 0;
+            chartArea2.AxisY2.TitleFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea2.AxisY2.TitleForeColor = System.Drawing.Color.Gainsboro;
+            chartArea2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            chartArea2.BorderColor = System.Drawing.Color.White;
+            chartArea2.BorderWidth = 0;
+            chartArea2.Name = "ChartArea1";
+            this.chGanancia.ChartAreas.Add(chartArea2);
+            this.chGanancia.Enabled = false;
+            legend2.BackColor = System.Drawing.Color.Transparent;
+            legend2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend2.ForeColor = System.Drawing.Color.Gainsboro;
+            legend2.IsTextAutoFit = false;
+            legend2.Name = "Legend1";
+            this.chGanancia.Legends.Add(legend2);
+            this.chGanancia.Location = new System.Drawing.Point(0, 2);
+            this.chGanancia.Name = "chGanancia";
+            this.chGanancia.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
+            series2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series2.BackSecondaryColor = System.Drawing.Color.MediumPurple;
+            series2.BorderWidth = 0;
+            series2.ChartArea = "ChartArea1";
+            series2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.IsVisibleInLegend = false;
+            series2.LabelBackColor = System.Drawing.Color.Transparent;
+            series2.LabelBorderColor = System.Drawing.Color.Transparent;
+            series2.LabelBorderWidth = 0;
+            series2.LabelForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            series2.Legend = "Legend1";
+            series2.MarkerSize = 6;
+            series2.Name = "Series1";
+            series2.YValuesPerPoint = 2;
+            this.chGanancia.Series.Add(series2);
+            this.chGanancia.Size = new System.Drawing.Size(846, 569);
+            this.chGanancia.TabIndex = 6;
+            title2.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title2.ForeColor = System.Drawing.Color.Gainsboro;
+            title2.Name = "Title1";
+            title2.Text = "Nomina";
+            this.chGanancia.Titles.Add(title2);
             // 
-            // colorWithAlpha12
+            // icoGanancias
             // 
-            this.colorWithAlpha12.Alpha = 255;
-            this.colorWithAlpha12.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.colorWithAlpha12.Parent = this.alphaGradientPanel8;
+            this.icoGanancias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.icoGanancias.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.icoGanancias.IconChar = FontAwesome.Sharp.IconChar.PuzzlePiece;
+            this.icoGanancias.IconColor = System.Drawing.Color.DarkSlateBlue;
+            this.icoGanancias.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.icoGanancias.IconSize = 76;
+            this.icoGanancias.Location = new System.Drawing.Point(43, 597);
+            this.icoGanancias.Name = "icoGanancias";
+            this.icoGanancias.Size = new System.Drawing.Size(76, 81);
+            this.icoGanancias.TabIndex = 5;
+            this.icoGanancias.TabStop = false;
             // 
             // mdPrincipal
             // 
@@ -857,8 +857,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.chEmplMasLiquidados)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chEmpXcategoria)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icoGraficoEmplXCargo)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icoEmpleado)).EndInit();
@@ -871,6 +869,8 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icoNominaTotal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chGanancia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icoGanancias)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -888,10 +888,6 @@
         private FontAwesome.Sharp.IconPictureBox icoGraficoEmpleadoMasLiquidado;
         private System.Windows.Forms.DataVisualization.Charting.Chart chEmplMasLiquidados;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chEmpXcategoria;
-        private FontAwesome.Sharp.IconPictureBox icoGraficoEmplXCargo;
         private System.Windows.Forms.AlphaGradientPanel alphaGradientPanel7;
         private System.Windows.Forms.AlphaGradientPanel alphaGradientPanel8;
         private System.Windows.Forms.Panel panel4;
@@ -926,5 +922,9 @@
         private System.Windows.Forms.ColorWithAlpha colorWithAlpha6;
         private System.Windows.Forms.ColorWithAlpha colorWithAlpha7;
         private System.Windows.Forms.ColorWithAlpha colorWithAlpha8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chGanancia;
+        private FontAwesome.Sharp.IconPictureBox icoGanancias;
     }
 }

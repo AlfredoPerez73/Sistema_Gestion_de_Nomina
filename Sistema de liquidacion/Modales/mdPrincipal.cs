@@ -45,21 +45,18 @@ namespace Sistema_de_liquidacion.Modales
 
         private void CargarGraficos()
         {
-            var result = graficoService.CargarGraficos();
-            var result2 = graficoService.CargarGraficos2();
+            var result2 = graficoService.GraficoGanancia();
 
-            List<string> listaCargo = result.Item1;
-            List<int> listaCantEmp = result.Item2;
+            var result = graficoService.CargarGraficoEmplMasLiquidados();
 
-            List<string> listaEmp = result2.Item1;
-            List<int> listaLiqui = result2.Item2;
+            List<string> listaEmpl = result.Item1;
+            List<int> listaLiquid = result.Item2;
 
-            chEmpXcategoria.Series[0].Points.DataBindXY(listaCargo, listaCantEmp);
-            chEmplMasLiquidados.Series[0].Points.DataBindXY(listaEmp, listaLiqui);
+            List<string> AñoMes = result2.Item1;
+            List<decimal> Total = result2.Item2;
 
-
-            chEmpXcategoria.ChartAreas[0].AxisX.Interval = 1;  // Intervalo entre etiquetas
-            chEmpXcategoria.ChartAreas[0].AxisX.LabelStyle.Angle = -45;
+            chGanancia.Series[0].Points.DataBindXY(AñoMes, Total);
+            chEmplMasLiquidados.Series[0].Points.DataBindXY(listaEmpl, listaLiquid);
         }
 
         private void BorderRadiusPanel(Panel panel, int radio)

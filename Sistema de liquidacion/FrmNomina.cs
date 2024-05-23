@@ -54,11 +54,6 @@ namespace Sistema_de_liquidacion
             }
         }
 
-        private void CargarGraficos()
-        {
-
-        }
-
         private void FiltroLiquidaciones()
         {
             if (cboFiltroAño.SelectedIndex > 0 || cboFiltroMes.SelectedIndex > 0 || cboFiltroAño.SelectedIndex == 0 ||
@@ -105,14 +100,12 @@ namespace Sistema_de_liquidacion
             BorderRadiusPanel(panel4, 20);
             BorderRadiusPanel(panel5, 15);
             BorderRadiusPanel(panel6, 15);
-            BorderRadiusPanel(panel7, 20);
             BorderRadiusPanel(panel9, 20);
 
             cboFiltroAño.OnSelectedIndexChanged += cboFiltroAño_OnSelectedIndexChanged;
             cboFiltroMes.OnSelectedIndexChanged += cboFiltroMes_OnSelectedIndexChanged;
 
             CargarAños();
-            CargarGraficos();
             CargarRegistro();
         }
 

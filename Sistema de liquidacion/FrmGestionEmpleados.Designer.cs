@@ -38,9 +38,7 @@
             this.fecha = new RJCodeAdvance.RJControls.RJTextBox();
             this.fecha2 = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtBuscar = new RJCodeAdvance.RJControls.RJTextBox();
-            this.txtAño = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtLiquidacion = new RJCodeAdvance.RJControls.RJTextBox();
-            this.txtMes = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtDiasTrabajados = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtHorasExtras = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtDocumento2 = new RJCodeAdvance.RJControls.RJTextBox();
@@ -49,11 +47,12 @@
             this.txtEstado = new RJCodeAdvance.RJControls.RJTextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.cboCargo = new RJCodeAdvance.RJControls.RJComboBox();
             this.btnGuardarLiquidacion = new RJCodeAdvance.RJControls.RJButton();
-            this.btnBuscarEmpleado = new RJCodeAdvance.RJControls.RJButton();
             this.txtCodigo = new RJCodeAdvance.RJControls.RJTextBox();
+            this.btnBuscarEmpleado = new RJCodeAdvance.RJControls.RJButton();
             this.tblRegistroLiquidaciones = new System.Windows.Forms.DataGridView();
             this.btnSeleccionar2 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.IdDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -90,7 +89,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.dpFechaFinal = new RJCodeAdvance.RJControls.RJDatePicker();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.drFechaActual = new RJCodeAdvance.RJControls.RJDatePicker();
+            this.dpFechaActual = new RJCodeAdvance.RJControls.RJDatePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.btnGenerarPDF = new RJCodeAdvance.RJControls.RJButton();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -100,6 +99,7 @@
             this.colorWithAlpha4 = new System.Windows.Forms.ColorWithAlpha();
             this.colorWithAlpha1 = new System.Windows.Forms.ColorWithAlpha();
             this.colorWithAlpha2 = new System.Windows.Forms.ColorWithAlpha();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistroLiquidaciones)).BeginInit();
@@ -140,7 +140,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(72, 11);
+            this.label8.Location = new System.Drawing.Point(100, 17);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(253, 26);
@@ -268,31 +268,6 @@
             this.txtBuscar.Enter += new System.EventHandler(this.txtBuscar_Enter);
             this.txtBuscar.Leave += new System.EventHandler(this.txtBuscar_Leave);
             // 
-            // txtAño
-            // 
-            this.txtAño.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAño.BackColor = System.Drawing.SystemColors.Window;
-            this.txtAño.BorderColor = System.Drawing.Color.White;
-            this.txtAño.BorderFocusColor = System.Drawing.Color.White;
-            this.txtAño.BorderRadius = 15;
-            this.txtAño.BorderSize = 2;
-            this.txtAño.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAño.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtAño.Location = new System.Drawing.Point(31, 318);
-            this.txtAño.Margin = new System.Windows.Forms.Padding(6);
-            this.txtAño.Multiline = false;
-            this.txtAño.Name = "txtAño";
-            this.txtAño.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtAño.PasswordChar = false;
-            this.txtAño.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtAño.PlaceholderText = "";
-            this.txtAño.Size = new System.Drawing.Size(319, 42);
-            this.txtAño.TabIndex = 18;
-            this.txtAño.Texts = "Año";
-            this.txtAño.UnderlinedStyle = false;
-            this.txtAño.Enter += new System.EventHandler(this.txtAño_Enter);
-            this.txtAño.Leave += new System.EventHandler(this.txtAño_Leave);
-            // 
             // txtLiquidacion
             // 
             this.txtLiquidacion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -303,7 +278,7 @@
             this.txtLiquidacion.BorderSize = 2;
             this.txtLiquidacion.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLiquidacion.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtLiquidacion.Location = new System.Drawing.Point(31, 235);
+            this.txtLiquidacion.Location = new System.Drawing.Point(50, 85);
             this.txtLiquidacion.Margin = new System.Windows.Forms.Padding(6);
             this.txtLiquidacion.Multiline = false;
             this.txtLiquidacion.Name = "txtLiquidacion";
@@ -311,37 +286,12 @@
             this.txtLiquidacion.PasswordChar = false;
             this.txtLiquidacion.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtLiquidacion.PlaceholderText = "";
-            this.txtLiquidacion.Size = new System.Drawing.Size(319, 42);
+            this.txtLiquidacion.Size = new System.Drawing.Size(334, 42);
             this.txtLiquidacion.TabIndex = 17;
             this.txtLiquidacion.Texts = "Codigo de liquidacion";
             this.txtLiquidacion.UnderlinedStyle = false;
             this.txtLiquidacion.Enter += new System.EventHandler(this.txtLiquidacion_Enter);
             this.txtLiquidacion.Leave += new System.EventHandler(this.txtLiquidacion_Leave);
-            // 
-            // txtMes
-            // 
-            this.txtMes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMes.BackColor = System.Drawing.SystemColors.Window;
-            this.txtMes.BorderColor = System.Drawing.Color.White;
-            this.txtMes.BorderFocusColor = System.Drawing.Color.White;
-            this.txtMes.BorderRadius = 15;
-            this.txtMes.BorderSize = 2;
-            this.txtMes.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMes.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtMes.Location = new System.Drawing.Point(31, 399);
-            this.txtMes.Margin = new System.Windows.Forms.Padding(6);
-            this.txtMes.Multiline = false;
-            this.txtMes.Name = "txtMes";
-            this.txtMes.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtMes.PasswordChar = false;
-            this.txtMes.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtMes.PlaceholderText = "";
-            this.txtMes.Size = new System.Drawing.Size(319, 42);
-            this.txtMes.TabIndex = 18;
-            this.txtMes.Texts = "Mes";
-            this.txtMes.UnderlinedStyle = false;
-            this.txtMes.Enter += new System.EventHandler(this.txtMes_Enter);
-            this.txtMes.Leave += new System.EventHandler(this.txtMes_Leave);
             // 
             // txtDiasTrabajados
             // 
@@ -353,7 +303,7 @@
             this.txtDiasTrabajados.BorderSize = 2;
             this.txtDiasTrabajados.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiasTrabajados.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtDiasTrabajados.Location = new System.Drawing.Point(31, 486);
+            this.txtDiasTrabajados.Location = new System.Drawing.Point(398, 85);
             this.txtDiasTrabajados.Margin = new System.Windows.Forms.Padding(6);
             this.txtDiasTrabajados.Multiline = false;
             this.txtDiasTrabajados.Name = "txtDiasTrabajados";
@@ -361,7 +311,7 @@
             this.txtDiasTrabajados.PasswordChar = false;
             this.txtDiasTrabajados.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtDiasTrabajados.PlaceholderText = "";
-            this.txtDiasTrabajados.Size = new System.Drawing.Size(319, 42);
+            this.txtDiasTrabajados.Size = new System.Drawing.Size(334, 42);
             this.txtDiasTrabajados.TabIndex = 18;
             this.txtDiasTrabajados.Texts = "Dias trabajados";
             this.txtDiasTrabajados.UnderlinedStyle = false;
@@ -378,7 +328,7 @@
             this.txtHorasExtras.BorderSize = 2;
             this.txtHorasExtras.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHorasExtras.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtHorasExtras.Location = new System.Drawing.Point(31, 569);
+            this.txtHorasExtras.Location = new System.Drawing.Point(747, 85);
             this.txtHorasExtras.Margin = new System.Windows.Forms.Padding(6);
             this.txtHorasExtras.Multiline = false;
             this.txtHorasExtras.Name = "txtHorasExtras";
@@ -386,7 +336,7 @@
             this.txtHorasExtras.PasswordChar = false;
             this.txtHorasExtras.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtHorasExtras.PlaceholderText = "";
-            this.txtHorasExtras.Size = new System.Drawing.Size(319, 42);
+            this.txtHorasExtras.Size = new System.Drawing.Size(334, 42);
             this.txtHorasExtras.TabIndex = 18;
             this.txtHorasExtras.Texts = "Horas extras";
             this.txtHorasExtras.UnderlinedStyle = false;
@@ -401,9 +351,10 @@
             this.txtDocumento2.BorderFocusColor = System.Drawing.Color.White;
             this.txtDocumento2.BorderRadius = 15;
             this.txtDocumento2.BorderSize = 2;
+            this.txtDocumento2.Enabled = false;
             this.txtDocumento2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDocumento2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtDocumento2.Location = new System.Drawing.Point(362, 152);
+            this.txtDocumento2.Location = new System.Drawing.Point(398, 33);
             this.txtDocumento2.Margin = new System.Windows.Forms.Padding(6);
             this.txtDocumento2.Multiline = false;
             this.txtDocumento2.Name = "txtDocumento2";
@@ -411,11 +362,12 @@
             this.txtDocumento2.PasswordChar = false;
             this.txtDocumento2.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtDocumento2.PlaceholderText = "";
-            this.txtDocumento2.Size = new System.Drawing.Size(319, 42);
+            this.txtDocumento2.Size = new System.Drawing.Size(334, 42);
             this.txtDocumento2.TabIndex = 18;
             this.txtDocumento2.Texts = "Documento";
             this.txtDocumento2.UnderlinedStyle = false;
             this.txtDocumento2.Enter += new System.EventHandler(this.txtDocumento2_Enter);
+            this.txtDocumento2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDocumento2_KeyDown);
             this.txtDocumento2.Leave += new System.EventHandler(this.txtDocumento2_Leave);
             // 
             // txtNombre
@@ -428,7 +380,7 @@
             this.txtNombre.BorderSize = 2;
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtNombre.Location = new System.Drawing.Point(362, 235);
+            this.txtNombre.Location = new System.Drawing.Point(744, 33);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(6);
             this.txtNombre.Multiline = false;
             this.txtNombre.Name = "txtNombre";
@@ -436,11 +388,12 @@
             this.txtNombre.PasswordChar = false;
             this.txtNombre.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtNombre.PlaceholderText = "";
-            this.txtNombre.Size = new System.Drawing.Size(319, 42);
+            this.txtNombre.Size = new System.Drawing.Size(334, 42);
             this.txtNombre.TabIndex = 18;
             this.txtNombre.Texts = "Nombre";
             this.txtNombre.UnderlinedStyle = false;
             this.txtNombre.Enter += new System.EventHandler(this.txtNombre_Enter);
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
             // 
             // txtSalario2
@@ -453,7 +406,7 @@
             this.txtSalario2.BorderSize = 2;
             this.txtSalario2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSalario2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtSalario2.Location = new System.Drawing.Point(362, 401);
+            this.txtSalario2.Location = new System.Drawing.Point(220, 141);
             this.txtSalario2.Margin = new System.Windows.Forms.Padding(6);
             this.txtSalario2.Multiline = false;
             this.txtSalario2.Name = "txtSalario2";
@@ -461,11 +414,12 @@
             this.txtSalario2.PasswordChar = false;
             this.txtSalario2.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtSalario2.PlaceholderText = "";
-            this.txtSalario2.Size = new System.Drawing.Size(319, 42);
+            this.txtSalario2.Size = new System.Drawing.Size(334, 42);
             this.txtSalario2.TabIndex = 18;
             this.txtSalario2.Texts = "Salario";
             this.txtSalario2.UnderlinedStyle = false;
             this.txtSalario2.Enter += new System.EventHandler(this.txtSalario2_Enter);
+            this.txtSalario2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSalario2_KeyPress);
             this.txtSalario2.Leave += new System.EventHandler(this.txtSalario2_Leave);
             // 
             // txtEstado
@@ -478,7 +432,7 @@
             this.txtEstado.BorderSize = 2;
             this.txtEstado.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstado.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtEstado.Location = new System.Drawing.Point(362, 486);
+            this.txtEstado.Location = new System.Drawing.Point(566, 141);
             this.txtEstado.Margin = new System.Windows.Forms.Padding(6);
             this.txtEstado.Multiline = false;
             this.txtEstado.Name = "txtEstado";
@@ -486,11 +440,12 @@
             this.txtEstado.PasswordChar = false;
             this.txtEstado.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtEstado.PlaceholderText = "";
-            this.txtEstado.Size = new System.Drawing.Size(319, 42);
+            this.txtEstado.Size = new System.Drawing.Size(334, 42);
             this.txtEstado.TabIndex = 18;
             this.txtEstado.Texts = "Estado";
             this.txtEstado.UnderlinedStyle = false;
             this.txtEstado.Enter += new System.EventHandler(this.txtEstado_Enter);
+            this.txtEstado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEstado_KeyPress);
             this.txtEstado.Leave += new System.EventHandler(this.txtEstado_Leave);
             // 
             // label11
@@ -498,14 +453,14 @@
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(237, 45);
+            this.label11.Location = new System.Drawing.Point(107, 145);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(267, 28);
+            this.label11.Size = new System.Drawing.Size(301, 32);
             this.label11.TabIndex = 15;
-            this.label11.Text = "Detalle del empleado";
+            this.label11.Text = "Detalle de liquidacion";
             // 
             // panel3
             // 
@@ -513,39 +468,50 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.panel6);
-            this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.btnGuardarLiquidacion);
-            this.panel3.Controls.Add(this.btnBuscarEmpleado);
             this.panel3.Controls.Add(this.txtEstado);
             this.panel3.Controls.Add(this.txtSalario2);
             this.panel3.Controls.Add(this.txtNombre);
             this.panel3.Controls.Add(this.txtDocumento2);
             this.panel3.Controls.Add(this.txtHorasExtras);
             this.panel3.Controls.Add(this.txtDiasTrabajados);
-            this.panel3.Controls.Add(this.txtMes);
             this.panel3.Controls.Add(this.txtCodigo);
             this.panel3.Controls.Add(this.txtLiquidacion);
-            this.panel3.Controls.Add(this.txtAño);
-            this.panel3.Location = new System.Drawing.Point(1135, 127);
+            this.panel3.Location = new System.Drawing.Point(105, 188);
             this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(756, 775);
+            this.panel3.Size = new System.Drawing.Size(1786, 228);
             this.panel3.TabIndex = 35;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 10.2F);
+            this.textBox1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.textBox1.Location = new System.Drawing.Point(414, 44);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(315, 17);
+            this.textBox1.TabIndex = 48;
+            this.textBox1.Text = "Documento";
+            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel6.Controls.Add(this.cboCargo);
-            this.panel6.Location = new System.Drawing.Point(365, 310);
+            this.panel6.Location = new System.Drawing.Point(1101, 57);
             this.panel6.Margin = new System.Windows.Forms.Padding(5);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(301, 50);
+            this.panel6.Size = new System.Drawing.Size(332, 50);
             this.panel6.TabIndex = 41;
             // 
             // cboCargo
             // 
-            this.cboCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.cboCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.cboCargo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.cboCargo.BorderSize = 1;
             this.cboCargo.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -579,10 +545,10 @@
             this.btnGuardarLiquidacion.ForeColor = System.Drawing.Color.White;
             this.btnGuardarLiquidacion.Image = global::Sistema_de_liquidacion.Properties.Resources.disk;
             this.btnGuardarLiquidacion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardarLiquidacion.Location = new System.Drawing.Point(33, 624);
+            this.btnGuardarLiquidacion.Location = new System.Drawing.Point(1561, 33);
             this.btnGuardarLiquidacion.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardarLiquidacion.Name = "btnGuardarLiquidacion";
-            this.btnGuardarLiquidacion.Size = new System.Drawing.Size(666, 50);
+            this.btnGuardarLiquidacion.Size = new System.Drawing.Size(204, 51);
             this.btnGuardarLiquidacion.TabIndex = 19;
             this.btnGuardarLiquidacion.Text = "Guardar Liqu.";
             this.btnGuardarLiquidacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -590,6 +556,31 @@
             this.btnGuardarLiquidacion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGuardarLiquidacion.UseVisualStyleBackColor = false;
             this.btnGuardarLiquidacion.Click += new System.EventHandler(this.btnGuardarLiquidacion_Click);
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCodigo.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCodigo.BorderColor = System.Drawing.Color.White;
+            this.txtCodigo.BorderFocusColor = System.Drawing.Color.White;
+            this.txtCodigo.BorderRadius = 15;
+            this.txtCodigo.BorderSize = 2;
+            this.txtCodigo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtCodigo.Location = new System.Drawing.Point(52, 33);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(6);
+            this.txtCodigo.Multiline = false;
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
+            this.txtCodigo.PasswordChar = false;
+            this.txtCodigo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCodigo.PlaceholderText = "";
+            this.txtCodigo.Size = new System.Drawing.Size(334, 42);
+            this.txtCodigo.TabIndex = 17;
+            this.txtCodigo.Texts = "Codigo de detalle de liquidacion";
+            this.txtCodigo.UnderlinedStyle = false;
+            this.txtCodigo.Enter += new System.EventHandler(this.txtCodigo_Enter);
+            this.txtCodigo.Leave += new System.EventHandler(this.txtCodigo_Leave);
             // 
             // btnBuscarEmpleado
             // 
@@ -604,7 +595,7 @@
             this.btnBuscarEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarEmpleado.ForeColor = System.Drawing.Color.White;
             this.btnBuscarEmpleado.Image = global::Sistema_de_liquidacion.Properties.Resources.busqueda1;
-            this.btnBuscarEmpleado.Location = new System.Drawing.Point(685, 152);
+            this.btnBuscarEmpleado.Location = new System.Drawing.Point(1843, 133);
             this.btnBuscarEmpleado.Margin = new System.Windows.Forms.Padding(5);
             this.btnBuscarEmpleado.Name = "btnBuscarEmpleado";
             this.btnBuscarEmpleado.Size = new System.Drawing.Size(48, 44);
@@ -612,31 +603,6 @@
             this.btnBuscarEmpleado.TextColor = System.Drawing.Color.White;
             this.btnBuscarEmpleado.UseVisualStyleBackColor = false;
             this.btnBuscarEmpleado.Click += new System.EventHandler(this.btnBuscarEmpleado_Click_1);
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCodigo.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCodigo.BorderColor = System.Drawing.Color.White;
-            this.txtCodigo.BorderFocusColor = System.Drawing.Color.White;
-            this.txtCodigo.BorderRadius = 15;
-            this.txtCodigo.BorderSize = 2;
-            this.txtCodigo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtCodigo.Location = new System.Drawing.Point(33, 152);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(6);
-            this.txtCodigo.Multiline = false;
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtCodigo.PasswordChar = false;
-            this.txtCodigo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtCodigo.PlaceholderText = "";
-            this.txtCodigo.Size = new System.Drawing.Size(319, 42);
-            this.txtCodigo.TabIndex = 17;
-            this.txtCodigo.Texts = "Codigo de detalle de liquidacion";
-            this.txtCodigo.UnderlinedStyle = false;
-            this.txtCodigo.Enter += new System.EventHandler(this.txtCodigo_Enter);
-            this.txtCodigo.Leave += new System.EventHandler(this.txtCodigo_Leave);
             // 
             // tblRegistroLiquidaciones
             // 
@@ -709,7 +675,7 @@
             this.tblRegistroLiquidaciones.RowHeadersVisible = false;
             this.tblRegistroLiquidaciones.RowHeadersWidth = 51;
             this.tblRegistroLiquidaciones.RowTemplate.Height = 24;
-            this.tblRegistroLiquidaciones.Size = new System.Drawing.Size(982, 435);
+            this.tblRegistroLiquidaciones.Size = new System.Drawing.Size(1791, 295);
             this.tblRegistroLiquidaciones.TabIndex = 27;
             this.tblRegistroLiquidaciones.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.tblRegistroLiquidaciones_CellPainting_1);
             // 
@@ -778,6 +744,7 @@
             this.Usuario.MinimumWidth = 6;
             this.Usuario.Name = "Usuario";
             this.Usuario.ReadOnly = true;
+            this.Usuario.Visible = false;
             this.Usuario.Width = 125;
             // 
             // Documento2
@@ -810,6 +777,7 @@
             this.Estado2.MinimumWidth = 6;
             this.Estado2.Name = "Estado2";
             this.Estado2.ReadOnly = true;
+            this.Estado2.Visible = false;
             this.Estado2.Width = 125;
             // 
             // DiasTrabajados
@@ -932,10 +900,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel1.Controls.Add(this.tblRegistroLiquidaciones);
-            this.panel1.Location = new System.Drawing.Point(89, 257);
+            this.panel1.Location = new System.Drawing.Point(100, 507);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(982, 435);
+            this.panel1.Size = new System.Drawing.Size(1791, 295);
             this.panel1.TabIndex = 39;
             // 
             // panel2
@@ -1047,7 +1015,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel7.Controls.Add(this.drFechaActual);
+            this.panel7.Controls.Add(this.dpFechaActual);
             this.panel7.Location = new System.Drawing.Point(821, 110);
             this.panel7.Margin = new System.Windows.Forms.Padding(5);
             this.panel7.Name = "panel7";
@@ -1055,26 +1023,26 @@
             this.panel7.TabIndex = 40;
             this.panel7.Visible = false;
             // 
-            // drFechaActual
+            // dpFechaActual
             // 
-            this.drFechaActual.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.drFechaActual.BorderSize = 0;
-            this.drFechaActual.CalendarForeColor = System.Drawing.Color.White;
-            this.drFechaActual.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.drFechaActual.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.drFechaActual.CalendarTitleForeColor = System.Drawing.Color.White;
-            this.drFechaActual.CalendarTrailingForeColor = System.Drawing.Color.White;
-            this.drFechaActual.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.drFechaActual.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.drFechaActual.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.drFechaActual.Location = new System.Drawing.Point(0, 0);
-            this.drFechaActual.MinimumSize = new System.Drawing.Size(4, 35);
-            this.drFechaActual.Name = "drFechaActual";
-            this.drFechaActual.Size = new System.Drawing.Size(147, 35);
-            this.drFechaActual.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.drFechaActual.TabIndex = 0;
-            this.drFechaActual.TextColor = System.Drawing.Color.White;
-            this.drFechaActual.ValueChanged += new System.EventHandler(this.dpFechaInicial_ValueChanged);
+            this.dpFechaActual.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.dpFechaActual.BorderSize = 0;
+            this.dpFechaActual.CalendarForeColor = System.Drawing.Color.White;
+            this.dpFechaActual.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.dpFechaActual.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.dpFechaActual.CalendarTitleForeColor = System.Drawing.Color.White;
+            this.dpFechaActual.CalendarTrailingForeColor = System.Drawing.Color.White;
+            this.dpFechaActual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dpFechaActual.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dpFechaActual.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dpFechaActual.Location = new System.Drawing.Point(0, 0);
+            this.dpFechaActual.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dpFechaActual.Name = "dpFechaActual";
+            this.dpFechaActual.Size = new System.Drawing.Size(147, 35);
+            this.dpFechaActual.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.dpFechaActual.TabIndex = 0;
+            this.dpFechaActual.TextColor = System.Drawing.Color.White;
+            this.dpFechaActual.ValueChanged += new System.EventHandler(this.dpFechaInicial_ValueChanged);
             // 
             // label5
             // 
@@ -1102,7 +1070,7 @@
             this.btnGenerarPDF.ForeColor = System.Drawing.Color.White;
             this.btnGenerarPDF.Image = global::Sistema_de_liquidacion.Properties.Resources.archivo_pdf;
             this.btnGenerarPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGenerarPDF.Location = new System.Drawing.Point(890, 702);
+            this.btnGenerarPDF.Location = new System.Drawing.Point(1710, 860);
             this.btnGenerarPDF.Margin = new System.Windows.Forms.Padding(5);
             this.btnGenerarPDF.Name = "btnGenerarPDF";
             this.btnGenerarPDF.Size = new System.Drawing.Size(181, 50);
@@ -1119,12 +1087,11 @@
             this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel9.Controls.Add(this.label8);
             this.panel9.Controls.Add(this.txtBuscar);
             this.panel9.Controls.Add(this.panel2);
             this.panel9.Controls.Add(this.panel5);
             this.panel9.Controls.Add(this.panel4);
-            this.panel9.Location = new System.Drawing.Point(100, 46);
+            this.panel9.Location = new System.Drawing.Point(100, 50);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1791, 51);
             this.panel9.TabIndex = 46;
@@ -1165,23 +1132,41 @@
             this.colorWithAlpha2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.colorWithAlpha2.Parent = null;
             // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(107, 461);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(342, 32);
+            this.label2.TabIndex = 47;
+            this.label2.Text = "Registro de liquidaciones";
+            // 
             // FrmGestionEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.panel9);
+            this.Controls.Add(this.btnBuscarEmpleado);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.btnGenerarPDF);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.fecha2);
             this.Controls.Add(this.fecha);
             this.Controls.Add(this.txtcargo);
             this.Controls.Add(this.txtIdProducto);
             this.Controls.Add(this.txtDetalle);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
@@ -1199,7 +1184,6 @@
             this.panel5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1214,9 +1198,7 @@
         private RJCodeAdvance.RJControls.RJTextBox fecha;
         private RJCodeAdvance.RJControls.RJTextBox fecha2;
         private RJCodeAdvance.RJControls.RJTextBox txtBuscar;
-        private RJCodeAdvance.RJControls.RJTextBox txtAño;
         private RJCodeAdvance.RJControls.RJTextBox txtLiquidacion;
-        private RJCodeAdvance.RJControls.RJTextBox txtMes;
         private RJCodeAdvance.RJControls.RJTextBox txtDiasTrabajados;
         private RJCodeAdvance.RJControls.RJTextBox txtHorasExtras;
         private RJCodeAdvance.RJControls.RJTextBox txtDocumento2;
@@ -1240,9 +1222,16 @@
         private RJCodeAdvance.RJControls.RJComboBox cboCargo;
         private RJCodeAdvance.RJControls.RJButton btnGenerarPDF;
         private System.Windows.Forms.Panel panel7;
-        private RJCodeAdvance.RJControls.RJDatePicker drFechaActual;
+        private RJCodeAdvance.RJControls.RJDatePicker dpFechaActual;
         private System.Windows.Forms.Label label5;
         private RJCodeAdvance.RJControls.RJTextBox txtCodigo;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.ColorWithAlpha colorWithAlpha5;
+        private System.Windows.Forms.ColorWithAlpha colorWithAlpha6;
+        private System.Windows.Forms.ColorWithAlpha colorWithAlpha3;
+        private System.Windows.Forms.ColorWithAlpha colorWithAlpha4;
+        private System.Windows.Forms.ColorWithAlpha colorWithAlpha1;
+        private System.Windows.Forms.ColorWithAlpha colorWithAlpha2;
         private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar2;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdDetalle;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdFactura2;
@@ -1269,13 +1258,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Devengado;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro3;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdUsuario;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.ColorWithAlpha colorWithAlpha5;
-        private System.Windows.Forms.ColorWithAlpha colorWithAlpha6;
-        private System.Windows.Forms.ColorWithAlpha colorWithAlpha3;
-        private System.Windows.Forms.ColorWithAlpha colorWithAlpha4;
-        private System.Windows.Forms.ColorWithAlpha colorWithAlpha1;
-        private System.Windows.Forms.ColorWithAlpha colorWithAlpha2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

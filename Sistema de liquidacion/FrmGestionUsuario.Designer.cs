@@ -28,22 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.cboFiltroRol = new RJCodeAdvance.RJControls.RJComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tblRegistro = new System.Windows.Forms.DataGridView();
-            this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.IdUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Contraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdRol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnPasswordChar = new RJCodeAdvance.RJControls.RJButton();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -66,6 +57,21 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.txtBuscar = new RJCodeAdvance.RJControls.RJTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Contraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdRol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistro)).BeginInit();
@@ -126,10 +132,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel2.Controls.Add(this.tblRegistro);
-            this.panel2.Location = new System.Drawing.Point(278, 295);
+            this.panel2.Location = new System.Drawing.Point(98, 532);
             this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(966, 374);
+            this.panel2.Size = new System.Drawing.Size(1747, 400);
             this.panel2.TabIndex = 30;
             // 
             // tblRegistro
@@ -140,17 +146,22 @@
             this.tblRegistro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblRegistro.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.tblRegistro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblRegistro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblRegistro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.tblRegistro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblRegistro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSeleccionar,
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column5,
+            this.Column4,
             this.IdUsuario,
             this.Documento,
             this.Usuario,
@@ -159,14 +170,14 @@
             this.Rol,
             this.Correo,
             this.FechaRegistro});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tblRegistro.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tblRegistro.DefaultCellStyle = dataGridViewCellStyle4;
             this.tblRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblRegistro.EnableHeadersVisualStyles = false;
             this.tblRegistro.GridColor = System.Drawing.Color.White;
@@ -179,85 +190,10 @@
             this.tblRegistro.RowHeadersWidth = 51;
             this.tblRegistro.RowTemplate.Height = 24;
             this.tblRegistro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tblRegistro.Size = new System.Drawing.Size(966, 374);
+            this.tblRegistro.Size = new System.Drawing.Size(1747, 400);
             this.tblRegistro.TabIndex = 19;
             this.tblRegistro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblRegistro_CellContentClick);
             this.tblRegistro.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.tblRegistro_CellPainting);
-            // 
-            // btnSeleccionar
-            // 
-            this.btnSeleccionar.HeaderText = "";
-            this.btnSeleccionar.MinimumWidth = 6;
-            this.btnSeleccionar.Name = "btnSeleccionar";
-            this.btnSeleccionar.ReadOnly = true;
-            this.btnSeleccionar.Width = 30;
-            // 
-            // IdUsuario
-            // 
-            this.IdUsuario.HeaderText = "Id de usuario";
-            this.IdUsuario.MinimumWidth = 6;
-            this.IdUsuario.Name = "IdUsuario";
-            this.IdUsuario.ReadOnly = true;
-            this.IdUsuario.Visible = false;
-            this.IdUsuario.Width = 125;
-            // 
-            // Documento
-            // 
-            this.Documento.HeaderText = "Documento";
-            this.Documento.MinimumWidth = 6;
-            this.Documento.Name = "Documento";
-            this.Documento.ReadOnly = true;
-            this.Documento.Width = 125;
-            // 
-            // Usuario
-            // 
-            this.Usuario.HeaderText = "Usuario";
-            this.Usuario.MinimumWidth = 6;
-            this.Usuario.Name = "Usuario";
-            this.Usuario.ReadOnly = true;
-            this.Usuario.Width = 125;
-            // 
-            // Contraseña
-            // 
-            this.Contraseña.HeaderText = "Contraseña";
-            this.Contraseña.MinimumWidth = 6;
-            this.Contraseña.Name = "Contraseña";
-            this.Contraseña.ReadOnly = true;
-            this.Contraseña.Visible = false;
-            this.Contraseña.Width = 125;
-            // 
-            // IdRol
-            // 
-            this.IdRol.HeaderText = "Id del rol";
-            this.IdRol.MinimumWidth = 6;
-            this.IdRol.Name = "IdRol";
-            this.IdRol.ReadOnly = true;
-            this.IdRol.Visible = false;
-            this.IdRol.Width = 125;
-            // 
-            // Rol
-            // 
-            this.Rol.HeaderText = "Rol";
-            this.Rol.MinimumWidth = 6;
-            this.Rol.Name = "Rol";
-            this.Rol.ReadOnly = true;
-            this.Rol.Width = 125;
-            // 
-            // Correo
-            // 
-            this.Correo.HeaderText = "Correo";
-            this.Correo.MinimumWidth = 6;
-            this.Correo.Name = "Correo";
-            this.Correo.ReadOnly = true;
-            this.Correo.Width = 125;
-            // 
-            // FechaRegistro
-            // 
-            this.FechaRegistro.HeaderText = "Fecha de registro";
-            this.FechaRegistro.MinimumWidth = 6;
-            this.FechaRegistro.Name = "FechaRegistro";
-            this.FechaRegistro.ReadOnly = true;
-            this.FechaRegistro.Width = 200;
             // 
             // panel1
             // 
@@ -266,7 +202,6 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel1.Controls.Add(this.btnPasswordChar);
             this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.btnLimpiar);
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnGuardar);
@@ -275,10 +210,10 @@
             this.panel1.Controls.Add(this.txtCorreo);
             this.panel1.Controls.Add(this.txtContraseña);
             this.panel1.Controls.Add(this.txtNombreUsuario);
-            this.panel1.Location = new System.Drawing.Point(789, 118);
+            this.panel1.Location = new System.Drawing.Point(99, 208);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(524, 812);
+            this.panel1.Size = new System.Drawing.Size(1746, 226);
             this.panel1.TabIndex = 29;
             // 
             // btnPasswordChar
@@ -294,7 +229,7 @@
             this.btnPasswordChar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPasswordChar.ForeColor = System.Drawing.Color.White;
             this.btnPasswordChar.Image = global::Sistema_de_liquidacion.Properties.Resources.ojo__1_;
-            this.btnPasswordChar.Location = new System.Drawing.Point(442, 324);
+            this.btnPasswordChar.Location = new System.Drawing.Point(1084, 38);
             this.btnPasswordChar.Margin = new System.Windows.Forms.Padding(5);
             this.btnPasswordChar.Name = "btnPasswordChar";
             this.btnPasswordChar.Size = new System.Drawing.Size(44, 43);
@@ -312,7 +247,7 @@
             this.panel5.Controls.Add(this.rjTextBox10);
             this.panel5.Controls.Add(this.cboRoles);
             this.panel5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel5.Location = new System.Drawing.Point(100, 394);
+            this.panel5.Location = new System.Drawing.Point(559, 96);
             this.panel5.Margin = new System.Windows.Forms.Padding(5);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(331, 52);
@@ -471,12 +406,12 @@
             this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(144, 58);
+            this.label19.Location = new System.Drawing.Point(98, 160);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(210, 25);
+            this.label19.Size = new System.Drawing.Size(269, 32);
             this.label19.TabIndex = 9;
             this.label19.Text = "Detalle del usuarios";
             // 
@@ -494,10 +429,10 @@
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
             this.btnLimpiar.Image = global::Sistema_de_liquidacion.Properties.Resources.escoba;
-            this.btnLimpiar.Location = new System.Drawing.Point(98, 589);
+            this.btnLimpiar.Location = new System.Drawing.Point(1487, 84);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(5);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(331, 51);
+            this.btnLimpiar.Size = new System.Drawing.Size(204, 51);
             this.btnLimpiar.TabIndex = 15;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -520,10 +455,10 @@
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.Image = global::Sistema_de_liquidacion.Properties.Resources.circulo_cruzado__1_;
-            this.btnEliminar.Location = new System.Drawing.Point(101, 645);
+            this.btnEliminar.Location = new System.Drawing.Point(1486, 140);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(5);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(330, 51);
+            this.btnEliminar.Size = new System.Drawing.Size(204, 51);
             this.btnEliminar.TabIndex = 14;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -546,10 +481,10 @@
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Image = global::Sistema_de_liquidacion.Properties.Resources.disk;
-            this.btnGuardar.Location = new System.Drawing.Point(97, 528);
+            this.btnGuardar.Location = new System.Drawing.Point(1486, 23);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(330, 51);
+            this.btnGuardar.Size = new System.Drawing.Size(204, 51);
             this.btnGuardar.TabIndex = 14;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -568,7 +503,7 @@
             this.txtIdUsuario.BorderSize = 2;
             this.txtIdUsuario.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdUsuario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtIdUsuario.Location = new System.Drawing.Point(97, 147);
+            this.txtIdUsuario.Location = new System.Drawing.Point(1141, 38);
             this.txtIdUsuario.Margin = new System.Windows.Forms.Padding(6);
             this.txtIdUsuario.Multiline = false;
             this.txtIdUsuario.Name = "txtIdUsuario";
@@ -595,7 +530,7 @@
             this.txtDocumento.BorderSize = 2;
             this.txtDocumento.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDocumento.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtDocumento.Location = new System.Drawing.Point(97, 202);
+            this.txtDocumento.Location = new System.Drawing.Point(47, 38);
             this.txtDocumento.Margin = new System.Windows.Forms.Padding(6);
             this.txtDocumento.Multiline = false;
             this.txtDocumento.Name = "txtDocumento";
@@ -621,7 +556,7 @@
             this.txtCorreo.BorderSize = 2;
             this.txtCorreo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtCorreo.Location = new System.Drawing.Point(101, 468);
+            this.txtCorreo.Location = new System.Drawing.Point(214, 96);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(6);
             this.txtCorreo.Multiline = false;
             this.txtCorreo.Name = "txtCorreo";
@@ -646,7 +581,7 @@
             this.txtContraseña.BorderSize = 2;
             this.txtContraseña.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtContraseña.Location = new System.Drawing.Point(97, 324);
+            this.txtContraseña.Location = new System.Drawing.Point(739, 38);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(6);
             this.txtContraseña.Multiline = false;
             this.txtContraseña.Name = "txtContraseña";
@@ -671,7 +606,7 @@
             this.txtNombreUsuario.BorderSize = 2;
             this.txtNombreUsuario.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreUsuario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtNombreUsuario.Location = new System.Drawing.Point(97, 260);
+            this.txtNombreUsuario.Location = new System.Drawing.Point(393, 38);
             this.txtNombreUsuario.Margin = new System.Windows.Forms.Padding(6);
             this.txtNombreUsuario.Multiline = false;
             this.txtNombreUsuario.Name = "txtNombreUsuario";
@@ -712,12 +647,11 @@
             this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel9.Controls.Add(this.label8);
             this.panel9.Controls.Add(this.panel3);
             this.panel9.Controls.Add(this.txtBuscar);
-            this.panel9.Location = new System.Drawing.Point(99, 49);
+            this.panel9.Location = new System.Drawing.Point(99, 58);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1792, 51);
+            this.panel9.Size = new System.Drawing.Size(1760, 51);
             this.panel9.TabIndex = 48;
             // 
             // label8
@@ -725,7 +659,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(72, 11);
+            this.label8.Location = new System.Drawing.Point(99, 29);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(211, 26);
@@ -757,15 +691,137 @@
             this.txtBuscar.Enter += new System.EventHandler(this.txtBuscar_Enter);
             this.txtBuscar.Leave += new System.EventHandler(this.txtBuscar_Leave);
             // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(92, 486);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(275, 32);
+            this.label2.TabIndex = 49;
+            this.label2.Text = "Registro de usuarios";
+            // 
+            // btnSeleccionar
+            // 
+            this.btnSeleccionar.HeaderText = "";
+            this.btnSeleccionar.MinimumWidth = 6;
+            this.btnSeleccionar.Name = "btnSeleccionar";
+            this.btnSeleccionar.ReadOnly = true;
+            this.btnSeleccionar.Width = 30;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // IdUsuario
+            // 
+            this.IdUsuario.HeaderText = "Id de usuario";
+            this.IdUsuario.MinimumWidth = 6;
+            this.IdUsuario.Name = "IdUsuario";
+            this.IdUsuario.ReadOnly = true;
+            this.IdUsuario.Visible = false;
+            this.IdUsuario.Width = 125;
+            // 
+            // Documento
+            // 
+            this.Documento.HeaderText = "Documento";
+            this.Documento.MinimumWidth = 6;
+            this.Documento.Name = "Documento";
+            this.Documento.ReadOnly = true;
+            this.Documento.Width = 125;
+            // 
+            // Usuario
+            // 
+            this.Usuario.HeaderText = "Usuario";
+            this.Usuario.MinimumWidth = 6;
+            this.Usuario.Name = "Usuario";
+            this.Usuario.ReadOnly = true;
+            this.Usuario.Width = 125;
+            // 
+            // Contraseña
+            // 
+            this.Contraseña.HeaderText = "Contraseña";
+            this.Contraseña.MinimumWidth = 6;
+            this.Contraseña.Name = "Contraseña";
+            this.Contraseña.ReadOnly = true;
+            this.Contraseña.Visible = false;
+            this.Contraseña.Width = 125;
+            // 
+            // IdRol
+            // 
+            this.IdRol.HeaderText = "Id del rol";
+            this.IdRol.MinimumWidth = 6;
+            this.IdRol.Name = "IdRol";
+            this.IdRol.ReadOnly = true;
+            this.IdRol.Visible = false;
+            this.IdRol.Width = 125;
+            // 
+            // Rol
+            // 
+            this.Rol.HeaderText = "Rol";
+            this.Rol.MinimumWidth = 6;
+            this.Rol.Name = "Rol";
+            this.Rol.ReadOnly = true;
+            this.Rol.Width = 125;
+            // 
+            // Correo
+            // 
+            this.Correo.HeaderText = "Correo";
+            this.Correo.MinimumWidth = 6;
+            this.Correo.Name = "Correo";
+            this.Correo.ReadOnly = true;
+            this.Correo.Width = 125;
+            // 
+            // FechaRegistro
+            // 
+            this.FechaRegistro.HeaderText = "Fecha de registro";
+            this.FechaRegistro.MinimumWidth = 6;
+            this.FechaRegistro.Name = "FechaRegistro";
+            this.FechaRegistro.ReadOnly = true;
+            this.FechaRegistro.Width = 200;
+            // 
             // FrmGestionUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label19);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
@@ -776,11 +832,10 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistro)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -802,15 +857,6 @@
         private RJCodeAdvance.RJControls.RJTextBox txtNombreUsuario;
         private RJCodeAdvance.RJControls.RJButton btnEliminar;
         private RJCodeAdvance.RJControls.RJTextBox txtContraseña;
-        private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdUsuario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Documento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Usuario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Contraseña;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdRol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Rol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Correo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
         private RJCodeAdvance.RJControls.RJTextBox txtIdUsuario;
         private RJCodeAdvance.RJControls.RJButton btnPasswordChar;
         private RJCodeAdvance.RJControls.RJButton btnBuscarEmpleado;
@@ -822,5 +868,20 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label8;
         private RJCodeAdvance.RJControls.RJTextBox txtBuscar;
+        private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdUsuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Documento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Usuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Contraseña;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdRol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Rol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Correo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
+        private System.Windows.Forms.Label label2;
     }
 }
