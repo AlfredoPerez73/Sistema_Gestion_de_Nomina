@@ -46,7 +46,6 @@
     <Compile Include="ConexionRepository.cs" />
     <Compile Include="ContratoRepository.cs" />
     <Compile Include="DetalleLiquidacionRepository.cs" />
-    <Compile Include="GraficosRepository.cs" />
     <Compile Include="LiquidacionRepository.cs" />
     <Compile Include="PermisoRepository.cs" />
     <Compile Include="EmpleadoRepository.cs" />
