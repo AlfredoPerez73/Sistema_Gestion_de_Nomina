@@ -35,6 +35,20 @@ namespace Sistema_de_liquidacion
         {
             if (!ValidarCampos()) { return; }
 
+            var cargos = RegistrarRol();
+            var ID = rolService.BuscarId(txtRol.Texts);
+            if (ID != true)
+            {
+                var msg = rolService.Guardar(cargos);
+                MessageBox.Show(msg, "Gestion de roles", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CargarRegistro();
+                Nuevo();
+            }
+            else
+            {
+                MessageBox.Show($"El registro {txtRol.Texts} " +
+                    $"ya existe!", "Gestion de roles", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private bool ValidarCampos()
@@ -55,6 +69,24 @@ namespace Sistema_de_liquidacion
         private void ModificarRegistro()
         {
             if (!ValidarCampos()) { return; }
+
+            Rol cargo = new Rol
+            {
+                NRol = txtRol.Texts,
+                IdRol = Convert.ToInt32(txtIdRol.Texts)
+            };
+            if (cargo != null)
+            {
+                var msg = rolService.ModificarRegistros(cargo);
+                MessageBox.Show(msg, "Gestion de roles", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CargarRegistro();
+                Nuevo();
+            }
+            else
+            {
+                MessageBox.Show($"El registro {txtRol.Texts} " +
+                    $"ya existe!", "Gestion de roles", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
         }
 

@@ -23,10 +23,6 @@ namespace Sistema_de_liquidacion.Modales
 
         private void mdPrincipal_Load(object sender, EventArgs e)
         {
-            BorderRadiusPanel(panel4, 15);
-            BorderRadiusPanel(panel6, 20);
-            BorderRadiusPanel(panel7, 20);
-            BorderRadiusPanel(panel8, 20);
             BorderRadiusPanel(panel10, 20);
             BorderRadiusPanel(panel11, 20);
 
@@ -73,6 +69,11 @@ namespace Sistema_de_liquidacion.Modales
             path.CloseFigure();
 
             panel.Region = new Region(path);
+        }
+
+        private void icoEmpleado_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

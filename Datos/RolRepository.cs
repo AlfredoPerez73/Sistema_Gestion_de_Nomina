@@ -1,6 +1,7 @@
 ﻿using Entidad;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -55,6 +56,51 @@ namespace Datos
                 return null;
             }
             return $"Se ha registrado el producto {rol.NRol}";
+        }
+
+        public string ModifcarRegistros(Rol rol)
+        {
+            try
+            {
+                string Actualizar = "ModificarRoles";
+                SqlCommand command = new SqlCommand(Actualizar, Connection);
+                command.Parameters.AddWithValue("@NRol", rol.NRol);
+                command.Parameters.AddWithValue("@IdRol", rol.IdRol);
+                command.CommandType = CommandType.StoredProcedure;
+                AbrirConnection();
+                var index = command.ExecuteNonQuery();
+                CerrarConnection();
+            }
+            catch (Exception)
+            {
+                return "Error al modificar el rol, " +
+                    "el cargo se encuentra relacionado con un empleado";
+            }
+
+            return $"Se ha modificado el rol {rol.NRol} " +
+                $"con la ID {rol.IdRol}";
+        }
+
+        public string EliminarRegistros(Rol rol)
+        {
+            try
+            {
+                string Eliminar = "EliminarRoles";
+
+                SqlCommand command = new SqlCommand(Eliminar, Connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@IdRol", rol.IdRol);
+                AbrirConnection();
+                var index = command.ExecuteNonQuery();
+                CerrarConnection();
+            }
+            catch (Exception)
+            {
+                return "Error al eliminar el rol, " +
+                    "el cargo se encuentra relacionado con un empleado";
+            }
+            return $"Se ha eliminado el rol {rol.IdRol} " +
+                $"con la ID {rol.IdRol}";
         }
 
         private Rol Map(SqlDataReader reader)

@@ -52,54 +52,22 @@ namespace Sistema_de_liquidacion
         {
             List<Permiso> permisoList = new PermisoService().ValidacionPermiso(Convert.ToString(oUsuario.IdPersona));
 
-            bool index = permisoList.Any(m => m.NPermiso == btnGestionPermisos.Text);
-            if (index == false)
+            foreach (Control control in SlideContenedor.Controls)
             {
-                ButtonBlock();
+                if (control is Button button)
+                {
+                    bool encontrado = permisoList.Any(m => m.NPermiso == button.Text);
+                    button.Visible = encontrado;
+                }
             }
         }
 
-        private struct RGBColors
-        {
-            public static Color color1 = Color.FromArgb(172, 126, 241);
-            public static Color color2 = Color.FromArgb(249, 118, 176);
-            public static Color color3 = Color.FromArgb(253, 138, 114);
-            public static Color color4 = Color.FromArgb(95, 77, 221);
-            public static Color color5 = Color.FromArgb(249, 88, 155);
-            public static Color color6 = Color.FromArgb(24, 161, 251);
-            public static Color color7 = Color.MediumPurple;
-            public static Color color8 = Color.Brown;
-        }
-
-        private void ActivateButton(object senderBtn, Color color)
-        {
-            if (senderBtn != null)
-            {
-                DisableButton();
-
-                currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(37, 36, 81);
-                currentBtn.ForeColor = color;
-                currentBtn.TextAlign = ContentAlignment.MiddleCenter;
-                currentBtn.IconColor = color;
-
-                leftBorderBtn.BackColor = color;
-                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
-                leftBorderBtn.Visible = true;
-                leftBorderBtn.BringToFront();
-
-                btnEstadoFrm.IconChar = currentBtn.IconChar;
-                btnEstadoFrm.IconColor = color;
-            }
-        }
         private void DisableButton()
         {
             if (currentBtn != null)
             {
                 currentBtn.BackColor = Color.FromArgb(31, 30, 68);
-                currentBtn.ForeColor = Color.Gainsboro;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Gainsboro;
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
@@ -112,19 +80,6 @@ namespace Sistema_de_liquidacion
             btnEstadoFrm.IconChar = IconChar.Home;
             btnEstadoFrm.IconColor = Color.MediumPurple;
             lblEstado.Text = "Inicio";
-        }
-
-        private void ButtonBlock()
-        {
-            FrmReporte FrmReporte = new FrmReporte();
-
-            btnGestionPermisos.Visible = false;
-            btnGestionRol.Visible = false;
-            btnGestionUsuario.Visible = false;
-            btnGestionCargo.Visible = false;
-            if (FrmReporte.tblRegistroReporte.Columns.Contains("btnSEliminar"))
-                FrmReporte.tblRegistroReporte.Columns["btnSEliminar"].Visible = false;
-
         }
 
         private void CargarUsuario()
@@ -243,49 +198,41 @@ namespace Sistema_de_liquidacion
 
         private void btnGestionEmpleado_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
             AbrirFormularios((Button)sender, new FrmGestionEmpleados(oUsuario));
         }
 
         private void btnLiquidacionTotal_Click_1(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color2);
             AbrirFormularios((Button)sender, new FrmNomina());
         }
 
         private void btnMantenedorEmpleado_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color3);
             AbrirFormularios((Button)sender, new FrmMantenedorEmpleado());
         }
 
         private void btnCargo_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color4);
             AbrirFormularios((Button)sender, new FrmGestionCargo());
         }
 
         private void btnGestionRol_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color5);
             AbrirFormularios((Button)sender, new FrmGestionRol());
         }
 
         private void btnGestionUsuario_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color6);
             AbrirFormularios((Button)sender, new FrmGestionUsuario());
         }
 
         private void btnReporte_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color7);
             AbrirFormularios((Button)sender, new FrmReporte());
         }
 
         private void btnGestionPermisos_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color8);
             AbrirFormularios((Button)sender, new FrmGestionPermiso(oUsuario));
         }
 

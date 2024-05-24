@@ -41,6 +41,7 @@ namespace Sistema_de_liquidacion
             {
                 var msg = cargoService.Guardar(cargos);
                 MessageBox.Show(msg, "Gestion de cargos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CargarRegistro();
                 Nuevo();
             }
             else
@@ -78,6 +79,7 @@ namespace Sistema_de_liquidacion
             {
                 var msg = cargoService.ModificarRegistros(cargo);
                 MessageBox.Show(msg, "Gestion de cargos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CargarRegistro();
                 Nuevo();
             }
             else
