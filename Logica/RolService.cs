@@ -25,12 +25,14 @@ namespace Logica
 
         public string ModificarRegistros(Rol rol)
         {
-            throw new NotImplementedException();
+            var msg = rolRepository.ModifcarRegistros(rol);
+            return msg;
         }
 
         public string EliminarRegistro(Rol rol)
         {
-            throw new NotImplementedException();
+            var msg = rolRepository.EliminarRegistros(rol);
+            return msg;
 
         }
 

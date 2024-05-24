@@ -318,7 +318,6 @@
             this.txtRol.TabIndex = 30;
             this.txtRol.Texts = "Rol";
             this.txtRol.UnderlinedStyle = false;
-            this.txtRol.Visible = false;
             this.txtRol.Enter += new System.EventHandler(this.txtRol_Enter);
             this.txtRol.Leave += new System.EventHandler(this.txtRol_Leave);
             // 

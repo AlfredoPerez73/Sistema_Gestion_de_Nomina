@@ -49,6 +49,7 @@ namespace Sistema_de_liquidacion
             {
                 var msg = permisoService.Guardar(permisos);
                 MessageBox.Show(msg, "Gestion de permisos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CargarRegistro();
                 Nuevo();
             }
             else

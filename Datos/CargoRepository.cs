@@ -100,7 +100,7 @@ namespace Datos
                 return "Error al eliminar el cargo, " +
                     "el cargo se encuentra relacionado con un empleado";
             }
-            return $"Se ha eliminado el producto {cargo.CargoDesempeñado} " +
+            return $"Se ha eliminado el cargo {cargo.CargoDesempeñado} " +
                 $"con la ID {cargo.IdCargo}";
         }
 
