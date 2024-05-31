@@ -48,6 +48,9 @@ namespace Sistema_de_liquidacion
                     row.Cells["PrimaSTotal"].Value = item.PrimaServiciosTotal.ToString("C");
                     row.Cells["AuxATotal"].Value = item.AuxAlimentacionTotal.ToString("C");
                     row.Cells["PrimaNTotal"].Value = item.PrimaNavidadTotal.ToString("C");
+                    row.Cells["VacacionesTotales"].Value = item.VacacionesTotal.ToString("C");
+                    row.Cells["CesantiasTotal"].Value = item.CesantiaTotal.ToString("C");
+                    row.Cells["InteresesTotales"].Value = item.InteresesCesantiaTotal.ToString("C");
                     row.Cells["TotalGeneral"].Value = item.Total.ToString("C");
                     row.Cells["FechaRegistro"].Value = item.FechaRegistro.ToString("d");
                 }

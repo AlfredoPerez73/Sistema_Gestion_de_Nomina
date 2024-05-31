@@ -51,10 +51,10 @@ namespace Datos
             try
             {
                 string Registro = "INSERT INTO DETALLE_LIQUIDACION(Codigo,DiasTrabajados,HorasExtras,Salud,Pension,ValorHorasExtra,AuxTransporte," +
-                        "BonificacionServicios,PrimaServicios,AuxAlimentacion,PrimaNavidad,Devengado,IdProducto,Documento," +
-                        "Nombre,NCargo,Salario,Estado,IdFactura,Año,Mes,IdUsuario,NombreUsuario) VALUES" +
+                        "BonificacionServicios,PrimaServicios,AuxAlimentacion,PrimaNavidad,Vacaciones,Cesantias,InteresesCesantia,Devengado,IdProducto,Documento," +
+                        "Nombre,NCargo,Contrato,Salario,Estado,IdFactura,Año,Mes,IdUsuario,NombreUsuario) VALUES" +
                         "(@Codigo,@DiasTrabajados,@HorasExtras,@Salud, @Pension, @ValorHorasExtra, @AuxTransporte, @BonificacionServicios, @PrimaServicios, " +
-                        "@AuxAlimentacion, @PrimaNavidad, @Devengado, @IdProducto, @Documento, @Nombre, @NCargo, @Salario, " +
+                        "@AuxAlimentacion, @PrimaNavidad, @Vacaciones, @Cesantia, @InteresesCesantia, @Devengado, @IdProducto, @Documento, @Nombre, @NCargo, @Contrato, @Salario, " +
                         "@Estado, @IdFactura, @AñoDetalle, @MesDetalle, @IdUsuario, @NombreUsuario);";
                 SqlCommand commandDetalle = new SqlCommand(Registro, Connection);
                 commandDetalle.Parameters.AddWithValue("@Codigo", detalle.Codigo);
@@ -68,11 +68,15 @@ namespace Datos
                 commandDetalle.Parameters.AddWithValue("@PrimaServicios", detalle.PrimaServicios);
                 commandDetalle.Parameters.AddWithValue("@AuxAlimentacion", detalle.AuxAlimentacion);
                 commandDetalle.Parameters.AddWithValue("@PrimaNavidad", detalle.PrimaNavidad);
+                commandDetalle.Parameters.AddWithValue("@Vacaciones", detalle.Vacaciones);
+                commandDetalle.Parameters.AddWithValue("@Cesantia", detalle.Cesantia);
+                commandDetalle.Parameters.AddWithValue("@InteresesCesantia", detalle.InteresesCesantia);
                 commandDetalle.Parameters.AddWithValue("@Devengado", detalle.Devengado);
                 commandDetalle.Parameters.AddWithValue("@IdProducto", detalle.empleado.IdPersona);
                 commandDetalle.Parameters.AddWithValue("@Documento", detalle.empleado.Documento);
                 commandDetalle.Parameters.AddWithValue("@Nombre", detalle.empleado.Nombre);
                 commandDetalle.Parameters.AddWithValue("@NCargo", detalle.empleado.Cargo.CargoDesempeñado);
+                commandDetalle.Parameters.AddWithValue("@Contrato", detalle.empleado.Contrato.TipoContrato);
                 commandDetalle.Parameters.AddWithValue("@Salario", detalle.empleado.Contrato.Salario);
                 commandDetalle.Parameters.AddWithValue("@Estado", detalle.empleado.Estado);
                 commandDetalle.Parameters.AddWithValue("@IdFactura", detalle.liquidacion.IdFactura);
@@ -87,7 +91,7 @@ namespace Datos
             }
             catch (Exception)
             {
-                return null;
+                return "Error al registrar la liquidacion";
             }
             return $"Se ha registrado la liquidacion {detalle.Codigo}";
         }
@@ -109,6 +113,9 @@ namespace Datos
                 PrimaServicios = Convert.ToDecimal(reader["PrimaServicios"]),
                 AuxAlimentacion = Convert.ToDecimal(reader["AuxAlimentacion"]),
                 PrimaNavidad = Convert.ToDecimal(reader["PrimaNavidad"]),
+                Vacaciones = Convert.ToDecimal(reader["Vacaciones"]),
+                Cesantia = Convert.ToDecimal(reader["Cesantias"]),
+                InteresesCesantia = Convert.ToDecimal(reader["InteresesCesantia"]),
                 Devengado = Convert.ToDecimal(reader["Devengado"]),
                 FechaRegistro = Convert.ToDateTime(reader["FechaRegistro"]),
                 empleado = new Empleado
@@ -119,6 +126,7 @@ namespace Datos
                     Estado = Convert.ToString(reader["Estado"]),
                     Contrato = new Contrato
                     {
+                        TipoContrato = Convert.ToString(reader["Contrato"]),
                         Salario = Convert.ToDecimal(reader["Salario"]),
                     },
                 },

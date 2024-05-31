@@ -19,6 +19,9 @@ namespace Entidad
         public decimal PrimaServiciosTotal { get; set; }
         public decimal AuxAlimentacionTotal { get; set; }
         public decimal PrimaNavidadTotal { get; set; }
+        public decimal VacacionesTotal { get; set; }
+        public decimal CesantiaTotal { get; set; }
+        public decimal InteresesCesantiaTotal { get; set; }
         public decimal Total { get; set; }
         public DateTime FechaRegistro { get; set; }
 
@@ -32,7 +35,10 @@ namespace Entidad
             PrimaServiciosTotal = detalles.Sum(dl => dl.PrimaServicios);
             AuxAlimentacionTotal = detalles.Sum(dl => dl.AuxAlimentacion);
             PrimaNavidadTotal = detalles.Sum(dl => dl.PrimaNavidad);
-            Total = detalles.Sum(dl => dl.Devengado + dl.Salud + dl.Pension + dl.AuxTransporte + dl.BonificacionServicios + dl.PrimaServicios + dl.AuxAlimentacion + dl.PrimaNavidad);
+            VacacionesTotal = detalles.Sum(dl => dl.Vacaciones);
+            CesantiaTotal = detalles.Sum(dl => dl.Cesantia);
+            InteresesCesantiaTotal = detalles.Sum(dl => dl.InteresesCesantia);
+            Total = detalles.Sum(dl => dl.Devengado + dl.Salud + dl.Pension + dl.AuxTransporte + dl.BonificacionServicios + dl.PrimaServicios + dl.AuxAlimentacion + dl.PrimaNavidad + dl.Vacaciones + dl.Cesantia + dl.InteresesCesantia);
         }
     }
 }
