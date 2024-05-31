@@ -40,44 +40,51 @@ namespace Sistema_de_liquidacion
 
         private DetalleLiquidacion RegistroLiquidaciones()
         {
-            DetalleLiquidacion detalleLiquidacion = new DetalleLiquidacion
+            try
             {
-                Codigo = txtCodigo.Texts,
-                empleado = new Empleado
+                DetalleLiquidacion detalleLiquidacion = new DetalleLiquidacion
                 {
-                    IdPersona = Convert.ToInt32(txtIdProducto.Texts),
-                    Documento = txtDocumento2.Texts,
-                    Nombre = txtNombre.Texts,
-                    Cargo = new Cargo
+                    Codigo = txtCodigo.Texts,
+                    empleado = new Empleado
                     {
-                        CargoDesempeñado = cboCargo.Texts,
+                        IdPersona = Convert.ToInt32(txtIdProducto.Texts),
+                        Documento = txtDocumento2.Texts,
+                        Nombre = txtNombre.Texts,
+                        Cargo = new Cargo
+                        {
+                            CargoDesempeñado = cboCargo.Texts,
+                        },
+                        Contrato = new Contrato
+                        {
+                            TipoContrato = cboContrato.Texts,
+                            Salario = Convert.ToDecimal(txtSalario2.Texts),
+                        },
+                        Estado = txtEstado.Texts,
                     },
-                    Contrato = new Contrato
+                    liquidacion = new Liquidacion
                     {
+                        IdFactura = Convert.ToInt32(txtLiquidacion.Texts),
+                        Año = dpFechaActual.Value.Year,
+                        Mes = dpFechaActual.Value.Month,
 
-                        Salario = Convert.ToDecimal(txtSalario2.Texts),
                     },
-                    Estado = txtEstado.Texts,
-                },
-                liquidacion = new Liquidacion
-                {
-                    IdFactura = Convert.ToInt32(txtLiquidacion.Texts),
-                    Año = dpFechaActual.Value.Year,
-                    Mes = dpFechaActual.Value.Month,
+                    usuario = new Usuario
+                    {
+                        IdPersona = oUsuario.IdPersona,
+                        Nombre = oUsuario.Nombre,
+                    },
+                    DiasTrabajados = Convert.ToInt32(txtDiasTrabajados.Texts),
+                    HorasExtras = Convert.ToInt32(txtHorasExtras.Texts),
+                };
 
-                },
-                usuario = new Usuario
-                {
-                    IdPersona = oUsuario.IdPersona,
-                    Nombre = oUsuario.Nombre,
-                },
-                DiasTrabajados = Convert.ToInt32(txtDiasTrabajados.Texts),
-                HorasExtras = Convert.ToInt32(txtHorasExtras.Texts),
-            };
+                detalleLiquidacion.ActualizarDetalles();
 
-            detalleLiquidacion.ActualizarDetalles(detalleLiquidacion.empleado, detalleLiquidacion.liquidacion);
-
-            return detalleLiquidacion;
+                return detalleLiquidacion;
+            }
+            catch (FormatException)
+            {
+                return null;
+            }
         }
 
         private void GuardarRegistroDetalleLiquidacion()
@@ -192,6 +199,7 @@ namespace Sistema_de_liquidacion
                     txtNombre.Texts = oEmpleado.Nombre.ToString();
                     txtcargo.Texts = oEmpleado.Cargo.IdCargo.ToString();
                     cboCargo.Texts = oEmpleado.Cargo.CargoDesempeñado.ToString();
+                    cboContrato.Texts = oEmpleado.Contrato.TipoContrato.ToString();
                     fecha.Texts = oEmpleado.Cargo.FechaRegistro.ToString("d");
                     txtSalario2.Texts = oEmpleado.Contrato.Salario.ToString();
                     txtEstado.Texts = oEmpleado.Estado.ToString();
@@ -235,6 +243,7 @@ namespace Sistema_de_liquidacion
                     row.Cells["Nombre"].Value = item.empleado.Nombre;
                     row.Cells["Cargo2"].Value = item.empleado.Cargo.CargoDesempeñado;
                     row.Cells["Salario2"].Value = item.empleado.Contrato.Salario.ToString("C");
+                    row.Cells["Contrato"].Value = item.empleado.Contrato.TipoContrato;
                     row.Cells["Estado2"].Value = item.empleado.Estado;
                     row.Cells["Salud"].Value = item.Salud.ToString("C");
                     row.Cells["Pension"].Value = item.Pension.ToString("C");
@@ -243,6 +252,9 @@ namespace Sistema_de_liquidacion
                     row.Cells["PrimaServicios"].Value = item.PrimaServicios.ToString("C");
                     row.Cells["AuxAlimentacion"].Value = item.AuxAlimentacion.ToString("C");
                     row.Cells["PrimaNavidad"].Value = item.PrimaNavidad.ToString("C");
+                    row.Cells["Vacaciones"].Value = item.Vacaciones.ToString("C");
+                    row.Cells["Cesantias"].Value = item.Cesantia.ToString("C");
+                    row.Cells["InteresesCesantias"].Value = item.InteresesCesantia.ToString("C");
                     row.Cells["Devengado"].Value = item.Devengado.ToString("C");
                     row.Cells["IdUsuario"].Value = item.usuario.IdPersona;
                     row.Cells["Usuario"].Value = item.usuario.Nombre;
@@ -295,6 +307,9 @@ namespace Sistema_de_liquidacion
                 fils += "<td>" + row.Cells["Bonificacion"].Value.ToString() + "</td>";
                 fils += "<td>" + row.Cells["PrimaServicios"].Value.ToString() + "</td>";
                 fils += "<td>" + row.Cells["PrimaNavidad"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["Vacaciones"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["Cesantias"].Value.ToString() + "</td>";
+                fils += "<td>" + row.Cells["InteresesCesantias"].Value.ToString() + "</td>";
                 fils += "<td>" + row.Cells["Devengado"].Value.ToString() + "</td>";
                 fils += "</tr>";
 
@@ -408,6 +423,7 @@ namespace Sistema_de_liquidacion
             BorderRadiusPanel(panel4, 15);
             BorderRadiusPanel(panel5, 15);
             BorderRadiusPanel(panel6, 20);
+            BorderRadiusPanel(panel8, 20);
             BorderRadiusPanel(panel9, 20);
 
             CargarEstados();

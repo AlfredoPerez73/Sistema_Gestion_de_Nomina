@@ -54,32 +54,6 @@
             this.txtCodigo = new RJCodeAdvance.RJControls.RJTextBox();
             this.btnBuscarEmpleado = new RJCodeAdvance.RJControls.RJButton();
             this.tblRegistroLiquidaciones = new System.Windows.Forms.DataGridView();
-            this.btnSeleccionar2 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.IdDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdFactura2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdProducto2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Año2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Mes2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Documento2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cargo2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiasTrabajados = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HorasTrabajadas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ValHorasExtras = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Salario2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Salud = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pension = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AuxT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Bonificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrimaServicios = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AuxAlimentacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrimaNavidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Devengado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaRegistro3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -100,6 +74,38 @@
             this.colorWithAlpha1 = new System.Windows.Forms.ColorWithAlpha();
             this.colorWithAlpha2 = new System.Windows.Forms.ColorWithAlpha();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.cboContrato = new RJCodeAdvance.RJControls.RJComboBox();
+            this.btnSeleccionar2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.IdDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdFactura2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdProducto2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Año2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mes2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Documento2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cargo2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Contrato = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiasTrabajados = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HorasTrabajadas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ValHorasExtras = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Salario2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Salud = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pension = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AuxT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Bonificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrimaServicios = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AuxAlimentacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrimaNavidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Vacaciones = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cesantias = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InteresesCesantias = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Devengado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaRegistro3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistroLiquidaciones)).BeginInit();
@@ -109,6 +115,7 @@
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtDetalle
@@ -328,7 +335,7 @@
             this.txtHorasExtras.BorderSize = 2;
             this.txtHorasExtras.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHorasExtras.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtHorasExtras.Location = new System.Drawing.Point(747, 85);
+            this.txtHorasExtras.Location = new System.Drawing.Point(744, 85);
             this.txtHorasExtras.Margin = new System.Windows.Forms.Padding(6);
             this.txtHorasExtras.Multiline = false;
             this.txtHorasExtras.Name = "txtHorasExtras";
@@ -406,7 +413,7 @@
             this.txtSalario2.BorderSize = 2;
             this.txtSalario2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSalario2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtSalario2.Location = new System.Drawing.Point(220, 141);
+            this.txtSalario2.Location = new System.Drawing.Point(195, 139);
             this.txtSalario2.Margin = new System.Windows.Forms.Padding(6);
             this.txtSalario2.Multiline = false;
             this.txtSalario2.Name = "txtSalario2";
@@ -432,7 +439,7 @@
             this.txtEstado.BorderSize = 2;
             this.txtEstado.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstado.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtEstado.Location = new System.Drawing.Point(566, 141);
+            this.txtEstado.Location = new System.Drawing.Point(541, 139);
             this.txtEstado.Margin = new System.Windows.Forms.Padding(6);
             this.txtEstado.Multiline = false;
             this.txtEstado.Name = "txtEstado";
@@ -468,6 +475,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel3.Controls.Add(this.panel8);
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.btnGuardarLiquidacion);
@@ -633,6 +641,7 @@
             this.Documento2,
             this.Nombre,
             this.Cargo2,
+            this.Contrato,
             this.Estado2,
             this.DiasTrabajados,
             this.HorasTrabajadas,
@@ -645,6 +654,9 @@
             this.PrimaServicios,
             this.AuxAlimentacion,
             this.PrimaNavidad,
+            this.Vacaciones,
+            this.Cesantias,
+            this.InteresesCesantias,
             this.Devengado,
             this.FechaRegistro3,
             this.IdUsuario});
@@ -678,220 +690,6 @@
             this.tblRegistroLiquidaciones.Size = new System.Drawing.Size(1791, 295);
             this.tblRegistroLiquidaciones.TabIndex = 27;
             this.tblRegistroLiquidaciones.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.tblRegistroLiquidaciones_CellPainting_1);
-            // 
-            // btnSeleccionar2
-            // 
-            this.btnSeleccionar2.HeaderText = "";
-            this.btnSeleccionar2.MinimumWidth = 6;
-            this.btnSeleccionar2.Name = "btnSeleccionar2";
-            this.btnSeleccionar2.ReadOnly = true;
-            this.btnSeleccionar2.Width = 30;
-            // 
-            // IdDetalle
-            // 
-            this.IdDetalle.HeaderText = "Id de detalle";
-            this.IdDetalle.MinimumWidth = 6;
-            this.IdDetalle.Name = "IdDetalle";
-            this.IdDetalle.ReadOnly = true;
-            this.IdDetalle.Visible = false;
-            this.IdDetalle.Width = 170;
-            // 
-            // IdFactura2
-            // 
-            this.IdFactura2.HeaderText = "Id de la factura";
-            this.IdFactura2.MinimumWidth = 6;
-            this.IdFactura2.Name = "IdFactura2";
-            this.IdFactura2.ReadOnly = true;
-            this.IdFactura2.Visible = false;
-            this.IdFactura2.Width = 170;
-            // 
-            // Codigo
-            // 
-            this.Codigo.HeaderText = "Codigo";
-            this.Codigo.MinimumWidth = 6;
-            this.Codigo.Name = "Codigo";
-            this.Codigo.ReadOnly = true;
-            this.Codigo.Width = 125;
-            // 
-            // IdProducto2
-            // 
-            this.IdProducto2.HeaderText = "Id de producto";
-            this.IdProducto2.MinimumWidth = 6;
-            this.IdProducto2.Name = "IdProducto2";
-            this.IdProducto2.ReadOnly = true;
-            this.IdProducto2.Visible = false;
-            this.IdProducto2.Width = 170;
-            // 
-            // Año2
-            // 
-            this.Año2.HeaderText = "Año";
-            this.Año2.MinimumWidth = 6;
-            this.Año2.Name = "Año2";
-            this.Año2.ReadOnly = true;
-            this.Año2.Width = 125;
-            // 
-            // Mes2
-            // 
-            this.Mes2.HeaderText = "Mes";
-            this.Mes2.MinimumWidth = 6;
-            this.Mes2.Name = "Mes2";
-            this.Mes2.ReadOnly = true;
-            this.Mes2.Width = 125;
-            // 
-            // Usuario
-            // 
-            this.Usuario.HeaderText = "Usuario";
-            this.Usuario.MinimumWidth = 6;
-            this.Usuario.Name = "Usuario";
-            this.Usuario.ReadOnly = true;
-            this.Usuario.Visible = false;
-            this.Usuario.Width = 125;
-            // 
-            // Documento2
-            // 
-            this.Documento2.HeaderText = "Documento";
-            this.Documento2.MinimumWidth = 6;
-            this.Documento2.Name = "Documento2";
-            this.Documento2.ReadOnly = true;
-            this.Documento2.Width = 125;
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.MinimumWidth = 6;
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            this.Nombre.Width = 125;
-            // 
-            // Cargo2
-            // 
-            this.Cargo2.HeaderText = "Cargo";
-            this.Cargo2.MinimumWidth = 6;
-            this.Cargo2.Name = "Cargo2";
-            this.Cargo2.ReadOnly = true;
-            this.Cargo2.Width = 125;
-            // 
-            // Estado2
-            // 
-            this.Estado2.HeaderText = "Estado";
-            this.Estado2.MinimumWidth = 6;
-            this.Estado2.Name = "Estado2";
-            this.Estado2.ReadOnly = true;
-            this.Estado2.Visible = false;
-            this.Estado2.Width = 125;
-            // 
-            // DiasTrabajados
-            // 
-            this.DiasTrabajados.HeaderText = "Dias trabajados";
-            this.DiasTrabajados.MinimumWidth = 6;
-            this.DiasTrabajados.Name = "DiasTrabajados";
-            this.DiasTrabajados.ReadOnly = true;
-            this.DiasTrabajados.Width = 125;
-            // 
-            // HorasTrabajadas
-            // 
-            this.HorasTrabajadas.HeaderText = "Horas Extra";
-            this.HorasTrabajadas.MinimumWidth = 6;
-            this.HorasTrabajadas.Name = "HorasTrabajadas";
-            this.HorasTrabajadas.ReadOnly = true;
-            this.HorasTrabajadas.Width = 125;
-            // 
-            // ValHorasExtras
-            // 
-            this.ValHorasExtras.HeaderText = "Valor de horas extras";
-            this.ValHorasExtras.MinimumWidth = 6;
-            this.ValHorasExtras.Name = "ValHorasExtras";
-            this.ValHorasExtras.ReadOnly = true;
-            this.ValHorasExtras.Width = 250;
-            // 
-            // Salario2
-            // 
-            this.Salario2.HeaderText = "Salario";
-            this.Salario2.MinimumWidth = 6;
-            this.Salario2.Name = "Salario2";
-            this.Salario2.ReadOnly = true;
-            this.Salario2.Width = 125;
-            // 
-            // Salud
-            // 
-            this.Salud.HeaderText = "Salud";
-            this.Salud.MinimumWidth = 6;
-            this.Salud.Name = "Salud";
-            this.Salud.ReadOnly = true;
-            this.Salud.Width = 125;
-            // 
-            // Pension
-            // 
-            this.Pension.HeaderText = "Pension";
-            this.Pension.MinimumWidth = 6;
-            this.Pension.Name = "Pension";
-            this.Pension.ReadOnly = true;
-            this.Pension.Width = 125;
-            // 
-            // AuxT
-            // 
-            this.AuxT.HeaderText = "Aux. Transporte";
-            this.AuxT.MinimumWidth = 6;
-            this.AuxT.Name = "AuxT";
-            this.AuxT.ReadOnly = true;
-            this.AuxT.Width = 170;
-            // 
-            // Bonificacion
-            // 
-            this.Bonificacion.HeaderText = "Bonifiacion de servicios";
-            this.Bonificacion.MinimumWidth = 6;
-            this.Bonificacion.Name = "Bonificacion";
-            this.Bonificacion.ReadOnly = true;
-            this.Bonificacion.Width = 125;
-            // 
-            // PrimaServicios
-            // 
-            this.PrimaServicios.HeaderText = "Prima de servicios";
-            this.PrimaServicios.MinimumWidth = 6;
-            this.PrimaServicios.Name = "PrimaServicios";
-            this.PrimaServicios.ReadOnly = true;
-            this.PrimaServicios.Width = 125;
-            // 
-            // AuxAlimentacion
-            // 
-            this.AuxAlimentacion.HeaderText = "Aux. de alimentacion";
-            this.AuxAlimentacion.MinimumWidth = 6;
-            this.AuxAlimentacion.Name = "AuxAlimentacion";
-            this.AuxAlimentacion.ReadOnly = true;
-            this.AuxAlimentacion.Width = 125;
-            // 
-            // PrimaNavidad
-            // 
-            this.PrimaNavidad.HeaderText = "Prima de navidad";
-            this.PrimaNavidad.MinimumWidth = 6;
-            this.PrimaNavidad.Name = "PrimaNavidad";
-            this.PrimaNavidad.ReadOnly = true;
-            this.PrimaNavidad.Width = 125;
-            // 
-            // Devengado
-            // 
-            this.Devengado.HeaderText = "Devengado";
-            this.Devengado.MinimumWidth = 6;
-            this.Devengado.Name = "Devengado";
-            this.Devengado.ReadOnly = true;
-            this.Devengado.Width = 125;
-            // 
-            // FechaRegistro3
-            // 
-            this.FechaRegistro3.HeaderText = "Fecha de registro";
-            this.FechaRegistro3.MinimumWidth = 6;
-            this.FechaRegistro3.Name = "FechaRegistro3";
-            this.FechaRegistro3.ReadOnly = true;
-            this.FechaRegistro3.Width = 125;
-            // 
-            // IdUsuario
-            // 
-            this.IdUsuario.HeaderText = "Id de usuario";
-            this.IdUsuario.MinimumWidth = 6;
-            this.IdUsuario.Name = "IdUsuario";
-            this.IdUsuario.ReadOnly = true;
-            this.IdUsuario.Visible = false;
-            this.IdUsuario.Width = 125;
             // 
             // panel1
             // 
@@ -1146,6 +944,275 @@
             this.label2.TabIndex = 47;
             this.label2.Text = "Registro de liquidaciones";
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel8.Controls.Add(this.cboContrato);
+            this.panel8.Location = new System.Drawing.Point(1101, 117);
+            this.panel8.Margin = new System.Windows.Forms.Padding(5);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(332, 50);
+            this.panel8.TabIndex = 42;
+            // 
+            // cboContrato
+            // 
+            this.cboContrato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.cboContrato.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.cboContrato.BorderSize = 1;
+            this.cboContrato.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cboContrato.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboContrato.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboContrato.ForeColor = System.Drawing.Color.Gainsboro;
+            this.cboContrato.IconColor = System.Drawing.Color.White;
+            this.cboContrato.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.cboContrato.ListTextColor = System.Drawing.Color.White;
+            this.cboContrato.Location = new System.Drawing.Point(0, 0);
+            this.cboContrato.Margin = new System.Windows.Forms.Padding(5);
+            this.cboContrato.MinimumSize = new System.Drawing.Size(334, 44);
+            this.cboContrato.Name = "cboContrato";
+            this.cboContrato.Padding = new System.Windows.Forms.Padding(1);
+            this.cboContrato.Size = new System.Drawing.Size(334, 50);
+            this.cboContrato.TabIndex = 23;
+            this.cboContrato.Texts = "Contrato";
+            // 
+            // btnSeleccionar2
+            // 
+            this.btnSeleccionar2.HeaderText = "";
+            this.btnSeleccionar2.MinimumWidth = 6;
+            this.btnSeleccionar2.Name = "btnSeleccionar2";
+            this.btnSeleccionar2.ReadOnly = true;
+            this.btnSeleccionar2.Width = 30;
+            // 
+            // IdDetalle
+            // 
+            this.IdDetalle.HeaderText = "Id de detalle";
+            this.IdDetalle.MinimumWidth = 6;
+            this.IdDetalle.Name = "IdDetalle";
+            this.IdDetalle.ReadOnly = true;
+            this.IdDetalle.Visible = false;
+            this.IdDetalle.Width = 170;
+            // 
+            // IdFactura2
+            // 
+            this.IdFactura2.HeaderText = "Id de la factura";
+            this.IdFactura2.MinimumWidth = 6;
+            this.IdFactura2.Name = "IdFactura2";
+            this.IdFactura2.ReadOnly = true;
+            this.IdFactura2.Visible = false;
+            this.IdFactura2.Width = 170;
+            // 
+            // Codigo
+            // 
+            this.Codigo.HeaderText = "Codigo";
+            this.Codigo.MinimumWidth = 6;
+            this.Codigo.Name = "Codigo";
+            this.Codigo.ReadOnly = true;
+            this.Codigo.Width = 125;
+            // 
+            // IdProducto2
+            // 
+            this.IdProducto2.HeaderText = "Id de producto";
+            this.IdProducto2.MinimumWidth = 6;
+            this.IdProducto2.Name = "IdProducto2";
+            this.IdProducto2.ReadOnly = true;
+            this.IdProducto2.Visible = false;
+            this.IdProducto2.Width = 170;
+            // 
+            // Año2
+            // 
+            this.Año2.HeaderText = "Año";
+            this.Año2.MinimumWidth = 6;
+            this.Año2.Name = "Año2";
+            this.Año2.ReadOnly = true;
+            this.Año2.Width = 125;
+            // 
+            // Mes2
+            // 
+            this.Mes2.HeaderText = "Mes";
+            this.Mes2.MinimumWidth = 6;
+            this.Mes2.Name = "Mes2";
+            this.Mes2.ReadOnly = true;
+            this.Mes2.Width = 125;
+            // 
+            // Usuario
+            // 
+            this.Usuario.HeaderText = "Usuario";
+            this.Usuario.MinimumWidth = 6;
+            this.Usuario.Name = "Usuario";
+            this.Usuario.ReadOnly = true;
+            this.Usuario.Visible = false;
+            this.Usuario.Width = 125;
+            // 
+            // Documento2
+            // 
+            this.Documento2.HeaderText = "Documento";
+            this.Documento2.MinimumWidth = 6;
+            this.Documento2.Name = "Documento2";
+            this.Documento2.ReadOnly = true;
+            this.Documento2.Width = 125;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.MinimumWidth = 6;
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            this.Nombre.Width = 125;
+            // 
+            // Cargo2
+            // 
+            this.Cargo2.HeaderText = "Cargo";
+            this.Cargo2.MinimumWidth = 6;
+            this.Cargo2.Name = "Cargo2";
+            this.Cargo2.ReadOnly = true;
+            this.Cargo2.Width = 125;
+            // 
+            // Contrato
+            // 
+            this.Contrato.HeaderText = "Contrato";
+            this.Contrato.Name = "Contrato";
+            this.Contrato.ReadOnly = true;
+            // 
+            // Estado2
+            // 
+            this.Estado2.HeaderText = "Estado";
+            this.Estado2.MinimumWidth = 6;
+            this.Estado2.Name = "Estado2";
+            this.Estado2.ReadOnly = true;
+            this.Estado2.Visible = false;
+            this.Estado2.Width = 125;
+            // 
+            // DiasTrabajados
+            // 
+            this.DiasTrabajados.HeaderText = "Dias trabajados";
+            this.DiasTrabajados.MinimumWidth = 6;
+            this.DiasTrabajados.Name = "DiasTrabajados";
+            this.DiasTrabajados.ReadOnly = true;
+            this.DiasTrabajados.Width = 125;
+            // 
+            // HorasTrabajadas
+            // 
+            this.HorasTrabajadas.HeaderText = "Horas Extra";
+            this.HorasTrabajadas.MinimumWidth = 6;
+            this.HorasTrabajadas.Name = "HorasTrabajadas";
+            this.HorasTrabajadas.ReadOnly = true;
+            this.HorasTrabajadas.Width = 125;
+            // 
+            // ValHorasExtras
+            // 
+            this.ValHorasExtras.HeaderText = "Valor de horas extras";
+            this.ValHorasExtras.MinimumWidth = 6;
+            this.ValHorasExtras.Name = "ValHorasExtras";
+            this.ValHorasExtras.ReadOnly = true;
+            this.ValHorasExtras.Width = 250;
+            // 
+            // Salario2
+            // 
+            this.Salario2.HeaderText = "Salario";
+            this.Salario2.MinimumWidth = 6;
+            this.Salario2.Name = "Salario2";
+            this.Salario2.ReadOnly = true;
+            this.Salario2.Width = 125;
+            // 
+            // Salud
+            // 
+            this.Salud.HeaderText = "Salud";
+            this.Salud.MinimumWidth = 6;
+            this.Salud.Name = "Salud";
+            this.Salud.ReadOnly = true;
+            this.Salud.Width = 125;
+            // 
+            // Pension
+            // 
+            this.Pension.HeaderText = "Pension";
+            this.Pension.MinimumWidth = 6;
+            this.Pension.Name = "Pension";
+            this.Pension.ReadOnly = true;
+            this.Pension.Width = 125;
+            // 
+            // AuxT
+            // 
+            this.AuxT.HeaderText = "Aux. Transporte";
+            this.AuxT.MinimumWidth = 6;
+            this.AuxT.Name = "AuxT";
+            this.AuxT.ReadOnly = true;
+            this.AuxT.Width = 170;
+            // 
+            // Bonificacion
+            // 
+            this.Bonificacion.HeaderText = "Bonifiacion de servicios";
+            this.Bonificacion.MinimumWidth = 6;
+            this.Bonificacion.Name = "Bonificacion";
+            this.Bonificacion.ReadOnly = true;
+            this.Bonificacion.Width = 125;
+            // 
+            // PrimaServicios
+            // 
+            this.PrimaServicios.HeaderText = "Prima de servicios";
+            this.PrimaServicios.MinimumWidth = 6;
+            this.PrimaServicios.Name = "PrimaServicios";
+            this.PrimaServicios.ReadOnly = true;
+            this.PrimaServicios.Width = 125;
+            // 
+            // AuxAlimentacion
+            // 
+            this.AuxAlimentacion.HeaderText = "Aux. de alimentacion";
+            this.AuxAlimentacion.MinimumWidth = 6;
+            this.AuxAlimentacion.Name = "AuxAlimentacion";
+            this.AuxAlimentacion.ReadOnly = true;
+            this.AuxAlimentacion.Width = 125;
+            // 
+            // PrimaNavidad
+            // 
+            this.PrimaNavidad.HeaderText = "Prima de navidad";
+            this.PrimaNavidad.MinimumWidth = 6;
+            this.PrimaNavidad.Name = "PrimaNavidad";
+            this.PrimaNavidad.ReadOnly = true;
+            this.PrimaNavidad.Width = 125;
+            // 
+            // Vacaciones
+            // 
+            this.Vacaciones.HeaderText = "Vacaciones";
+            this.Vacaciones.Name = "Vacaciones";
+            this.Vacaciones.ReadOnly = true;
+            // 
+            // Cesantias
+            // 
+            this.Cesantias.HeaderText = "Cesantias";
+            this.Cesantias.Name = "Cesantias";
+            this.Cesantias.ReadOnly = true;
+            // 
+            // InteresesCesantias
+            // 
+            this.InteresesCesantias.HeaderText = "Intereses de cesantias";
+            this.InteresesCesantias.Name = "InteresesCesantias";
+            this.InteresesCesantias.ReadOnly = true;
+            // 
+            // Devengado
+            // 
+            this.Devengado.HeaderText = "Devengado";
+            this.Devengado.MinimumWidth = 6;
+            this.Devengado.Name = "Devengado";
+            this.Devengado.ReadOnly = true;
+            this.Devengado.Width = 125;
+            // 
+            // FechaRegistro3
+            // 
+            this.FechaRegistro3.HeaderText = "Fecha de registro";
+            this.FechaRegistro3.MinimumWidth = 6;
+            this.FechaRegistro3.Name = "FechaRegistro3";
+            this.FechaRegistro3.ReadOnly = true;
+            this.FechaRegistro3.Width = 125;
+            // 
+            // IdUsuario
+            // 
+            this.IdUsuario.HeaderText = "Id de usuario";
+            this.IdUsuario.MinimumWidth = 6;
+            this.IdUsuario.Name = "IdUsuario";
+            this.IdUsuario.ReadOnly = true;
+            this.IdUsuario.Visible = false;
+            this.IdUsuario.Width = 125;
+            // 
             // FrmGestionEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -1184,6 +1251,7 @@
             this.panel5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1232,6 +1300,10 @@
         private System.Windows.Forms.ColorWithAlpha colorWithAlpha4;
         private System.Windows.Forms.ColorWithAlpha colorWithAlpha1;
         private System.Windows.Forms.ColorWithAlpha colorWithAlpha2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel8;
+        private RJCodeAdvance.RJControls.RJComboBox cboContrato;
         private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar2;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdDetalle;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdFactura2;
@@ -1243,6 +1315,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Documento2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cargo2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Contrato;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado2;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiasTrabajados;
         private System.Windows.Forms.DataGridViewTextBoxColumn HorasTrabajadas;
@@ -1255,11 +1328,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PrimaServicios;
         private System.Windows.Forms.DataGridViewTextBoxColumn AuxAlimentacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrimaNavidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Vacaciones;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cesantias;
+        private System.Windows.Forms.DataGridViewTextBoxColumn InteresesCesantias;
         private System.Windows.Forms.DataGridViewTextBoxColumn Devengado;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro3;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdUsuario;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

@@ -58,6 +58,9 @@ namespace Datos
                 PrimaServiciosTotal = Convert.ToDecimal(reader["PrimaServiciosTotal"]),
                 AuxAlimentacionTotal = Convert.ToDecimal(reader["AuxAlimentacionTotal"]),
                 PrimaNavidadTotal = Convert.ToDecimal(reader["PrimaNavidadTotal"]),
+                VacacionesTotal = Convert.ToDecimal(reader["VacacionesTotal"]),
+                CesantiaTotal = Convert.ToDecimal(reader["CesantiasTotal"]),
+                InteresesCesantiaTotal = Convert.ToDecimal(reader["InteresesCensantiaTotal"]),
                 Total = Convert.ToDecimal(reader["Total"]),
                 FechaRegistro = Convert.ToDateTime(reader["FechaRegistro"]),
             };

@@ -31,8 +31,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.txtBuscar = new RJCodeAdvance.RJControls.RJTextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.dpFechaFinal = new RJCodeAdvance.RJControls.RJDatePicker();
@@ -46,7 +47,6 @@
             this.cboFiltroAño = new RJCodeAdvance.RJControls.RJComboBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.tblRegistroDetalleLiquidaciones = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
             this.IdFactura = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Año = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +59,9 @@
             this.PrimaSTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AuxATotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrimaNTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VacacionesTotales = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CesantiasTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InteresesTotales = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalGeneral = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
@@ -86,6 +89,30 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(94, 172);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(299, 32);
+            this.label3.TabIndex = 52;
+            this.label3.Text = "Registro de la nomina";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(95, 38);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(96, 26);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Nomina";
+            // 
             // panel9
             // 
             this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -100,18 +127,6 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1774, 51);
             this.panel9.TabIndex = 51;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(95, 38);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(96, 26);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "Nomina";
             // 
             // txtBuscar
             // 
@@ -322,6 +337,9 @@
             this.PrimaSTotal,
             this.AuxATotal,
             this.PrimaNTotal,
+            this.VacacionesTotales,
+            this.CesantiasTotal,
+            this.InteresesTotales,
             this.TotalGeneral,
             this.FechaRegistro});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -346,18 +364,6 @@
             this.tblRegistroDetalleLiquidaciones.Size = new System.Drawing.Size(1774, 395);
             this.tblRegistroDetalleLiquidaciones.TabIndex = 21;
             this.tblRegistroDetalleLiquidaciones.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblRegistroDetalleLiquidaciones_CellContentClick);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(94, 172);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(299, 32);
-            this.label3.TabIndex = 52;
-            this.label3.Text = "Registro de la nomina";
             // 
             // IdFactura
             // 
@@ -455,6 +461,24 @@
             this.PrimaNTotal.ReadOnly = true;
             this.PrimaNTotal.Width = 125;
             // 
+            // VacacionesTotales
+            // 
+            this.VacacionesTotales.HeaderText = "Vacaciones totales";
+            this.VacacionesTotales.Name = "VacacionesTotales";
+            this.VacacionesTotales.ReadOnly = true;
+            // 
+            // CesantiasTotal
+            // 
+            this.CesantiasTotal.HeaderText = "Cesantias totales";
+            this.CesantiasTotal.Name = "CesantiasTotal";
+            this.CesantiasTotal.ReadOnly = true;
+            // 
+            // InteresesTotales
+            // 
+            this.InteresesTotales.HeaderText = "Intereses totales de cesantias";
+            this.InteresesTotales.Name = "InteresesTotales";
+            this.InteresesTotales.ReadOnly = true;
+            // 
             // TotalGeneral
             // 
             this.TotalGeneral.HeaderText = "Total";
@@ -525,6 +549,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PrimaSTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn AuxATotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrimaNTotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VacacionesTotales;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CesantiasTotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn InteresesTotales;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalGeneral;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
     }

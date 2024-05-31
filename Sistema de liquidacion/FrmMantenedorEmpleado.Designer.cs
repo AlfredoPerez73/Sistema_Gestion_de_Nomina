@@ -50,6 +50,8 @@
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaRegistro2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.cboContrato = new RJCodeAdvance.RJControls.RJComboBox();
             this.btnModificar = new RJCodeAdvance.RJControls.RJButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -64,7 +66,6 @@
             this.btnLimpiar = new RJCodeAdvance.RJControls.RJButton();
             this.btnGuardar = new RJCodeAdvance.RJControls.RJButton();
             this.txtDocumento = new RJCodeAdvance.RJControls.RJTextBox();
-            this.txtContrato = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtSalario = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtNombreProducto = new RJCodeAdvance.RJControls.RJTextBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -78,6 +79,7 @@
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistro)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -329,6 +331,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.btnModificar);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -339,7 +342,6 @@
             this.panel1.Controls.Add(this.btnLimpiar);
             this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.txtDocumento);
-            this.panel1.Controls.Add(this.txtContrato);
             this.panel1.Controls.Add(this.txtSalario);
             this.panel1.Controls.Add(this.txtNombreProducto);
             this.panel1.Location = new System.Drawing.Point(96, 183);
@@ -347,6 +349,36 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1776, 263);
             this.panel1.TabIndex = 24;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.cboContrato);
+            this.panel8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel8.Location = new System.Drawing.Point(1104, 80);
+            this.panel8.Margin = new System.Windows.Forms.Padding(5);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(334, 51);
+            this.panel8.TabIndex = 28;
+            // 
+            // cboContrato
+            // 
+            this.cboContrato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.cboContrato.BorderColor = System.Drawing.Color.Transparent;
+            this.cboContrato.BorderSize = 0;
+            this.cboContrato.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cboContrato.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboContrato.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboContrato.ForeColor = System.Drawing.Color.Gainsboro;
+            this.cboContrato.IconColor = System.Drawing.Color.White;
+            this.cboContrato.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.cboContrato.ListTextColor = System.Drawing.Color.Gainsboro;
+            this.cboContrato.Location = new System.Drawing.Point(0, 0);
+            this.cboContrato.Margin = new System.Windows.Forms.Padding(5);
+            this.cboContrato.MinimumSize = new System.Drawing.Size(334, 44);
+            this.cboContrato.Name = "cboContrato";
+            this.cboContrato.Size = new System.Drawing.Size(334, 51);
+            this.cboContrato.TabIndex = 13;
+            this.cboContrato.Texts = "Contrato";
             // 
             // btnModificar
             // 
@@ -594,31 +626,6 @@
             this.txtDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
             this.txtDocumento.Leave += new System.EventHandler(this.txtDocumento_Leave);
             // 
-            // txtContrato
-            // 
-            this.txtContrato.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtContrato.BackColor = System.Drawing.SystemColors.Window;
-            this.txtContrato.BorderColor = System.Drawing.Color.White;
-            this.txtContrato.BorderFocusColor = System.Drawing.Color.White;
-            this.txtContrato.BorderRadius = 15;
-            this.txtContrato.BorderSize = 2;
-            this.txtContrato.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContrato.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtContrato.Location = new System.Drawing.Point(1096, 83);
-            this.txtContrato.Margin = new System.Windows.Forms.Padding(6);
-            this.txtContrato.Multiline = false;
-            this.txtContrato.Name = "txtContrato";
-            this.txtContrato.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtContrato.PasswordChar = false;
-            this.txtContrato.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtContrato.PlaceholderText = "";
-            this.txtContrato.Size = new System.Drawing.Size(334, 42);
-            this.txtContrato.TabIndex = 12;
-            this.txtContrato.Texts = "Tipo de contrato";
-            this.txtContrato.UnderlinedStyle = false;
-            this.txtContrato.Enter += new System.EventHandler(this.txtContrato_Enter);
-            this.txtContrato.Leave += new System.EventHandler(this.txtContrato_Leave);
-            // 
             // txtSalario
             // 
             this.txtSalario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -849,6 +856,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistro)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel8.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -886,7 +894,6 @@
         private RJCodeAdvance.RJControls.RJDatePicker dpFechaFinal;
         private System.Windows.Forms.Panel panel7;
         private RJCodeAdvance.RJControls.RJDatePicker dpFechaInicial;
-        private RJCodeAdvance.RJControls.RJTextBox txtContrato;
         private RJCodeAdvance.RJControls.RJTextBox txtIdProducto;
         private RJCodeAdvance.RJControls.RJButton btnModificar;
         private RJCodeAdvance.RJControls.RJTextBox txtIdContrato;
@@ -909,5 +916,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel8;
+        private RJCodeAdvance.RJControls.RJComboBox cboContrato;
     }
 }

@@ -36,7 +36,7 @@ namespace Sistema_de_liquidacion
                     FechaInicio = Convert.ToDateTime(dpFechaInicial.Value.ToString("yyyy-M-d")),
                     FechaFin = Convert.ToDateTime(dpFechaFinal.Value.ToString("yyyy-M-d")),
                     Salario = Convert.ToDecimal(txtSalario.Texts),
-                    TipoContrato = txtContrato.Texts.ToUpper(),
+                    TipoContrato = cboContrato.Texts.ToUpper(),
                 },
                 Estado = cboEstado.Texts.ToUpper(),
             };
@@ -79,7 +79,7 @@ namespace Sistema_de_liquidacion
                     FechaInicio = Convert.ToDateTime(dpFechaInicial.Text),
                     FechaFin = Convert.ToDateTime(dpFechaFinal.Text),
                     Salario = Convert.ToInt32(txtSalario.Texts),
-                    TipoContrato = txtContrato.Texts.ToUpper(),
+                    TipoContrato = cboContrato.Texts.ToUpper(),
                 },
                 IdPersona = Convert.ToInt32(txtIdProducto.Texts),
             };
@@ -215,6 +215,17 @@ namespace Sistema_de_liquidacion
             cboEstado.SelectedIndex = 0;
         }
 
+        private void CargarContratos()
+        {
+            cboContrato.Items.Clear();
+            cboContrato.Items.Add("");
+            cboContrato.Items.Add("CONTRATO FIJO");
+            cboContrato.Items.Add("TERMINO INDEFINIDO");
+            cboContrato.Items.Add("PRESTACION DE SERVICIO");
+            cboContrato.Items.Add("POR EL ESTADO");
+            cboContrato.SelectedIndex = 0;
+        }
+
         private void CargarCargos()
         {
             CargoService cargoService = new CargoService();
@@ -238,12 +249,14 @@ namespace Sistema_de_liquidacion
         private void FrmMantenedorEmpleado_Load(object sender, EventArgs e)
         {
             CargarEstados();
+            CargarContratos();
             CargarCargos();
             BorderRadiusPanel(panel1, 20);
             BorderRadiusPanel(panel2, 20);
             BorderRadiusPanel(panel3, 15);
             BorderRadiusPanel(panel4, 20);
             BorderRadiusPanel(panel5, 20);
+            BorderRadiusPanel(panel8, 20);
             BorderRadiusPanel(panel9, 20);
 
             CargarRegistro();
@@ -271,7 +284,7 @@ namespace Sistema_de_liquidacion
                     string salarioSinFormato = salarioNumerico.ToString("#,0.##").Replace(".",""); // Formatea el salario con dos decimales máximo
                     txtSalario.Texts = salarioSinFormato;
 
-                    txtContrato.Texts = tblRegistro.Rows[index].Cells["TipoContrato"].Value.ToString();
+                    cboContrato.Texts = tblRegistro.Rows[index].Cells["TipoContrato"].Value.ToString();
                     dpFechaInicial.Text = tblRegistro.Rows[index].Cells["FechaInicio"].Value.ToString();
                     dpFechaFinal.Text = tblRegistro.Rows[index].Cells["FechaFin"].Value.ToString();
 
@@ -431,24 +444,6 @@ namespace Sistema_de_liquidacion
             {
                 txtSalario.Texts = "Salario";
                 txtSalario.ForeColor = Color.LightGray;
-            }
-        }
-
-        private void txtContrato_Enter(object sender, EventArgs e)
-        {
-            if (txtContrato.Texts == "Tipo de contrato")
-            {
-                txtContrato.Texts = "";
-                txtContrato.ForeColor = Color.LightGray;
-            }
-        }
-
-        private void txtContrato_Leave(object sender, EventArgs e)
-        {
-            if (txtContrato.Texts == "")
-            {
-                txtContrato.Texts = "Tipo de contrato";
-                txtContrato.ForeColor = Color.LightGray;
             }
         }
 
