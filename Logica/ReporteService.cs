@@ -36,5 +36,24 @@ namespace Logica
             return msg;
         }
 
+        public List<Reporte> BuscarX(string x)
+        {
+            int idReporte;
+
+            List<Reporte> reportes = CargarRegistro();
+            if (int.TryParse(x, out idReporte))
+            {
+                reportes = reportes
+                    .Where(item => item.IdReporte == idReporte).ToList();
+            }
+            else
+            {
+                reportes = reportes
+                    .Where(item => item.NombreReporte.IndexOf(x, StringComparison.OrdinalIgnoreCase) != -1 ||
+                                   item.Usuario.Nombre.IndexOf(x, StringComparison.OrdinalIgnoreCase) != -1)
+                    .ToList();
+            }
+            return reportes;
+        }
     }
 }

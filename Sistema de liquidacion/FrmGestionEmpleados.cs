@@ -264,6 +264,19 @@ namespace Sistema_de_liquidacion
             }
         }
 
+        private void MessageTable()
+        {
+            if (tblRegistroLiquidaciones.Rows.Count > 0)
+            {
+                lbltbl.Visible = false;
+            }
+            else
+            {
+                lbltbl.Visible = true;
+            }
+
+        }
+
         public string GenerarContenidoHTML()
         {
             string read_Html = Properties.Resources.PlantillaLiquidacion.ToString();
@@ -428,7 +441,7 @@ namespace Sistema_de_liquidacion
 
             CargarEstados();
             CargarRegistro();
-
+            MessageTable();
         }
 
         private void btnGuardarLiquidacion_Click(object sender, EventArgs e)

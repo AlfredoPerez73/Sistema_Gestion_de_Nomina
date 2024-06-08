@@ -24,11 +24,18 @@ namespace Sistema_de_liquidacion
 
         private Cargo RegistrarCargo()
         {
-            Cargo cargo = new Cargo
+            try
             {
-                CargoDesempeñado = txtCargo.Texts,
-            };
-            return cargo;
+                Cargo cargo = new Cargo
+                {
+                    CargoDesempeñado = txtCargo.Texts,
+                };
+                return cargo;
+            }
+            catch (FormatException)
+            {
+                return null;
+            }
         }
 
         private void GuardarRegistro()
@@ -123,6 +130,19 @@ namespace Sistema_de_liquidacion
             }
         }
 
+        private void MessageTable()
+        {
+            if (tblRegistroCargo.Rows.Count > 0)
+            {
+                lbltbl.Visible = false;
+            }
+            else
+            {
+                lbltbl.Visible = true;
+            }
+
+        }
+
         private void FrmGestionCargo_Load(object sender, EventArgs e)
         {
             BorderRadiusPanel(panel3, 20);
@@ -130,7 +150,7 @@ namespace Sistema_de_liquidacion
             BorderRadiusPanel(panel9, 20);
 
             CargarRegistro();
-
+            MessageTable();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

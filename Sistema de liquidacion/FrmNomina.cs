@@ -57,6 +57,19 @@ namespace Sistema_de_liquidacion
             }
         }
 
+        private void MessageTable()
+        {
+            if (tblRegistroDetalleLiquidaciones.Rows.Count > 0)
+            {
+                lbltbl.Visible = false;
+            }
+            else
+            {
+                lbltbl.Visible = true;
+            }
+
+        }
+
         private void FiltroLiquidaciones()
         {
             if (cboFiltroAño.SelectedIndex > 0 || cboFiltroMes.SelectedIndex > 0 || cboFiltroAño.SelectedIndex == 0 ||
@@ -110,6 +123,7 @@ namespace Sistema_de_liquidacion
 
             CargarAños();
             CargarRegistro();
+            MessageTable();
         }
 
         private void BorderRadiusPanel(Panel panel, int radio)
