@@ -20,6 +20,7 @@ namespace Sistema_de_liquidacion
     {
         Reporte reporte = new Reporte();
         ReporteService reporteService = new ReporteService();
+        private bool allowEdit = false;
 
         public FrmReporte()
         {
@@ -30,7 +31,7 @@ namespace Sistema_de_liquidacion
         {
             mdArchivo mdArchivo = new mdArchivo();
             mdArchivo.ShowDialog();
-            CargarRegistroReportes(reporteService.CargarRegistro());
+            CargarRegistro();
 
         }
         
@@ -77,7 +78,7 @@ namespace Sistema_de_liquidacion
                     {
                         var msg = reporteService.EliminarRegistros(reporte);
                         MessageBox.Show(msg, "Gestion de reporte", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        CargarRegistroReportes(reporteService.CargarRegistro());
+                        CargarRegistro();
                     }
                     else
                     {
@@ -89,25 +90,50 @@ namespace Sistema_de_liquidacion
 
         }
 
-        private void CargarRegistroReportes(List<Reporte> lista)
+        private void CargarRegistro()
+        {
+            Visualizer(reporteService.CargarRegistro());
+        }
+
+        private void Visualizer(List<Reporte> lista)
         {
             tblRegistroReporte.Rows.Clear();
 
             if (lista != null)
             {
-                foreach (var producto in lista)
+                foreach (var item in lista)
                 {
                     int index = tblRegistroReporte.Rows.Add();
                     DataGridViewRow row = tblRegistroReporte.Rows[index];
-                    row.Cells["IdReporte"].Value = producto.IdReporte;
-                    row.Cells["IdUsuario2"].Value = producto.Usuario.IdPersona;
-                    row.Cells["Usuario2"].Value = producto.Usuario.Nombre;
-                    row.Cells["Reporte2"].Value = producto.NombreReporte;
-                    row.Cells["Documento"].Value = producto.Documento;
-                    row.Cells["Extension"].Value = producto.Extension;
-                    row.Cells["FechaRegistro"].Value = producto.FechaRegistro.ToString("d");
+                    row.Cells["IdReporte"].Value = item.IdReporte;
+                    row.Cells["IdUsuario2"].Value = item.Usuario.IdPersona;
+                    row.Cells["Usuario2"].Value = item.Usuario.Nombre;
+                    row.Cells["Reporte2"].Value = item.NombreReporte;
+                    row.Cells["Documento"].Value = item.Documento;
+                    row.Cells["Extension"].Value = item.Extension;
+                    row.Cells["FechaRegistro"].Value = item.FechaRegistro.ToString("d");
                 }
             }
+        }
+
+        private void MessageTable()
+        {
+            if (tblRegistroReporte.Rows.Count > 0)
+            {
+                lbltbl.Visible = false;
+            }
+            else
+            {
+                lbltbl.Visible = true;
+            }
+
+        }
+
+        private void FiltroReporte()
+        {
+            var filtro = txtBuscar.Texts;
+            var lista = reporteService.BuscarX(filtro);
+            Visualizer(lista);
         }
 
         private void FrmReporte_Load(object sender, EventArgs e)
@@ -118,8 +144,9 @@ namespace Sistema_de_liquidacion
             BorderRadiusPanel(panel5, 15);
             BorderRadiusPanel(panel7, 20);
             BorderRadiusPanel(panel9, 20);
-            CargarRegistroReportes(reporteService.CargarRegistro());
 
+            CargarRegistro();
+            MessageTable();
         }
 
         private void BorderRadiusPanel(Panel panel, int radio)
@@ -215,6 +242,125 @@ namespace Sistema_de_liquidacion
         private void tblRegistroReporte_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             CellContentClick(sender, e);
+        }
+
+        private void txtBuscar__TextChanged(object sender, EventArgs e)
+        {
+            if (txtBuscar.Texts == "Buscar:")
+            { Visualizer(reporteService.CargarRegistro()); }
+            else if (txtBuscar.Texts == "") { Visualizer(reporteService.CargarRegistro()); }
+            else
+            { FiltroReporte(); }
+        }
+
+        private void txtBuscar_Enter(object sender, EventArgs e)
+        {
+            if (txtBuscar.Texts == "Buscar:")
+            {
+                txtBuscar.Texts = "";
+                txtBuscar.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txtBuscar_Leave(object sender, EventArgs e)
+        {
+            if (txtBuscar.Texts == "")
+            {
+                txtBuscar.Texts = "Buscar:";
+                txtBuscar.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txtReporte_Enter(object sender, EventArgs e)
+        {
+            if (txtReporte.Texts == "Nombre de reporte")
+            {
+                txtReporte.Texts = "";
+                txtReporte.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txtReporte_Leave(object sender, EventArgs e)
+        {
+            if (txtReporte.Texts == "")
+            {
+                txtReporte.Texts = "Nombre de reporte";
+                txtReporte.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txtDocumento_Enter(object sender, EventArgs e)
+        {
+            if (txtDocumento.Texts == "Documento")
+            {
+                txtDocumento.Texts = "";
+                txtDocumento.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txtDocumento_Leave(object sender, EventArgs e)
+        {
+            if (txtDocumento.Texts == "")
+            {
+                txtDocumento.Texts = "Documento";
+                txtDocumento.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txtFechaRegistro_Enter(object sender, EventArgs e)
+        {
+            if (txtFechaRegistro.Texts == "Fecha de registro")
+            {
+                txtFechaRegistro.Texts = "";
+                txtFechaRegistro.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txtFechaRegistro_Leave(object sender, EventArgs e)
+        {
+            if (txtFechaRegistro.Texts == "Fecha de registro")
+            {
+                txtFechaRegistro.Texts = "";
+                txtFechaRegistro.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txtExtension_Enter(object sender, EventArgs e)
+        {
+            if (txtExtension.Texts == "Extension")
+            {
+                txtExtension.Texts = "";
+                txtExtension.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txtExtension_Leave(object sender, EventArgs e)
+        {
+            if (txtExtension.Texts == "")
+            {
+                txtExtension.Texts = "Extension";
+                txtExtension.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txtReporte_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !allowEdit;
+        }
+
+        private void txtDocumento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !allowEdit;
+        }
+
+        private void txtFechaRegistro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !allowEdit;
+        }
+
+        private void txtExtension_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !allowEdit;
         }
     }
 }

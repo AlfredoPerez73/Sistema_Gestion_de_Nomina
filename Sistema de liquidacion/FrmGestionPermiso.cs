@@ -30,13 +30,20 @@ namespace Sistema_de_liquidacion
 
         private Permiso RegistrarPermisos()
         {
-            Rol RoleIndex = (Rol)cboRoles.SelectedItem;
-            Permiso permiso = new Permiso
+            try
             {
-                NPermiso = cboHerramienta.Texts,
-                Rol = RoleIndex,
-            };
-            return permiso;
+                Rol RoleIndex = (Rol)cboRoles.SelectedItem;
+                Permiso permiso = new Permiso
+                {
+                    NPermiso = cboHerramienta.Texts,
+                    Rol = RoleIndex,
+                };
+                return permiso;
+            }
+            catch (FormatException)
+            {
+                return null;
+            }
         }
 
         private void GuardarPermiso()
@@ -132,6 +139,19 @@ namespace Sistema_de_liquidacion
             }
         }
 
+        private void MessageTable()
+        {
+            if (tblRegistroPermiso.Rows.Count > 0)
+            {
+                lbltbl.Visible = false;
+            }
+            else
+            {
+                lbltbl.Visible = true;
+            }
+
+        }
+
         private void Nuevo()
         {
             cboHerramienta.Texts = "Permisos";
@@ -174,6 +194,7 @@ namespace Sistema_de_liquidacion
             botones = GetAllButtons(frmMenuPrincipal).ToArray();
             CargarRegistro();
             CargarRoles();
+            MessageTable();
             CargarBotonesEnComboBox();
             cboRoles.Texts = "Rol desempeñado";
         }

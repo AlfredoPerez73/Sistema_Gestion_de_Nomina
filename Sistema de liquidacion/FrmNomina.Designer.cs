@@ -46,6 +46,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cboFiltroAño = new RJCodeAdvance.RJControls.RJComboBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lbltbl = new System.Windows.Forms.Label();
             this.tblRegistroDetalleLiquidaciones = new System.Windows.Forms.DataGridView();
             this.IdFactura = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -227,7 +228,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(2, 11);
+            this.label2.Location = new System.Drawing.Point(6, 11);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 20);
@@ -270,7 +271,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(-1, 11);
+            this.label1.Location = new System.Drawing.Point(4, 11);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 20);
@@ -301,11 +302,26 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel4.Controls.Add(this.lbltbl);
             this.panel4.Controls.Add(this.tblRegistroDetalleLiquidaciones);
             this.panel4.Location = new System.Drawing.Point(100, 235);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1774, 395);
             this.panel4.TabIndex = 43;
+            // 
+            // lbltbl
+            // 
+            this.lbltbl.AutoSize = true;
+            this.lbltbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.lbltbl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltbl.ForeColor = System.Drawing.Color.White;
+            this.lbltbl.Location = new System.Drawing.Point(863, 147);
+            this.lbltbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbltbl.Name = "lbltbl";
+            this.lbltbl.Size = new System.Drawing.Size(190, 17);
+            this.lbltbl.TabIndex = 24;
+            this.lbltbl.Text = "No hay registro de nomina.";
+            this.lbltbl.Visible = false;
             // 
             // tblRegistroDetalleLiquidaciones
             // 
@@ -513,6 +529,7 @@
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistroDetalleLiquidaciones)).EndInit();
             this.ResumeLayout(false);
 
@@ -554,5 +571,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn InteresesTotales;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalGeneral;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
+        private System.Windows.Forms.Label lbltbl;
     }
 }

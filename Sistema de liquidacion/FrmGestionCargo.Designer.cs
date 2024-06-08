@@ -56,6 +56,7 @@
             this.btnGuardar = new RJCodeAdvance.RJControls.RJButton();
             this.txtIdCargo = new RJCodeAdvance.RJControls.RJTextBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.lbltbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -158,6 +159,7 @@
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel4.Controls.Add(this.lbltbl);
             this.panel4.Controls.Add(this.tblRegistroCargo);
             this.panel4.Location = new System.Drawing.Point(108, 524);
             this.panel4.Margin = new System.Windows.Forms.Padding(5);
@@ -453,6 +455,19 @@
             this.label19.TabIndex = 9;
             this.label19.Text = "Detalle del cargo";
             // 
+            // lbltbl
+            // 
+            this.lbltbl.AutoSize = true;
+            this.lbltbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.lbltbl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltbl.ForeColor = System.Drawing.Color.White;
+            this.lbltbl.Location = new System.Drawing.Point(762, 129);
+            this.lbltbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbltbl.Name = "lbltbl";
+            this.lbltbl.Size = new System.Drawing.Size(190, 17);
+            this.lbltbl.TabIndex = 25;
+            this.lbltbl.Text = "No hay registros de cargos.";
+            // 
             // FrmGestionCargo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -469,6 +484,7 @@
             this.panel2.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistroCargo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -502,5 +518,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn IdCargo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cargo;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
+        private System.Windows.Forms.Label lbltbl;
     }
 }

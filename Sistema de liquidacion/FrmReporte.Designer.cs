@@ -41,6 +41,7 @@
             this.txtBuscar = new RJCodeAdvance.RJControls.RJTextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnVerArchivo = new RJCodeAdvance.RJControls.RJButton();
             this.txtIdReporte = new RJCodeAdvance.RJControls.RJTextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -52,6 +53,7 @@
             this.txtExtension = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtDocumento = new RJCodeAdvance.RJControls.RJTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lbltbl = new System.Windows.Forms.Label();
             this.tblRegistroReporte = new System.Windows.Forms.DataGridView();
             this.btnSeleccionar2 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnSEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
@@ -201,6 +203,9 @@
             this.txtBuscar.TabIndex = 46;
             this.txtBuscar.Texts = "Buscar:";
             this.txtBuscar.UnderlinedStyle = false;
+            this.txtBuscar._TextChanged += new System.EventHandler(this.txtBuscar__TextChanged);
+            this.txtBuscar.Enter += new System.EventHandler(this.txtBuscar_Enter);
+            this.txtBuscar.Leave += new System.EventHandler(this.txtBuscar_Leave);
             // 
             // label19
             // 
@@ -221,6 +226,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.btnVerArchivo);
             this.panel2.Controls.Add(this.txtIdReporte);
             this.panel2.Controls.Add(this.label5);
@@ -235,6 +241,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1766, 245);
             this.panel2.TabIndex = 57;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(1516, 118);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(170, 35);
+            this.label3.TabIndex = 57;
+            this.label3.Text = "Para guardar un archivo busquelo en su equipo";
             // 
             // btnVerArchivo
             // 
@@ -251,7 +267,7 @@
             this.btnVerArchivo.ForeColor = System.Drawing.Color.White;
             this.btnVerArchivo.Image = global::Sistema_de_liquidacion.Properties.Resources.busqueda;
             this.btnVerArchivo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVerArchivo.Location = new System.Drawing.Point(1506, 111);
+            this.btnVerArchivo.Location = new System.Drawing.Point(1506, 159);
             this.btnVerArchivo.Margin = new System.Windows.Forms.Padding(5);
             this.btnVerArchivo.Name = "btnVerArchivo";
             this.btnVerArchivo.Size = new System.Drawing.Size(204, 51);
@@ -321,6 +337,9 @@
             this.txtReporte.TabIndex = 10;
             this.txtReporte.Texts = "Nombre de reporte";
             this.txtReporte.UnderlinedStyle = false;
+            this.txtReporte.Enter += new System.EventHandler(this.txtReporte_Enter);
+            this.txtReporte.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtReporte_KeyPress);
+            this.txtReporte.Leave += new System.EventHandler(this.txtReporte_Leave);
             // 
             // panel7
             // 
@@ -402,6 +421,9 @@
             this.txtFechaRegistro.TabIndex = 12;
             this.txtFechaRegistro.Texts = "Fecha de registro";
             this.txtFechaRegistro.UnderlinedStyle = false;
+            this.txtFechaRegistro.Enter += new System.EventHandler(this.txtFechaRegistro_Enter);
+            this.txtFechaRegistro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFechaRegistro_KeyPress);
+            this.txtFechaRegistro.Leave += new System.EventHandler(this.txtFechaRegistro_Leave);
             // 
             // txtExtension
             // 
@@ -425,6 +447,9 @@
             this.txtExtension.TabIndex = 11;
             this.txtExtension.Texts = "Extension";
             this.txtExtension.UnderlinedStyle = false;
+            this.txtExtension.Enter += new System.EventHandler(this.txtExtension_Enter);
+            this.txtExtension.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtExtension_KeyPress);
+            this.txtExtension.Leave += new System.EventHandler(this.txtExtension_Leave);
             // 
             // txtDocumento
             // 
@@ -448,6 +473,9 @@
             this.txtDocumento.TabIndex = 11;
             this.txtDocumento.Texts = "Documento";
             this.txtDocumento.UnderlinedStyle = false;
+            this.txtDocumento.Enter += new System.EventHandler(this.txtDocumento_Enter);
+            this.txtDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
+            this.txtDocumento.Leave += new System.EventHandler(this.txtDocumento_Leave);
             // 
             // panel3
             // 
@@ -455,12 +483,25 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel3.Controls.Add(this.lbltbl);
             this.panel3.Controls.Add(this.tblRegistroReporte);
             this.panel3.Location = new System.Drawing.Point(98, 584);
             this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1755, 308);
             this.panel3.TabIndex = 47;
+            // 
+            // lbltbl
+            // 
+            this.lbltbl.AutoSize = true;
+            this.lbltbl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltbl.ForeColor = System.Drawing.Color.White;
+            this.lbltbl.Location = new System.Drawing.Point(800, 130);
+            this.lbltbl.Name = "lbltbl";
+            this.lbltbl.Size = new System.Drawing.Size(192, 17);
+            this.lbltbl.TabIndex = 58;
+            this.lbltbl.Text = "No hay registro de reportes.";
+            this.lbltbl.Visible = false;
             // 
             // tblRegistroReporte
             // 
@@ -678,6 +719,7 @@
             this.panel2.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistroReporte)).EndInit();
             this.ResumeLayout(false);
 
@@ -699,7 +741,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label19;
         private RJCodeAdvance.RJControls.RJTextBox txtIdReporte;
-        private RJCodeAdvance.RJControls.RJTextBox txtFechaRegistro;
         private RJCodeAdvance.RJControls.RJTextBox txtExtension;
         private RJCodeAdvance.RJControls.RJTextBox txtDocumento;
         private System.Windows.Forms.Panel panel9;
@@ -724,5 +765,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Extension;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
         public System.Windows.Forms.DataGridView tblRegistroReporte;
+        private RJCodeAdvance.RJControls.RJTextBox txtFechaRegistro;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbltbl;
     }
 }

@@ -24,11 +24,18 @@ namespace Sistema_de_liquidacion
 
         private Rol RegistrarRol()
         {
-            Rol rol = new Rol
+            try
             {
-                NRol = txtRol.Texts,
-            };
-            return rol;
+                Rol rol = new Rol
+                {
+                    NRol = txtRol.Texts,
+                };
+                return rol;
+            }
+            catch (FormatException)
+            {
+                return null;
+            }
         }
 
         private void GuardarRegistro()
@@ -124,6 +131,19 @@ namespace Sistema_de_liquidacion
             }
         }
 
+        private void MessageTable()
+        {
+            if (tblRegistroRol.Rows.Count > 0)
+            {
+                lbltbl.Visible = false;
+            }
+            else
+            {
+                lbltbl.Visible = true;
+            }
+
+        }
+
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             GuardarRegistro();
@@ -141,6 +161,7 @@ namespace Sistema_de_liquidacion
             BorderRadiusPanel(panel9, 20);
 
             CargarRegistro();
+            MessageTable();
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)

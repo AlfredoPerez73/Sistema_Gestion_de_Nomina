@@ -46,6 +46,7 @@ namespace Sistema_de_liquidacion
             ContenedorPrincipal();
             CargarUsuario();
             Permisos();
+            ToolTipButtons();
         }
 
         private void Permisos()
@@ -80,6 +81,23 @@ namespace Sistema_de_liquidacion
             btnEstadoFrm.IconChar = IconChar.Home;
             btnEstadoFrm.IconColor = Color.MediumPurple;
             lblEstado.Text = "Inicio";
+        }
+
+        private void ToolTipButtons()
+        {
+
+            toolTip1.ToolTipTitle = "Menu Principal";  // Título del ToolTip
+            toolTip1.ToolTipIcon = ToolTipIcon.Info;
+
+            toolTip1.SetToolTip(btnInicio, "Menu principal");
+            toolTip1.SetToolTip(btnLiquidacionTotal, "Estado nominal de liquidaciones");
+            toolTip1.SetToolTip(btnMantenedorEmpleado, "Gestion de informacion del empleado");
+            toolTip1.SetToolTip(btnGestionEmpleado, "Gestion de liquidacion del empleado");
+            toolTip1.SetToolTip(btnGestionCargo, "Gestion de cargos empresariales");
+            toolTip1.SetToolTip(btnGestionRol, "Gestion de roles de usuarios");
+            toolTip1.SetToolTip(btnGestionUsuario, "Gestion de usuarios");
+            toolTip1.SetToolTip(btnGestionPermisos, "Gestion de permisos de usuarios");
+            toolTip1.SetToolTip(btnReporte, "Gestion de reportes de liquidacion");
         }
 
         private void CargarUsuario()

@@ -55,6 +55,7 @@
             this.btnGuardar = new RJCodeAdvance.RJControls.RJButton();
             this.txtIdRol = new RJCodeAdvance.RJControls.RJTextBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.lbltbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -144,6 +145,7 @@
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel4.Controls.Add(this.lbltbl);
             this.panel4.Controls.Add(this.tblRegistroRol);
             this.panel4.Location = new System.Drawing.Point(108, 524);
             this.panel4.Margin = new System.Windows.Forms.Padding(5);
@@ -438,6 +440,20 @@
             this.label19.TabIndex = 9;
             this.label19.Text = "Detalle del rol";
             // 
+            // lbltbl
+            // 
+            this.lbltbl.AutoSize = true;
+            this.lbltbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.lbltbl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltbl.ForeColor = System.Drawing.Color.White;
+            this.lbltbl.Location = new System.Drawing.Point(757, 149);
+            this.lbltbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbltbl.Name = "lbltbl";
+            this.lbltbl.Size = new System.Drawing.Size(170, 17);
+            this.lbltbl.TabIndex = 25;
+            this.lbltbl.Text = "No hay registro de roles.";
+            this.lbltbl.Visible = false;
+            // 
             // FrmGestionRol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -453,6 +469,7 @@
             this.panel1.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistroRol)).EndInit();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -486,5 +503,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn IdRol;
         private System.Windows.Forms.DataGridViewTextBoxColumn Rol;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
+        private System.Windows.Forms.Label lbltbl;
     }
 }

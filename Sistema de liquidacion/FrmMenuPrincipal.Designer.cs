@@ -58,6 +58,7 @@
             this.btnGestionUsuario = new FontAwesome.Sharp.IconButton();
             this.btnGestionPermisos = new FontAwesome.Sharp.IconButton();
             this.btnReporte = new FontAwesome.Sharp.IconButton();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SlideTitle.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -512,6 +513,11 @@
             this.btnReporte.UseVisualStyleBackColor = true;
             this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
             // 
+            // toolTip1
+            // 
+            this.toolTip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.toolTip1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            // 
             // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -569,5 +575,6 @@
         private FontAwesome.Sharp.IconButton btnMantenedorEmpleado;
         private FontAwesome.Sharp.IconButton btnInicio;
         private FontAwesome.Sharp.IconButton btnLiquidacionTotal;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

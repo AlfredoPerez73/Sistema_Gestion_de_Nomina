@@ -39,6 +39,7 @@
             this.cboFiltroRol = new RJCodeAdvance.RJControls.RJComboBox();
             this.txtBuscar = new RJCodeAdvance.RJControls.RJTextBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lbltbl = new System.Windows.Forms.Label();
             this.tblRegistroPermiso = new System.Windows.Forms.DataGridView();
             this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnSEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
@@ -211,12 +212,26 @@
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel4.Controls.Add(this.lbltbl);
             this.panel4.Controls.Add(this.tblRegistroPermiso);
             this.panel4.Location = new System.Drawing.Point(108, 524);
             this.panel4.Margin = new System.Windows.Forms.Padding(5);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1766, 400);
             this.panel4.TabIndex = 31;
+            // 
+            // lbltbl
+            // 
+            this.lbltbl.AutoSize = true;
+            this.lbltbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.lbltbl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltbl.ForeColor = System.Drawing.Color.White;
+            this.lbltbl.Location = new System.Drawing.Point(766, 138);
+            this.lbltbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbltbl.Name = "lbltbl";
+            this.lbltbl.Size = new System.Drawing.Size(199, 17);
+            this.lbltbl.TabIndex = 24;
+            this.lbltbl.Text = "No hay registro de permisos.";
             // 
             // tblRegistroPermiso
             // 
@@ -808,6 +823,7 @@
             this.panel9.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistroPermiso)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -860,5 +876,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn IdRol;
         private System.Windows.Forms.DataGridViewTextBoxColumn Rol;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
+        private System.Windows.Forms.Label lbltbl;
     }
 }

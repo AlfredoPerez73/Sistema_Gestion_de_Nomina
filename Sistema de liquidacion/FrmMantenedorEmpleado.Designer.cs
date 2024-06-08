@@ -73,6 +73,7 @@
             this.txtIdCargo = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtIdProducto = new RJCodeAdvance.RJControls.RJTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbltbl = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
@@ -776,12 +777,24 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel2.Controls.Add(this.lbltbl);
             this.panel2.Controls.Add(this.tblRegistro);
             this.panel2.Location = new System.Drawing.Point(109, 585);
             this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1776, 283);
             this.panel2.TabIndex = 25;
+            // 
+            // lbltbl
+            // 
+            this.lbltbl.AutoSize = true;
+            this.lbltbl.ForeColor = System.Drawing.Color.White;
+            this.lbltbl.Location = new System.Drawing.Point(836, 127);
+            this.lbltbl.Name = "lbltbl";
+            this.lbltbl.Size = new System.Drawing.Size(216, 17);
+            this.lbltbl.TabIndex = 50;
+            this.lbltbl.Text = "No hay registro de empleados.";
+            this.lbltbl.Visible = false;
             // 
             // panel3
             // 
@@ -862,6 +875,7 @@
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -918,5 +932,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel8;
         private RJCodeAdvance.RJControls.RJComboBox cboContrato;
+        private System.Windows.Forms.Label lbltbl;
     }
 }

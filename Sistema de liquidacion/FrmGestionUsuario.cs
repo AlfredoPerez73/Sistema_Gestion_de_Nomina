@@ -25,16 +25,23 @@ namespace Sistema_de_liquidacion
 
         private Usuario RegistrarUsuario()
         {
-            Rol RoleIndex = (Rol)cboRoles.SelectedItem;
-            Usuario usuario = new Usuario
+            try
             {
-                Documento = txtDocumento.Texts,
-                Nombre = txtNombreUsuario.Texts,
-                Rol = RoleIndex,
-                Contraseña = txtContraseña.Texts,
-                Correo = txtCorreo.Texts,
-            };
-            return usuario;
+                Rol RoleIndex = (Rol)cboRoles.SelectedItem;
+                Usuario usuario = new Usuario
+                {
+                    Documento = txtDocumento.Texts,
+                    Nombre = txtNombreUsuario.Texts,
+                    Rol = RoleIndex,
+                    Contraseña = txtContraseña.Texts,
+                    Correo = txtCorreo.Texts,
+                };
+                return usuario;
+            }
+            catch (FormatException)
+            {
+                return null;
+            }
         } 
 
         private void GuardarRegistro()
@@ -132,7 +139,7 @@ namespace Sistema_de_liquidacion
             BorderRadiusPanel(panel9, 20);
 
             CargarRoles();
-
+            MessageTable();
             CargarRegistro();
         }
 
@@ -191,6 +198,19 @@ namespace Sistema_de_liquidacion
 
                 }
             }
+        }
+
+        private void MessageTable()
+        {
+            if (tblRegistro.Rows.Count > 0)
+            {
+                lbltbl.Visible = false;
+            }
+            else
+            {
+                lbltbl.Visible = true;
+            }
+
         }
 
         private void FiltroUsuario()

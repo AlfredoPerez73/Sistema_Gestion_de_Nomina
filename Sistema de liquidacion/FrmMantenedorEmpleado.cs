@@ -25,22 +25,28 @@ namespace Sistema_de_liquidacion
 
         private Empleado RegistroProducto()
         {
-            Cargo CargoIndex = (Cargo)cboCargos.SelectedItem;
-            Empleado producto = new Empleado
+            try
             {
-                Documento = txtDocumento.Texts,
-                Nombre = txtNombreProducto.Texts.ToUpper(),
-                Cargo = CargoIndex,
-                Contrato = new Contrato
+                Cargo CargoIndex = (Cargo)cboCargos.SelectedItem;
+                Empleado producto = new Empleado
                 {
-                    FechaInicio = Convert.ToDateTime(dpFechaInicial.Value.ToString("yyyy-M-d")),
-                    FechaFin = Convert.ToDateTime(dpFechaFinal.Value.ToString("yyyy-M-d")),
-                    Salario = Convert.ToDecimal(txtSalario.Texts),
-                    TipoContrato = cboContrato.Texts.ToUpper(),
-                },
-                Estado = cboEstado.Texts.ToUpper(),
-            };
-            return producto;
+                    Documento = txtDocumento.Texts,
+                    Nombre = txtNombreProducto.Texts.ToUpper(),
+                    Cargo = CargoIndex,
+                    Contrato = new Contrato
+                    {
+                        FechaInicio = Convert.ToDateTime(dpFechaInicial.Value.ToString("yyyy-M-d")),
+                        FechaFin = Convert.ToDateTime(dpFechaFinal.Value.ToString("yyyy-M-d")),
+                        Salario = Convert.ToDecimal(txtSalario.Texts),
+                        TipoContrato = cboContrato.Texts.ToUpper(),
+                    },
+                    Estado = cboEstado.Texts.ToUpper(),
+                };
+                return producto;
+            } catch (FormatException)
+            {
+                return null;
+            }
         }
 
         private void GuardarRegistro()
@@ -181,6 +187,19 @@ namespace Sistema_de_liquidacion
             }
         }
 
+        private void MessageTable()
+        {
+            if (tblRegistro.Rows.Count > 0)
+            {
+                lbltbl.Visible = false;
+            }
+            else
+            {
+                lbltbl.Visible = true;
+            }
+
+        }
+
         private void FiltroProducto()
         {
             var filtro = txtBuscar.Texts;
@@ -260,6 +279,7 @@ namespace Sistema_de_liquidacion
             BorderRadiusPanel(panel9, 20);
 
             CargarRegistro();
+            MessageTable();
         }
 
         private void CellContentClick(object sender, DataGridViewCellEventArgs e)
