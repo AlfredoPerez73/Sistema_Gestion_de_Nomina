@@ -18,18 +18,20 @@ namespace Sistema_de_liquidacion
 {
     public partial class FrmReporte : Form
     {
+        private Usuario oUsuario;
         Reporte reporte = new Reporte();
         ReporteService reporteService = new ReporteService();
         private bool allowEdit = false;
 
-        public FrmReporte()
+        public FrmReporte(Usuario oUsuario)
         {
             InitializeComponent();
+            this.oUsuario = oUsuario;
         }
 
         private void GuardarRegistro()
         {
-            mdArchivo mdArchivo = new mdArchivo();
+            mdArchivo mdArchivo = new mdArchivo(oUsuario);
             mdArchivo.ShowDialog();
             CargarRegistro();
 
@@ -220,6 +222,17 @@ namespace Sistema_de_liquidacion
                 var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
 
                 e.Graphics.DrawImage(Properties.Resources.check_circle, new System.Drawing.Rectangle(x, y, w, h));
+                e.Handled = true;
+            }
+            if (e.ColumnIndex == 1)
+            {
+                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
+                var w = Properties.Resources.circulo_marca_x_sin_findo.Width;
+                var h = Properties.Resources.circulo_marca_x_sin_findo.Width;
+                var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2;
+                var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
+
+                e.Graphics.DrawImage(Properties.Resources.circulo_marca_x_sin_findo, new Rectangle(x, y, w, h));
                 e.Handled = true;
             }
         }

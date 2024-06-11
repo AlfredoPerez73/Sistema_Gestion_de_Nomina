@@ -16,38 +16,49 @@ namespace Sistema_de_liquidacion.Modales
     public partial class mdArchivo : Form
     {
         ReporteService reporteService = new ReporteService();
-        Reporte Reporte = new Reporte();
+        private Usuario oUsuario;
 
         OpenFileDialog dlg = new OpenFileDialog();
 
-        public mdArchivo()
+        public mdArchivo(Usuario oUsuario)
         {
             InitializeComponent();
+            this.oUsuario = oUsuario;
         }
 
         private void GuardarArchivo()
         {
             if (!ValidarCampos()) { return; }
 
-            //try
-            //{
+            try
+            {
                 byte[] archivo = null;
                 Stream MyStream = dlg.OpenFile();
                 MemoryStream memoryStream = new MemoryStream();
                 MyStream.CopyTo(memoryStream);
                 archivo = memoryStream.ToArray();
 
-                Reporte.NombreReporte = txtNombreArchivo.Texts;
-                Reporte.Documento = archivo;
-                Reporte.Extension = dlg.SafeFileName;
+                Reporte oReporte = new Reporte
+                {
+                    NombreReporte = txtNombreArchivo.Texts,
+                    Documento = archivo,
+                    Extension = dlg.SafeFileName,
+                    Usuario = new Usuario
+                    {
+                        IdPersona = oUsuario.IdPersona,
+                        Nombre = oUsuario.Nombre
+                    },
+                };
 
-                var msg = reporteService.Guardar(Reporte);
+                var msg = reporteService.Guardar(oReporte);
                 MessageBox.Show(msg, "Gestión de reportes", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
-            //catch (IOException ex)
-            //{
-            //    MessageBox.Show(ex.Message, "Gestión de reportes", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
+                this.Close();
+
+            }
+            catch (IOException ex)
+            {
+                MessageBox.Show(ex.Message, "Gestión de reportes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
         }
 
