@@ -246,7 +246,7 @@ namespace Sistema_de_liquidacion
 
         private void btnReporte_Click(object sender, EventArgs e)
         {
-            AbrirFormularios((Button)sender, new FrmReporte());
+            AbrirFormularios((Button)sender, new FrmReporte(oUsuario));
         }
 
         private void btnGestionPermisos_Click(object sender, EventArgs e)
