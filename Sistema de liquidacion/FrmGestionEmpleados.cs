@@ -145,6 +145,8 @@ namespace Sistema_de_liquidacion
             txtDetalle.Focus();
             txtLiquidacion.Texts = "Id de liquidacion";
             txtDetalle.Texts = "Id de detalle";
+            cboCargo.Texts = "Cargo desempeñado";
+            cboContrato.Texts = "Contrato";
         }
 
         private void CargarEstados()
@@ -430,15 +432,16 @@ namespace Sistema_de_liquidacion
 
         private void FrmGestionEmpleados_Load(object sender, EventArgs e)
         {
-            BorderRadiusPanel(panel1, 20);
+            BorderRadiusPanel(panel1, 30);
             BorderRadiusPanel(panel2, 15);
-            BorderRadiusPanel(panel3, 20);
+            BorderRadiusPanel(panel3, 30);
             BorderRadiusPanel(panel4, 15);
             BorderRadiusPanel(panel5, 15);
             BorderRadiusPanel(panel6, 20);
             BorderRadiusPanel(panel8, 20);
             BorderRadiusPanel(panel9, 20);
 
+            Nuevo();
             CargarEstados();
             CargarRegistro();
             MessageTable();
@@ -548,7 +551,7 @@ namespace Sistema_de_liquidacion
             if (txtLiquidacion.Texts == "Codigo de liquidacion")
             {
                 txtLiquidacion.Texts = "";
-                txtLiquidacion.ForeColor = Color.LightGray;
+                txtLiquidacion.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -557,7 +560,7 @@ namespace Sistema_de_liquidacion
             if (txtLiquidacion.Texts == "")
             {
                 txtLiquidacion.Texts = "Codigo de liquidacion";
-                txtLiquidacion.ForeColor = Color.LightGray;
+                txtLiquidacion.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -566,7 +569,7 @@ namespace Sistema_de_liquidacion
             if (txtCodigo.Texts == "Codigo de detalle de liquidacion")
             {
                 txtCodigo.Texts = "";
-                txtCodigo.ForeColor = Color.LightGray;
+                txtCodigo.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -575,7 +578,7 @@ namespace Sistema_de_liquidacion
             if (txtCodigo.Texts == "")
             {
                 txtCodigo.Texts = "Codigo de detalle de liquidacion";
-                txtCodigo.ForeColor = Color.LightGray;
+                txtCodigo.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -584,7 +587,7 @@ namespace Sistema_de_liquidacion
             if (txtDiasTrabajados.Texts == "Dias trabajados")
             {
                 txtDiasTrabajados.Texts = "";
-                txtDiasTrabajados.ForeColor = Color.LightGray;
+                txtDiasTrabajados.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -593,7 +596,7 @@ namespace Sistema_de_liquidacion
             if (txtDiasTrabajados.Texts == "")
             {
                 txtDiasTrabajados.Texts = "Dias trabajados";
-                txtDiasTrabajados.ForeColor = Color.LightGray;
+                txtDiasTrabajados.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -602,7 +605,7 @@ namespace Sistema_de_liquidacion
             if (txtHorasExtras.Texts == "Horas extras")
             {
                 txtHorasExtras.Texts = "";
-                txtHorasExtras.ForeColor = Color.LightGray;
+                txtHorasExtras.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -611,7 +614,7 @@ namespace Sistema_de_liquidacion
             if (txtHorasExtras.Texts == "")
             {
                 txtHorasExtras.Texts = "Horas extras";
-                txtHorasExtras.ForeColor = Color.LightGray;
+                txtHorasExtras.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -620,7 +623,7 @@ namespace Sistema_de_liquidacion
             if (txtDocumento2.Texts == "Documento")
             {
                 txtDocumento2.Texts = "";
-                txtDocumento2.ForeColor = Color.LightGray;
+                txtDocumento2.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -629,7 +632,7 @@ namespace Sistema_de_liquidacion
             if (txtDocumento2.Texts == "")
             {
                 txtDocumento2.Texts = "Documento";
-                txtDocumento2.ForeColor = Color.LightGray;
+                txtDocumento2.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -639,7 +642,7 @@ namespace Sistema_de_liquidacion
             if (textBox1.Text == "Documento")
             {
                 textBox1.Text = "";
-                textBox1.ForeColor = Color.LightGray;
+                textBox1.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -648,7 +651,7 @@ namespace Sistema_de_liquidacion
             if (textBox1.Text == "")
             {
                 textBox1.Text = "Documento";
-                textBox1.ForeColor = Color.LightGray;
+                textBox1.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -657,7 +660,7 @@ namespace Sistema_de_liquidacion
             if (txtNombre.Texts == "Nombre")
             {
                 txtNombre.Texts = "";
-                txtNombre.ForeColor = Color.LightGray;
+                txtNombre.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -666,7 +669,7 @@ namespace Sistema_de_liquidacion
             if (txtNombre.Texts == "")
             {
                 txtNombre.Texts = "Nombre";
-                txtNombre.ForeColor = Color.LightGray;
+                txtNombre.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -675,7 +678,7 @@ namespace Sistema_de_liquidacion
             if (cboCargo.Texts == "Cargo desempeñado")
             {
                 cboCargo.Texts = "";
-                cboCargo.ForeColor = Color.LightGray;
+                cboCargo.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -684,7 +687,7 @@ namespace Sistema_de_liquidacion
             if (txtSalario2.Texts == "Salario")
             {
                 txtSalario2.Texts = "";
-                txtSalario2.ForeColor = Color.LightGray;
+                txtSalario2.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -693,7 +696,7 @@ namespace Sistema_de_liquidacion
             if (txtSalario2.Texts == "")
             {
                 txtSalario2.Texts = "Salario";
-                txtSalario2.ForeColor = Color.LightGray;
+                txtSalario2.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -702,7 +705,7 @@ namespace Sistema_de_liquidacion
             if (txtEstado.Texts == "Estado")
             {
                 txtEstado.Texts = "";
-                txtEstado.ForeColor = Color.LightGray;
+                txtEstado.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -711,7 +714,7 @@ namespace Sistema_de_liquidacion
             if (txtEstado.Texts == "")
             {
                 txtEstado.Texts = "Estado";
-                txtEstado.ForeColor = Color.LightGray;
+                txtEstado.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 

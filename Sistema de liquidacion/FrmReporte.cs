@@ -148,8 +148,8 @@ namespace Sistema_de_liquidacion
 
         private void FrmReporte_Load(object sender, EventArgs e)
         {
-            BorderRadiusPanel(panel2, 20);
-            BorderRadiusPanel(panel3, 20);
+            BorderRadiusPanel(panel2, 30);
+            BorderRadiusPanel(panel3, 30);
             BorderRadiusPanel(panel4, 15);
             BorderRadiusPanel(panel5, 15);
             BorderRadiusPanel(panel7, 20);
@@ -297,7 +297,7 @@ namespace Sistema_de_liquidacion
             if (txtReporte.Texts == "Nombre de reporte")
             {
                 txtReporte.Texts = "";
-                txtReporte.ForeColor = Color.LightGray;
+                txtReporte.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -306,7 +306,7 @@ namespace Sistema_de_liquidacion
             if (txtReporte.Texts == "")
             {
                 txtReporte.Texts = "Nombre de reporte";
-                txtReporte.ForeColor = Color.LightGray;
+                txtReporte.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -315,7 +315,7 @@ namespace Sistema_de_liquidacion
             if (txtDocumento.Texts == "Documento")
             {
                 txtDocumento.Texts = "";
-                txtDocumento.ForeColor = Color.LightGray;
+                txtDocumento.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -324,7 +324,7 @@ namespace Sistema_de_liquidacion
             if (txtDocumento.Texts == "")
             {
                 txtDocumento.Texts = "Documento";
-                txtDocumento.ForeColor = Color.LightGray;
+                txtDocumento.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -333,7 +333,7 @@ namespace Sistema_de_liquidacion
             if (txtFechaRegistro.Texts == "Fecha de registro")
             {
                 txtFechaRegistro.Texts = "";
-                txtFechaRegistro.ForeColor = Color.LightGray;
+                txtFechaRegistro.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -342,7 +342,7 @@ namespace Sistema_de_liquidacion
             if (txtFechaRegistro.Texts == "Fecha de registro")
             {
                 txtFechaRegistro.Texts = "";
-                txtFechaRegistro.ForeColor = Color.LightGray;
+                txtFechaRegistro.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -351,7 +351,7 @@ namespace Sistema_de_liquidacion
             if (txtExtension.Texts == "Extension")
             {
                 txtExtension.Texts = "";
-                txtExtension.ForeColor = Color.LightGray;
+                txtExtension.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -360,7 +360,7 @@ namespace Sistema_de_liquidacion
             if (txtExtension.Texts == "")
             {
                 txtExtension.Texts = "Extension";
-                txtExtension.ForeColor = Color.LightGray;
+                txtExtension.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 

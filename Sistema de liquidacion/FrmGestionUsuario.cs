@@ -132,12 +132,13 @@ namespace Sistema_de_liquidacion
 
         private void FrmGestionUsuario_Load(object sender, EventArgs e)
         {
-            BorderRadiusPanel(panel1, 20);
-            BorderRadiusPanel(panel2, 20);
+            BorderRadiusPanel(panel1, 30);
+            BorderRadiusPanel(panel2, 30);
             BorderRadiusPanel(panel3, 15);
             BorderRadiusPanel(panel5, 20);
             BorderRadiusPanel(panel9, 20);
 
+            Nuevo();
             CargarRoles();
             MessageTable();
             CargarRegistro();
@@ -404,7 +405,7 @@ namespace Sistema_de_liquidacion
             if (txtDocumento.Texts == "Documento")
             {
                 txtDocumento.Texts = "";
-                txtDocumento.ForeColor = Color.LightGray;
+                txtDocumento.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -413,7 +414,7 @@ namespace Sistema_de_liquidacion
             if (txtDocumento.Texts == "")
             {
                 txtDocumento.Texts = "Documento";
-                txtDocumento.ForeColor = Color.LightGray;
+                txtDocumento.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -422,7 +423,7 @@ namespace Sistema_de_liquidacion
             if (txtNombreUsuario.Texts == "Usuario")
             {
                 txtNombreUsuario.Texts = "";
-                txtNombreUsuario.ForeColor = Color.LightGray;
+                txtNombreUsuario.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -431,7 +432,7 @@ namespace Sistema_de_liquidacion
             if (txtNombreUsuario.Texts == "")
             {
                 txtNombreUsuario.Texts = "Usuario";
-                txtNombreUsuario.ForeColor = Color.LightGray;
+                txtNombreUsuario.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -440,7 +441,7 @@ namespace Sistema_de_liquidacion
             if (txtCorreo.Texts == "Correo")
             {
                 txtCorreo.Texts = "";
-                txtCorreo.ForeColor = Color.LightGray;
+                txtCorreo.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -449,7 +450,7 @@ namespace Sistema_de_liquidacion
             if (txtCorreo.Texts == "")
             {
                 txtCorreo.Texts = "Correo";
-                txtCorreo.ForeColor = Color.LightGray;
+                txtCorreo.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 

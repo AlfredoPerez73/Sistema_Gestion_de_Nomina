@@ -57,11 +57,11 @@
             this.chHorasRealizadas = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.alphaGradientPanel10 = new System.Windows.Forms.AlphaGradientPanel();
             this.colorWithAlpha23 = new System.Windows.Forms.ColorWithAlpha();
-            this.alphaGradientPanel5 = new System.Windows.Forms.AlphaGradientPanel();
             this.colorWithAlpha24 = new System.Windows.Forms.ColorWithAlpha();
             this.alphaGradientPanel11 = new System.Windows.Forms.AlphaGradientPanel();
             this.colorWithAlpha31 = new System.Windows.Forms.ColorWithAlpha();
             this.colorWithAlpha32 = new System.Windows.Forms.ColorWithAlpha();
+            this.alphaGradientPanel5 = new System.Windows.Forms.AlphaGradientPanel();
             this.alphaGradientPanel14 = new System.Windows.Forms.AlphaGradientPanel();
             this.colorWithAlpha25 = new System.Windows.Forms.ColorWithAlpha();
             this.colorWithAlpha26 = new System.Windows.Forms.ColorWithAlpha();
@@ -205,13 +205,17 @@
             this.panel3.Controls.Add(this.alphaGradientPanel9);
             this.panel3.Controls.Add(this.alphaGradientPanel15);
             this.panel3.Location = new System.Drawing.Point(0, -1);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1924, 1055);
+            this.panel3.Size = new System.Drawing.Size(2565, 1298);
             this.panel3.TabIndex = 3;
             this.panel3.Tag = "";
             // 
             // alphaGradientPanel17
             // 
+            this.alphaGradientPanel17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.alphaGradientPanel17.BackColor = System.Drawing.Color.Transparent;
             this.alphaGradientPanel17.Border = false;
             this.alphaGradientPanel17.BorderColor = System.Drawing.SystemColors.ActiveBorder;
@@ -233,10 +237,11 @@
             this.alphaGradientPanel17.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel17.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel17.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel17.Location = new System.Drawing.Point(1081, 568);
+            this.alphaGradientPanel17.Location = new System.Drawing.Point(1938, 699);
+            this.alphaGradientPanel17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alphaGradientPanel17.Name = "alphaGradientPanel17";
             this.alphaGradientPanel17.Rounded = true;
-            this.alphaGradientPanel17.Size = new System.Drawing.Size(425, 256);
+            this.alphaGradientPanel17.Size = new System.Drawing.Size(567, 390);
             this.alphaGradientPanel17.TabIndex = 22;
             // 
             // colorWithAlpha43
@@ -253,6 +258,9 @@
             // 
             // alphaGradientPanel12
             // 
+            this.alphaGradientPanel12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.alphaGradientPanel12.BackColor = System.Drawing.Color.Transparent;
             this.alphaGradientPanel12.Border = false;
             this.alphaGradientPanel12.BorderColor = System.Drawing.SystemColors.ActiveBorder;
@@ -274,10 +282,11 @@
             this.alphaGradientPanel12.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel12.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel12.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel12.Location = new System.Drawing.Point(623, 568);
+            this.alphaGradientPanel12.Location = new System.Drawing.Point(1328, 699);
+            this.alphaGradientPanel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alphaGradientPanel12.Name = "alphaGradientPanel12";
             this.alphaGradientPanel12.Rounded = true;
-            this.alphaGradientPanel12.Size = new System.Drawing.Size(431, 256);
+            this.alphaGradientPanel12.Size = new System.Drawing.Size(575, 390);
             this.alphaGradientPanel12.TabIndex = 21;
             // 
             // colorWithAlpha41
@@ -299,9 +308,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panel2.Controls.Add(this.chValorHoras);
-            this.panel2.Location = new System.Drawing.Point(1076, 488);
+            this.panel2.Location = new System.Drawing.Point(1932, 601);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(432, 246);
+            this.panel2.Size = new System.Drawing.Size(576, 378);
             this.panel2.TabIndex = 8;
             // 
             // chValorHoras
@@ -355,6 +365,7 @@
             legend1.Name = "Legend1";
             this.chValorHoras.Legends.Add(legend1);
             this.chValorHoras.Location = new System.Drawing.Point(0, 2);
+            this.chValorHoras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chValorHoras.Name = "chValorHoras";
             series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
             series1.BackSecondaryColor = System.Drawing.Color.MediumPurple;
@@ -372,7 +383,7 @@
             series1.Name = "Series1";
             series1.YValuesPerPoint = 2;
             this.chValorHoras.Series.Add(series1);
-            this.chValorHoras.Size = new System.Drawing.Size(432, 244);
+            this.chValorHoras.Size = new System.Drawing.Size(576, 393);
             this.chValorHoras.TabIndex = 6;
             title1.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title1.ForeColor = System.Drawing.Color.Gainsboro;
@@ -387,9 +398,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panel1.Controls.Add(this.chHorasRealizadas);
-            this.panel1.Location = new System.Drawing.Point(623, 486);
+            this.panel1.Location = new System.Drawing.Point(1328, 598);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(432, 246);
+            this.panel1.Size = new System.Drawing.Size(576, 378);
             this.panel1.TabIndex = 7;
             // 
             // chHorasRealizadas
@@ -443,6 +455,7 @@
             legend2.Name = "Legend1";
             this.chHorasRealizadas.Legends.Add(legend2);
             this.chHorasRealizadas.Location = new System.Drawing.Point(0, 2);
+            this.chHorasRealizadas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chHorasRealizadas.Name = "chHorasRealizadas";
             this.chHorasRealizadas.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
             series2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
@@ -461,7 +474,7 @@
             series2.Name = "Series1";
             series2.YValuesPerPoint = 2;
             this.chHorasRealizadas.Series.Add(series2);
-            this.chHorasRealizadas.Size = new System.Drawing.Size(432, 287);
+            this.chHorasRealizadas.Size = new System.Drawing.Size(576, 446);
             this.chHorasRealizadas.TabIndex = 6;
             title2.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title2.ForeColor = System.Drawing.Color.Gainsboro;
@@ -471,6 +484,9 @@
             // 
             // alphaGradientPanel10
             // 
+            this.alphaGradientPanel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.alphaGradientPanel10.BackColor = System.Drawing.Color.Transparent;
             this.alphaGradientPanel10.Border = false;
             this.alphaGradientPanel10.BorderColor = System.Drawing.SystemColors.ActiveBorder;
@@ -492,55 +508,30 @@
             this.alphaGradientPanel10.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel10.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel10.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel10.Location = new System.Drawing.Point(1072, 39);
+            this.alphaGradientPanel10.Location = new System.Drawing.Point(1924, 48);
+            this.alphaGradientPanel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alphaGradientPanel10.Name = "alphaGradientPanel10";
             this.alphaGradientPanel10.Rounded = true;
-            this.alphaGradientPanel10.Size = new System.Drawing.Size(429, 155);
+            this.alphaGradientPanel10.Size = new System.Drawing.Size(572, 191);
             this.alphaGradientPanel10.TabIndex = 15;
             // 
             // colorWithAlpha23
             // 
             this.colorWithAlpha23.Alpha = 255;
             this.colorWithAlpha23.Color = System.Drawing.Color.Black;
-            this.colorWithAlpha23.Parent = this.alphaGradientPanel10;
-            // 
-            // alphaGradientPanel5
-            // 
-            this.alphaGradientPanel5.BackColor = System.Drawing.Color.Transparent;
-            this.alphaGradientPanel5.Border = false;
-            this.alphaGradientPanel5.BorderColor = System.Drawing.SystemColors.ActiveBorder;
-            this.alphaGradientPanel5.Colors.Add(this.colorWithAlpha23);
-            this.alphaGradientPanel5.Colors.Add(this.colorWithAlpha24);
-            this.alphaGradientPanel5.ContentPadding = new System.Windows.Forms.Padding(0);
-            this.alphaGradientPanel5.CornerRadius = 20;
-            this.alphaGradientPanel5.Corners = ((System.Windows.Forms.Corner)((((System.Windows.Forms.Corner.TopLeft | System.Windows.Forms.Corner.TopRight) 
-            | System.Windows.Forms.Corner.BottomLeft) 
-            | System.Windows.Forms.Corner.BottomRight)));
-            this.alphaGradientPanel5.Gradient = true;
-            this.alphaGradientPanel5.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.alphaGradientPanel5.GradientOffset = 1F;
-            this.alphaGradientPanel5.GradientSize = new System.Drawing.Size(0, 0);
-            this.alphaGradientPanel5.GradientWrapMode = System.Drawing.Drawing2D.WrapMode.Tile;
-            this.alphaGradientPanel5.Grayscale = false;
-            this.alphaGradientPanel5.Image = null;
-            this.alphaGradientPanel5.ImageAlpha = 75;
-            this.alphaGradientPanel5.ImagePadding = new System.Windows.Forms.Padding(5);
-            this.alphaGradientPanel5.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
-            this.alphaGradientPanel5.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel5.Location = new System.Drawing.Point(93, 39);
-            this.alphaGradientPanel5.Name = "alphaGradientPanel5";
-            this.alphaGradientPanel5.Rounded = true;
-            this.alphaGradientPanel5.Size = new System.Drawing.Size(313, 159);
-            this.alphaGradientPanel5.TabIndex = 12;
+            this.colorWithAlpha23.Parent = this.alphaGradientPanel5;
             // 
             // colorWithAlpha24
             // 
             this.colorWithAlpha24.Alpha = 255;
             this.colorWithAlpha24.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.colorWithAlpha24.Parent = this.alphaGradientPanel10;
+            this.colorWithAlpha24.Parent = this.alphaGradientPanel5;
             // 
             // alphaGradientPanel11
             // 
+            this.alphaGradientPanel11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.alphaGradientPanel11.BackColor = System.Drawing.Color.Transparent;
             this.alphaGradientPanel11.Border = false;
             this.alphaGradientPanel11.BorderColor = System.Drawing.SystemColors.ActiveBorder;
@@ -562,10 +553,11 @@
             this.alphaGradientPanel11.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel11.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel11.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel11.Location = new System.Drawing.Point(622, 219);
+            this.alphaGradientPanel11.Location = new System.Drawing.Point(1326, 270);
+            this.alphaGradientPanel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alphaGradientPanel11.Name = "alphaGradientPanel11";
             this.alphaGradientPanel11.Rounded = true;
-            this.alphaGradientPanel11.Size = new System.Drawing.Size(435, 261);
+            this.alphaGradientPanel11.Size = new System.Drawing.Size(580, 321);
             this.alphaGradientPanel11.TabIndex = 16;
             // 
             // colorWithAlpha31
@@ -580,8 +572,44 @@
             this.colorWithAlpha32.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.colorWithAlpha32.Parent = this.alphaGradientPanel11;
             // 
+            // alphaGradientPanel5
+            // 
+            this.alphaGradientPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.alphaGradientPanel5.BackColor = System.Drawing.Color.Transparent;
+            this.alphaGradientPanel5.Border = false;
+            this.alphaGradientPanel5.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.alphaGradientPanel5.Colors.Add(this.colorWithAlpha23);
+            this.alphaGradientPanel5.Colors.Add(this.colorWithAlpha24);
+            this.alphaGradientPanel5.ContentPadding = new System.Windows.Forms.Padding(0);
+            this.alphaGradientPanel5.CornerRadius = 20;
+            this.alphaGradientPanel5.Corners = ((System.Windows.Forms.Corner)((((System.Windows.Forms.Corner.TopLeft | System.Windows.Forms.Corner.TopRight) 
+            | System.Windows.Forms.Corner.BottomLeft) 
+            | System.Windows.Forms.Corner.BottomRight)));
+            this.alphaGradientPanel5.Gradient = true;
+            this.alphaGradientPanel5.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.alphaGradientPanel5.GradientOffset = 1F;
+            this.alphaGradientPanel5.GradientSize = new System.Drawing.Size(0, 0);
+            this.alphaGradientPanel5.GradientWrapMode = System.Drawing.Drawing2D.WrapMode.Tile;
+            this.alphaGradientPanel5.Grayscale = false;
+            this.alphaGradientPanel5.Image = null;
+            this.alphaGradientPanel5.ImageAlpha = 75;
+            this.alphaGradientPanel5.ImagePadding = new System.Windows.Forms.Padding(5);
+            this.alphaGradientPanel5.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
+            this.alphaGradientPanel5.ImageSize = new System.Drawing.Size(48, 48);
+            this.alphaGradientPanel5.Location = new System.Drawing.Point(163, 48);
+            this.alphaGradientPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.alphaGradientPanel5.Name = "alphaGradientPanel5";
+            this.alphaGradientPanel5.Rounded = true;
+            this.alphaGradientPanel5.Size = new System.Drawing.Size(579, 196);
+            this.alphaGradientPanel5.TabIndex = 12;
+            // 
             // alphaGradientPanel14
             // 
+            this.alphaGradientPanel14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.alphaGradientPanel14.BackColor = System.Drawing.Color.Transparent;
             this.alphaGradientPanel14.Border = false;
             this.alphaGradientPanel14.BorderColor = System.Drawing.SystemColors.ActiveBorder;
@@ -612,10 +640,11 @@
             this.alphaGradientPanel14.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel14.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel14.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel14.Location = new System.Drawing.Point(623, 204);
+            this.alphaGradientPanel14.Location = new System.Drawing.Point(1327, 251);
+            this.alphaGradientPanel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alphaGradientPanel14.Name = "alphaGradientPanel14";
             this.alphaGradientPanel14.Rounded = true;
-            this.alphaGradientPanel14.Size = new System.Drawing.Size(435, 239);
+            this.alphaGradientPanel14.Size = new System.Drawing.Size(580, 294);
             this.alphaGradientPanel14.TabIndex = 0;
             // 
             // colorWithAlpha25
@@ -636,10 +665,11 @@
             this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.Donate;
             this.iconPictureBox5.IconColor = System.Drawing.Color.White;
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox5.IconSize = 85;
-            this.iconPictureBox5.Location = new System.Drawing.Point(328, 152);
+            this.iconPictureBox5.IconSize = 106;
+            this.iconPictureBox5.Location = new System.Drawing.Point(437, 187);
+            this.iconPictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconPictureBox5.Name = "iconPictureBox5";
-            this.iconPictureBox5.Size = new System.Drawing.Size(85, 86);
+            this.iconPictureBox5.Size = new System.Drawing.Size(113, 106);
             this.iconPictureBox5.TabIndex = 1;
             this.iconPictureBox5.TabStop = false;
             // 
@@ -648,9 +678,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(120, 32);
+            this.label3.Location = new System.Drawing.Point(160, 39);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(257, 26);
+            this.label3.Size = new System.Drawing.Size(314, 32);
             this.label3.TabIndex = 0;
             this.label3.Text = "Total valor horas extras";
             // 
@@ -660,10 +691,11 @@
             this.iconPictureBox7.IconChar = FontAwesome.Sharp.IconChar.Hourglass;
             this.iconPictureBox7.IconColor = System.Drawing.Color.White;
             this.iconPictureBox7.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconPictureBox7.IconSize = 60;
-            this.iconPictureBox7.Location = new System.Drawing.Point(259, 169);
+            this.iconPictureBox7.IconSize = 74;
+            this.iconPictureBox7.Location = new System.Drawing.Point(345, 208);
+            this.iconPictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconPictureBox7.Name = "iconPictureBox7";
-            this.iconPictureBox7.Size = new System.Drawing.Size(68, 60);
+            this.iconPictureBox7.Size = new System.Drawing.Size(91, 74);
             this.iconPictureBox7.TabIndex = 1;
             this.iconPictureBox7.TabStop = false;
             // 
@@ -672,9 +704,10 @@
             this.lblValTotalHoras.AutoSize = true;
             this.lblValTotalHoras.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.lblValTotalHoras.ForeColor = System.Drawing.Color.White;
-            this.lblValTotalHoras.Location = new System.Drawing.Point(135, 58);
+            this.lblValTotalHoras.Location = new System.Drawing.Point(180, 71);
+            this.lblValTotalHoras.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblValTotalHoras.Name = "lblValTotalHoras";
-            this.lblValTotalHoras.Size = new System.Drawing.Size(95, 32);
+            this.lblValTotalHoras.Size = new System.Drawing.Size(118, 40);
             this.lblValTotalHoras.TabIndex = 0;
             this.lblValTotalHoras.Text = "label1";
             // 
@@ -701,10 +734,11 @@
             this.alphaGradientPanel13.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel13.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel13.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel13.Location = new System.Drawing.Point(453, 16);
+            this.alphaGradientPanel13.Location = new System.Drawing.Point(604, 20);
+            this.alphaGradientPanel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alphaGradientPanel13.Name = "alphaGradientPanel13";
             this.alphaGradientPanel13.Rounded = true;
-            this.alphaGradientPanel13.Size = new System.Drawing.Size(435, 134);
+            this.alphaGradientPanel13.Size = new System.Drawing.Size(580, 165);
             this.alphaGradientPanel13.TabIndex = 0;
             // 
             // colorWithAlpha27
@@ -725,10 +759,11 @@
             this.iconPictureBox8.IconChar = FontAwesome.Sharp.IconChar.ClockFour;
             this.iconPictureBox8.IconColor = System.Drawing.Color.White;
             this.iconPictureBox8.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconPictureBox8.IconSize = 78;
-            this.iconPictureBox8.Location = new System.Drawing.Point(22, 118);
+            this.iconPictureBox8.IconSize = 96;
+            this.iconPictureBox8.Location = new System.Drawing.Point(29, 145);
+            this.iconPictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconPictureBox8.Name = "iconPictureBox8";
-            this.iconPictureBox8.Size = new System.Drawing.Size(85, 78);
+            this.iconPictureBox8.Size = new System.Drawing.Size(113, 96);
             this.iconPictureBox8.TabIndex = 0;
             this.iconPictureBox8.TabStop = false;
             // 
@@ -738,10 +773,11 @@
             this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.SackDollar;
             this.iconPictureBox6.IconColor = System.Drawing.Color.White;
             this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox6.IconSize = 85;
-            this.iconPictureBox6.Location = new System.Drawing.Point(22, 19);
+            this.iconPictureBox6.IconSize = 106;
+            this.iconPictureBox6.Location = new System.Drawing.Point(29, 23);
+            this.iconPictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconPictureBox6.Name = "iconPictureBox6";
-            this.iconPictureBox6.Size = new System.Drawing.Size(85, 86);
+            this.iconPictureBox6.Size = new System.Drawing.Size(113, 106);
             this.iconPictureBox6.TabIndex = 0;
             this.iconPictureBox6.TabStop = false;
             // 
@@ -750,9 +786,10 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(122, 124);
+            this.label9.Location = new System.Drawing.Point(163, 153);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(200, 23);
+            this.label9.Size = new System.Drawing.Size(252, 28);
             this.label9.TabIndex = 0;
             this.label9.Text = "Total de horas extras";
             // 
@@ -761,9 +798,10 @@
             this.lblTotalHoras.AutoSize = true;
             this.lblTotalHoras.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.lblTotalHoras.ForeColor = System.Drawing.Color.White;
-            this.lblTotalHoras.Location = new System.Drawing.Point(137, 150);
+            this.lblTotalHoras.Location = new System.Drawing.Point(183, 185);
+            this.lblTotalHoras.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalHoras.Name = "lblTotalHoras";
-            this.lblTotalHoras.Size = new System.Drawing.Size(58, 19);
+            this.lblTotalHoras.Size = new System.Drawing.Size(70, 23);
             this.lblTotalHoras.TabIndex = 0;
             this.lblTotalHoras.Text = "label1";
             // 
@@ -774,9 +812,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panel11.Controls.Add(this.chGanancia);
-            this.panel11.Location = new System.Drawing.Point(95, 197);
+            this.panel11.Location = new System.Drawing.Point(163, 242);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(506, 283);
+            this.panel11.Size = new System.Drawing.Size(1158, 348);
             this.panel11.TabIndex = 1;
             // 
             // chGanancia
@@ -830,6 +869,7 @@
             legend3.Name = "Legend1";
             this.chGanancia.Legends.Add(legend3);
             this.chGanancia.Location = new System.Drawing.Point(0, 2);
+            this.chGanancia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chGanancia.Name = "chGanancia";
             this.chGanancia.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
             series3.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
@@ -847,7 +887,7 @@
             series3.Name = "Series1";
             series3.YValuesPerPoint = 2;
             this.chGanancia.Series.Add(series3);
-            this.chGanancia.Size = new System.Drawing.Size(500, 258);
+            this.chGanancia.Size = new System.Drawing.Size(1154, 348);
             this.chGanancia.TabIndex = 6;
             title3.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title3.ForeColor = System.Drawing.Color.Gainsboro;
@@ -857,6 +897,9 @@
             // 
             // alphaGradientPanel7
             // 
+            this.alphaGradientPanel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.alphaGradientPanel7.BackColor = System.Drawing.Color.Black;
             this.alphaGradientPanel7.Border = true;
             this.alphaGradientPanel7.BorderColor = System.Drawing.Color.Transparent;
@@ -878,10 +921,11 @@
             this.alphaGradientPanel7.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel7.ImagePosition = System.Windows.Forms.ImagePosition.Center;
             this.alphaGradientPanel7.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel7.Location = new System.Drawing.Point(98, 204);
+            this.alphaGradientPanel7.Location = new System.Drawing.Point(167, 251);
+            this.alphaGradientPanel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alphaGradientPanel7.Name = "alphaGradientPanel7";
             this.alphaGradientPanel7.Rounded = true;
-            this.alphaGradientPanel7.Size = new System.Drawing.Size(500, 330);
+            this.alphaGradientPanel7.Size = new System.Drawing.Size(1150, 406);
             this.alphaGradientPanel7.TabIndex = 6;
             // 
             // colorWithAlpha9
@@ -898,6 +942,9 @@
             // 
             // alphaGradientPanel6
             // 
+            this.alphaGradientPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.alphaGradientPanel6.BackColor = System.Drawing.Color.Transparent;
             this.alphaGradientPanel6.Border = false;
             this.alphaGradientPanel6.BorderColor = System.Drawing.SystemColors.ActiveBorder;
@@ -919,10 +966,11 @@
             this.alphaGradientPanel6.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel6.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel6.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel6.Location = new System.Drawing.Point(415, 36);
+            this.alphaGradientPanel6.Location = new System.Drawing.Point(748, 44);
+            this.alphaGradientPanel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alphaGradientPanel6.Name = "alphaGradientPanel6";
             this.alphaGradientPanel6.Rounded = true;
-            this.alphaGradientPanel6.Size = new System.Drawing.Size(313, 159);
+            this.alphaGradientPanel6.Size = new System.Drawing.Size(573, 196);
             this.alphaGradientPanel6.TabIndex = 19;
             // 
             // colorWithAlpha37
@@ -939,6 +987,9 @@
             // 
             // alphaGradientPanel2
             // 
+            this.alphaGradientPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.alphaGradientPanel2.BackColor = System.Drawing.Color.Transparent;
             this.alphaGradientPanel2.Border = false;
             this.alphaGradientPanel2.BorderColor = System.Drawing.SystemColors.ActiveBorder;
@@ -964,10 +1015,11 @@
             this.alphaGradientPanel2.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel2.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel2.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel2.Location = new System.Drawing.Point(417, 26);
+            this.alphaGradientPanel2.Location = new System.Drawing.Point(751, 32);
+            this.alphaGradientPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alphaGradientPanel2.Name = "alphaGradientPanel2";
             this.alphaGradientPanel2.Rounded = true;
-            this.alphaGradientPanel2.Size = new System.Drawing.Size(313, 134);
+            this.alphaGradientPanel2.Size = new System.Drawing.Size(573, 165);
             this.alphaGradientPanel2.TabIndex = 10;
             // 
             // colorWithAlpha17
@@ -988,10 +1040,11 @@
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.LineChart;
             this.iconPictureBox2.IconColor = System.Drawing.Color.White;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 85;
-            this.iconPictureBox2.Location = new System.Drawing.Point(343, 49);
+            this.iconPictureBox2.IconSize = 106;
+            this.iconPictureBox2.Location = new System.Drawing.Point(457, 60);
+            this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(85, 86);
+            this.iconPictureBox2.Size = new System.Drawing.Size(113, 106);
             this.iconPictureBox2.TabIndex = 1;
             this.iconPictureBox2.TabStop = false;
             // 
@@ -1001,10 +1054,11 @@
             this.icoUsuarios.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             this.icoUsuarios.IconColor = System.Drawing.Color.White;
             this.icoUsuarios.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.icoUsuarios.IconSize = 85;
-            this.icoUsuarios.Location = new System.Drawing.Point(24, 26);
+            this.icoUsuarios.IconSize = 106;
+            this.icoUsuarios.Location = new System.Drawing.Point(32, 32);
+            this.icoUsuarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.icoUsuarios.Name = "icoUsuarios";
-            this.icoUsuarios.Size = new System.Drawing.Size(85, 86);
+            this.icoUsuarios.Size = new System.Drawing.Size(113, 106);
             this.icoUsuarios.TabIndex = 0;
             this.icoUsuarios.TabStop = false;
             // 
@@ -1014,9 +1068,10 @@
             this.lblNumUsuarios.BackColor = System.Drawing.Color.Transparent;
             this.lblNumUsuarios.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.lblNumUsuarios.ForeColor = System.Drawing.Color.White;
-            this.lblNumUsuarios.Location = new System.Drawing.Point(119, 68);
+            this.lblNumUsuarios.Location = new System.Drawing.Point(159, 84);
+            this.lblNumUsuarios.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNumUsuarios.Name = "lblNumUsuarios";
-            this.lblNumUsuarios.Size = new System.Drawing.Size(95, 32);
+            this.lblNumUsuarios.Size = new System.Drawing.Size(118, 40);
             this.lblNumUsuarios.TabIndex = 0;
             this.lblNumUsuarios.Text = "label1";
             // 
@@ -1026,14 +1081,18 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(115, 41);
+            this.label8.Location = new System.Drawing.Point(153, 50);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(166, 26);
+            this.label8.Size = new System.Drawing.Size(204, 32);
             this.label8.TabIndex = 0;
             this.label8.Text = "N° de Usuarios";
             // 
             // alphaGradientPanel16
             // 
+            this.alphaGradientPanel16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.alphaGradientPanel16.BackColor = System.Drawing.Color.Transparent;
             this.alphaGradientPanel16.Border = false;
             this.alphaGradientPanel16.BorderColor = System.Drawing.SystemColors.ActiveBorder;
@@ -1055,10 +1114,11 @@
             this.alphaGradientPanel16.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel16.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel16.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel16.Location = new System.Drawing.Point(741, 35);
+            this.alphaGradientPanel16.Location = new System.Drawing.Point(1333, 43);
+            this.alphaGradientPanel16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alphaGradientPanel16.Name = "alphaGradientPanel16";
             this.alphaGradientPanel16.Rounded = true;
-            this.alphaGradientPanel16.Size = new System.Drawing.Size(313, 159);
+            this.alphaGradientPanel16.Size = new System.Drawing.Size(583, 196);
             this.alphaGradientPanel16.TabIndex = 18;
             // 
             // colorWithAlpha35
@@ -1075,6 +1135,9 @@
             // 
             // alphaGradientPanel3
             // 
+            this.alphaGradientPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.alphaGradientPanel3.BackColor = System.Drawing.Color.Transparent;
             this.alphaGradientPanel3.Border = false;
             this.alphaGradientPanel3.BorderColor = System.Drawing.SystemColors.ActiveBorder;
@@ -1100,10 +1163,11 @@
             this.alphaGradientPanel3.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel3.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel3.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel3.Location = new System.Drawing.Point(741, 30);
+            this.alphaGradientPanel3.Location = new System.Drawing.Point(1333, 37);
+            this.alphaGradientPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alphaGradientPanel3.Name = "alphaGradientPanel3";
             this.alphaGradientPanel3.Rounded = true;
-            this.alphaGradientPanel3.Size = new System.Drawing.Size(313, 130);
+            this.alphaGradientPanel3.Size = new System.Drawing.Size(583, 160);
             this.alphaGradientPanel3.TabIndex = 11;
             // 
             // colorWithAlpha19
@@ -1124,10 +1188,11 @@
             this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.ChartPie;
             this.iconPictureBox3.IconColor = System.Drawing.Color.White;
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconPictureBox3.IconSize = 78;
-            this.iconPictureBox3.Location = new System.Drawing.Point(352, 57);
+            this.iconPictureBox3.IconSize = 96;
+            this.iconPictureBox3.Location = new System.Drawing.Point(469, 70);
+            this.iconPictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(85, 78);
+            this.iconPictureBox3.Size = new System.Drawing.Size(113, 96);
             this.iconPictureBox3.TabIndex = 1;
             this.iconPictureBox3.TabStop = false;
             // 
@@ -1137,10 +1202,11 @@
             this.icoReportes.IconChar = FontAwesome.Sharp.IconChar.FileContract;
             this.icoReportes.IconColor = System.Drawing.Color.White;
             this.icoReportes.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.icoReportes.IconSize = 78;
-            this.icoReportes.Location = new System.Drawing.Point(25, 29);
+            this.icoReportes.IconSize = 96;
+            this.icoReportes.Location = new System.Drawing.Point(33, 36);
+            this.icoReportes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.icoReportes.Name = "icoReportes";
-            this.icoReportes.Size = new System.Drawing.Size(85, 78);
+            this.icoReportes.Size = new System.Drawing.Size(113, 96);
             this.icoReportes.TabIndex = 0;
             this.icoReportes.TabStop = false;
             // 
@@ -1149,9 +1215,10 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(120, 39);
+            this.label10.Location = new System.Drawing.Point(160, 48);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(172, 26);
+            this.label10.Size = new System.Drawing.Size(210, 32);
             this.label10.TabIndex = 0;
             this.label10.Text = "N° de Reportes";
             // 
@@ -1160,9 +1227,10 @@
             this.lblNumReportes.AutoSize = true;
             this.lblNumReportes.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.lblNumReportes.ForeColor = System.Drawing.Color.White;
-            this.lblNumReportes.Location = new System.Drawing.Point(122, 67);
+            this.lblNumReportes.Location = new System.Drawing.Point(163, 82);
+            this.lblNumReportes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNumReportes.Name = "lblNumReportes";
-            this.lblNumReportes.Size = new System.Drawing.Size(95, 32);
+            this.lblNumReportes.Size = new System.Drawing.Size(118, 40);
             this.lblNumReportes.TabIndex = 0;
             this.lblNumReportes.Text = "label1";
             // 
@@ -1174,9 +1242,10 @@
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panel10.Controls.Add(this.label1);
             this.panel10.Controls.Add(this.chEmplMasLiquidados);
-            this.panel10.Location = new System.Drawing.Point(98, 529);
+            this.panel10.Location = new System.Drawing.Point(167, 651);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(500, 249);
+            this.panel10.Size = new System.Drawing.Size(1150, 473);
             this.panel10.TabIndex = 1;
             // 
             // label1
@@ -1185,9 +1254,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(132, 703);
+            this.label1.Location = new System.Drawing.Point(176, 865);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 23);
+            this.label1.Size = new System.Drawing.Size(111, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "empresa";
             // 
@@ -1207,7 +1277,8 @@
             legend4.IsTextAutoFit = false;
             legend4.Name = "Legend1";
             this.chEmplMasLiquidados.Legends.Add(legend4);
-            this.chEmplMasLiquidados.Location = new System.Drawing.Point(0, -3);
+            this.chEmplMasLiquidados.Location = new System.Drawing.Point(0, 7);
+            this.chEmplMasLiquidados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chEmplMasLiquidados.Name = "chEmplMasLiquidados";
             this.chEmplMasLiquidados.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series4.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
@@ -1223,7 +1294,7 @@
             series4.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             series4.Name = "Series1";
             this.chEmplMasLiquidados.Series.Add(series4);
-            this.chEmplMasLiquidados.Size = new System.Drawing.Size(497, 252);
+            this.chEmplMasLiquidados.Size = new System.Drawing.Size(1146, 446);
             this.chEmplMasLiquidados.TabIndex = 2;
             title4.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title4.ForeColor = System.Drawing.Color.Gainsboro;
@@ -1233,6 +1304,9 @@
             // 
             // alphaGradientPanel8
             // 
+            this.alphaGradientPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.alphaGradientPanel8.BackColor = System.Drawing.Color.Black;
             this.alphaGradientPanel8.Border = true;
             this.alphaGradientPanel8.BorderColor = System.Drawing.Color.Transparent;
@@ -1254,10 +1328,11 @@
             this.alphaGradientPanel8.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel8.ImagePosition = System.Windows.Forms.ImagePosition.Center;
             this.alphaGradientPanel8.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel8.Location = new System.Drawing.Point(101, 529);
+            this.alphaGradientPanel8.Location = new System.Drawing.Point(171, 651);
+            this.alphaGradientPanel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alphaGradientPanel8.Name = "alphaGradientPanel8";
             this.alphaGradientPanel8.Rounded = true;
-            this.alphaGradientPanel8.Size = new System.Drawing.Size(494, 295);
+            this.alphaGradientPanel8.Size = new System.Drawing.Size(1142, 363);
             this.alphaGradientPanel8.TabIndex = 7;
             // 
             // colorWithAlpha11
@@ -1274,6 +1349,9 @@
             // 
             // alphaGradientPanel4
             // 
+            this.alphaGradientPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.alphaGradientPanel4.BackColor = System.Drawing.Color.Transparent;
             this.alphaGradientPanel4.Border = false;
             this.alphaGradientPanel4.BorderColor = System.Drawing.SystemColors.ActiveBorder;
@@ -1299,10 +1377,11 @@
             this.alphaGradientPanel4.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel4.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel4.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel4.Location = new System.Drawing.Point(1073, 30);
+            this.alphaGradientPanel4.Location = new System.Drawing.Point(1926, 37);
+            this.alphaGradientPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alphaGradientPanel4.Name = "alphaGradientPanel4";
             this.alphaGradientPanel4.Rounded = true;
-            this.alphaGradientPanel4.Size = new System.Drawing.Size(429, 132);
+            this.alphaGradientPanel4.Size = new System.Drawing.Size(572, 162);
             this.alphaGradientPanel4.TabIndex = 0;
             // 
             // colorWithAlpha21
@@ -1323,10 +1402,11 @@
             this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlassChart;
             this.iconPictureBox4.IconColor = System.Drawing.Color.White;
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.IconSize = 85;
-            this.iconPictureBox4.Location = new System.Drawing.Point(343, 53);
+            this.iconPictureBox4.IconSize = 106;
+            this.iconPictureBox4.Location = new System.Drawing.Point(457, 65);
+            this.iconPictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(85, 86);
+            this.iconPictureBox4.Size = new System.Drawing.Size(113, 106);
             this.iconPictureBox4.TabIndex = 1;
             this.iconPictureBox4.TabStop = false;
             // 
@@ -1336,10 +1416,11 @@
             this.icoNominaTotal.IconChar = FontAwesome.Sharp.IconChar.FileSignature;
             this.icoNominaTotal.IconColor = System.Drawing.Color.White;
             this.icoNominaTotal.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.icoNominaTotal.IconSize = 85;
-            this.icoNominaTotal.Location = new System.Drawing.Point(23, 23);
+            this.icoNominaTotal.IconSize = 106;
+            this.icoNominaTotal.Location = new System.Drawing.Point(31, 28);
+            this.icoNominaTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.icoNominaTotal.Name = "icoNominaTotal";
-            this.icoNominaTotal.Size = new System.Drawing.Size(85, 86);
+            this.icoNominaTotal.Size = new System.Drawing.Size(113, 106);
             this.icoNominaTotal.TabIndex = 0;
             this.icoNominaTotal.TabStop = false;
             // 
@@ -1348,9 +1429,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(119, 36);
+            this.label4.Location = new System.Drawing.Point(159, 44);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(150, 26);
+            this.label4.Size = new System.Drawing.Size(181, 32);
             this.label4.TabIndex = 0;
             this.label4.Text = "Nomina total";
             // 
@@ -1359,14 +1441,18 @@
             this.lblNominaTotal.AutoSize = true;
             this.lblNominaTotal.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.lblNominaTotal.ForeColor = System.Drawing.Color.White;
-            this.lblNominaTotal.Location = new System.Drawing.Point(121, 64);
+            this.lblNominaTotal.Location = new System.Drawing.Point(161, 79);
+            this.lblNominaTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNominaTotal.Name = "lblNominaTotal";
-            this.lblNominaTotal.Size = new System.Drawing.Size(95, 32);
+            this.lblNominaTotal.Size = new System.Drawing.Size(118, 40);
             this.lblNominaTotal.TabIndex = 0;
             this.lblNominaTotal.Text = "label1";
             // 
             // alphaGradientPanel1
             // 
+            this.alphaGradientPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.alphaGradientPanel1.BackColor = System.Drawing.Color.Transparent;
             this.alphaGradientPanel1.Border = false;
             this.alphaGradientPanel1.BorderColor = System.Drawing.SystemColors.ActiveBorder;
@@ -1392,10 +1478,11 @@
             this.alphaGradientPanel1.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel1.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel1.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel1.Location = new System.Drawing.Point(93, 28);
+            this.alphaGradientPanel1.Location = new System.Drawing.Point(163, 34);
+            this.alphaGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alphaGradientPanel1.Name = "alphaGradientPanel1";
             this.alphaGradientPanel1.Rounded = true;
-            this.alphaGradientPanel1.Size = new System.Drawing.Size(313, 132);
+            this.alphaGradientPanel1.Size = new System.Drawing.Size(579, 162);
             this.alphaGradientPanel1.TabIndex = 9;
             // 
             // colorWithAlpha13
@@ -1416,10 +1503,11 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.ProjectDiagram;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 85;
-            this.iconPictureBox1.Location = new System.Drawing.Point(343, 54);
+            this.iconPictureBox1.IconSize = 106;
+            this.iconPictureBox1.Location = new System.Drawing.Point(457, 66);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(85, 86);
+            this.iconPictureBox1.Size = new System.Drawing.Size(113, 106);
             this.iconPictureBox1.TabIndex = 1;
             this.iconPictureBox1.TabStop = false;
             // 
@@ -1429,10 +1517,11 @@
             this.icoEmpleado.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
             this.icoEmpleado.IconColor = System.Drawing.Color.White;
             this.icoEmpleado.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.icoEmpleado.IconSize = 85;
-            this.icoEmpleado.Location = new System.Drawing.Point(26, 26);
+            this.icoEmpleado.IconSize = 106;
+            this.icoEmpleado.Location = new System.Drawing.Point(35, 32);
+            this.icoEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.icoEmpleado.Name = "icoEmpleado";
-            this.icoEmpleado.Size = new System.Drawing.Size(85, 86);
+            this.icoEmpleado.Size = new System.Drawing.Size(113, 106);
             this.icoEmpleado.TabIndex = 0;
             this.icoEmpleado.TabStop = false;
             this.icoEmpleado.Click += new System.EventHandler(this.icoEmpleado_Click);
@@ -1442,9 +1531,10 @@
             this.lblNumEmpleados.AutoSize = true;
             this.lblNumEmpleados.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.lblNumEmpleados.ForeColor = System.Drawing.Color.White;
-            this.lblNumEmpleados.Location = new System.Drawing.Point(120, 66);
+            this.lblNumEmpleados.Location = new System.Drawing.Point(160, 81);
+            this.lblNumEmpleados.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNumEmpleados.Name = "lblNumEmpleados";
-            this.lblNumEmpleados.Size = new System.Drawing.Size(95, 32);
+            this.lblNumEmpleados.Size = new System.Drawing.Size(118, 40);
             this.lblNumEmpleados.TabIndex = 0;
             this.lblNumEmpleados.Text = "label1";
             // 
@@ -1453,14 +1543,18 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(117, 41);
+            this.label6.Location = new System.Drawing.Point(156, 50);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(198, 26);
+            this.label6.Size = new System.Drawing.Size(241, 32);
             this.label6.TabIndex = 0;
             this.label6.Text = "N° de Empleados";
             // 
             // alphaGradientPanel9
             // 
+            this.alphaGradientPanel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.alphaGradientPanel9.BackColor = System.Drawing.Color.Transparent;
             this.alphaGradientPanel9.Border = false;
             this.alphaGradientPanel9.BorderColor = System.Drawing.SystemColors.ActiveBorder;
@@ -1482,10 +1576,11 @@
             this.alphaGradientPanel9.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel9.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel9.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel9.Location = new System.Drawing.Point(1073, 219);
+            this.alphaGradientPanel9.Location = new System.Drawing.Point(1928, 270);
+            this.alphaGradientPanel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alphaGradientPanel9.Name = "alphaGradientPanel9";
             this.alphaGradientPanel9.Rounded = true;
-            this.alphaGradientPanel9.Size = new System.Drawing.Size(435, 261);
+            this.alphaGradientPanel9.Size = new System.Drawing.Size(580, 321);
             this.alphaGradientPanel9.TabIndex = 20;
             // 
             // colorWithAlpha39
@@ -1502,6 +1597,9 @@
             // 
             // alphaGradientPanel15
             // 
+            this.alphaGradientPanel15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.alphaGradientPanel15.BackColor = System.Drawing.Color.Transparent;
             this.alphaGradientPanel15.Border = false;
             this.alphaGradientPanel15.BorderColor = System.Drawing.SystemColors.ActiveBorder;
@@ -1531,10 +1629,11 @@
             this.alphaGradientPanel15.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel15.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel15.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel15.Location = new System.Drawing.Point(1072, 204);
+            this.alphaGradientPanel15.Location = new System.Drawing.Point(1926, 251);
+            this.alphaGradientPanel15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.alphaGradientPanel15.Name = "alphaGradientPanel15";
             this.alphaGradientPanel15.Rounded = true;
-            this.alphaGradientPanel15.Size = new System.Drawing.Size(435, 239);
+            this.alphaGradientPanel15.Size = new System.Drawing.Size(580, 294);
             this.alphaGradientPanel15.TabIndex = 0;
             // 
             // colorWithAlpha29
@@ -1555,10 +1654,11 @@
             this.iconPictureBox9.IconChar = FontAwesome.Sharp.IconChar.Donate;
             this.iconPictureBox9.IconColor = System.Drawing.Color.White;
             this.iconPictureBox9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox9.IconSize = 85;
-            this.iconPictureBox9.Location = new System.Drawing.Point(328, 143);
+            this.iconPictureBox9.IconSize = 106;
+            this.iconPictureBox9.Location = new System.Drawing.Point(437, 176);
+            this.iconPictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconPictureBox9.Name = "iconPictureBox9";
-            this.iconPictureBox9.Size = new System.Drawing.Size(85, 86);
+            this.iconPictureBox9.Size = new System.Drawing.Size(113, 106);
             this.iconPictureBox9.TabIndex = 8;
             this.iconPictureBox9.TabStop = false;
             // 
@@ -1567,9 +1667,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(120, 23);
+            this.label2.Location = new System.Drawing.Point(160, 28);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(198, 26);
+            this.label2.Size = new System.Drawing.Size(241, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "Total valor salario";
             // 
@@ -1579,10 +1680,11 @@
             this.iconPictureBox10.IconChar = FontAwesome.Sharp.IconChar.CalendarCheck;
             this.iconPictureBox10.IconColor = System.Drawing.Color.White;
             this.iconPictureBox10.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconPictureBox10.IconSize = 60;
-            this.iconPictureBox10.Location = new System.Drawing.Point(259, 160);
+            this.iconPictureBox10.IconSize = 74;
+            this.iconPictureBox10.Location = new System.Drawing.Point(345, 197);
+            this.iconPictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconPictureBox10.Name = "iconPictureBox10";
-            this.iconPictureBox10.Size = new System.Drawing.Size(68, 60);
+            this.iconPictureBox10.Size = new System.Drawing.Size(91, 74);
             this.iconPictureBox10.TabIndex = 9;
             this.iconPictureBox10.TabStop = false;
             // 
@@ -1591,9 +1693,10 @@
             this.lblTotalSalario.AutoSize = true;
             this.lblTotalSalario.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.lblTotalSalario.ForeColor = System.Drawing.Color.White;
-            this.lblTotalSalario.Location = new System.Drawing.Point(135, 49);
+            this.lblTotalSalario.Location = new System.Drawing.Point(180, 60);
+            this.lblTotalSalario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalSalario.Name = "lblTotalSalario";
-            this.lblTotalSalario.Size = new System.Drawing.Size(95, 32);
+            this.lblTotalSalario.Size = new System.Drawing.Size(118, 40);
             this.lblTotalSalario.TabIndex = 3;
             this.lblTotalSalario.Text = "label1";
             // 
@@ -1603,10 +1706,11 @@
             this.iconPictureBox11.IconChar = FontAwesome.Sharp.IconChar.CalendarDays;
             this.iconPictureBox11.IconColor = System.Drawing.Color.White;
             this.iconPictureBox11.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconPictureBox11.IconSize = 78;
-            this.iconPictureBox11.Location = new System.Drawing.Point(22, 109);
+            this.iconPictureBox11.IconSize = 96;
+            this.iconPictureBox11.Location = new System.Drawing.Point(29, 134);
+            this.iconPictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconPictureBox11.Name = "iconPictureBox11";
-            this.iconPictureBox11.Size = new System.Drawing.Size(85, 78);
+            this.iconPictureBox11.Size = new System.Drawing.Size(113, 96);
             this.iconPictureBox11.TabIndex = 4;
             this.iconPictureBox11.TabStop = false;
             // 
@@ -1616,10 +1720,11 @@
             this.iconPictureBox12.IconChar = FontAwesome.Sharp.IconChar.SackDollar;
             this.iconPictureBox12.IconColor = System.Drawing.Color.White;
             this.iconPictureBox12.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox12.IconSize = 85;
-            this.iconPictureBox12.Location = new System.Drawing.Point(22, 10);
+            this.iconPictureBox12.IconSize = 106;
+            this.iconPictureBox12.Location = new System.Drawing.Point(29, 12);
+            this.iconPictureBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconPictureBox12.Name = "iconPictureBox12";
-            this.iconPictureBox12.Size = new System.Drawing.Size(85, 86);
+            this.iconPictureBox12.Size = new System.Drawing.Size(113, 106);
             this.iconPictureBox12.TabIndex = 5;
             this.iconPictureBox12.TabStop = false;
             // 
@@ -1628,9 +1733,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(122, 115);
+            this.label7.Location = new System.Drawing.Point(163, 142);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(235, 23);
+            this.label7.Size = new System.Drawing.Size(294, 28);
             this.label7.TabIndex = 6;
             this.label7.Text = "Total de dias trabajados";
             // 
@@ -1639,9 +1745,10 @@
             this.lblDiasTotales.AutoSize = true;
             this.lblDiasTotales.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.lblDiasTotales.ForeColor = System.Drawing.Color.White;
-            this.lblDiasTotales.Location = new System.Drawing.Point(137, 141);
+            this.lblDiasTotales.Location = new System.Drawing.Point(183, 174);
+            this.lblDiasTotales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDiasTotales.Name = "lblDiasTotales";
-            this.lblDiasTotales.Size = new System.Drawing.Size(58, 19);
+            this.lblDiasTotales.Size = new System.Drawing.Size(70, 23);
             this.lblDiasTotales.TabIndex = 7;
             this.lblDiasTotales.Text = "label1";
             // 
@@ -1719,11 +1826,12 @@
             // 
             // mdPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1529, 827);
+            this.ClientSize = new System.Drawing.Size(1942, 1018);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "mdPrincipal";
             this.Text = "mdPrincipal";
             this.Load += new System.EventHandler(this.mdPrincipal_Load);

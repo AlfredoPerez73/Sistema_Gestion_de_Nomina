@@ -156,8 +156,8 @@ namespace Sistema_de_liquidacion
 
         private void FrmGestionRol_Load(object sender, EventArgs e)
         {
-            BorderRadiusPanel(panel2, 20);
-            BorderRadiusPanel(panel4, 20);
+            BorderRadiusPanel(panel2, 30);
+            BorderRadiusPanel(panel4, 30);
             BorderRadiusPanel(panel9, 20);
 
             CargarRegistro();
@@ -285,7 +285,7 @@ namespace Sistema_de_liquidacion
             if (txtIdRol.Texts == "Id de Rol")
             {
                 txtIdRol.Texts = "";
-                txtIdRol.ForeColor = Color.LightGray;
+                txtIdRol.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -294,7 +294,7 @@ namespace Sistema_de_liquidacion
             if (txtIdRol.Texts == "")
             {
                 txtIdRol.Texts = "Id de Rol";
-                txtIdRol.ForeColor = Color.LightGray;
+                txtIdRol.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -303,7 +303,7 @@ namespace Sistema_de_liquidacion
             if (txtRol.Texts == "Rol")
             {
                 txtRol.Texts = "";
-                txtRol.ForeColor = Color.LightGray;
+                txtRol.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -312,7 +312,7 @@ namespace Sistema_de_liquidacion
             if (txtRol.Texts == "")
             {
                 txtRol.Texts = "Rol";
-                txtRol.ForeColor = Color.LightGray;
+                txtRol.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 

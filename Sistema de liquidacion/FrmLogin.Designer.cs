@@ -127,11 +127,11 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(70, 143);
+            this.label2.Location = new System.Drawing.Point(80, 143);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 36);
+            this.label2.Size = new System.Drawing.Size(99, 36);
             this.label2.TabIndex = 1;
-            this.label2.Text = "LIQUIDEZ";
+            this.label2.Text = "NOMI";
             // 
             // lblError
             // 
@@ -155,7 +155,7 @@
             this.txtContraseña.BorderRadius = 15;
             this.txtContraseña.BorderSize = 2;
             this.txtContraseña.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtContraseña.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.txtContraseña.Location = new System.Drawing.Point(268, 96);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.txtContraseña.Multiline = false;
@@ -164,7 +164,7 @@
             this.txtContraseña.PasswordChar = false;
             this.txtContraseña.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtContraseña.PlaceholderText = "";
-            this.txtContraseña.Size = new System.Drawing.Size(208, 32);
+            this.txtContraseña.Size = new System.Drawing.Size(208, 35);
             this.txtContraseña.TabIndex = 1;
             this.txtContraseña.Texts = "Contraseña";
             this.txtContraseña.UnderlinedStyle = false;
@@ -180,7 +180,7 @@
             this.txtUsuario.BorderRadius = 15;
             this.txtUsuario.BorderSize = 2;
             this.txtUsuario.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.txtUsuario.Location = new System.Drawing.Point(266, 37);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Multiline = false;
@@ -189,7 +189,7 @@
             this.txtUsuario.PasswordChar = false;
             this.txtUsuario.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtUsuario.PlaceholderText = "";
-            this.txtUsuario.Size = new System.Drawing.Size(249, 32);
+            this.txtUsuario.Size = new System.Drawing.Size(249, 35);
             this.txtUsuario.TabIndex = 1;
             this.txtUsuario.Texts = "Usuario";
             this.txtUsuario.UnderlinedStyle = false;
@@ -239,7 +239,7 @@
             // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(546, 226);
             this.Controls.Add(this.panel1);

@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.txtBuscar = new RJCodeAdvance.RJControls.RJTextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.dpFechaFinal = new RJCodeAdvance.RJControls.RJDatePicker();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -85,8 +84,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1529, 827);
+            this.panel1.Size = new System.Drawing.Size(1942, 1018);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -95,10 +95,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(127, 172);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(152, 212);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(299, 32);
+            this.label3.Size = new System.Drawing.Size(375, 40);
             this.label3.TabIndex = 52;
             this.label3.Text = "Registro de la nomina";
             // 
@@ -107,10 +107,10 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(128, 38);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(154, 47);
+            this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(96, 26);
+            this.label10.Size = new System.Drawing.Size(122, 34);
             this.label10.TabIndex = 28;
             this.label10.Text = "Nomina";
             // 
@@ -119,46 +119,24 @@
             this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel9.Controls.Add(this.txtBuscar);
             this.panel9.Controls.Add(this.panel5);
             this.panel9.Controls.Add(this.panel6);
             this.panel9.Controls.Add(this.panel3);
             this.panel9.Controls.Add(this.panel2);
-            this.panel9.Location = new System.Drawing.Point(133, 79);
+            this.panel9.Location = new System.Drawing.Point(160, 97);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1379, 51);
+            this.panel9.Size = new System.Drawing.Size(2350, 63);
             this.panel9.TabIndex = 51;
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.txtBuscar.BorderColor = System.Drawing.Color.Transparent;
-            this.txtBuscar.BorderFocusColor = System.Drawing.Color.Transparent;
-            this.txtBuscar.BorderRadius = 15;
-            this.txtBuscar.BorderSize = 2;
-            this.txtBuscar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscar.ForeColor = System.Drawing.Color.LightGray;
-            this.txtBuscar.Location = new System.Drawing.Point(163, 4);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(6);
-            this.txtBuscar.Multiline = false;
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtBuscar.PasswordChar = false;
-            this.txtBuscar.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtBuscar.PlaceholderText = "";
-            this.txtBuscar.Size = new System.Drawing.Size(455, 40);
-            this.txtBuscar.TabIndex = 46;
-            this.txtBuscar.Texts = "Buscar:";
-            this.txtBuscar.UnderlinedStyle = false;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panel5.Controls.Add(this.dpFechaFinal);
-            this.panel5.Location = new System.Drawing.Point(1597, 9);
-            this.panel5.Margin = new System.Windows.Forms.Padding(5);
+            this.panel5.Location = new System.Drawing.Point(1343, 11);
+            this.panel5.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(146, 34);
+            this.panel5.Size = new System.Drawing.Size(195, 42);
             this.panel5.TabIndex = 44;
             // 
             // dpFechaFinal
@@ -174,9 +152,10 @@
             this.dpFechaFinal.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dpFechaFinal.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dpFechaFinal.Location = new System.Drawing.Point(0, 0);
+            this.dpFechaFinal.Margin = new System.Windows.Forms.Padding(4);
             this.dpFechaFinal.MinimumSize = new System.Drawing.Size(4, 35);
             this.dpFechaFinal.Name = "dpFechaFinal";
-            this.dpFechaFinal.Size = new System.Drawing.Size(146, 35);
+            this.dpFechaFinal.Size = new System.Drawing.Size(195, 35);
             this.dpFechaFinal.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.dpFechaFinal.TabIndex = 0;
             this.dpFechaFinal.TextColor = System.Drawing.Color.White;
@@ -186,10 +165,10 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panel6.Controls.Add(this.dpFechaInicial);
-            this.panel6.Location = new System.Drawing.Point(1440, 8);
-            this.panel6.Margin = new System.Windows.Forms.Padding(5);
+            this.panel6.Location = new System.Drawing.Point(1134, 10);
+            this.panel6.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(150, 34);
+            this.panel6.Size = new System.Drawing.Size(200, 42);
             this.panel6.TabIndex = 45;
             // 
             // dpFechaInicial
@@ -205,9 +184,10 @@
             this.dpFechaInicial.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dpFechaInicial.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dpFechaInicial.Location = new System.Drawing.Point(0, 0);
+            this.dpFechaInicial.Margin = new System.Windows.Forms.Padding(4);
             this.dpFechaInicial.MinimumSize = new System.Drawing.Size(4, 35);
             this.dpFechaInicial.Name = "dpFechaInicial";
-            this.dpFechaInicial.Size = new System.Drawing.Size(150, 35);
+            this.dpFechaInicial.Size = new System.Drawing.Size(200, 35);
             this.dpFechaInicial.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.dpFechaInicial.TabIndex = 0;
             this.dpFechaInicial.TextColor = System.Drawing.Color.White;
@@ -218,9 +198,10 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.cboFiltroMes);
-            this.panel3.Location = new System.Drawing.Point(1060, 5);
+            this.panel3.Location = new System.Drawing.Point(627, 6);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(293, 40);
+            this.panel3.Size = new System.Drawing.Size(391, 49);
             this.panel3.TabIndex = 42;
             // 
             // label2
@@ -228,10 +209,9 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(6, 11);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(10, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 20);
+            this.label2.Size = new System.Drawing.Size(87, 25);
             this.label2.TabIndex = 20;
             this.label2.Text = "Filtrar:";
             // 
@@ -248,10 +228,11 @@
             this.cboFiltroMes.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.cboFiltroMes.ListTextColor = System.Drawing.Color.White;
             this.cboFiltroMes.Location = new System.Drawing.Point(0, 0);
-            this.cboFiltroMes.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cboFiltroMes.Margin = new System.Windows.Forms.Padding(4);
+            this.cboFiltroMes.MinimumSize = new System.Drawing.Size(267, 37);
             this.cboFiltroMes.Name = "cboFiltroMes";
             this.cboFiltroMes.Padding = new System.Windows.Forms.Padding(1);
-            this.cboFiltroMes.Size = new System.Drawing.Size(293, 40);
+            this.cboFiltroMes.Size = new System.Drawing.Size(391, 49);
             this.cboFiltroMes.TabIndex = 23;
             this.cboFiltroMes.Texts = "";
             this.cboFiltroMes.OnSelectedIndexChanged += new System.EventHandler(this.cboFiltroAño_OnSelectedIndexChanged);
@@ -261,9 +242,10 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.cboFiltroAño);
-            this.panel2.Location = new System.Drawing.Point(751, 5);
+            this.panel2.Location = new System.Drawing.Point(215, 6);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(293, 40);
+            this.panel2.Size = new System.Drawing.Size(391, 49);
             this.panel2.TabIndex = 41;
             // 
             // label1
@@ -271,10 +253,9 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(4, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(7, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 20);
+            this.label1.Size = new System.Drawing.Size(87, 25);
             this.label1.TabIndex = 20;
             this.label1.Text = "Filtrar:";
             // 
@@ -291,10 +272,11 @@
             this.cboFiltroAño.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.cboFiltroAño.ListTextColor = System.Drawing.Color.White;
             this.cboFiltroAño.Location = new System.Drawing.Point(0, 0);
-            this.cboFiltroAño.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cboFiltroAño.Margin = new System.Windows.Forms.Padding(4);
+            this.cboFiltroAño.MinimumSize = new System.Drawing.Size(267, 37);
             this.cboFiltroAño.Name = "cboFiltroAño";
             this.cboFiltroAño.Padding = new System.Windows.Forms.Padding(1);
-            this.cboFiltroAño.Size = new System.Drawing.Size(293, 40);
+            this.cboFiltroAño.Size = new System.Drawing.Size(391, 49);
             this.cboFiltroAño.TabIndex = 23;
             this.cboFiltroAño.Texts = "";
             this.cboFiltroAño.OnSelectedIndexChanged += new System.EventHandler(this.cboFiltroAño_OnSelectedIndexChanged_1);
@@ -304,9 +286,10 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel4.Controls.Add(this.lbltbl);
             this.panel4.Controls.Add(this.tblRegistroDetalleLiquidaciones);
-            this.panel4.Location = new System.Drawing.Point(133, 246);
+            this.panel4.Location = new System.Drawing.Point(160, 303);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1379, 395);
+            this.panel4.Size = new System.Drawing.Size(2350, 486);
             this.panel4.TabIndex = 43;
             // 
             // lbltbl
@@ -315,10 +298,9 @@
             this.lbltbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.lbltbl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltbl.ForeColor = System.Drawing.Color.White;
-            this.lbltbl.Location = new System.Drawing.Point(570, 159);
-            this.lbltbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbltbl.Location = new System.Drawing.Point(760, 196);
             this.lbltbl.Name = "lbltbl";
-            this.lbltbl.Size = new System.Drawing.Size(190, 17);
+            this.lbltbl.Size = new System.Drawing.Size(232, 19);
             this.lbltbl.TabIndex = 24;
             this.lbltbl.Text = "No hay registro de nomina.";
             this.lbltbl.Visible = false;
@@ -331,14 +313,14 @@
             this.tblRegistroDetalleLiquidaciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblRegistroDetalleLiquidaciones.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.tblRegistroDetalleLiquidaciones.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblRegistroDetalleLiquidaciones.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblRegistroDetalleLiquidaciones.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.tblRegistroDetalleLiquidaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblRegistroDetalleLiquidaciones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdFactura,
@@ -358,26 +340,26 @@
             this.InteresesTotales,
             this.TotalGeneral,
             this.FechaRegistro});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tblRegistroDetalleLiquidaciones.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tblRegistroDetalleLiquidaciones.DefaultCellStyle = dataGridViewCellStyle4;
             this.tblRegistroDetalleLiquidaciones.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblRegistroDetalleLiquidaciones.EnableHeadersVisualStyles = false;
             this.tblRegistroDetalleLiquidaciones.GridColor = System.Drawing.Color.SteelBlue;
             this.tblRegistroDetalleLiquidaciones.Location = new System.Drawing.Point(0, 0);
-            this.tblRegistroDetalleLiquidaciones.Margin = new System.Windows.Forms.Padding(2);
+            this.tblRegistroDetalleLiquidaciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tblRegistroDetalleLiquidaciones.Name = "tblRegistroDetalleLiquidaciones";
             this.tblRegistroDetalleLiquidaciones.ReadOnly = true;
             this.tblRegistroDetalleLiquidaciones.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.tblRegistroDetalleLiquidaciones.RowHeadersVisible = false;
             this.tblRegistroDetalleLiquidaciones.RowHeadersWidth = 51;
             this.tblRegistroDetalleLiquidaciones.RowTemplate.Height = 24;
-            this.tblRegistroDetalleLiquidaciones.Size = new System.Drawing.Size(1379, 395);
+            this.tblRegistroDetalleLiquidaciones.Size = new System.Drawing.Size(2350, 486);
             this.tblRegistroDetalleLiquidaciones.TabIndex = 21;
             this.tblRegistroDetalleLiquidaciones.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblRegistroDetalleLiquidaciones_CellContentClick);
             // 
@@ -393,6 +375,7 @@
             // Column1
             // 
             this.Column1.HeaderText = "";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             this.Column1.Width = 50;
@@ -480,20 +463,26 @@
             // VacacionesTotales
             // 
             this.VacacionesTotales.HeaderText = "Vacaciones totales";
+            this.VacacionesTotales.MinimumWidth = 6;
             this.VacacionesTotales.Name = "VacacionesTotales";
             this.VacacionesTotales.ReadOnly = true;
+            this.VacacionesTotales.Width = 125;
             // 
             // CesantiasTotal
             // 
             this.CesantiasTotal.HeaderText = "Cesantias totales";
+            this.CesantiasTotal.MinimumWidth = 6;
             this.CesantiasTotal.Name = "CesantiasTotal";
             this.CesantiasTotal.ReadOnly = true;
+            this.CesantiasTotal.Width = 125;
             // 
             // InteresesTotales
             // 
             this.InteresesTotales.HeaderText = "Intereses totales de cesantias";
+            this.InteresesTotales.MinimumWidth = 6;
             this.InteresesTotales.Name = "InteresesTotales";
             this.InteresesTotales.ReadOnly = true;
+            this.InteresesTotales.Width = 125;
             // 
             // TotalGeneral
             // 
@@ -513,11 +502,12 @@
             // 
             // FrmNomina
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1529, 827);
+            this.ClientSize = new System.Drawing.Size(1942, 1018);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmNomina";
             this.Text = "Nomina";
             this.Load += new System.EventHandler(this.FrmLiquidacionTotal_Load);
@@ -550,7 +540,6 @@
         private RJCodeAdvance.RJControls.RJDatePicker dpFechaFinal;
         private System.Windows.Forms.Panel panel6;
         private RJCodeAdvance.RJControls.RJDatePicker dpFechaInicial;
-        private RJCodeAdvance.RJControls.RJTextBox txtBuscar;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label3;

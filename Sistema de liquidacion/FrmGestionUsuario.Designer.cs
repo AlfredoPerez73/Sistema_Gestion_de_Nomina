@@ -132,10 +132,10 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel2.Controls.Add(this.lbltbl);
             this.panel2.Controls.Add(this.tblRegistro);
-            this.panel2.Location = new System.Drawing.Point(158, 538);
+            this.panel2.Location = new System.Drawing.Point(132, 538);
             this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1352, 241);
+            this.panel2.Size = new System.Drawing.Size(1750, 241);
             this.panel2.TabIndex = 30;
             // 
             // lbltbl
@@ -147,7 +147,7 @@
             this.lbltbl.Location = new System.Drawing.Point(567, 99);
             this.lbltbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltbl.Name = "lbltbl";
-            this.lbltbl.Size = new System.Drawing.Size(192, 17);
+            this.lbltbl.Size = new System.Drawing.Size(237, 19);
             this.lbltbl.TabIndex = 24;
             this.lbltbl.Text = "No hay registro de usuarios.";
             // 
@@ -202,7 +202,7 @@
             this.tblRegistro.RowHeadersWidth = 51;
             this.tblRegistro.RowTemplate.Height = 24;
             this.tblRegistro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tblRegistro.Size = new System.Drawing.Size(1352, 241);
+            this.tblRegistro.Size = new System.Drawing.Size(1750, 241);
             this.tblRegistro.TabIndex = 19;
             this.tblRegistro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblRegistro_CellContentClick);
             this.tblRegistro.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.tblRegistro_CellPainting);
@@ -218,6 +218,7 @@
             // btnSEliminar
             // 
             this.btnSEliminar.HeaderText = "";
+            this.btnSEliminar.MinimumWidth = 6;
             this.btnSEliminar.Name = "btnSEliminar";
             this.btnSEliminar.ReadOnly = true;
             this.btnSEliminar.Width = 30;
@@ -225,20 +226,26 @@
             // Column3
             // 
             this.Column3.HeaderText = "";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
+            this.Column3.Width = 125;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "";
+            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
+            this.Column5.Width = 125;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
+            this.Column4.Width = 125;
             // 
             // IdUsuario
             // 
@@ -321,10 +328,11 @@
             this.panel1.Controls.Add(this.txtCorreo);
             this.panel1.Controls.Add(this.txtContraseña);
             this.panel1.Controls.Add(this.txtNombreUsuario);
-            this.panel1.Location = new System.Drawing.Point(157, 216);
+            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panel1.Location = new System.Drawing.Point(131, 229);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1313, 184);
+            this.panel1.Size = new System.Drawing.Size(1750, 184);
             this.panel1.TabIndex = 29;
             // 
             // btnPasswordChar
@@ -339,7 +347,7 @@
             this.btnPasswordChar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPasswordChar.ForeColor = System.Drawing.Color.White;
             this.btnPasswordChar.Image = global::Sistema_de_liquidacion.Properties.Resources.ojo__1_;
-            this.btnPasswordChar.Location = new System.Drawing.Point(736, 42);
+            this.btnPasswordChar.Location = new System.Drawing.Point(710, 42);
             this.btnPasswordChar.Margin = new System.Windows.Forms.Padding(5);
             this.btnPasswordChar.Name = "btnPasswordChar";
             this.btnPasswordChar.Size = new System.Drawing.Size(44, 43);
@@ -357,7 +365,7 @@
             this.panel5.Controls.Add(this.rjTextBox10);
             this.panel5.Controls.Add(this.cboRoles);
             this.panel5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel5.Location = new System.Drawing.Point(736, 96);
+            this.panel5.Location = new System.Drawing.Point(710, 97);
             this.panel5.Margin = new System.Windows.Forms.Padding(5);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(331, 52);
@@ -381,7 +389,7 @@
             this.rjTextBox6.PasswordChar = false;
             this.rjTextBox6.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox6.PlaceholderText = "";
-            this.rjTextBox6.Size = new System.Drawing.Size(334, 42);
+            this.rjTextBox6.Size = new System.Drawing.Size(334, 44);
             this.rjTextBox6.TabIndex = 11;
             this.rjTextBox6.Texts = "Usuario";
             this.rjTextBox6.UnderlinedStyle = false;
@@ -406,7 +414,7 @@
             this.rjTextBox7.PasswordChar = false;
             this.rjTextBox7.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox7.PlaceholderText = "";
-            this.rjTextBox7.Size = new System.Drawing.Size(334, 42);
+            this.rjTextBox7.Size = new System.Drawing.Size(334, 44);
             this.rjTextBox7.TabIndex = 11;
             this.rjTextBox7.Texts = "Contraseña";
             this.rjTextBox7.UnderlinedStyle = false;
@@ -431,7 +439,7 @@
             this.rjTextBox8.PasswordChar = false;
             this.rjTextBox8.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox8.PlaceholderText = "";
-            this.rjTextBox8.Size = new System.Drawing.Size(334, 42);
+            this.rjTextBox8.Size = new System.Drawing.Size(334, 44);
             this.rjTextBox8.TabIndex = 12;
             this.rjTextBox8.Texts = "Correo";
             this.rjTextBox8.UnderlinedStyle = false;
@@ -456,7 +464,7 @@
             this.rjTextBox9.PasswordChar = false;
             this.rjTextBox9.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox9.PlaceholderText = "";
-            this.rjTextBox9.Size = new System.Drawing.Size(334, 42);
+            this.rjTextBox9.Size = new System.Drawing.Size(334, 44);
             this.rjTextBox9.TabIndex = 10;
             this.rjTextBox9.Texts = "Documento";
             this.rjTextBox9.UnderlinedStyle = false;
@@ -482,7 +490,7 @@
             this.rjTextBox10.PasswordChar = false;
             this.rjTextBox10.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox10.PlaceholderText = "";
-            this.rjTextBox10.Size = new System.Drawing.Size(334, 42);
+            this.rjTextBox10.Size = new System.Drawing.Size(334, 44);
             this.rjTextBox10.TabIndex = 10;
             this.rjTextBox10.Texts = "Id de Usuario";
             this.rjTextBox10.UnderlinedStyle = false;
@@ -516,7 +524,7 @@
             this.btnLimpiar.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnLimpiar.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.btnLimpiar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnLimpiar.BorderRadius = 17;
+            this.btnLimpiar.BorderRadius = 22;
             this.btnLimpiar.BorderSize = 0;
             this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpiar.FlatAppearance.BorderSize = 0;
@@ -524,10 +532,10 @@
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
             this.btnLimpiar.Image = global::Sistema_de_liquidacion.Properties.Resources.escoba;
-            this.btnLimpiar.Location = new System.Drawing.Point(1090, 90);
+            this.btnLimpiar.Location = new System.Drawing.Point(1051, 95);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(5);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(204, 51);
+            this.btnLimpiar.Size = new System.Drawing.Size(272, 63);
             this.btnLimpiar.TabIndex = 15;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -541,7 +549,7 @@
             this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnGuardar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnGuardar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnGuardar.BorderRadius = 17;
+            this.btnGuardar.BorderRadius = 22;
             this.btnGuardar.BorderSize = 0;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
@@ -549,10 +557,10 @@
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Image = global::Sistema_de_liquidacion.Properties.Resources.disk;
-            this.btnGuardar.Location = new System.Drawing.Point(1089, 29);
+            this.btnGuardar.Location = new System.Drawing.Point(1050, 29);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(204, 51);
+            this.btnGuardar.Size = new System.Drawing.Size(272, 63);
             this.btnGuardar.TabIndex = 14;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -569,8 +577,8 @@
             this.txtDocumento.BorderRadius = 15;
             this.txtDocumento.BorderSize = 2;
             this.txtDocumento.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDocumento.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtDocumento.Location = new System.Drawing.Point(51, 42);
+            this.txtDocumento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.txtDocumento.Location = new System.Drawing.Point(22, 42);
             this.txtDocumento.Margin = new System.Windows.Forms.Padding(6);
             this.txtDocumento.Multiline = false;
             this.txtDocumento.Name = "txtDocumento";
@@ -578,7 +586,7 @@
             this.txtDocumento.PasswordChar = false;
             this.txtDocumento.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtDocumento.PlaceholderText = "";
-            this.txtDocumento.Size = new System.Drawing.Size(334, 42);
+            this.txtDocumento.Size = new System.Drawing.Size(334, 44);
             this.txtDocumento.TabIndex = 10;
             this.txtDocumento.Texts = "Documento";
             this.txtDocumento.UnderlinedStyle = false;
@@ -594,8 +602,8 @@
             this.txtCorreo.BorderRadius = 15;
             this.txtCorreo.BorderSize = 2;
             this.txtCorreo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtCorreo.Location = new System.Drawing.Point(391, 96);
+            this.txtCorreo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.txtCorreo.Location = new System.Drawing.Point(362, 96);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(6);
             this.txtCorreo.Multiline = false;
             this.txtCorreo.Name = "txtCorreo";
@@ -603,7 +611,7 @@
             this.txtCorreo.PasswordChar = false;
             this.txtCorreo.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtCorreo.PlaceholderText = "";
-            this.txtCorreo.Size = new System.Drawing.Size(334, 42);
+            this.txtCorreo.Size = new System.Drawing.Size(334, 44);
             this.txtCorreo.TabIndex = 12;
             this.txtCorreo.Texts = "Correo";
             this.txtCorreo.UnderlinedStyle = false;
@@ -618,8 +626,8 @@
             this.txtContraseña.BorderRadius = 15;
             this.txtContraseña.BorderSize = 2;
             this.txtContraseña.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtContraseña.Location = new System.Drawing.Point(391, 42);
+            this.txtContraseña.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.txtContraseña.Location = new System.Drawing.Point(362, 42);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(6);
             this.txtContraseña.Multiline = false;
             this.txtContraseña.Name = "txtContraseña";
@@ -627,7 +635,7 @@
             this.txtContraseña.PasswordChar = false;
             this.txtContraseña.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtContraseña.PlaceholderText = "";
-            this.txtContraseña.Size = new System.Drawing.Size(334, 42);
+            this.txtContraseña.Size = new System.Drawing.Size(334, 44);
             this.txtContraseña.TabIndex = 11;
             this.txtContraseña.Texts = "Contraseña";
             this.txtContraseña.UnderlinedStyle = false;
@@ -642,8 +650,8 @@
             this.txtNombreUsuario.BorderRadius = 15;
             this.txtNombreUsuario.BorderSize = 2;
             this.txtNombreUsuario.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreUsuario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtNombreUsuario.Location = new System.Drawing.Point(51, 96);
+            this.txtNombreUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.txtNombreUsuario.Location = new System.Drawing.Point(22, 96);
             this.txtNombreUsuario.Margin = new System.Windows.Forms.Padding(6);
             this.txtNombreUsuario.Multiline = false;
             this.txtNombreUsuario.Name = "txtNombreUsuario";
@@ -651,7 +659,7 @@
             this.txtNombreUsuario.PasswordChar = false;
             this.txtNombreUsuario.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtNombreUsuario.PlaceholderText = "";
-            this.txtNombreUsuario.Size = new System.Drawing.Size(334, 42);
+            this.txtNombreUsuario.Size = new System.Drawing.Size(334, 44);
             this.txtNombreUsuario.TabIndex = 11;
             this.txtNombreUsuario.Texts = "Usuario";
             this.txtNombreUsuario.UnderlinedStyle = false;
@@ -669,8 +677,8 @@
             this.txtIdUsuario.BorderRadius = 15;
             this.txtIdUsuario.BorderSize = 2;
             this.txtIdUsuario.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdUsuario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtIdUsuario.Location = new System.Drawing.Point(151, 116);
+            this.txtIdUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.txtIdUsuario.Location = new System.Drawing.Point(125, 129);
             this.txtIdUsuario.Margin = new System.Windows.Forms.Padding(6);
             this.txtIdUsuario.Multiline = false;
             this.txtIdUsuario.Name = "txtIdUsuario";
@@ -678,7 +686,7 @@
             this.txtIdUsuario.PasswordChar = false;
             this.txtIdUsuario.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtIdUsuario.PlaceholderText = "";
-            this.txtIdUsuario.Size = new System.Drawing.Size(334, 42);
+            this.txtIdUsuario.Size = new System.Drawing.Size(334, 44);
             this.txtIdUsuario.TabIndex = 10;
             this.txtIdUsuario.Texts = "Id de Usuario";
             this.txtIdUsuario.UnderlinedStyle = false;
@@ -695,10 +703,10 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(152, 169);
+            this.label19.Location = new System.Drawing.Point(126, 182);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(269, 32);
+            this.label19.Size = new System.Drawing.Size(338, 40);
             this.label19.TabIndex = 9;
             this.label19.Text = "Detalle del usuarios";
             // 
@@ -731,9 +739,9 @@
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel9.Controls.Add(this.panel3);
             this.panel9.Controls.Add(this.txtBuscar);
-            this.panel9.Location = new System.Drawing.Point(157, 58);
+            this.panel9.Location = new System.Drawing.Point(131, 71);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1313, 51);
+            this.panel9.Size = new System.Drawing.Size(1750, 51);
             this.panel9.TabIndex = 48;
             // 
             // txtBuscar
@@ -753,7 +761,7 @@
             this.txtBuscar.PasswordChar = false;
             this.txtBuscar.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtBuscar.PlaceholderText = "";
-            this.txtBuscar.Size = new System.Drawing.Size(496, 40);
+            this.txtBuscar.Size = new System.Drawing.Size(496, 43);
             this.txtBuscar.TabIndex = 28;
             this.txtBuscar.Texts = "Buscar:";
             this.txtBuscar.UnderlinedStyle = false;
@@ -769,10 +777,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(152, 29);
+            this.label8.Location = new System.Drawing.Point(126, 29);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(211, 26);
+            this.label8.Size = new System.Drawing.Size(269, 34);
             this.label8.TabIndex = 28;
             this.label8.Text = "Gestion de usuario";
             // 
@@ -784,16 +792,16 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(152, 486);
+            this.label2.Location = new System.Drawing.Point(126, 486);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(275, 32);
+            this.label2.Size = new System.Drawing.Size(344, 40);
             this.label2.TabIndex = 49;
             this.label2.Text = "Registro de usuarios";
             // 
             // FrmGestionUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(1529, 827);

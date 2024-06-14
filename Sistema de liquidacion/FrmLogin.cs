@@ -155,7 +155,7 @@ namespace Sistema_de_liquidacion
             if (txtUsuario.Texts == "Usuario")
             {
                 txtUsuario.Texts = "";
-                txtUsuario.ForeColor = Color.LightGray;
+                txtUsuario.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -164,7 +164,7 @@ namespace Sistema_de_liquidacion
             if (txtUsuario.Texts == "")
             {
                 txtUsuario.Texts = "Usuario";
-                txtUsuario.ForeColor = Color.LightGray;
+                txtUsuario.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -173,7 +173,7 @@ namespace Sistema_de_liquidacion
             if (txtContraseña.Texts == "Contraseña")
             {
                 txtContraseña.Texts = "";
-                txtContraseña.ForeColor = Color.LightGray;
+                txtContraseña.ForeColor = Color.FromArgb(31, 30, 68);
                 txtContraseña.PasswordChar = true;
             }
         }
@@ -183,7 +183,7 @@ namespace Sistema_de_liquidacion
             if (txtContraseña.Texts == "")
             {
                 txtContraseña.Texts = "Contraseña";
-                txtContraseña.ForeColor = Color.LightGray;
+                txtContraseña.ForeColor = Color.FromArgb(31, 30, 68);
                 txtContraseña.PasswordChar = false;
             }
         }

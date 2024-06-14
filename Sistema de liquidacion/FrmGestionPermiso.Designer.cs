@@ -92,9 +92,9 @@
             this.panel1.Controls.Add(this.label19);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1529, 827);
+            this.panel1.Size = new System.Drawing.Size(1942, 1018);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -106,10 +106,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(178, 33);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(155, 41);
+            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(230, 26);
+            this.label8.Size = new System.Drawing.Size(291, 34);
             this.label8.TabIndex = 28;
             this.label8.Text = "Gestion de permisos";
             // 
@@ -121,9 +121,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(165, 468);
+            this.label2.Location = new System.Drawing.Point(167, 577);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(285, 32);
+            this.label2.Size = new System.Drawing.Size(358, 40);
             this.label2.TabIndex = 50;
             this.label2.Text = "Registro de permisos";
             // 
@@ -135,9 +136,10 @@
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel9.Controls.Add(this.panel6);
             this.panel9.Controls.Add(this.txtBuscar);
-            this.panel9.Location = new System.Drawing.Point(183, 65);
+            this.panel9.Location = new System.Drawing.Point(162, 80);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1288, 51);
+            this.panel9.Size = new System.Drawing.Size(2350, 63);
             this.panel9.TabIndex = 49;
             // 
             // panel6
@@ -145,10 +147,10 @@
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel6.Controls.Add(this.label1);
             this.panel6.Controls.Add(this.cboFiltroRol);
-            this.panel6.Location = new System.Drawing.Point(929, 6);
-            this.panel6.Margin = new System.Windows.Forms.Padding(5);
+            this.panel6.Location = new System.Drawing.Point(1239, 7);
+            this.panel6.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(331, 40);
+            this.panel6.Size = new System.Drawing.Size(441, 49);
             this.panel6.TabIndex = 31;
             // 
             // label1
@@ -156,10 +158,10 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 10);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(16, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 27);
+            this.label1.Size = new System.Drawing.Size(145, 33);
             this.label1.TabIndex = 20;
             this.label1.Text = "Filtrar:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -177,11 +179,11 @@
             this.cboFiltroRol.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.cboFiltroRol.ListTextColor = System.Drawing.Color.White;
             this.cboFiltroRol.Location = new System.Drawing.Point(0, 0);
-            this.cboFiltroRol.Margin = new System.Windows.Forms.Padding(5);
-            this.cboFiltroRol.MinimumSize = new System.Drawing.Size(334, 44);
+            this.cboFiltroRol.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.cboFiltroRol.MinimumSize = new System.Drawing.Size(445, 54);
             this.cboFiltroRol.Name = "cboFiltroRol";
             this.cboFiltroRol.Padding = new System.Windows.Forms.Padding(1);
-            this.cboFiltroRol.Size = new System.Drawing.Size(334, 44);
+            this.cboFiltroRol.Size = new System.Drawing.Size(445, 54);
             this.cboFiltroRol.TabIndex = 23;
             this.cboFiltroRol.Texts = "";
             this.cboFiltroRol.OnSelectedIndexChanged += new System.EventHandler(this.cboFiltroRol_OnSelectedIndexChanged);
@@ -195,15 +197,15 @@
             this.txtBuscar.BorderSize = 2;
             this.txtBuscar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.ForeColor = System.Drawing.Color.LightGray;
-            this.txtBuscar.Location = new System.Drawing.Point(80, 6);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(6);
+            this.txtBuscar.Location = new System.Drawing.Point(107, 7);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.txtBuscar.Multiline = false;
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
+            this.txtBuscar.Padding = new System.Windows.Forms.Padding(21, 14, 21, 14);
             this.txtBuscar.PasswordChar = false;
             this.txtBuscar.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtBuscar.PlaceholderText = "";
-            this.txtBuscar.Size = new System.Drawing.Size(487, 40);
+            this.txtBuscar.Size = new System.Drawing.Size(649, 49);
             this.txtBuscar.TabIndex = 28;
             this.txtBuscar.Texts = "Buscar:";
             this.txtBuscar.UnderlinedStyle = false;
@@ -219,10 +221,10 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel4.Controls.Add(this.lbltbl);
             this.panel4.Controls.Add(this.tblRegistroPermiso);
-            this.panel4.Location = new System.Drawing.Point(183, 517);
-            this.panel4.Margin = new System.Windows.Forms.Padding(5);
+            this.panel4.Location = new System.Drawing.Point(162, 636);
+            this.panel4.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1288, 248);
+            this.panel4.Size = new System.Drawing.Size(2350, 305);
             this.panel4.TabIndex = 31;
             // 
             // lbltbl
@@ -231,10 +233,10 @@
             this.lbltbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.lbltbl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltbl.ForeColor = System.Drawing.Color.White;
-            this.lbltbl.Location = new System.Drawing.Point(565, 94);
-            this.lbltbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbltbl.Location = new System.Drawing.Point(832, 123);
+            this.lbltbl.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbltbl.Name = "lbltbl";
-            this.lbltbl.Size = new System.Drawing.Size(199, 17);
+            this.lbltbl.Size = new System.Drawing.Size(244, 19);
             this.lbltbl.TabIndex = 24;
             this.lbltbl.Text = "No hay registro de permisos.";
             // 
@@ -278,7 +280,7 @@
             this.tblRegistroPermiso.EnableHeadersVisualStyles = false;
             this.tblRegistroPermiso.GridColor = System.Drawing.Color.White;
             this.tblRegistroPermiso.Location = new System.Drawing.Point(0, 0);
-            this.tblRegistroPermiso.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tblRegistroPermiso.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
             this.tblRegistroPermiso.Name = "tblRegistroPermiso";
             this.tblRegistroPermiso.ReadOnly = true;
             this.tblRegistroPermiso.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -286,7 +288,7 @@
             this.tblRegistroPermiso.RowHeadersWidth = 51;
             this.tblRegistroPermiso.RowTemplate.Height = 24;
             this.tblRegistroPermiso.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tblRegistroPermiso.Size = new System.Drawing.Size(1288, 248);
+            this.tblRegistroPermiso.Size = new System.Drawing.Size(2350, 305);
             this.tblRegistroPermiso.TabIndex = 19;
             this.tblRegistroPermiso.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblRegistroPermiso_CellContentClick);
             this.tblRegistroPermiso.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.tblRegistroPermiso_CellPainting);
@@ -302,6 +304,7 @@
             // btnSEliminar
             // 
             this.btnSEliminar.HeaderText = "";
+            this.btnSEliminar.MinimumWidth = 6;
             this.btnSEliminar.Name = "btnSEliminar";
             this.btnSEliminar.ReadOnly = true;
             this.btnSEliminar.Width = 30;
@@ -309,27 +312,35 @@
             // Column1
             // 
             this.Column1.HeaderText = "";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
+            this.Column1.Width = 125;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "";
+            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
+            this.Column5.Width = 125;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "";
+            this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
+            this.Column6.Width = 125;
             // 
             // IdPermiso
             // 
             this.IdPermiso.HeaderText = "Id de permiso";
+            this.IdPermiso.MinimumWidth = 6;
             this.IdPermiso.Name = "IdPermiso";
             this.IdPermiso.ReadOnly = true;
             this.IdPermiso.Visible = false;
+            this.IdPermiso.Width = 125;
             // 
             // Permisos
             // 
@@ -351,6 +362,7 @@
             // Rol
             // 
             this.Rol.HeaderText = "Rol";
+            this.Rol.MinimumWidth = 6;
             this.Rol.Name = "Rol";
             this.Rol.ReadOnly = true;
             this.Rol.Width = 200;
@@ -358,6 +370,7 @@
             // FechaRegistro
             // 
             this.FechaRegistro.HeaderText = "Fecha de registro";
+            this.FechaRegistro.MinimumWidth = 6;
             this.FechaRegistro.Name = "FechaRegistro";
             this.FechaRegistro.ReadOnly = true;
             this.FechaRegistro.Width = 200;
@@ -374,10 +387,10 @@
             this.panel2.Controls.Add(this.btnLimpiar);
             this.panel2.Controls.Add(this.btnGuardar);
             this.panel2.Controls.Add(this.txtIdPermiso);
-            this.panel2.Location = new System.Drawing.Point(183, 181);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(162, 253);
+            this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1288, 191);
+            this.panel2.Size = new System.Drawing.Size(2350, 235);
             this.panel2.TabIndex = 30;
             // 
             // btnModificar
@@ -385,7 +398,7 @@
             this.btnModificar.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnModificar.BackgroundColor = System.Drawing.Color.RoyalBlue;
             this.btnModificar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnModificar.BorderRadius = 17;
+            this.btnModificar.BorderRadius = 25;
             this.btnModificar.BorderSize = 0;
             this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnModificar.FlatAppearance.BorderSize = 0;
@@ -393,10 +406,10 @@
             this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.Color.White;
             this.btnModificar.Image = global::Sistema_de_liquidacion.Properties.Resources.cuadrado_de_la_pluma;
-            this.btnModificar.Location = new System.Drawing.Point(848, 45);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnModificar.Location = new System.Drawing.Point(1408, 55);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(5);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(204, 51);
+            this.btnModificar.Size = new System.Drawing.Size(272, 63);
             this.btnModificar.TabIndex = 29;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -414,10 +427,10 @@
             this.panel3.Controls.Add(this.rjTextBox5);
             this.panel3.Controls.Add(this.cboHerramienta);
             this.panel3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(63, 49);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(361, 60);
+            this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(271, 50);
+            this.panel3.Size = new System.Drawing.Size(361, 62);
             this.panel3.TabIndex = 28;
             // 
             // rjTextBox1
@@ -430,15 +443,15 @@
             this.rjTextBox1.BorderSize = 2;
             this.rjTextBox1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.rjTextBox1.Location = new System.Drawing.Point(22, -107);
-            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rjTextBox1.Location = new System.Drawing.Point(29, -132);
+            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rjTextBox1.Multiline = false;
             this.rjTextBox1.Name = "rjTextBox1";
-            this.rjTextBox1.Padding = new System.Windows.Forms.Padding(12, 9, 12, 9);
+            this.rjTextBox1.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
             this.rjTextBox1.PasswordChar = false;
             this.rjTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox1.PlaceholderText = "";
-            this.rjTextBox1.Size = new System.Drawing.Size(250, 38);
+            this.rjTextBox1.Size = new System.Drawing.Size(333, 44);
             this.rjTextBox1.TabIndex = 11;
             this.rjTextBox1.Texts = "Usuario";
             this.rjTextBox1.UnderlinedStyle = false;
@@ -453,15 +466,15 @@
             this.rjTextBox2.BorderSize = 2;
             this.rjTextBox2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.rjTextBox2.Location = new System.Drawing.Point(22, -55);
-            this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rjTextBox2.Location = new System.Drawing.Point(29, -68);
+            this.rjTextBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rjTextBox2.Multiline = false;
             this.rjTextBox2.Name = "rjTextBox2";
-            this.rjTextBox2.Padding = new System.Windows.Forms.Padding(12, 9, 12, 9);
+            this.rjTextBox2.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
             this.rjTextBox2.PasswordChar = false;
             this.rjTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox2.PlaceholderText = "";
-            this.rjTextBox2.Size = new System.Drawing.Size(250, 38);
+            this.rjTextBox2.Size = new System.Drawing.Size(333, 44);
             this.rjTextBox2.TabIndex = 11;
             this.rjTextBox2.Texts = "Contraseña";
             this.rjTextBox2.UnderlinedStyle = false;
@@ -476,15 +489,15 @@
             this.rjTextBox3.BorderSize = 2;
             this.rjTextBox3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.rjTextBox3.Location = new System.Drawing.Point(20, 62);
-            this.rjTextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rjTextBox3.Location = new System.Drawing.Point(27, 76);
+            this.rjTextBox3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rjTextBox3.Multiline = false;
             this.rjTextBox3.Name = "rjTextBox3";
-            this.rjTextBox3.Padding = new System.Windows.Forms.Padding(12, 9, 12, 9);
+            this.rjTextBox3.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
             this.rjTextBox3.PasswordChar = false;
             this.rjTextBox3.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox3.PlaceholderText = "";
-            this.rjTextBox3.Size = new System.Drawing.Size(250, 38);
+            this.rjTextBox3.Size = new System.Drawing.Size(333, 44);
             this.rjTextBox3.TabIndex = 12;
             this.rjTextBox3.Texts = "Correo";
             this.rjTextBox3.UnderlinedStyle = false;
@@ -499,15 +512,15 @@
             this.rjTextBox4.BorderSize = 2;
             this.rjTextBox4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.rjTextBox4.Location = new System.Drawing.Point(22, -154);
-            this.rjTextBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rjTextBox4.Location = new System.Drawing.Point(29, -190);
+            this.rjTextBox4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rjTextBox4.Multiline = false;
             this.rjTextBox4.Name = "rjTextBox4";
-            this.rjTextBox4.Padding = new System.Windows.Forms.Padding(12, 9, 12, 9);
+            this.rjTextBox4.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
             this.rjTextBox4.PasswordChar = false;
             this.rjTextBox4.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox4.PlaceholderText = "";
-            this.rjTextBox4.Size = new System.Drawing.Size(250, 38);
+            this.rjTextBox4.Size = new System.Drawing.Size(333, 44);
             this.rjTextBox4.TabIndex = 10;
             this.rjTextBox4.Texts = "Documento";
             this.rjTextBox4.UnderlinedStyle = false;
@@ -522,15 +535,15 @@
             this.rjTextBox5.BorderSize = 2;
             this.rjTextBox5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.rjTextBox5.Location = new System.Drawing.Point(22, -199);
-            this.rjTextBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rjTextBox5.Location = new System.Drawing.Point(29, -245);
+            this.rjTextBox5.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rjTextBox5.Multiline = false;
             this.rjTextBox5.Name = "rjTextBox5";
-            this.rjTextBox5.Padding = new System.Windows.Forms.Padding(12, 9, 12, 9);
+            this.rjTextBox5.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
             this.rjTextBox5.PasswordChar = false;
             this.rjTextBox5.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox5.PlaceholderText = "";
-            this.rjTextBox5.Size = new System.Drawing.Size(250, 38);
+            this.rjTextBox5.Size = new System.Drawing.Size(333, 44);
             this.rjTextBox5.TabIndex = 10;
             this.rjTextBox5.Texts = "Id de Usuario";
             this.rjTextBox5.UnderlinedStyle = false;
@@ -549,10 +562,10 @@
             this.cboHerramienta.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.cboHerramienta.ListTextColor = System.Drawing.Color.Gainsboro;
             this.cboHerramienta.Location = new System.Drawing.Point(0, 0);
-            this.cboHerramienta.Margin = new System.Windows.Forms.Padding(4);
-            this.cboHerramienta.MinimumSize = new System.Drawing.Size(250, 36);
+            this.cboHerramienta.Margin = new System.Windows.Forms.Padding(5);
+            this.cboHerramienta.MinimumSize = new System.Drawing.Size(333, 44);
             this.cboHerramienta.Name = "cboHerramienta";
-            this.cboHerramienta.Size = new System.Drawing.Size(271, 50);
+            this.cboHerramienta.Size = new System.Drawing.Size(361, 62);
             this.cboHerramienta.TabIndex = 17;
             this.cboHerramienta.Texts = "Permisos";
             this.cboHerramienta.OnSelectedIndexChanged += new System.EventHandler(this.cboHerramienta_OnSelectedIndexChanged);
@@ -566,10 +579,10 @@
             this.panel5.Controls.Add(this.rjTextBox10);
             this.panel5.Controls.Add(this.cboRoles);
             this.panel5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel5.Location = new System.Drawing.Point(346, 49);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Location = new System.Drawing.Point(738, 60);
+            this.panel5.Margin = new System.Windows.Forms.Padding(5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(271, 50);
+            this.panel5.Size = new System.Drawing.Size(361, 62);
             this.panel5.TabIndex = 28;
             // 
             // rjTextBox6
@@ -582,15 +595,15 @@
             this.rjTextBox6.BorderSize = 2;
             this.rjTextBox6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.rjTextBox6.Location = new System.Drawing.Point(22, -107);
-            this.rjTextBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rjTextBox6.Location = new System.Drawing.Point(29, -132);
+            this.rjTextBox6.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rjTextBox6.Multiline = false;
             this.rjTextBox6.Name = "rjTextBox6";
-            this.rjTextBox6.Padding = new System.Windows.Forms.Padding(12, 9, 12, 9);
+            this.rjTextBox6.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
             this.rjTextBox6.PasswordChar = false;
             this.rjTextBox6.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox6.PlaceholderText = "";
-            this.rjTextBox6.Size = new System.Drawing.Size(250, 38);
+            this.rjTextBox6.Size = new System.Drawing.Size(333, 44);
             this.rjTextBox6.TabIndex = 11;
             this.rjTextBox6.Texts = "Usuario";
             this.rjTextBox6.UnderlinedStyle = false;
@@ -605,15 +618,15 @@
             this.rjTextBox7.BorderSize = 2;
             this.rjTextBox7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.rjTextBox7.Location = new System.Drawing.Point(22, -55);
-            this.rjTextBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rjTextBox7.Location = new System.Drawing.Point(29, -68);
+            this.rjTextBox7.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rjTextBox7.Multiline = false;
             this.rjTextBox7.Name = "rjTextBox7";
-            this.rjTextBox7.Padding = new System.Windows.Forms.Padding(12, 9, 12, 9);
+            this.rjTextBox7.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
             this.rjTextBox7.PasswordChar = false;
             this.rjTextBox7.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox7.PlaceholderText = "";
-            this.rjTextBox7.Size = new System.Drawing.Size(250, 38);
+            this.rjTextBox7.Size = new System.Drawing.Size(333, 44);
             this.rjTextBox7.TabIndex = 11;
             this.rjTextBox7.Texts = "Contraseña";
             this.rjTextBox7.UnderlinedStyle = false;
@@ -628,15 +641,15 @@
             this.rjTextBox8.BorderSize = 2;
             this.rjTextBox8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.rjTextBox8.Location = new System.Drawing.Point(20, 62);
-            this.rjTextBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rjTextBox8.Location = new System.Drawing.Point(27, 76);
+            this.rjTextBox8.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rjTextBox8.Multiline = false;
             this.rjTextBox8.Name = "rjTextBox8";
-            this.rjTextBox8.Padding = new System.Windows.Forms.Padding(12, 9, 12, 9);
+            this.rjTextBox8.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
             this.rjTextBox8.PasswordChar = false;
             this.rjTextBox8.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox8.PlaceholderText = "";
-            this.rjTextBox8.Size = new System.Drawing.Size(250, 38);
+            this.rjTextBox8.Size = new System.Drawing.Size(333, 44);
             this.rjTextBox8.TabIndex = 12;
             this.rjTextBox8.Texts = "Correo";
             this.rjTextBox8.UnderlinedStyle = false;
@@ -651,15 +664,15 @@
             this.rjTextBox9.BorderSize = 2;
             this.rjTextBox9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox9.ForeColor = System.Drawing.Color.Gainsboro;
-            this.rjTextBox9.Location = new System.Drawing.Point(22, -154);
-            this.rjTextBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rjTextBox9.Location = new System.Drawing.Point(29, -190);
+            this.rjTextBox9.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rjTextBox9.Multiline = false;
             this.rjTextBox9.Name = "rjTextBox9";
-            this.rjTextBox9.Padding = new System.Windows.Forms.Padding(12, 9, 12, 9);
+            this.rjTextBox9.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
             this.rjTextBox9.PasswordChar = false;
             this.rjTextBox9.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox9.PlaceholderText = "";
-            this.rjTextBox9.Size = new System.Drawing.Size(250, 38);
+            this.rjTextBox9.Size = new System.Drawing.Size(333, 44);
             this.rjTextBox9.TabIndex = 10;
             this.rjTextBox9.Texts = "Documento";
             this.rjTextBox9.UnderlinedStyle = false;
@@ -674,15 +687,15 @@
             this.rjTextBox10.BorderSize = 2;
             this.rjTextBox10.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox10.ForeColor = System.Drawing.Color.Gainsboro;
-            this.rjTextBox10.Location = new System.Drawing.Point(22, -199);
-            this.rjTextBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rjTextBox10.Location = new System.Drawing.Point(29, -245);
+            this.rjTextBox10.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.rjTextBox10.Multiline = false;
             this.rjTextBox10.Name = "rjTextBox10";
-            this.rjTextBox10.Padding = new System.Windows.Forms.Padding(12, 9, 12, 9);
+            this.rjTextBox10.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
             this.rjTextBox10.PasswordChar = false;
             this.rjTextBox10.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox10.PlaceholderText = "";
-            this.rjTextBox10.Size = new System.Drawing.Size(250, 38);
+            this.rjTextBox10.Size = new System.Drawing.Size(333, 44);
             this.rjTextBox10.TabIndex = 10;
             this.rjTextBox10.Texts = "Id de Usuario";
             this.rjTextBox10.UnderlinedStyle = false;
@@ -701,10 +714,10 @@
             this.cboRoles.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.cboRoles.ListTextColor = System.Drawing.Color.Gainsboro;
             this.cboRoles.Location = new System.Drawing.Point(0, 0);
-            this.cboRoles.Margin = new System.Windows.Forms.Padding(4);
-            this.cboRoles.MinimumSize = new System.Drawing.Size(250, 36);
+            this.cboRoles.Margin = new System.Windows.Forms.Padding(5);
+            this.cboRoles.MinimumSize = new System.Drawing.Size(333, 44);
             this.cboRoles.Name = "cboRoles";
-            this.cboRoles.Size = new System.Drawing.Size(271, 50);
+            this.cboRoles.Size = new System.Drawing.Size(361, 62);
             this.cboRoles.TabIndex = 17;
             this.cboRoles.Texts = "Rol desempeñado";
             this.cboRoles.OnSelectedIndexChanged += new System.EventHandler(this.cboRoles_OnSelectedIndexChanged);
@@ -714,7 +727,7 @@
             this.btnLimpiar.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnLimpiar.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.btnLimpiar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnLimpiar.BorderRadius = 17;
+            this.btnLimpiar.BorderRadius = 25;
             this.btnLimpiar.BorderSize = 0;
             this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpiar.FlatAppearance.BorderSize = 0;
@@ -722,10 +735,10 @@
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
             this.btnLimpiar.Image = global::Sistema_de_liquidacion.Properties.Resources.escoba;
-            this.btnLimpiar.Location = new System.Drawing.Point(742, 107);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLimpiar.Location = new System.Drawing.Point(1266, 132);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(5);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(204, 51);
+            this.btnLimpiar.Size = new System.Drawing.Size(272, 63);
             this.btnLimpiar.TabIndex = 15;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -739,7 +752,7 @@
             this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnGuardar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnGuardar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnGuardar.BorderRadius = 17;
+            this.btnGuardar.BorderRadius = 25;
             this.btnGuardar.BorderSize = 0;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
@@ -747,10 +760,10 @@
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Image = global::Sistema_de_liquidacion.Properties.Resources.disk;
-            this.btnGuardar.Location = new System.Drawing.Point(636, 48);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuardar.Location = new System.Drawing.Point(1131, 59);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(204, 51);
+            this.btnGuardar.Size = new System.Drawing.Size(272, 63);
             this.btnGuardar.TabIndex = 14;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -768,15 +781,15 @@
             this.txtIdPermiso.BorderSize = 2;
             this.txtIdPermiso.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdPermiso.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtIdPermiso.Location = new System.Drawing.Point(290, 111);
-            this.txtIdPermiso.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtIdPermiso.Location = new System.Drawing.Point(664, 137);
+            this.txtIdPermiso.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtIdPermiso.Multiline = false;
             this.txtIdPermiso.Name = "txtIdPermiso";
-            this.txtIdPermiso.Padding = new System.Windows.Forms.Padding(12, 9, 12, 9);
+            this.txtIdPermiso.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
             this.txtIdPermiso.PasswordChar = false;
             this.txtIdPermiso.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtIdPermiso.PlaceholderText = "";
-            this.txtIdPermiso.Size = new System.Drawing.Size(250, 38);
+            this.txtIdPermiso.Size = new System.Drawing.Size(333, 44);
             this.txtIdPermiso.TabIndex = 10;
             this.txtIdPermiso.Texts = "Id de Usuario";
             this.txtIdPermiso.UnderlinedStyle = false;
@@ -790,20 +803,21 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(171, 130);
+            this.label19.Location = new System.Drawing.Point(159, 201);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(267, 32);
+            this.label19.Size = new System.Drawing.Size(337, 40);
             this.label19.TabIndex = 9;
             this.label19.Text = "Detalle del permiso";
             // 
             // FrmGestionPermiso
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1529, 827);
+            this.ClientSize = new System.Drawing.Size(1942, 1018);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmGestionPermiso";
             this.Text = "Gestion de permisos";
             this.Load += new System.EventHandler(this.FrmGestionPermiso_Load);
