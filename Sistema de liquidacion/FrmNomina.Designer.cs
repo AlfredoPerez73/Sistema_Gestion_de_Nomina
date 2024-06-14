@@ -86,7 +86,7 @@
             this.panel1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1924, 1055);
+            this.panel1.Size = new System.Drawing.Size(1529, 827);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -95,7 +95,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(94, 172);
+            this.label3.Location = new System.Drawing.Point(127, 172);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(299, 32);
@@ -107,7 +107,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(95, 38);
+            this.label10.Location = new System.Drawing.Point(128, 38);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(96, 26);
@@ -124,9 +124,9 @@
             this.panel9.Controls.Add(this.panel6);
             this.panel9.Controls.Add(this.panel3);
             this.panel9.Controls.Add(this.panel2);
-            this.panel9.Location = new System.Drawing.Point(100, 67);
+            this.panel9.Location = new System.Drawing.Point(133, 79);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1774, 51);
+            this.panel9.Size = new System.Drawing.Size(1379, 51);
             this.panel9.TabIndex = 51;
             // 
             // txtBuscar
@@ -218,7 +218,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.cboFiltroMes);
-            this.panel3.Location = new System.Drawing.Point(990, 5);
+            this.panel3.Location = new System.Drawing.Point(1060, 5);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(293, 40);
             this.panel3.TabIndex = 42;
@@ -261,7 +261,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.cboFiltroAño);
-            this.panel2.Location = new System.Drawing.Point(681, 5);
+            this.panel2.Location = new System.Drawing.Point(751, 5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(293, 40);
             this.panel2.TabIndex = 41;
@@ -304,9 +304,9 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel4.Controls.Add(this.lbltbl);
             this.panel4.Controls.Add(this.tblRegistroDetalleLiquidaciones);
-            this.panel4.Location = new System.Drawing.Point(100, 235);
+            this.panel4.Location = new System.Drawing.Point(133, 246);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1774, 395);
+            this.panel4.Size = new System.Drawing.Size(1379, 395);
             this.panel4.TabIndex = 43;
             // 
             // lbltbl
@@ -315,7 +315,7 @@
             this.lbltbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.lbltbl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltbl.ForeColor = System.Drawing.Color.White;
-            this.lbltbl.Location = new System.Drawing.Point(863, 147);
+            this.lbltbl.Location = new System.Drawing.Point(570, 159);
             this.lbltbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltbl.Name = "lbltbl";
             this.lbltbl.Size = new System.Drawing.Size(190, 17);
@@ -377,7 +377,7 @@
             this.tblRegistroDetalleLiquidaciones.RowHeadersVisible = false;
             this.tblRegistroDetalleLiquidaciones.RowHeadersWidth = 51;
             this.tblRegistroDetalleLiquidaciones.RowTemplate.Height = 24;
-            this.tblRegistroDetalleLiquidaciones.Size = new System.Drawing.Size(1774, 395);
+            this.tblRegistroDetalleLiquidaciones.Size = new System.Drawing.Size(1379, 395);
             this.tblRegistroDetalleLiquidaciones.TabIndex = 21;
             this.tblRegistroDetalleLiquidaciones.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblRegistroDetalleLiquidaciones_CellContentClick);
             // 
@@ -515,7 +515,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1529, 827);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmNomina";

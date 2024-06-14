@@ -38,8 +38,6 @@
             this.tblRegistro = new System.Windows.Forms.DataGridView();
             this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnSEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,11 +60,11 @@
             this.cboRoles = new RJCodeAdvance.RJControls.RJComboBox();
             this.btnLimpiar = new RJCodeAdvance.RJControls.RJButton();
             this.btnGuardar = new RJCodeAdvance.RJControls.RJButton();
-            this.txtIdUsuario = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtDocumento = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtCorreo = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtContraseña = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtNombreUsuario = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtIdUsuario = new RJCodeAdvance.RJControls.RJTextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.btnBuscarEmpleado = new RJCodeAdvance.RJControls.RJButton();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -86,7 +84,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.cboFiltroRol);
-            this.panel3.Location = new System.Drawing.Point(1210, 6);
+            this.panel3.Location = new System.Drawing.Point(962, 6);
             this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(331, 40);
@@ -128,15 +126,16 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel2.Controls.Add(this.lbltbl);
             this.panel2.Controls.Add(this.tblRegistro);
-            this.panel2.Location = new System.Drawing.Point(98, 532);
+            this.panel2.Location = new System.Drawing.Point(158, 538);
             this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1747, 400);
+            this.panel2.Size = new System.Drawing.Size(1352, 241);
             this.panel2.TabIndex = 30;
             // 
             // lbltbl
@@ -145,7 +144,7 @@
             this.lbltbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.lbltbl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltbl.ForeColor = System.Drawing.Color.White;
-            this.lbltbl.Location = new System.Drawing.Point(775, 148);
+            this.lbltbl.Location = new System.Drawing.Point(567, 99);
             this.lbltbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltbl.Name = "lbltbl";
             this.lbltbl.Size = new System.Drawing.Size(192, 17);
@@ -172,8 +171,6 @@
             this.tblRegistro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSeleccionar,
             this.btnSEliminar,
-            this.Column1,
-            this.Column2,
             this.Column3,
             this.Column5,
             this.Column4,
@@ -205,7 +202,7 @@
             this.tblRegistro.RowHeadersWidth = 51;
             this.tblRegistro.RowTemplate.Height = 24;
             this.tblRegistro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tblRegistro.Size = new System.Drawing.Size(1747, 400);
+            this.tblRegistro.Size = new System.Drawing.Size(1352, 241);
             this.tblRegistro.TabIndex = 19;
             this.tblRegistro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblRegistro_CellContentClick);
             this.tblRegistro.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.tblRegistro_CellPainting);
@@ -224,18 +221,6 @@
             this.btnSEliminar.Name = "btnSEliminar";
             this.btnSEliminar.ReadOnly = true;
             this.btnSEliminar.Width = 30;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
@@ -324,27 +309,26 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel1.Controls.Add(this.btnPasswordChar);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.btnLimpiar);
             this.panel1.Controls.Add(this.btnGuardar);
-            this.panel1.Controls.Add(this.txtIdUsuario);
             this.panel1.Controls.Add(this.txtDocumento);
             this.panel1.Controls.Add(this.txtCorreo);
             this.panel1.Controls.Add(this.txtContraseña);
             this.panel1.Controls.Add(this.txtNombreUsuario);
-            this.panel1.Location = new System.Drawing.Point(99, 208);
+            this.panel1.Location = new System.Drawing.Point(157, 216);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1746, 226);
+            this.panel1.Size = new System.Drawing.Size(1313, 184);
             this.panel1.TabIndex = 29;
             // 
             // btnPasswordChar
             // 
-            this.btnPasswordChar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPasswordChar.BackColor = System.Drawing.Color.White;
             this.btnPasswordChar.BackgroundColor = System.Drawing.Color.White;
             this.btnPasswordChar.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -355,7 +339,7 @@
             this.btnPasswordChar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPasswordChar.ForeColor = System.Drawing.Color.White;
             this.btnPasswordChar.Image = global::Sistema_de_liquidacion.Properties.Resources.ojo__1_;
-            this.btnPasswordChar.Location = new System.Drawing.Point(1084, 38);
+            this.btnPasswordChar.Location = new System.Drawing.Point(736, 42);
             this.btnPasswordChar.Margin = new System.Windows.Forms.Padding(5);
             this.btnPasswordChar.Name = "btnPasswordChar";
             this.btnPasswordChar.Size = new System.Drawing.Size(44, 43);
@@ -373,7 +357,7 @@
             this.panel5.Controls.Add(this.rjTextBox10);
             this.panel5.Controls.Add(this.cboRoles);
             this.panel5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel5.Location = new System.Drawing.Point(559, 96);
+            this.panel5.Location = new System.Drawing.Point(736, 96);
             this.panel5.Margin = new System.Windows.Forms.Padding(5);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(331, 52);
@@ -529,7 +513,6 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLimpiar.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnLimpiar.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.btnLimpiar.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -541,7 +524,7 @@
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
             this.btnLimpiar.Image = global::Sistema_de_liquidacion.Properties.Resources.escoba;
-            this.btnLimpiar.Location = new System.Drawing.Point(1487, 84);
+            this.btnLimpiar.Location = new System.Drawing.Point(1090, 90);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(5);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(204, 51);
@@ -555,7 +538,6 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnGuardar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnGuardar.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -567,7 +549,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Image = global::Sistema_de_liquidacion.Properties.Resources.disk;
-            this.btnGuardar.Location = new System.Drawing.Point(1486, 23);
+            this.btnGuardar.Location = new System.Drawing.Point(1089, 29);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(204, 51);
@@ -579,36 +561,8 @@
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // txtIdUsuario
-            // 
-            this.txtIdUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIdUsuario.BackColor = System.Drawing.SystemColors.Window;
-            this.txtIdUsuario.BorderColor = System.Drawing.Color.White;
-            this.txtIdUsuario.BorderFocusColor = System.Drawing.Color.White;
-            this.txtIdUsuario.BorderRadius = 15;
-            this.txtIdUsuario.BorderSize = 2;
-            this.txtIdUsuario.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdUsuario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtIdUsuario.Location = new System.Drawing.Point(1141, 38);
-            this.txtIdUsuario.Margin = new System.Windows.Forms.Padding(6);
-            this.txtIdUsuario.Multiline = false;
-            this.txtIdUsuario.Name = "txtIdUsuario";
-            this.txtIdUsuario.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
-            this.txtIdUsuario.PasswordChar = false;
-            this.txtIdUsuario.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtIdUsuario.PlaceholderText = "";
-            this.txtIdUsuario.Size = new System.Drawing.Size(334, 42);
-            this.txtIdUsuario.TabIndex = 10;
-            this.txtIdUsuario.Texts = "Id de Usuario";
-            this.txtIdUsuario.UnderlinedStyle = false;
-            this.txtIdUsuario.Visible = false;
-            this.txtIdUsuario._TextChanged += new System.EventHandler(this.txtDocumento__TextChanged);
-            this.txtIdUsuario.Enter += new System.EventHandler(this.txtDocumento_Enter);
-            this.txtIdUsuario.Leave += new System.EventHandler(this.txtDocumento_Leave);
-            // 
             // txtDocumento
             // 
-            this.txtDocumento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDocumento.BackColor = System.Drawing.SystemColors.Window;
             this.txtDocumento.BorderColor = System.Drawing.Color.White;
             this.txtDocumento.BorderFocusColor = System.Drawing.Color.White;
@@ -616,7 +570,7 @@
             this.txtDocumento.BorderSize = 2;
             this.txtDocumento.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDocumento.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtDocumento.Location = new System.Drawing.Point(47, 38);
+            this.txtDocumento.Location = new System.Drawing.Point(51, 42);
             this.txtDocumento.Margin = new System.Windows.Forms.Padding(6);
             this.txtDocumento.Multiline = false;
             this.txtDocumento.Name = "txtDocumento";
@@ -634,7 +588,6 @@
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCorreo.BackColor = System.Drawing.SystemColors.Window;
             this.txtCorreo.BorderColor = System.Drawing.Color.White;
             this.txtCorreo.BorderFocusColor = System.Drawing.Color.White;
@@ -642,7 +595,7 @@
             this.txtCorreo.BorderSize = 2;
             this.txtCorreo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtCorreo.Location = new System.Drawing.Point(214, 96);
+            this.txtCorreo.Location = new System.Drawing.Point(391, 96);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(6);
             this.txtCorreo.Multiline = false;
             this.txtCorreo.Name = "txtCorreo";
@@ -659,7 +612,6 @@
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtContraseña.BackColor = System.Drawing.SystemColors.Window;
             this.txtContraseña.BorderColor = System.Drawing.Color.White;
             this.txtContraseña.BorderFocusColor = System.Drawing.Color.White;
@@ -667,7 +619,7 @@
             this.txtContraseña.BorderSize = 2;
             this.txtContraseña.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtContraseña.Location = new System.Drawing.Point(739, 38);
+            this.txtContraseña.Location = new System.Drawing.Point(391, 42);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(6);
             this.txtContraseña.Multiline = false;
             this.txtContraseña.Name = "txtContraseña";
@@ -684,7 +636,6 @@
             // 
             // txtNombreUsuario
             // 
-            this.txtNombreUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombreUsuario.BackColor = System.Drawing.SystemColors.Window;
             this.txtNombreUsuario.BorderColor = System.Drawing.Color.White;
             this.txtNombreUsuario.BorderFocusColor = System.Drawing.Color.White;
@@ -692,7 +643,7 @@
             this.txtNombreUsuario.BorderSize = 2;
             this.txtNombreUsuario.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreUsuario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtNombreUsuario.Location = new System.Drawing.Point(393, 38);
+            this.txtNombreUsuario.Location = new System.Drawing.Point(51, 96);
             this.txtNombreUsuario.Margin = new System.Windows.Forms.Padding(6);
             this.txtNombreUsuario.Multiline = false;
             this.txtNombreUsuario.Name = "txtNombreUsuario";
@@ -707,14 +658,44 @@
             this.txtNombreUsuario.Enter += new System.EventHandler(this.txtNombreUsuario_Enter);
             this.txtNombreUsuario.Leave += new System.EventHandler(this.txtNombreUsuario_Leave);
             // 
+            // txtIdUsuario
+            // 
+            this.txtIdUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtIdUsuario.BackColor = System.Drawing.SystemColors.Window;
+            this.txtIdUsuario.BorderColor = System.Drawing.Color.White;
+            this.txtIdUsuario.BorderFocusColor = System.Drawing.Color.White;
+            this.txtIdUsuario.BorderRadius = 15;
+            this.txtIdUsuario.BorderSize = 2;
+            this.txtIdUsuario.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdUsuario.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtIdUsuario.Location = new System.Drawing.Point(151, 116);
+            this.txtIdUsuario.Margin = new System.Windows.Forms.Padding(6);
+            this.txtIdUsuario.Multiline = false;
+            this.txtIdUsuario.Name = "txtIdUsuario";
+            this.txtIdUsuario.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
+            this.txtIdUsuario.PasswordChar = false;
+            this.txtIdUsuario.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtIdUsuario.PlaceholderText = "";
+            this.txtIdUsuario.Size = new System.Drawing.Size(334, 42);
+            this.txtIdUsuario.TabIndex = 10;
+            this.txtIdUsuario.Texts = "Id de Usuario";
+            this.txtIdUsuario.UnderlinedStyle = false;
+            this.txtIdUsuario.Visible = false;
+            this.txtIdUsuario._TextChanged += new System.EventHandler(this.txtDocumento__TextChanged);
+            this.txtIdUsuario.Enter += new System.EventHandler(this.txtDocumento_Enter);
+            this.txtIdUsuario.Leave += new System.EventHandler(this.txtDocumento_Leave);
+            // 
             // label19
             // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(98, 160);
+            this.label19.Location = new System.Drawing.Point(152, 169);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(269, 32);
@@ -744,14 +725,15 @@
             // 
             // panel9
             // 
-            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel9.Controls.Add(this.panel3);
             this.panel9.Controls.Add(this.txtBuscar);
-            this.panel9.Location = new System.Drawing.Point(99, 58);
+            this.panel9.Location = new System.Drawing.Point(157, 58);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1760, 51);
+            this.panel9.Size = new System.Drawing.Size(1313, 51);
             this.panel9.TabIndex = 48;
             // 
             // txtBuscar
@@ -763,7 +745,7 @@
             this.txtBuscar.BorderSize = 2;
             this.txtBuscar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.ForeColor = System.Drawing.Color.LightGray;
-            this.txtBuscar.Location = new System.Drawing.Point(492, 6);
+            this.txtBuscar.Location = new System.Drawing.Point(92, 6);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(6);
             this.txtBuscar.Multiline = false;
             this.txtBuscar.Name = "txtBuscar";
@@ -781,10 +763,13 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(99, 29);
+            this.label8.Location = new System.Drawing.Point(152, 29);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(211, 26);
@@ -793,12 +778,13 @@
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(92, 486);
+            this.label2.Location = new System.Drawing.Point(152, 486);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(275, 32);
@@ -810,11 +796,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1529, 827);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.label19);
+            this.Controls.Add(this.txtIdUsuario);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -864,10 +851,9 @@
         private System.Windows.Forms.Label label8;
         private RJCodeAdvance.RJControls.RJTextBox txtBuscar;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbltbl;
         private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar;
         private System.Windows.Forms.DataGridViewButtonColumn btnSEliminar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
@@ -879,6 +865,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Rol;
         private System.Windows.Forms.DataGridViewTextBoxColumn Correo;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
-        private System.Windows.Forms.Label lbltbl;
     }
 }

@@ -400,5 +400,10 @@ namespace Sistema_de_liquidacion
         {
             CellContentClick(sender, e);
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

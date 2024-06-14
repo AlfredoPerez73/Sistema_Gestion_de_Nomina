@@ -45,28 +45,23 @@
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.alphaGradientPanel17 = new System.Windows.Forms.AlphaGradientPanel();
+            this.colorWithAlpha43 = new System.Windows.Forms.ColorWithAlpha();
+            this.colorWithAlpha44 = new System.Windows.Forms.ColorWithAlpha();
+            this.alphaGradientPanel12 = new System.Windows.Forms.AlphaGradientPanel();
+            this.colorWithAlpha41 = new System.Windows.Forms.ColorWithAlpha();
+            this.colorWithAlpha42 = new System.Windows.Forms.ColorWithAlpha();
             this.panel2 = new System.Windows.Forms.Panel();
             this.chValorHoras = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
             this.chHorasRealizadas = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.alphaGradientPanel10 = new System.Windows.Forms.AlphaGradientPanel();
             this.colorWithAlpha23 = new System.Windows.Forms.ColorWithAlpha();
+            this.alphaGradientPanel5 = new System.Windows.Forms.AlphaGradientPanel();
             this.colorWithAlpha24 = new System.Windows.Forms.ColorWithAlpha();
             this.alphaGradientPanel11 = new System.Windows.Forms.AlphaGradientPanel();
             this.colorWithAlpha31 = new System.Windows.Forms.ColorWithAlpha();
             this.colorWithAlpha32 = new System.Windows.Forms.ColorWithAlpha();
-            this.alphaGradientPanel5 = new System.Windows.Forms.AlphaGradientPanel();
-            this.alphaGradientPanel15 = new System.Windows.Forms.AlphaGradientPanel();
-            this.colorWithAlpha29 = new System.Windows.Forms.ColorWithAlpha();
-            this.colorWithAlpha30 = new System.Windows.Forms.ColorWithAlpha();
-            this.iconPictureBox9 = new FontAwesome.Sharp.IconPictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.iconPictureBox10 = new FontAwesome.Sharp.IconPictureBox();
-            this.lblTotalSalario = new System.Windows.Forms.Label();
-            this.iconPictureBox11 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox12 = new FontAwesome.Sharp.IconPictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lblDiasTotales = new System.Windows.Forms.Label();
             this.alphaGradientPanel14 = new System.Windows.Forms.AlphaGradientPanel();
             this.colorWithAlpha25 = new System.Windows.Forms.ColorWithAlpha();
             this.colorWithAlpha26 = new System.Windows.Forms.ColorWithAlpha();
@@ -129,6 +124,17 @@
             this.alphaGradientPanel9 = new System.Windows.Forms.AlphaGradientPanel();
             this.colorWithAlpha39 = new System.Windows.Forms.ColorWithAlpha();
             this.colorWithAlpha40 = new System.Windows.Forms.ColorWithAlpha();
+            this.alphaGradientPanel15 = new System.Windows.Forms.AlphaGradientPanel();
+            this.colorWithAlpha29 = new System.Windows.Forms.ColorWithAlpha();
+            this.colorWithAlpha30 = new System.Windows.Forms.ColorWithAlpha();
+            this.iconPictureBox9 = new FontAwesome.Sharp.IconPictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.iconPictureBox10 = new FontAwesome.Sharp.IconPictureBox();
+            this.lblTotalSalario = new System.Windows.Forms.Label();
+            this.iconPictureBox11 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox12 = new FontAwesome.Sharp.IconPictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblDiasTotales = new System.Windows.Forms.Label();
             this.colorWithAlpha1 = new System.Windows.Forms.ColorWithAlpha();
             this.colorWithAlpha2 = new System.Windows.Forms.ColorWithAlpha();
             this.colorWithAlpha3 = new System.Windows.Forms.ColorWithAlpha();
@@ -141,22 +147,11 @@
             this.colorWithAlpha16 = new System.Windows.Forms.ColorWithAlpha();
             this.colorWithAlpha33 = new System.Windows.Forms.ColorWithAlpha();
             this.colorWithAlpha34 = new System.Windows.Forms.ColorWithAlpha();
-            this.alphaGradientPanel12 = new System.Windows.Forms.AlphaGradientPanel();
-            this.colorWithAlpha41 = new System.Windows.Forms.ColorWithAlpha();
-            this.colorWithAlpha42 = new System.Windows.Forms.ColorWithAlpha();
-            this.alphaGradientPanel17 = new System.Windows.Forms.AlphaGradientPanel();
-            this.colorWithAlpha43 = new System.Windows.Forms.ColorWithAlpha();
-            this.colorWithAlpha44 = new System.Windows.Forms.ColorWithAlpha();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chValorHoras)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chHorasRealizadas)).BeginInit();
-            this.alphaGradientPanel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox12)).BeginInit();
             this.alphaGradientPanel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
@@ -178,6 +173,11 @@
             this.alphaGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.icoEmpleado)).BeginInit();
+            this.alphaGradientPanel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -210,6 +210,88 @@
             this.panel3.TabIndex = 3;
             this.panel3.Tag = "";
             // 
+            // alphaGradientPanel17
+            // 
+            this.alphaGradientPanel17.BackColor = System.Drawing.Color.Transparent;
+            this.alphaGradientPanel17.Border = false;
+            this.alphaGradientPanel17.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.alphaGradientPanel17.Colors.Add(this.colorWithAlpha43);
+            this.alphaGradientPanel17.Colors.Add(this.colorWithAlpha44);
+            this.alphaGradientPanel17.ContentPadding = new System.Windows.Forms.Padding(0);
+            this.alphaGradientPanel17.CornerRadius = 20;
+            this.alphaGradientPanel17.Corners = ((System.Windows.Forms.Corner)((((System.Windows.Forms.Corner.TopLeft | System.Windows.Forms.Corner.TopRight) 
+            | System.Windows.Forms.Corner.BottomLeft) 
+            | System.Windows.Forms.Corner.BottomRight)));
+            this.alphaGradientPanel17.Gradient = true;
+            this.alphaGradientPanel17.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.alphaGradientPanel17.GradientOffset = 1F;
+            this.alphaGradientPanel17.GradientSize = new System.Drawing.Size(0, 0);
+            this.alphaGradientPanel17.GradientWrapMode = System.Drawing.Drawing2D.WrapMode.Tile;
+            this.alphaGradientPanel17.Grayscale = false;
+            this.alphaGradientPanel17.Image = null;
+            this.alphaGradientPanel17.ImageAlpha = 75;
+            this.alphaGradientPanel17.ImagePadding = new System.Windows.Forms.Padding(5);
+            this.alphaGradientPanel17.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
+            this.alphaGradientPanel17.ImageSize = new System.Drawing.Size(48, 48);
+            this.alphaGradientPanel17.Location = new System.Drawing.Point(1081, 568);
+            this.alphaGradientPanel17.Name = "alphaGradientPanel17";
+            this.alphaGradientPanel17.Rounded = true;
+            this.alphaGradientPanel17.Size = new System.Drawing.Size(425, 256);
+            this.alphaGradientPanel17.TabIndex = 22;
+            // 
+            // colorWithAlpha43
+            // 
+            this.colorWithAlpha43.Alpha = 255;
+            this.colorWithAlpha43.Color = System.Drawing.Color.Black;
+            this.colorWithAlpha43.Parent = this.alphaGradientPanel17;
+            // 
+            // colorWithAlpha44
+            // 
+            this.colorWithAlpha44.Alpha = 255;
+            this.colorWithAlpha44.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.colorWithAlpha44.Parent = this.alphaGradientPanel17;
+            // 
+            // alphaGradientPanel12
+            // 
+            this.alphaGradientPanel12.BackColor = System.Drawing.Color.Transparent;
+            this.alphaGradientPanel12.Border = false;
+            this.alphaGradientPanel12.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.alphaGradientPanel12.Colors.Add(this.colorWithAlpha41);
+            this.alphaGradientPanel12.Colors.Add(this.colorWithAlpha42);
+            this.alphaGradientPanel12.ContentPadding = new System.Windows.Forms.Padding(0);
+            this.alphaGradientPanel12.CornerRadius = 20;
+            this.alphaGradientPanel12.Corners = ((System.Windows.Forms.Corner)((((System.Windows.Forms.Corner.TopLeft | System.Windows.Forms.Corner.TopRight) 
+            | System.Windows.Forms.Corner.BottomLeft) 
+            | System.Windows.Forms.Corner.BottomRight)));
+            this.alphaGradientPanel12.Gradient = true;
+            this.alphaGradientPanel12.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.alphaGradientPanel12.GradientOffset = 1F;
+            this.alphaGradientPanel12.GradientSize = new System.Drawing.Size(0, 0);
+            this.alphaGradientPanel12.GradientWrapMode = System.Drawing.Drawing2D.WrapMode.Tile;
+            this.alphaGradientPanel12.Grayscale = false;
+            this.alphaGradientPanel12.Image = null;
+            this.alphaGradientPanel12.ImageAlpha = 75;
+            this.alphaGradientPanel12.ImagePadding = new System.Windows.Forms.Padding(5);
+            this.alphaGradientPanel12.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
+            this.alphaGradientPanel12.ImageSize = new System.Drawing.Size(48, 48);
+            this.alphaGradientPanel12.Location = new System.Drawing.Point(623, 568);
+            this.alphaGradientPanel12.Name = "alphaGradientPanel12";
+            this.alphaGradientPanel12.Rounded = true;
+            this.alphaGradientPanel12.Size = new System.Drawing.Size(431, 256);
+            this.alphaGradientPanel12.TabIndex = 21;
+            // 
+            // colorWithAlpha41
+            // 
+            this.colorWithAlpha41.Alpha = 255;
+            this.colorWithAlpha41.Color = System.Drawing.Color.Black;
+            this.colorWithAlpha41.Parent = this.alphaGradientPanel12;
+            // 
+            // colorWithAlpha42
+            // 
+            this.colorWithAlpha42.Alpha = 255;
+            this.colorWithAlpha42.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.colorWithAlpha42.Parent = this.alphaGradientPanel12;
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -217,9 +299,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panel2.Controls.Add(this.chValorHoras);
-            this.panel2.Location = new System.Drawing.Point(1458, 488);
+            this.panel2.Location = new System.Drawing.Point(1076, 488);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(432, 361);
+            this.panel2.Size = new System.Drawing.Size(432, 246);
             this.panel2.TabIndex = 8;
             // 
             // chValorHoras
@@ -290,7 +372,7 @@
             series1.Name = "Series1";
             series1.YValuesPerPoint = 2;
             this.chValorHoras.Series.Add(series1);
-            this.chValorHoras.Size = new System.Drawing.Size(432, 359);
+            this.chValorHoras.Size = new System.Drawing.Size(432, 244);
             this.chValorHoras.TabIndex = 6;
             title1.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title1.ForeColor = System.Drawing.Color.Gainsboro;
@@ -305,9 +387,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panel1.Controls.Add(this.chHorasRealizadas);
-            this.panel1.Location = new System.Drawing.Point(1005, 486);
+            this.panel1.Location = new System.Drawing.Point(623, 486);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(432, 361);
+            this.panel1.Size = new System.Drawing.Size(432, 246);
             this.panel1.TabIndex = 7;
             // 
             // chHorasRealizadas
@@ -379,7 +461,7 @@
             series2.Name = "Series1";
             series2.YValuesPerPoint = 2;
             this.chHorasRealizadas.Series.Add(series2);
-            this.chHorasRealizadas.Size = new System.Drawing.Size(432, 359);
+            this.chHorasRealizadas.Size = new System.Drawing.Size(432, 287);
             this.chHorasRealizadas.TabIndex = 6;
             title2.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title2.ForeColor = System.Drawing.Color.Gainsboro;
@@ -410,64 +492,17 @@
             this.alphaGradientPanel10.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel10.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel10.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel10.Location = new System.Drawing.Point(1454, 39);
+            this.alphaGradientPanel10.Location = new System.Drawing.Point(1072, 39);
             this.alphaGradientPanel10.Name = "alphaGradientPanel10";
             this.alphaGradientPanel10.Rounded = true;
-            this.alphaGradientPanel10.Size = new System.Drawing.Size(435, 159);
+            this.alphaGradientPanel10.Size = new System.Drawing.Size(429, 155);
             this.alphaGradientPanel10.TabIndex = 15;
             // 
             // colorWithAlpha23
             // 
             this.colorWithAlpha23.Alpha = 255;
             this.colorWithAlpha23.Color = System.Drawing.Color.Black;
-            this.colorWithAlpha23.Parent = this.alphaGradientPanel5;
-            // 
-            // colorWithAlpha24
-            // 
-            this.colorWithAlpha24.Alpha = 255;
-            this.colorWithAlpha24.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.colorWithAlpha24.Parent = this.alphaGradientPanel5;
-            // 
-            // alphaGradientPanel11
-            // 
-            this.alphaGradientPanel11.BackColor = System.Drawing.Color.Transparent;
-            this.alphaGradientPanel11.Border = false;
-            this.alphaGradientPanel11.BorderColor = System.Drawing.SystemColors.ActiveBorder;
-            this.alphaGradientPanel11.Colors.Add(this.colorWithAlpha31);
-            this.alphaGradientPanel11.Colors.Add(this.colorWithAlpha32);
-            this.alphaGradientPanel11.ContentPadding = new System.Windows.Forms.Padding(0);
-            this.alphaGradientPanel11.CornerRadius = 20;
-            this.alphaGradientPanel11.Corners = ((System.Windows.Forms.Corner)((((System.Windows.Forms.Corner.TopLeft | System.Windows.Forms.Corner.TopRight) 
-            | System.Windows.Forms.Corner.BottomLeft) 
-            | System.Windows.Forms.Corner.BottomRight)));
-            this.alphaGradientPanel11.Gradient = true;
-            this.alphaGradientPanel11.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.alphaGradientPanel11.GradientOffset = 1F;
-            this.alphaGradientPanel11.GradientSize = new System.Drawing.Size(0, 0);
-            this.alphaGradientPanel11.GradientWrapMode = System.Drawing.Drawing2D.WrapMode.Tile;
-            this.alphaGradientPanel11.Grayscale = false;
-            this.alphaGradientPanel11.Image = null;
-            this.alphaGradientPanel11.ImageAlpha = 75;
-            this.alphaGradientPanel11.ImagePadding = new System.Windows.Forms.Padding(5);
-            this.alphaGradientPanel11.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
-            this.alphaGradientPanel11.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel11.Location = new System.Drawing.Point(1004, 219);
-            this.alphaGradientPanel11.Name = "alphaGradientPanel11";
-            this.alphaGradientPanel11.Rounded = true;
-            this.alphaGradientPanel11.Size = new System.Drawing.Size(435, 261);
-            this.alphaGradientPanel11.TabIndex = 16;
-            // 
-            // colorWithAlpha31
-            // 
-            this.colorWithAlpha31.Alpha = 255;
-            this.colorWithAlpha31.Color = System.Drawing.Color.Black;
-            this.colorWithAlpha31.Parent = this.alphaGradientPanel11;
-            // 
-            // colorWithAlpha32
-            // 
-            this.colorWithAlpha32.Alpha = 255;
-            this.colorWithAlpha32.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.colorWithAlpha32.Parent = this.alphaGradientPanel11;
+            this.colorWithAlpha23.Parent = this.alphaGradientPanel10;
             // 
             // alphaGradientPanel5
             // 
@@ -495,153 +530,55 @@
             this.alphaGradientPanel5.Location = new System.Drawing.Point(93, 39);
             this.alphaGradientPanel5.Name = "alphaGradientPanel5";
             this.alphaGradientPanel5.Rounded = true;
-            this.alphaGradientPanel5.Size = new System.Drawing.Size(435, 159);
+            this.alphaGradientPanel5.Size = new System.Drawing.Size(313, 159);
             this.alphaGradientPanel5.TabIndex = 12;
             // 
-            // alphaGradientPanel15
+            // colorWithAlpha24
             // 
-            this.alphaGradientPanel15.BackColor = System.Drawing.Color.Transparent;
-            this.alphaGradientPanel15.Border = false;
-            this.alphaGradientPanel15.BorderColor = System.Drawing.SystemColors.ActiveBorder;
-            this.alphaGradientPanel15.Colors.Add(this.colorWithAlpha29);
-            this.alphaGradientPanel15.Colors.Add(this.colorWithAlpha30);
-            this.alphaGradientPanel15.ContentPadding = new System.Windows.Forms.Padding(0);
-            this.alphaGradientPanel15.Controls.Add(this.iconPictureBox9);
-            this.alphaGradientPanel15.Controls.Add(this.label2);
-            this.alphaGradientPanel15.Controls.Add(this.iconPictureBox10);
-            this.alphaGradientPanel15.Controls.Add(this.lblTotalSalario);
-            this.alphaGradientPanel15.Controls.Add(this.iconPictureBox11);
-            this.alphaGradientPanel15.Controls.Add(this.iconPictureBox12);
-            this.alphaGradientPanel15.Controls.Add(this.label7);
-            this.alphaGradientPanel15.Controls.Add(this.lblDiasTotales);
-            this.alphaGradientPanel15.CornerRadius = 20;
-            this.alphaGradientPanel15.Corners = ((System.Windows.Forms.Corner)((((System.Windows.Forms.Corner.TopLeft | System.Windows.Forms.Corner.TopRight) 
+            this.colorWithAlpha24.Alpha = 255;
+            this.colorWithAlpha24.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.colorWithAlpha24.Parent = this.alphaGradientPanel10;
+            // 
+            // alphaGradientPanel11
+            // 
+            this.alphaGradientPanel11.BackColor = System.Drawing.Color.Transparent;
+            this.alphaGradientPanel11.Border = false;
+            this.alphaGradientPanel11.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.alphaGradientPanel11.Colors.Add(this.colorWithAlpha31);
+            this.alphaGradientPanel11.Colors.Add(this.colorWithAlpha32);
+            this.alphaGradientPanel11.ContentPadding = new System.Windows.Forms.Padding(0);
+            this.alphaGradientPanel11.CornerRadius = 20;
+            this.alphaGradientPanel11.Corners = ((System.Windows.Forms.Corner)((((System.Windows.Forms.Corner.TopLeft | System.Windows.Forms.Corner.TopRight) 
             | System.Windows.Forms.Corner.BottomLeft) 
             | System.Windows.Forms.Corner.BottomRight)));
-            this.alphaGradientPanel15.Gradient = true;
-            this.alphaGradientPanel15.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.alphaGradientPanel15.GradientOffset = 1F;
-            this.alphaGradientPanel15.GradientSize = new System.Drawing.Size(0, 0);
-            this.alphaGradientPanel15.GradientWrapMode = System.Drawing.Drawing2D.WrapMode.Tile;
-            this.alphaGradientPanel15.Grayscale = false;
-            this.alphaGradientPanel15.Image = null;
-            this.alphaGradientPanel15.ImageAlpha = 75;
-            this.alphaGradientPanel15.ImagePadding = new System.Windows.Forms.Padding(5);
-            this.alphaGradientPanel15.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
-            this.alphaGradientPanel15.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel15.Location = new System.Drawing.Point(1454, 204);
-            this.alphaGradientPanel15.Name = "alphaGradientPanel15";
-            this.alphaGradientPanel15.Rounded = true;
-            this.alphaGradientPanel15.Size = new System.Drawing.Size(435, 239);
-            this.alphaGradientPanel15.TabIndex = 0;
+            this.alphaGradientPanel11.Gradient = true;
+            this.alphaGradientPanel11.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.alphaGradientPanel11.GradientOffset = 1F;
+            this.alphaGradientPanel11.GradientSize = new System.Drawing.Size(0, 0);
+            this.alphaGradientPanel11.GradientWrapMode = System.Drawing.Drawing2D.WrapMode.Tile;
+            this.alphaGradientPanel11.Grayscale = false;
+            this.alphaGradientPanel11.Image = null;
+            this.alphaGradientPanel11.ImageAlpha = 75;
+            this.alphaGradientPanel11.ImagePadding = new System.Windows.Forms.Padding(5);
+            this.alphaGradientPanel11.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
+            this.alphaGradientPanel11.ImageSize = new System.Drawing.Size(48, 48);
+            this.alphaGradientPanel11.Location = new System.Drawing.Point(622, 219);
+            this.alphaGradientPanel11.Name = "alphaGradientPanel11";
+            this.alphaGradientPanel11.Rounded = true;
+            this.alphaGradientPanel11.Size = new System.Drawing.Size(435, 261);
+            this.alphaGradientPanel11.TabIndex = 16;
             // 
-            // colorWithAlpha29
+            // colorWithAlpha31
             // 
-            this.colorWithAlpha29.Alpha = 255;
-            this.colorWithAlpha29.Color = System.Drawing.Color.SteelBlue;
-            this.colorWithAlpha29.Parent = this.alphaGradientPanel15;
+            this.colorWithAlpha31.Alpha = 255;
+            this.colorWithAlpha31.Color = System.Drawing.Color.Black;
+            this.colorWithAlpha31.Parent = this.alphaGradientPanel11;
             // 
-            // colorWithAlpha30
+            // colorWithAlpha32
             // 
-            this.colorWithAlpha30.Alpha = 255;
-            this.colorWithAlpha30.Color = System.Drawing.Color.RoyalBlue;
-            this.colorWithAlpha30.Parent = this.alphaGradientPanel15;
-            // 
-            // iconPictureBox9
-            // 
-            this.iconPictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox9.IconChar = FontAwesome.Sharp.IconChar.Donate;
-            this.iconPictureBox9.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox9.IconSize = 85;
-            this.iconPictureBox9.Location = new System.Drawing.Point(328, 143);
-            this.iconPictureBox9.Name = "iconPictureBox9";
-            this.iconPictureBox9.Size = new System.Drawing.Size(85, 86);
-            this.iconPictureBox9.TabIndex = 8;
-            this.iconPictureBox9.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(120, 23);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(198, 26);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Total valor salario";
-            // 
-            // iconPictureBox10
-            // 
-            this.iconPictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox10.IconChar = FontAwesome.Sharp.IconChar.CalendarCheck;
-            this.iconPictureBox10.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox10.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconPictureBox10.IconSize = 60;
-            this.iconPictureBox10.Location = new System.Drawing.Point(259, 160);
-            this.iconPictureBox10.Name = "iconPictureBox10";
-            this.iconPictureBox10.Size = new System.Drawing.Size(68, 60);
-            this.iconPictureBox10.TabIndex = 9;
-            this.iconPictureBox10.TabStop = false;
-            // 
-            // lblTotalSalario
-            // 
-            this.lblTotalSalario.AutoSize = true;
-            this.lblTotalSalario.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
-            this.lblTotalSalario.ForeColor = System.Drawing.Color.White;
-            this.lblTotalSalario.Location = new System.Drawing.Point(135, 49);
-            this.lblTotalSalario.Name = "lblTotalSalario";
-            this.lblTotalSalario.Size = new System.Drawing.Size(95, 32);
-            this.lblTotalSalario.TabIndex = 3;
-            this.lblTotalSalario.Text = "label1";
-            // 
-            // iconPictureBox11
-            // 
-            this.iconPictureBox11.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox11.IconChar = FontAwesome.Sharp.IconChar.CalendarDays;
-            this.iconPictureBox11.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox11.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconPictureBox11.IconSize = 78;
-            this.iconPictureBox11.Location = new System.Drawing.Point(22, 109);
-            this.iconPictureBox11.Name = "iconPictureBox11";
-            this.iconPictureBox11.Size = new System.Drawing.Size(85, 78);
-            this.iconPictureBox11.TabIndex = 4;
-            this.iconPictureBox11.TabStop = false;
-            // 
-            // iconPictureBox12
-            // 
-            this.iconPictureBox12.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox12.IconChar = FontAwesome.Sharp.IconChar.SackDollar;
-            this.iconPictureBox12.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox12.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox12.IconSize = 85;
-            this.iconPictureBox12.Location = new System.Drawing.Point(22, 10);
-            this.iconPictureBox12.Name = "iconPictureBox12";
-            this.iconPictureBox12.Size = new System.Drawing.Size(85, 86);
-            this.iconPictureBox12.TabIndex = 5;
-            this.iconPictureBox12.TabStop = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(122, 115);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(235, 23);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Total de dias trabajados";
-            // 
-            // lblDiasTotales
-            // 
-            this.lblDiasTotales.AutoSize = true;
-            this.lblDiasTotales.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.lblDiasTotales.ForeColor = System.Drawing.Color.White;
-            this.lblDiasTotales.Location = new System.Drawing.Point(137, 141);
-            this.lblDiasTotales.Name = "lblDiasTotales";
-            this.lblDiasTotales.Size = new System.Drawing.Size(58, 19);
-            this.lblDiasTotales.TabIndex = 7;
-            this.lblDiasTotales.Text = "label1";
+            this.colorWithAlpha32.Alpha = 255;
+            this.colorWithAlpha32.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.colorWithAlpha32.Parent = this.alphaGradientPanel11;
             // 
             // alphaGradientPanel14
             // 
@@ -675,7 +612,7 @@
             this.alphaGradientPanel14.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel14.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel14.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel14.Location = new System.Drawing.Point(1005, 204);
+            this.alphaGradientPanel14.Location = new System.Drawing.Point(623, 204);
             this.alphaGradientPanel14.Name = "alphaGradientPanel14";
             this.alphaGradientPanel14.Rounded = true;
             this.alphaGradientPanel14.Size = new System.Drawing.Size(435, 239);
@@ -839,7 +776,7 @@
             this.panel11.Controls.Add(this.chGanancia);
             this.panel11.Location = new System.Drawing.Point(95, 197);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(889, 283);
+            this.panel11.Size = new System.Drawing.Size(506, 283);
             this.panel11.TabIndex = 1;
             // 
             // chGanancia
@@ -910,7 +847,7 @@
             series3.Name = "Series1";
             series3.YValuesPerPoint = 2;
             this.chGanancia.Series.Add(series3);
-            this.chGanancia.Size = new System.Drawing.Size(887, 258);
+            this.chGanancia.Size = new System.Drawing.Size(500, 258);
             this.chGanancia.TabIndex = 6;
             title3.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title3.ForeColor = System.Drawing.Color.Gainsboro;
@@ -944,7 +881,7 @@
             this.alphaGradientPanel7.Location = new System.Drawing.Point(98, 204);
             this.alphaGradientPanel7.Name = "alphaGradientPanel7";
             this.alphaGradientPanel7.Rounded = true;
-            this.alphaGradientPanel7.Size = new System.Drawing.Size(883, 330);
+            this.alphaGradientPanel7.Size = new System.Drawing.Size(500, 330);
             this.alphaGradientPanel7.TabIndex = 6;
             // 
             // colorWithAlpha9
@@ -982,10 +919,10 @@
             this.alphaGradientPanel6.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel6.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel6.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel6.Location = new System.Drawing.Point(547, 39);
+            this.alphaGradientPanel6.Location = new System.Drawing.Point(415, 36);
             this.alphaGradientPanel6.Name = "alphaGradientPanel6";
             this.alphaGradientPanel6.Rounded = true;
-            this.alphaGradientPanel6.Size = new System.Drawing.Size(435, 159);
+            this.alphaGradientPanel6.Size = new System.Drawing.Size(313, 159);
             this.alphaGradientPanel6.TabIndex = 19;
             // 
             // colorWithAlpha37
@@ -1027,10 +964,10 @@
             this.alphaGradientPanel2.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel2.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel2.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel2.Location = new System.Drawing.Point(549, 29);
+            this.alphaGradientPanel2.Location = new System.Drawing.Point(417, 26);
             this.alphaGradientPanel2.Name = "alphaGradientPanel2";
             this.alphaGradientPanel2.Rounded = true;
-            this.alphaGradientPanel2.Size = new System.Drawing.Size(435, 134);
+            this.alphaGradientPanel2.Size = new System.Drawing.Size(313, 134);
             this.alphaGradientPanel2.TabIndex = 10;
             // 
             // colorWithAlpha17
@@ -1118,10 +1055,10 @@
             this.alphaGradientPanel16.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel16.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel16.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel16.Location = new System.Drawing.Point(1002, 39);
+            this.alphaGradientPanel16.Location = new System.Drawing.Point(741, 35);
             this.alphaGradientPanel16.Name = "alphaGradientPanel16";
             this.alphaGradientPanel16.Rounded = true;
-            this.alphaGradientPanel16.Size = new System.Drawing.Size(435, 159);
+            this.alphaGradientPanel16.Size = new System.Drawing.Size(313, 159);
             this.alphaGradientPanel16.TabIndex = 18;
             // 
             // colorWithAlpha35
@@ -1163,10 +1100,10 @@
             this.alphaGradientPanel3.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel3.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel3.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel3.Location = new System.Drawing.Point(1002, 31);
+            this.alphaGradientPanel3.Location = new System.Drawing.Point(741, 30);
             this.alphaGradientPanel3.Name = "alphaGradientPanel3";
             this.alphaGradientPanel3.Rounded = true;
-            this.alphaGradientPanel3.Size = new System.Drawing.Size(435, 134);
+            this.alphaGradientPanel3.Size = new System.Drawing.Size(313, 130);
             this.alphaGradientPanel3.TabIndex = 11;
             // 
             // colorWithAlpha19
@@ -1239,7 +1176,7 @@
             this.panel10.Controls.Add(this.chEmplMasLiquidados);
             this.panel10.Location = new System.Drawing.Point(98, 529);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(888, 318);
+            this.panel10.Size = new System.Drawing.Size(500, 249);
             this.panel10.TabIndex = 1;
             // 
             // label1
@@ -1286,7 +1223,7 @@
             series4.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             series4.Name = "Series1";
             this.chEmplMasLiquidados.Series.Add(series4);
-            this.chEmplMasLiquidados.Size = new System.Drawing.Size(886, 318);
+            this.chEmplMasLiquidados.Size = new System.Drawing.Size(497, 252);
             this.chEmplMasLiquidados.TabIndex = 2;
             title4.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title4.ForeColor = System.Drawing.Color.Gainsboro;
@@ -1320,7 +1257,7 @@
             this.alphaGradientPanel8.Location = new System.Drawing.Point(101, 529);
             this.alphaGradientPanel8.Name = "alphaGradientPanel8";
             this.alphaGradientPanel8.Rounded = true;
-            this.alphaGradientPanel8.Size = new System.Drawing.Size(882, 364);
+            this.alphaGradientPanel8.Size = new System.Drawing.Size(494, 295);
             this.alphaGradientPanel8.TabIndex = 7;
             // 
             // colorWithAlpha11
@@ -1362,10 +1299,10 @@
             this.alphaGradientPanel4.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel4.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel4.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel4.Location = new System.Drawing.Point(1455, 30);
+            this.alphaGradientPanel4.Location = new System.Drawing.Point(1073, 30);
             this.alphaGradientPanel4.Name = "alphaGradientPanel4";
             this.alphaGradientPanel4.Rounded = true;
-            this.alphaGradientPanel4.Size = new System.Drawing.Size(435, 134);
+            this.alphaGradientPanel4.Size = new System.Drawing.Size(429, 132);
             this.alphaGradientPanel4.TabIndex = 0;
             // 
             // colorWithAlpha21
@@ -1458,7 +1395,7 @@
             this.alphaGradientPanel1.Location = new System.Drawing.Point(93, 28);
             this.alphaGradientPanel1.Name = "alphaGradientPanel1";
             this.alphaGradientPanel1.Rounded = true;
-            this.alphaGradientPanel1.Size = new System.Drawing.Size(435, 134);
+            this.alphaGradientPanel1.Size = new System.Drawing.Size(313, 132);
             this.alphaGradientPanel1.TabIndex = 9;
             // 
             // colorWithAlpha13
@@ -1545,7 +1482,7 @@
             this.alphaGradientPanel9.ImagePadding = new System.Windows.Forms.Padding(5);
             this.alphaGradientPanel9.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
             this.alphaGradientPanel9.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel9.Location = new System.Drawing.Point(1455, 219);
+            this.alphaGradientPanel9.Location = new System.Drawing.Point(1073, 219);
             this.alphaGradientPanel9.Name = "alphaGradientPanel9";
             this.alphaGradientPanel9.Rounded = true;
             this.alphaGradientPanel9.Size = new System.Drawing.Size(435, 261);
@@ -1562,6 +1499,151 @@
             this.colorWithAlpha40.Alpha = 255;
             this.colorWithAlpha40.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.colorWithAlpha40.Parent = this.alphaGradientPanel9;
+            // 
+            // alphaGradientPanel15
+            // 
+            this.alphaGradientPanel15.BackColor = System.Drawing.Color.Transparent;
+            this.alphaGradientPanel15.Border = false;
+            this.alphaGradientPanel15.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.alphaGradientPanel15.Colors.Add(this.colorWithAlpha29);
+            this.alphaGradientPanel15.Colors.Add(this.colorWithAlpha30);
+            this.alphaGradientPanel15.ContentPadding = new System.Windows.Forms.Padding(0);
+            this.alphaGradientPanel15.Controls.Add(this.iconPictureBox9);
+            this.alphaGradientPanel15.Controls.Add(this.label2);
+            this.alphaGradientPanel15.Controls.Add(this.iconPictureBox10);
+            this.alphaGradientPanel15.Controls.Add(this.lblTotalSalario);
+            this.alphaGradientPanel15.Controls.Add(this.iconPictureBox11);
+            this.alphaGradientPanel15.Controls.Add(this.iconPictureBox12);
+            this.alphaGradientPanel15.Controls.Add(this.label7);
+            this.alphaGradientPanel15.Controls.Add(this.lblDiasTotales);
+            this.alphaGradientPanel15.CornerRadius = 20;
+            this.alphaGradientPanel15.Corners = ((System.Windows.Forms.Corner)((((System.Windows.Forms.Corner.TopLeft | System.Windows.Forms.Corner.TopRight) 
+            | System.Windows.Forms.Corner.BottomLeft) 
+            | System.Windows.Forms.Corner.BottomRight)));
+            this.alphaGradientPanel15.Gradient = true;
+            this.alphaGradientPanel15.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.alphaGradientPanel15.GradientOffset = 1F;
+            this.alphaGradientPanel15.GradientSize = new System.Drawing.Size(0, 0);
+            this.alphaGradientPanel15.GradientWrapMode = System.Drawing.Drawing2D.WrapMode.Tile;
+            this.alphaGradientPanel15.Grayscale = false;
+            this.alphaGradientPanel15.Image = null;
+            this.alphaGradientPanel15.ImageAlpha = 75;
+            this.alphaGradientPanel15.ImagePadding = new System.Windows.Forms.Padding(5);
+            this.alphaGradientPanel15.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
+            this.alphaGradientPanel15.ImageSize = new System.Drawing.Size(48, 48);
+            this.alphaGradientPanel15.Location = new System.Drawing.Point(1072, 204);
+            this.alphaGradientPanel15.Name = "alphaGradientPanel15";
+            this.alphaGradientPanel15.Rounded = true;
+            this.alphaGradientPanel15.Size = new System.Drawing.Size(435, 239);
+            this.alphaGradientPanel15.TabIndex = 0;
+            // 
+            // colorWithAlpha29
+            // 
+            this.colorWithAlpha29.Alpha = 255;
+            this.colorWithAlpha29.Color = System.Drawing.Color.SteelBlue;
+            this.colorWithAlpha29.Parent = this.alphaGradientPanel15;
+            // 
+            // colorWithAlpha30
+            // 
+            this.colorWithAlpha30.Alpha = 255;
+            this.colorWithAlpha30.Color = System.Drawing.Color.RoyalBlue;
+            this.colorWithAlpha30.Parent = this.alphaGradientPanel15;
+            // 
+            // iconPictureBox9
+            // 
+            this.iconPictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox9.IconChar = FontAwesome.Sharp.IconChar.Donate;
+            this.iconPictureBox9.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox9.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox9.IconSize = 85;
+            this.iconPictureBox9.Location = new System.Drawing.Point(328, 143);
+            this.iconPictureBox9.Name = "iconPictureBox9";
+            this.iconPictureBox9.Size = new System.Drawing.Size(85, 86);
+            this.iconPictureBox9.TabIndex = 8;
+            this.iconPictureBox9.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(120, 23);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(198, 26);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Total valor salario";
+            // 
+            // iconPictureBox10
+            // 
+            this.iconPictureBox10.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox10.IconChar = FontAwesome.Sharp.IconChar.CalendarCheck;
+            this.iconPictureBox10.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox10.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconPictureBox10.IconSize = 60;
+            this.iconPictureBox10.Location = new System.Drawing.Point(259, 160);
+            this.iconPictureBox10.Name = "iconPictureBox10";
+            this.iconPictureBox10.Size = new System.Drawing.Size(68, 60);
+            this.iconPictureBox10.TabIndex = 9;
+            this.iconPictureBox10.TabStop = false;
+            // 
+            // lblTotalSalario
+            // 
+            this.lblTotalSalario.AutoSize = true;
+            this.lblTotalSalario.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.lblTotalSalario.ForeColor = System.Drawing.Color.White;
+            this.lblTotalSalario.Location = new System.Drawing.Point(135, 49);
+            this.lblTotalSalario.Name = "lblTotalSalario";
+            this.lblTotalSalario.Size = new System.Drawing.Size(95, 32);
+            this.lblTotalSalario.TabIndex = 3;
+            this.lblTotalSalario.Text = "label1";
+            // 
+            // iconPictureBox11
+            // 
+            this.iconPictureBox11.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox11.IconChar = FontAwesome.Sharp.IconChar.CalendarDays;
+            this.iconPictureBox11.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox11.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconPictureBox11.IconSize = 78;
+            this.iconPictureBox11.Location = new System.Drawing.Point(22, 109);
+            this.iconPictureBox11.Name = "iconPictureBox11";
+            this.iconPictureBox11.Size = new System.Drawing.Size(85, 78);
+            this.iconPictureBox11.TabIndex = 4;
+            this.iconPictureBox11.TabStop = false;
+            // 
+            // iconPictureBox12
+            // 
+            this.iconPictureBox12.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox12.IconChar = FontAwesome.Sharp.IconChar.SackDollar;
+            this.iconPictureBox12.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox12.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox12.IconSize = 85;
+            this.iconPictureBox12.Location = new System.Drawing.Point(22, 10);
+            this.iconPictureBox12.Name = "iconPictureBox12";
+            this.iconPictureBox12.Size = new System.Drawing.Size(85, 86);
+            this.iconPictureBox12.TabIndex = 5;
+            this.iconPictureBox12.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(122, 115);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(235, 23);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Total de dias trabajados";
+            // 
+            // lblDiasTotales
+            // 
+            this.lblDiasTotales.AutoSize = true;
+            this.lblDiasTotales.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.lblDiasTotales.ForeColor = System.Drawing.Color.White;
+            this.lblDiasTotales.Location = new System.Drawing.Point(137, 141);
+            this.lblDiasTotales.Name = "lblDiasTotales";
+            this.lblDiasTotales.Size = new System.Drawing.Size(58, 19);
+            this.lblDiasTotales.TabIndex = 7;
+            this.lblDiasTotales.Text = "label1";
             // 
             // colorWithAlpha1
             // 
@@ -1635,93 +1717,11 @@
             this.colorWithAlpha34.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.colorWithAlpha34.Parent = null;
             // 
-            // alphaGradientPanel12
-            // 
-            this.alphaGradientPanel12.BackColor = System.Drawing.Color.Transparent;
-            this.alphaGradientPanel12.Border = false;
-            this.alphaGradientPanel12.BorderColor = System.Drawing.SystemColors.ActiveBorder;
-            this.alphaGradientPanel12.Colors.Add(this.colorWithAlpha41);
-            this.alphaGradientPanel12.Colors.Add(this.colorWithAlpha42);
-            this.alphaGradientPanel12.ContentPadding = new System.Windows.Forms.Padding(0);
-            this.alphaGradientPanel12.CornerRadius = 20;
-            this.alphaGradientPanel12.Corners = ((System.Windows.Forms.Corner)((((System.Windows.Forms.Corner.TopLeft | System.Windows.Forms.Corner.TopRight) 
-            | System.Windows.Forms.Corner.BottomLeft) 
-            | System.Windows.Forms.Corner.BottomRight)));
-            this.alphaGradientPanel12.Gradient = true;
-            this.alphaGradientPanel12.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.alphaGradientPanel12.GradientOffset = 1F;
-            this.alphaGradientPanel12.GradientSize = new System.Drawing.Size(0, 0);
-            this.alphaGradientPanel12.GradientWrapMode = System.Drawing.Drawing2D.WrapMode.Tile;
-            this.alphaGradientPanel12.Grayscale = false;
-            this.alphaGradientPanel12.Image = null;
-            this.alphaGradientPanel12.ImageAlpha = 75;
-            this.alphaGradientPanel12.ImagePadding = new System.Windows.Forms.Padding(5);
-            this.alphaGradientPanel12.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
-            this.alphaGradientPanel12.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel12.Location = new System.Drawing.Point(1005, 568);
-            this.alphaGradientPanel12.Name = "alphaGradientPanel12";
-            this.alphaGradientPanel12.Rounded = true;
-            this.alphaGradientPanel12.Size = new System.Drawing.Size(431, 325);
-            this.alphaGradientPanel12.TabIndex = 21;
-            // 
-            // colorWithAlpha41
-            // 
-            this.colorWithAlpha41.Alpha = 255;
-            this.colorWithAlpha41.Color = System.Drawing.Color.Black;
-            this.colorWithAlpha41.Parent = this.alphaGradientPanel12;
-            // 
-            // colorWithAlpha42
-            // 
-            this.colorWithAlpha42.Alpha = 255;
-            this.colorWithAlpha42.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.colorWithAlpha42.Parent = this.alphaGradientPanel12;
-            // 
-            // alphaGradientPanel17
-            // 
-            this.alphaGradientPanel17.BackColor = System.Drawing.Color.Transparent;
-            this.alphaGradientPanel17.Border = false;
-            this.alphaGradientPanel17.BorderColor = System.Drawing.SystemColors.ActiveBorder;
-            this.alphaGradientPanel17.Colors.Add(this.colorWithAlpha43);
-            this.alphaGradientPanel17.Colors.Add(this.colorWithAlpha44);
-            this.alphaGradientPanel17.ContentPadding = new System.Windows.Forms.Padding(0);
-            this.alphaGradientPanel17.CornerRadius = 20;
-            this.alphaGradientPanel17.Corners = ((System.Windows.Forms.Corner)((((System.Windows.Forms.Corner.TopLeft | System.Windows.Forms.Corner.TopRight) 
-            | System.Windows.Forms.Corner.BottomLeft) 
-            | System.Windows.Forms.Corner.BottomRight)));
-            this.alphaGradientPanel17.Gradient = true;
-            this.alphaGradientPanel17.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.alphaGradientPanel17.GradientOffset = 1F;
-            this.alphaGradientPanel17.GradientSize = new System.Drawing.Size(0, 0);
-            this.alphaGradientPanel17.GradientWrapMode = System.Drawing.Drawing2D.WrapMode.Tile;
-            this.alphaGradientPanel17.Grayscale = false;
-            this.alphaGradientPanel17.Image = null;
-            this.alphaGradientPanel17.ImageAlpha = 75;
-            this.alphaGradientPanel17.ImagePadding = new System.Windows.Forms.Padding(5);
-            this.alphaGradientPanel17.ImagePosition = System.Windows.Forms.ImagePosition.BottomRight;
-            this.alphaGradientPanel17.ImageSize = new System.Drawing.Size(48, 48);
-            this.alphaGradientPanel17.Location = new System.Drawing.Point(1463, 568);
-            this.alphaGradientPanel17.Name = "alphaGradientPanel17";
-            this.alphaGradientPanel17.Rounded = true;
-            this.alphaGradientPanel17.Size = new System.Drawing.Size(425, 325);
-            this.alphaGradientPanel17.TabIndex = 22;
-            // 
-            // colorWithAlpha43
-            // 
-            this.colorWithAlpha43.Alpha = 255;
-            this.colorWithAlpha43.Color = System.Drawing.Color.Black;
-            this.colorWithAlpha43.Parent = this.alphaGradientPanel17;
-            // 
-            // colorWithAlpha44
-            // 
-            this.colorWithAlpha44.Alpha = 255;
-            this.colorWithAlpha44.Color = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.colorWithAlpha44.Parent = this.alphaGradientPanel17;
-            // 
             // mdPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 944);
+            this.ClientSize = new System.Drawing.Size(1529, 827);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "mdPrincipal";
@@ -1732,12 +1732,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.chValorHoras)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chHorasRealizadas)).EndInit();
-            this.alphaGradientPanel15.ResumeLayout(false);
-            this.alphaGradientPanel15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox12)).EndInit();
             this.alphaGradientPanel14.ResumeLayout(false);
             this.alphaGradientPanel14.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
@@ -1765,6 +1759,12 @@
             this.alphaGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.icoEmpleado)).EndInit();
+            this.alphaGradientPanel15.ResumeLayout(false);
+            this.alphaGradientPanel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox12)).EndInit();
             this.ResumeLayout(false);
 
         }
