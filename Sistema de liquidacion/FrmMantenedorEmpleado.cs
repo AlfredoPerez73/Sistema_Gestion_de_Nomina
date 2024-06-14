@@ -40,7 +40,7 @@ namespace Sistema_de_liquidacion
                         Salario = Convert.ToDecimal(txtSalario.Texts),
                         TipoContrato = cboContrato.Texts.ToUpper(),
                     },
-                    Estado = cboEstado.Texts.ToUpper(),
+                    Estado = "ACTIVO",
                 };
                 return producto;
             } catch (FormatException)
@@ -150,9 +150,12 @@ namespace Sistema_de_liquidacion
 
         private void Nuevo()
         {
-            txtDocumento.Texts = "";
-            txtNombreProducto.Texts = "";
-            txtSalario.Texts = "";
+            txtDocumento.Texts = "Documento";
+            txtNombreProducto.Texts = "Nombre";
+            txtSalario.Texts = "Salario";
+            cboCargos.Texts = "Cargos desempeñados";
+            cboContrato.Texts = "Contrato";
+            cboEstado.Texts = "Estado";
             txtDocumento.Focus();
         }
 
@@ -226,12 +229,6 @@ namespace Sistema_de_liquidacion
             cboFiltroEstado.Items.Add("ACTIVO");
             cboFiltroEstado.Items.Add("INACTIVO");
             cboFiltroEstado.SelectedIndex = 0;
-            //-------------------------------------
-            cboEstado.Items.Clear();
-            cboEstado.Items.Add("");
-            cboEstado.Items.Add("ACTIVO");
-            cboEstado.Items.Add("INACTIVO");
-            cboEstado.SelectedIndex = 0;
         }
 
         private void CargarContratos()
@@ -270,14 +267,15 @@ namespace Sistema_de_liquidacion
             CargarEstados();
             CargarContratos();
             CargarCargos();
-            BorderRadiusPanel(panel1, 20);
-            BorderRadiusPanel(panel2, 20);
+            BorderRadiusPanel(panel1, 30);
+            BorderRadiusPanel(panel2, 30);
             BorderRadiusPanel(panel3, 15);
             BorderRadiusPanel(panel4, 20);
             BorderRadiusPanel(panel5, 20);
             BorderRadiusPanel(panel8, 20);
             BorderRadiusPanel(panel9, 20);
 
+            Nuevo();
             CargarRegistro();
             MessageTable();
         }
@@ -418,7 +416,7 @@ namespace Sistema_de_liquidacion
             if (txtDocumento.Texts == "Documento")
             {
                 txtDocumento.Texts = "";
-                txtDocumento.ForeColor = Color.LightGray;
+                txtDocumento.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -427,7 +425,7 @@ namespace Sistema_de_liquidacion
             if (txtDocumento.Texts == "")
             {
                 txtDocumento.Texts = "Documento";
-                txtDocumento.ForeColor = Color.LightGray;
+                txtDocumento.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -436,7 +434,7 @@ namespace Sistema_de_liquidacion
             if (txtNombreProducto.Texts == "Nombre")
             {
                 txtNombreProducto.Texts = "";
-                txtNombreProducto.ForeColor = Color.LightGray;
+                txtNombreProducto.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -445,7 +443,7 @@ namespace Sistema_de_liquidacion
             if (txtNombreProducto.Texts == "")
             {
                 txtNombreProducto.Texts = "Nombre";
-                txtNombreProducto.ForeColor = Color.LightGray;
+                txtNombreProducto.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -454,7 +452,7 @@ namespace Sistema_de_liquidacion
             if (txtSalario.Texts == "Salario")
             {
                 txtSalario.Texts = "";
-                txtSalario.ForeColor = Color.LightGray;
+                txtSalario.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -463,7 +461,7 @@ namespace Sistema_de_liquidacion
             if (txtSalario.Texts == "")
             {
                 txtSalario.Texts = "Salario";
-                txtSalario.ForeColor = Color.LightGray;
+                txtSalario.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 

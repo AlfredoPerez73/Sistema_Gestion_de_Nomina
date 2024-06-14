@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
@@ -70,9 +70,9 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1529, 827);
+            this.panel1.Size = new System.Drawing.Size(1942, 1018);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -86,9 +86,9 @@
             this.panel2.Controls.Add(this.label19);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1529, 827);
+            this.panel2.Size = new System.Drawing.Size(1942, 1018);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -97,10 +97,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(163, 33);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(167, 41);
+            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(209, 26);
+            this.label8.Size = new System.Drawing.Size(264, 34);
             this.label8.TabIndex = 28;
             this.label8.Text = "Gestion de cargos";
             // 
@@ -111,9 +111,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(162, 474);
+            this.label2.Location = new System.Drawing.Point(166, 583);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(260, 32);
+            this.label2.Size = new System.Drawing.Size(325, 40);
             this.label2.TabIndex = 50;
             this.label2.Text = "Registro de cargos";
             // 
@@ -123,9 +124,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel9.Controls.Add(this.txtBuscar);
-            this.panel9.Location = new System.Drawing.Point(168, 62);
+            this.panel9.Location = new System.Drawing.Point(174, 76);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1312, 51);
+            this.panel9.Size = new System.Drawing.Size(2350, 63);
             this.panel9.TabIndex = 49;
             // 
             // txtBuscar
@@ -137,15 +139,15 @@
             this.txtBuscar.BorderSize = 2;
             this.txtBuscar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.ForeColor = System.Drawing.Color.LightGray;
-            this.txtBuscar.Location = new System.Drawing.Point(134, 6);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(6);
+            this.txtBuscar.Location = new System.Drawing.Point(179, 7);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.txtBuscar.Multiline = false;
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
+            this.txtBuscar.Padding = new System.Windows.Forms.Padding(21, 14, 21, 14);
             this.txtBuscar.PasswordChar = false;
             this.txtBuscar.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtBuscar.PlaceholderText = "";
-            this.txtBuscar.Size = new System.Drawing.Size(487, 40);
+            this.txtBuscar.Size = new System.Drawing.Size(649, 49);
             this.txtBuscar.TabIndex = 28;
             this.txtBuscar.Texts = "Buscar:";
             this.txtBuscar.UnderlinedStyle = false;
@@ -160,10 +162,10 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel4.Controls.Add(this.lbltbl);
             this.panel4.Controls.Add(this.tblRegistroCargo);
-            this.panel4.Location = new System.Drawing.Point(168, 511);
-            this.panel4.Margin = new System.Windows.Forms.Padding(5);
+            this.panel4.Location = new System.Drawing.Point(174, 629);
+            this.panel4.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1312, 288);
+            this.panel4.Size = new System.Drawing.Size(2350, 354);
             this.panel4.TabIndex = 31;
             // 
             // lbltbl
@@ -172,10 +174,10 @@
             this.lbltbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.lbltbl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltbl.ForeColor = System.Drawing.Color.White;
-            this.lbltbl.Location = new System.Drawing.Point(657, 118);
-            this.lbltbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbltbl.Location = new System.Drawing.Point(770, 152);
+            this.lbltbl.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbltbl.Name = "lbltbl";
-            this.lbltbl.Size = new System.Drawing.Size(190, 17);
+            this.lbltbl.Size = new System.Drawing.Size(235, 19);
             this.lbltbl.TabIndex = 25;
             this.lbltbl.Text = "No hay registros de cargos.";
             // 
@@ -187,14 +189,14 @@
             this.tblRegistroCargo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tblRegistroCargo.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.tblRegistroCargo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblRegistroCargo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblRegistroCargo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.tblRegistroCargo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tblRegistroCargo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSeleccionar,
@@ -207,19 +209,19 @@
             this.IdCargo,
             this.Cargo,
             this.FechaRegistro});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tblRegistroCargo.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tblRegistroCargo.DefaultCellStyle = dataGridViewCellStyle6;
             this.tblRegistroCargo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblRegistroCargo.EnableHeadersVisualStyles = false;
             this.tblRegistroCargo.GridColor = System.Drawing.Color.White;
             this.tblRegistroCargo.Location = new System.Drawing.Point(0, 0);
-            this.tblRegistroCargo.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tblRegistroCargo.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
             this.tblRegistroCargo.Name = "tblRegistroCargo";
             this.tblRegistroCargo.ReadOnly = true;
             this.tblRegistroCargo.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -227,7 +229,7 @@
             this.tblRegistroCargo.RowHeadersWidth = 51;
             this.tblRegistroCargo.RowTemplate.Height = 24;
             this.tblRegistroCargo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tblRegistroCargo.Size = new System.Drawing.Size(1312, 288);
+            this.tblRegistroCargo.Size = new System.Drawing.Size(2350, 354);
             this.tblRegistroCargo.TabIndex = 19;
             this.tblRegistroCargo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblRegistroCargo_CellContentClick);
             this.tblRegistroCargo.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.tblRegistroCargo_CellPainting);
@@ -244,6 +246,7 @@
             // btnSEliminar
             // 
             this.btnSEliminar.HeaderText = "";
+            this.btnSEliminar.MinimumWidth = 6;
             this.btnSEliminar.Name = "btnSEliminar";
             this.btnSEliminar.ReadOnly = true;
             this.btnSEliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -253,39 +256,51 @@
             // Column1
             // 
             this.Column1.HeaderText = "";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
+            this.Column1.Width = 125;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
+            this.Column4.Width = 125;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
+            this.Column2.Width = 125;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "";
+            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
+            this.Column5.Width = 125;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "";
+            this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
+            this.Column6.Width = 125;
             // 
             // IdCargo
             // 
             this.IdCargo.HeaderText = "Id de cargo";
+            this.IdCargo.MinimumWidth = 6;
             this.IdCargo.Name = "IdCargo";
             this.IdCargo.ReadOnly = true;
             this.IdCargo.Visible = false;
+            this.IdCargo.Width = 125;
             // 
             // Cargo
             // 
@@ -298,6 +313,7 @@
             // FechaRegistro
             // 
             this.FechaRegistro.HeaderText = "Fecha de registro";
+            this.FechaRegistro.MinimumWidth = 6;
             this.FechaRegistro.Name = "FechaRegistro";
             this.FechaRegistro.ReadOnly = true;
             this.FechaRegistro.Width = 200;
@@ -313,11 +329,12 @@
             this.panel3.Controls.Add(this.btnLimpiar);
             this.panel3.Controls.Add(this.btnGuardar);
             this.panel3.Controls.Add(this.txtIdCargo);
-            this.panel3.Location = new System.Drawing.Point(168, 181);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(174, 223);
+            this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1312, 203);
+            this.panel3.Size = new System.Drawing.Size(2350, 250);
             this.panel3.TabIndex = 30;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // txtCargo
             // 
@@ -327,16 +344,16 @@
             this.txtCargo.BorderRadius = 15;
             this.txtCargo.BorderSize = 2;
             this.txtCargo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCargo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtCargo.Location = new System.Drawing.Point(385, 45);
-            this.txtCargo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCargo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.txtCargo.Location = new System.Drawing.Point(820, 74);
+            this.txtCargo.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtCargo.Multiline = false;
             this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Padding = new System.Windows.Forms.Padding(12, 9, 12, 9);
+            this.txtCargo.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
             this.txtCargo.PasswordChar = false;
             this.txtCargo.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtCargo.PlaceholderText = "";
-            this.txtCargo.Size = new System.Drawing.Size(250, 38);
+            this.txtCargo.Size = new System.Drawing.Size(333, 44);
             this.txtCargo.TabIndex = 31;
             this.txtCargo.Texts = "Cargo";
             this.txtCargo.UnderlinedStyle = false;
@@ -348,7 +365,7 @@
             this.btnModificar.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnModificar.BackgroundColor = System.Drawing.Color.RoyalBlue;
             this.btnModificar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnModificar.BorderRadius = 17;
+            this.btnModificar.BorderRadius = 25;
             this.btnModificar.BorderSize = 0;
             this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnModificar.FlatAppearance.BorderSize = 0;
@@ -356,10 +373,10 @@
             this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.Color.White;
             this.btnModificar.Image = global::Sistema_de_liquidacion.Properties.Resources.cuadrado_de_la_pluma;
-            this.btnModificar.Location = new System.Drawing.Point(860, 45);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnModificar.Location = new System.Drawing.Point(1726, 55);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(5);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(204, 51);
+            this.btnModificar.Size = new System.Drawing.Size(272, 63);
             this.btnModificar.TabIndex = 29;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -373,7 +390,7 @@
             this.btnLimpiar.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnLimpiar.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.btnLimpiar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnLimpiar.BorderRadius = 17;
+            this.btnLimpiar.BorderRadius = 25;
             this.btnLimpiar.BorderSize = 0;
             this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpiar.FlatAppearance.BorderSize = 0;
@@ -381,10 +398,10 @@
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
             this.btnLimpiar.Image = global::Sistema_de_liquidacion.Properties.Resources.escoba;
-            this.btnLimpiar.Location = new System.Drawing.Point(754, 107);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLimpiar.Location = new System.Drawing.Point(1584, 132);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(5);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(204, 51);
+            this.btnLimpiar.Size = new System.Drawing.Size(272, 63);
             this.btnLimpiar.TabIndex = 15;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -398,7 +415,7 @@
             this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnGuardar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnGuardar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnGuardar.BorderRadius = 17;
+            this.btnGuardar.BorderRadius = 25;
             this.btnGuardar.BorderSize = 0;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
@@ -406,10 +423,10 @@
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Image = global::Sistema_de_liquidacion.Properties.Resources.disk;
-            this.btnGuardar.Location = new System.Drawing.Point(643, 45);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuardar.Location = new System.Drawing.Point(1444, 55);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(204, 51);
+            this.btnGuardar.Size = new System.Drawing.Size(272, 63);
             this.btnGuardar.TabIndex = 14;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -428,15 +445,15 @@
             this.txtIdCargo.BorderSize = 2;
             this.txtIdCargo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdCargo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtIdCargo.Location = new System.Drawing.Point(-274, 45);
-            this.txtIdCargo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtIdCargo.Location = new System.Drawing.Point(236, 55);
+            this.txtIdCargo.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtIdCargo.Multiline = false;
             this.txtIdCargo.Name = "txtIdCargo";
-            this.txtIdCargo.Padding = new System.Windows.Forms.Padding(12, 9, 12, 9);
+            this.txtIdCargo.Padding = new System.Windows.Forms.Padding(16, 11, 16, 11);
             this.txtIdCargo.PasswordChar = false;
             this.txtIdCargo.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtIdCargo.PlaceholderText = "";
-            this.txtIdCargo.Size = new System.Drawing.Size(250, 38);
+            this.txtIdCargo.Size = new System.Drawing.Size(333, 44);
             this.txtIdCargo.TabIndex = 10;
             this.txtIdCargo.Texts = "Id de Cargo";
             this.txtIdCargo.UnderlinedStyle = false;
@@ -446,25 +463,25 @@
             // 
             // label19
             // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(162, 130);
+            this.label19.Location = new System.Drawing.Point(166, 178);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(242, 32);
+            this.label19.Size = new System.Drawing.Size(304, 40);
             this.label19.TabIndex = 9;
             this.label19.Text = "Detalle del cargo";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // FrmGestionCargo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1529, 827);
+            this.ClientSize = new System.Drawing.Size(1942, 1018);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmGestionCargo";
             this.Text = "Gestion de cargos";
             this.Load += new System.EventHandler(this.FrmGestionCargo_Load);

@@ -769,3 +769,110 @@ C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema_Gestion_de_No
 C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema_Gestion_de_Nomina_V1.1\Sistema de liquidacion\obj\Debug\Sistema de liquidacion GUI.csproj.CopyComplete
 C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema_Gestion_de_Nomina_V1.1\Sistema de liquidacion\obj\Debug\Sistema de liquidacion.exe
 C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema_Gestion_de_Nomina_V1.1\Sistema de liquidacion\obj\Debug\Sistema de liquidacion.pdb
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Sistema de liquidacion.exe.config
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Sistema de liquidacion.exe
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Sistema de liquidacion.pdb
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\AlphaGradientPanel.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\CircularProgressBar.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Entidad.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.barcodes.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.bouncy-castle-connector.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.commons.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.forms.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.io.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.kernel.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.layout.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.pdfa.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.sign.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.styledxmlparser.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.svg.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itextsharp.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Logica.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\MicroCom.Runtime.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\RestSharp.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\RJCodeAdvance.RJControls.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Buffers.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.CodeDom.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Memory.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Text.Json.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Threading.Channels.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.ValueTuple.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Tmds.DBus.Protocol.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\WinFormAnimation.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Datos.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Entidad.pdb
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Logica.pdb
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\CircularProgressBar.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.barcodes.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.bouncy-castle-connector.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.commons.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.forms.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.io.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.kernel.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.layout.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.pdfa.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.sign.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.styledxmlparser.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itext.svg.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\itextsharp.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\RestSharp.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Buffers.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.CodeDom.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Memory.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Text.Json.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Threading.Channels.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\System.ValueTuple.xml
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\bin\Debug\Datos.pdb
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema de liquidacion GUI.csproj.AssemblyReference.cache
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.FrmGestionCargo.resources
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.FrmGestionPermiso.resources
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.FrmGestionRol.resources
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.FrmGestionUsuario.resources
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.FrmNomina.resources
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.FrmMantenedorEmpleado.resources
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.FrmGestionEmpleados.resources
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.FrmLogin.resources
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.FrmMenuPrincipal.resources
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.FrmReporte.resources
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.Modales.mdArchivo.resources
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.Modales.mdBienvenida.resources
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.Modales.mdEmpleado.resources
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.Modales.mdPrincipal.resources
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema_de_liquidacion.Properties.Resources.resources
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema de liquidacion GUI.csproj.GenerateResource.cache
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema de liquidacion GUI.csproj.CoreCompileInputs.cache
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema de liquidacion GUI.csproj.CopyComplete
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema de liquidacion.exe
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Sistema de liquidacion\obj\Debug\Sistema de liquidacion.pdb

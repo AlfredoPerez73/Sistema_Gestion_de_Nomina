@@ -63,3 +63,9 @@ C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema_Gestion_de_No
 C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema_Gestion_de_Nomina_V1.1\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
 C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema_Gestion_de_Nomina_V1.1\Entidad\obj\Debug\Entidad.dll
 C:\Users\Alfredo\Desktop\UPC\5to Semestre\PROGRAMACION III\Sistema_Gestion_de_Nomina_V1.1\Entidad\obj\Debug\Entidad.pdb
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Entidad\bin\Debug\Entidad.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Entidad\bin\Debug\Entidad.pdb
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Entidad\obj\Debug\Entidad.csproj.AssemblyReference.cache
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Entidad\obj\Debug\Entidad.dll
+C:\Users\Angie Zarate\Downloads\Sistema_Gestion_de_Nomina\Entidad\obj\Debug\Entidad.pdb

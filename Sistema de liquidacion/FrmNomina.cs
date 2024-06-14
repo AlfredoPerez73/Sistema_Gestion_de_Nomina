@@ -113,7 +113,7 @@ namespace Sistema_de_liquidacion
         {
             BorderRadiusPanel(panel2, 15);
             BorderRadiusPanel(panel3, 15);
-            BorderRadiusPanel(panel4, 20);
+            BorderRadiusPanel(panel4, 30);
             BorderRadiusPanel(panel5, 15);
             BorderRadiusPanel(panel6, 15);
             BorderRadiusPanel(panel9, 20);

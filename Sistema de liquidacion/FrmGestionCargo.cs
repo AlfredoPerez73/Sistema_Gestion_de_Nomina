@@ -145,8 +145,8 @@ namespace Sistema_de_liquidacion
 
         private void FrmGestionCargo_Load(object sender, EventArgs e)
         {
-            BorderRadiusPanel(panel3, 20);
-            BorderRadiusPanel(panel4, 20);
+            BorderRadiusPanel(panel3, 30);
+            BorderRadiusPanel(panel4, 30);
             BorderRadiusPanel(panel9, 20);
 
             CargarRegistro();
@@ -284,7 +284,7 @@ namespace Sistema_de_liquidacion
             if (txtIdCargo.Texts == "Id de Cargo")
             {
                 txtIdCargo.Texts = "";
-                txtIdCargo.ForeColor = Color.LightGray;
+                txtIdCargo.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -293,7 +293,7 @@ namespace Sistema_de_liquidacion
             if (txtIdCargo.Texts == "")
             {
                 txtIdCargo.Texts = "Id de Cargo";
-                txtIdCargo.ForeColor = Color.LightGray;
+                txtIdCargo.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -302,7 +302,7 @@ namespace Sistema_de_liquidacion
             if (txtCargo.Texts == "Cargo")
             {
                 txtCargo.Texts = "";
-                txtCargo.ForeColor = Color.LightGray;
+                txtCargo.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -311,7 +311,7 @@ namespace Sistema_de_liquidacion
             if (txtCargo.Texts == "Cargo")
             {
                 txtCargo.Texts = "";
-                txtCargo.ForeColor = Color.LightGray;
+                txtCargo.ForeColor = Color.FromArgb(31, 30, 68);
             }
         }
 
@@ -321,6 +321,16 @@ namespace Sistema_de_liquidacion
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
         {
 
         }

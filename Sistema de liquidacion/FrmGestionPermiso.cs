@@ -184,7 +184,7 @@ namespace Sistema_de_liquidacion
         {
             FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal(usuario);
 
-            BorderRadiusPanel(panel2, 20);
+            BorderRadiusPanel(panel2, 30);
             BorderRadiusPanel(panel3, 20);
             BorderRadiusPanel(panel4, 20);
             BorderRadiusPanel(panel5, 20);
