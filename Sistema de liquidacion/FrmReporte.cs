@@ -39,31 +39,39 @@ namespace Sistema_de_liquidacion
         
         private void VerArchio()
         {
-            if (Convert.ToInt32(txtIdReporte.Texts) != 0)
+            try
             {
-                int IdReporte = Convert.ToInt32(txtIdReporte.Texts);
-                reporte.IdReporte = IdReporte;
-
-                var list = reporteService.CargarRegistroPorId(IdReporte);
-
-                foreach (Reporte reporte in list)
+                if (Convert.ToInt32(txtIdReporte.Texts) != 0)
                 {
-                    string direccion = AppDomain.CurrentDomain.BaseDirectory;
-                    string carpeta = direccion + "/temp/";
-                    string UbiCompleta = carpeta + reporte.Extension;
+                    int IdReporte = Convert.ToInt32(txtIdReporte.Texts);
+                    reporte.IdReporte = IdReporte;
 
-                    if (!Directory.Exists(carpeta))
+                    var list = reporteService.CargarRegistroPorId(IdReporte);
+
+                    foreach (Reporte reporte in list)
                     {
-                        Directory.CreateDirectory(carpeta);
+                        string direccion = AppDomain.CurrentDomain.BaseDirectory;
+                        string carpeta = direccion + "/temp/";
+                        string UbiCompleta = carpeta + reporte.Extension;
+
+                        if (!Directory.Exists(carpeta))
+                        {
+                            Directory.CreateDirectory(carpeta);
+                        }
+                        if (File.Exists(UbiCompleta))
+                        {
+                            Directory.Delete(UbiCompleta);
+                        }
+                        File.WriteAllBytes(UbiCompleta, reporte.Documento);
+                        Process.Start(UbiCompleta);
                     }
-                    if (File.Exists(UbiCompleta))
-                    {
-                        Directory.Delete(UbiCompleta);
-                    }
-                    File.WriteAllBytes(UbiCompleta, reporte.Documento);
-                    Process.Start(UbiCompleta);
                 }
             }
+            catch (FormatException)
+            {
+                MessageBox.Show("Debe seleccionar un reporte", "Gestion de reporte", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
 
         private void EliminarArchivo()

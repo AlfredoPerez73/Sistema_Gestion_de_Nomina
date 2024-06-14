@@ -55,16 +55,16 @@
             this.btnModificar = new RJCodeAdvance.RJControls.RJButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.dpFechaFinal = new RJCodeAdvance.RJControls.RJDatePicker();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.dpFechaInicial = new RJCodeAdvance.RJControls.RJDatePicker();
             this.panel5 = new System.Windows.Forms.Panel();
             this.cboCargos = new RJCodeAdvance.RJControls.RJComboBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.cboEstado = new RJCodeAdvance.RJControls.RJComboBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.dpFechaFinal = new RJCodeAdvance.RJControls.RJDatePicker();
             this.btnLimpiar = new RJCodeAdvance.RJControls.RJButton();
             this.btnGuardar = new RJCodeAdvance.RJControls.RJButton();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.dpFechaInicial = new RJCodeAdvance.RJControls.RJDatePicker();
             this.txtDocumento = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtSalario = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtNombreProducto = new RJCodeAdvance.RJControls.RJTextBox();
@@ -81,10 +81,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblRegistro)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -134,7 +134,7 @@
             this.txtBuscar.BorderSize = 2;
             this.txtBuscar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.ForeColor = System.Drawing.Color.LightGray;
-            this.txtBuscar.Location = new System.Drawing.Point(439, 5);
+            this.txtBuscar.Location = new System.Drawing.Point(125, 6);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(6);
             this.txtBuscar.Multiline = false;
             this.txtBuscar.Name = "txtBuscar";
@@ -203,7 +203,7 @@
             this.tblRegistro.RowHeadersWidth = 51;
             this.tblRegistro.RowTemplate.Height = 24;
             this.tblRegistro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tblRegistro.Size = new System.Drawing.Size(1776, 283);
+            this.tblRegistro.Size = new System.Drawing.Size(1380, 255);
             this.tblRegistro.TabIndex = 19;
             this.tblRegistro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblRegistro_CellContentClick);
             this.tblRegistro.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.tblRegistro_CellPainting);
@@ -247,7 +247,7 @@
             // 
             // NombreProducto
             // 
-            this.NombreProducto.HeaderText = "Nombre del producto";
+            this.NombreProducto.HeaderText = "Nombre del empleado";
             this.NombreProducto.MinimumWidth = 6;
             this.NombreProducto.Name = "NombreProducto";
             this.NombreProducto.ReadOnly = true;
@@ -329,33 +329,34 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.btnModificar);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.btnLimpiar);
             this.panel1.Controls.Add(this.btnGuardar);
+            this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.txtDocumento);
             this.panel1.Controls.Add(this.txtSalario);
             this.panel1.Controls.Add(this.txtNombreProducto);
-            this.panel1.Location = new System.Drawing.Point(96, 183);
+            this.panel1.Location = new System.Drawing.Point(135, 193);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1776, 263);
+            this.panel1.Size = new System.Drawing.Size(1380, 253);
             this.panel1.TabIndex = 24;
             // 
             // panel8
             // 
             this.panel8.Controls.Add(this.cboContrato);
             this.panel8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel8.Location = new System.Drawing.Point(1104, 80);
+            this.panel8.Location = new System.Drawing.Point(699, 80);
             this.panel8.Margin = new System.Windows.Forms.Padding(5);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(334, 51);
@@ -383,7 +384,6 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnModificar.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnModificar.BackgroundColor = System.Drawing.Color.RoyalBlue;
             this.btnModificar.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -395,7 +395,7 @@
             this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.Color.White;
             this.btnModificar.Image = global::Sistema_de_liquidacion.Properties.Resources.cuadrado_de_la_pluma;
-            this.btnModificar.Location = new System.Drawing.Point(1538, 96);
+            this.btnModificar.Location = new System.Drawing.Point(1142, 96);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(5);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(203, 51);
@@ -411,7 +411,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(978, 136);
+            this.label4.Location = new System.Drawing.Point(593, 11);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 17);
             this.label4.TabIndex = 47;
@@ -421,79 +421,17 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(1254, 134);
+            this.label3.Location = new System.Drawing.Point(869, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 17);
             this.label3.TabIndex = 48;
             this.label3.Text = "FECHA FINAL";
             // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel6.Controls.Add(this.dpFechaFinal);
-            this.panel6.Location = new System.Drawing.Point(1243, 163);
-            this.panel6.Margin = new System.Windows.Forms.Padding(5);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(239, 35);
-            this.panel6.TabIndex = 45;
-            // 
-            // dpFechaFinal
-            // 
-            this.dpFechaFinal.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.dpFechaFinal.BorderSize = 0;
-            this.dpFechaFinal.CalendarForeColor = System.Drawing.Color.White;
-            this.dpFechaFinal.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.dpFechaFinal.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.dpFechaFinal.CalendarTitleForeColor = System.Drawing.Color.White;
-            this.dpFechaFinal.CalendarTrailingForeColor = System.Drawing.Color.White;
-            this.dpFechaFinal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dpFechaFinal.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dpFechaFinal.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dpFechaFinal.Location = new System.Drawing.Point(0, 0);
-            this.dpFechaFinal.MinimumSize = new System.Drawing.Size(4, 35);
-            this.dpFechaFinal.Name = "dpFechaFinal";
-            this.dpFechaFinal.Size = new System.Drawing.Size(239, 35);
-            this.dpFechaFinal.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.dpFechaFinal.TabIndex = 0;
-            this.dpFechaFinal.TextColor = System.Drawing.Color.White;
-            this.dpFechaFinal.Value = new System.DateTime(2024, 5, 16, 0, 0, 0, 0);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panel7.Controls.Add(this.dpFechaInicial);
-            this.panel7.Location = new System.Drawing.Point(961, 164);
-            this.panel7.Margin = new System.Windows.Forms.Padding(5);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(242, 34);
-            this.panel7.TabIndex = 46;
-            // 
-            // dpFechaInicial
-            // 
-            this.dpFechaInicial.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.dpFechaInicial.BorderSize = 0;
-            this.dpFechaInicial.CalendarForeColor = System.Drawing.Color.White;
-            this.dpFechaInicial.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.dpFechaInicial.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.dpFechaInicial.CalendarTitleForeColor = System.Drawing.Color.White;
-            this.dpFechaInicial.CalendarTrailingForeColor = System.Drawing.Color.White;
-            this.dpFechaInicial.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dpFechaInicial.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dpFechaInicial.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dpFechaInicial.Location = new System.Drawing.Point(0, 0);
-            this.dpFechaInicial.MinimumSize = new System.Drawing.Size(4, 35);
-            this.dpFechaInicial.Name = "dpFechaInicial";
-            this.dpFechaInicial.Size = new System.Drawing.Size(242, 35);
-            this.dpFechaInicial.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.dpFechaInicial.TabIndex = 0;
-            this.dpFechaInicial.TextColor = System.Drawing.Color.White;
-            this.dpFechaInicial.Value = new System.DateTime(2024, 5, 16, 0, 0, 0, 0);
-            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.cboCargos);
             this.panel5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel5.Location = new System.Drawing.Point(269, 136);
+            this.panel5.Location = new System.Drawing.Point(354, 136);
             this.panel5.Margin = new System.Windows.Forms.Padding(5);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(331, 50);
@@ -523,7 +461,7 @@
             // 
             this.panel4.Controls.Add(this.cboEstado);
             this.panel4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel4.Location = new System.Drawing.Point(613, 137);
+            this.panel4.Location = new System.Drawing.Point(698, 134);
             this.panel4.Margin = new System.Windows.Forms.Padding(5);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(334, 51);
@@ -549,9 +487,39 @@
             this.cboEstado.TabIndex = 13;
             this.cboEstado.Texts = "Estado";
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel6.Controls.Add(this.dpFechaFinal);
+            this.panel6.Location = new System.Drawing.Point(858, 38);
+            this.panel6.Margin = new System.Windows.Forms.Padding(5);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(239, 35);
+            this.panel6.TabIndex = 45;
+            // 
+            // dpFechaFinal
+            // 
+            this.dpFechaFinal.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.dpFechaFinal.BorderSize = 0;
+            this.dpFechaFinal.CalendarForeColor = System.Drawing.Color.White;
+            this.dpFechaFinal.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.dpFechaFinal.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.dpFechaFinal.CalendarTitleForeColor = System.Drawing.Color.White;
+            this.dpFechaFinal.CalendarTrailingForeColor = System.Drawing.Color.White;
+            this.dpFechaFinal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dpFechaFinal.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dpFechaFinal.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dpFechaFinal.Location = new System.Drawing.Point(0, 0);
+            this.dpFechaFinal.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dpFechaFinal.Name = "dpFechaFinal";
+            this.dpFechaFinal.Size = new System.Drawing.Size(239, 35);
+            this.dpFechaFinal.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.dpFechaFinal.TabIndex = 0;
+            this.dpFechaFinal.TextColor = System.Drawing.Color.White;
+            this.dpFechaFinal.Value = new System.DateTime(2024, 5, 16, 0, 0, 0, 0);
+            // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLimpiar.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnLimpiar.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.btnLimpiar.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -563,7 +531,7 @@
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
             this.btnLimpiar.Image = global::Sistema_de_liquidacion.Properties.Resources.escoba;
-            this.btnLimpiar.Location = new System.Drawing.Point(1535, 154);
+            this.btnLimpiar.Location = new System.Drawing.Point(1139, 154);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(5);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(206, 51);
@@ -577,7 +545,6 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnGuardar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnGuardar.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -589,7 +556,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Image = global::Sistema_de_liquidacion.Properties.Resources.disk;
-            this.btnGuardar.Location = new System.Drawing.Point(1537, 40);
+            this.btnGuardar.Location = new System.Drawing.Point(1141, 40);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(204, 51);
@@ -601,9 +568,39 @@
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel7.Controls.Add(this.dpFechaInicial);
+            this.panel7.Location = new System.Drawing.Point(576, 39);
+            this.panel7.Margin = new System.Windows.Forms.Padding(5);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(242, 34);
+            this.panel7.TabIndex = 46;
+            // 
+            // dpFechaInicial
+            // 
+            this.dpFechaInicial.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.dpFechaInicial.BorderSize = 0;
+            this.dpFechaInicial.CalendarForeColor = System.Drawing.Color.White;
+            this.dpFechaInicial.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.dpFechaInicial.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.dpFechaInicial.CalendarTitleForeColor = System.Drawing.Color.White;
+            this.dpFechaInicial.CalendarTrailingForeColor = System.Drawing.Color.White;
+            this.dpFechaInicial.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dpFechaInicial.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dpFechaInicial.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dpFechaInicial.Location = new System.Drawing.Point(0, 0);
+            this.dpFechaInicial.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dpFechaInicial.Name = "dpFechaInicial";
+            this.dpFechaInicial.Size = new System.Drawing.Size(242, 35);
+            this.dpFechaInicial.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.dpFechaInicial.TabIndex = 0;
+            this.dpFechaInicial.TextColor = System.Drawing.Color.White;
+            this.dpFechaInicial.Value = new System.DateTime(2024, 5, 16, 0, 0, 0, 0);
+            // 
             // txtDocumento
             // 
-            this.txtDocumento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDocumento.BackColor = System.Drawing.SystemColors.Window;
             this.txtDocumento.BorderColor = System.Drawing.Color.White;
             this.txtDocumento.BorderFocusColor = System.Drawing.Color.White;
@@ -611,7 +608,7 @@
             this.txtDocumento.BorderSize = 2;
             this.txtDocumento.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDocumento.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtDocumento.Location = new System.Drawing.Point(750, 83);
+            this.txtDocumento.Location = new System.Drawing.Point(354, 83);
             this.txtDocumento.Margin = new System.Windows.Forms.Padding(6);
             this.txtDocumento.Multiline = false;
             this.txtDocumento.Name = "txtDocumento";
@@ -629,7 +626,6 @@
             // 
             // txtSalario
             // 
-            this.txtSalario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSalario.BackColor = System.Drawing.SystemColors.Window;
             this.txtSalario.BorderColor = System.Drawing.Color.White;
             this.txtSalario.BorderFocusColor = System.Drawing.Color.White;
@@ -637,7 +633,7 @@
             this.txtSalario.BorderSize = 2;
             this.txtSalario.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSalario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtSalario.Location = new System.Drawing.Point(404, 83);
+            this.txtSalario.Location = new System.Drawing.Point(15, 136);
             this.txtSalario.Margin = new System.Windows.Forms.Padding(6);
             this.txtSalario.Multiline = false;
             this.txtSalario.Name = "txtSalario";
@@ -655,7 +651,6 @@
             // 
             // txtNombreProducto
             // 
-            this.txtNombreProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombreProducto.BackColor = System.Drawing.SystemColors.Window;
             this.txtNombreProducto.BorderColor = System.Drawing.Color.White;
             this.txtNombreProducto.BorderFocusColor = System.Drawing.Color.White;
@@ -663,7 +658,7 @@
             this.txtNombreProducto.BorderSize = 2;
             this.txtNombreProducto.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreProducto.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtNombreProducto.Location = new System.Drawing.Point(58, 83);
+            this.txtNombreProducto.Location = new System.Drawing.Point(15, 83);
             this.txtNombreProducto.Margin = new System.Windows.Forms.Padding(6);
             this.txtNombreProducto.Multiline = false;
             this.txtNombreProducto.Name = "txtNombreProducto";
@@ -681,12 +676,13 @@
             // 
             // label19
             // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(103, 135);
+            this.label19.Location = new System.Drawing.Point(137, 144);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(299, 32);
@@ -703,7 +699,7 @@
             this.txtIdContrato.BorderSize = 2;
             this.txtIdContrato.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdContrato.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtIdContrato.Location = new System.Drawing.Point(533, 944);
+            this.txtIdContrato.Location = new System.Drawing.Point(138, 944);
             this.txtIdContrato.Margin = new System.Windows.Forms.Padding(6);
             this.txtIdContrato.Multiline = false;
             this.txtIdContrato.Name = "txtIdContrato";
@@ -730,7 +726,7 @@
             this.txtIdCargo.BorderSize = 2;
             this.txtIdCargo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdCargo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtIdCargo.Location = new System.Drawing.Point(878, 998);
+            this.txtIdCargo.Location = new System.Drawing.Point(483, 998);
             this.txtIdCargo.Margin = new System.Windows.Forms.Padding(6);
             this.txtIdCargo.Multiline = false;
             this.txtIdCargo.Name = "txtIdCargo";
@@ -757,7 +753,7 @@
             this.txtIdProducto.BorderSize = 2;
             this.txtIdProducto.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdProducto.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtIdProducto.Location = new System.Drawing.Point(532, 998);
+            this.txtIdProducto.Location = new System.Drawing.Point(137, 998);
             this.txtIdProducto.Margin = new System.Windows.Forms.Padding(6);
             this.txtIdProducto.Multiline = false;
             this.txtIdProducto.Name = "txtIdProducto";
@@ -776,20 +772,23 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel2.Controls.Add(this.lbltbl);
             this.panel2.Controls.Add(this.tblRegistro);
-            this.panel2.Location = new System.Drawing.Point(109, 585);
+            this.panel2.Location = new System.Drawing.Point(135, 551);
             this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1776, 283);
+            this.panel2.Size = new System.Drawing.Size(1380, 255);
             this.panel2.TabIndex = 25;
             // 
             // lbltbl
             // 
             this.lbltbl.AutoSize = true;
             this.lbltbl.ForeColor = System.Drawing.Color.White;
-            this.lbltbl.Location = new System.Drawing.Point(836, 127);
+            this.lbltbl.Location = new System.Drawing.Point(644, 117);
             this.lbltbl.Name = "lbltbl";
             this.lbltbl.Size = new System.Drawing.Size(216, 17);
             this.lbltbl.TabIndex = 50;
@@ -801,7 +800,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.cboFiltroEstado);
-            this.panel3.Location = new System.Drawing.Point(1299, 5);
+            this.panel3.Location = new System.Drawing.Point(1014, 5);
             this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(331, 40);
@@ -809,22 +808,26 @@
             // 
             // panel9
             // 
-            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel9.Controls.Add(this.panel3);
             this.panel9.Controls.Add(this.txtBuscar);
-            this.panel9.Location = new System.Drawing.Point(109, 62);
+            this.panel9.Location = new System.Drawing.Point(135, 60);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1776, 51);
+            this.panel9.Size = new System.Drawing.Size(1380, 51);
             this.panel9.TabIndex = 47;
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(119, 24);
+            this.label8.Location = new System.Drawing.Point(138, 31);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(247, 26);
@@ -833,12 +836,13 @@
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(104, 539);
+            this.label2.Location = new System.Drawing.Point(137, 514);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(317, 32);
@@ -850,7 +854,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1529, 827);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel9);
@@ -870,10 +874,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel8.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -914,6 +918,10 @@
         private RJCodeAdvance.RJControls.RJTextBox txtIdCargo;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel8;
+        private RJCodeAdvance.RJControls.RJComboBox cboContrato;
+        private System.Windows.Forms.Label lbltbl;
         private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -929,9 +937,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Salario;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel8;
-        private RJCodeAdvance.RJControls.RJComboBox cboContrato;
-        private System.Windows.Forms.Label lbltbl;
     }
 }

@@ -36,12 +36,11 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.txtBuscar = new RJCodeAdvance.RJControls.RJTextBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lbltbl = new System.Windows.Forms.Label();
             this.tblRegistroRol = new System.Windows.Forms.DataGridView();
             this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnSEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,7 +54,6 @@
             this.btnGuardar = new RJCodeAdvance.RJControls.RJButton();
             this.txtIdRol = new RJCodeAdvance.RJControls.RJTextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.lbltbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -76,15 +74,18 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1924, 1055);
+            this.panel1.Size = new System.Drawing.Size(1529, 827);
             this.panel1.TabIndex = 1;
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(109, 33);
+            this.label8.Location = new System.Drawing.Point(157, 33);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(184, 26);
@@ -93,12 +94,13 @@
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(108, 468);
+            this.label2.Location = new System.Drawing.Point(156, 471);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(230, 32);
             this.label2.TabIndex = 50;
@@ -106,13 +108,14 @@
             // 
             // panel9
             // 
-            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel9.Controls.Add(this.txtBuscar);
-            this.panel9.Location = new System.Drawing.Point(108, 65);
+            this.panel9.Location = new System.Drawing.Point(162, 65);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1766, 51);
+            this.panel9.Size = new System.Drawing.Size(1318, 51);
             this.panel9.TabIndex = 49;
             // 
             // txtBuscar
@@ -142,16 +145,31 @@
             // 
             // panel4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel4.Controls.Add(this.lbltbl);
             this.panel4.Controls.Add(this.tblRegistroRol);
-            this.panel4.Location = new System.Drawing.Point(108, 524);
+            this.panel4.Location = new System.Drawing.Point(162, 508);
             this.panel4.Margin = new System.Windows.Forms.Padding(5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1766, 400);
+            this.panel4.Size = new System.Drawing.Size(1318, 264);
             this.panel4.TabIndex = 31;
+            // 
+            // lbltbl
+            // 
+            this.lbltbl.AutoSize = true;
+            this.lbltbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.lbltbl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltbl.ForeColor = System.Drawing.Color.White;
+            this.lbltbl.Location = new System.Drawing.Point(560, 121);
+            this.lbltbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbltbl.Name = "lbltbl";
+            this.lbltbl.Size = new System.Drawing.Size(170, 17);
+            this.lbltbl.TabIndex = 25;
+            this.lbltbl.Text = "No hay registro de roles.";
+            this.lbltbl.Visible = false;
             // 
             // tblRegistroRol
             // 
@@ -174,8 +192,6 @@
             this.btnSeleccionar,
             this.btnSEliminar,
             this.Column1,
-            this.Column2,
-            this.Column3,
             this.Column4,
             this.Column5,
             this.Column6,
@@ -202,7 +218,7 @@
             this.tblRegistroRol.RowHeadersWidth = 51;
             this.tblRegistroRol.RowTemplate.Height = 24;
             this.tblRegistroRol.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tblRegistroRol.Size = new System.Drawing.Size(1766, 400);
+            this.tblRegistroRol.Size = new System.Drawing.Size(1318, 264);
             this.tblRegistroRol.TabIndex = 19;
             this.tblRegistroRol.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblRegistroRol_CellContentClick);
             this.tblRegistroRol.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.tblRegistroRol_CellPainting);
@@ -229,18 +245,6 @@
             this.Column1.HeaderText = "";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
@@ -284,7 +288,8 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panel2.Controls.Add(this.txtRol);
@@ -292,15 +297,14 @@
             this.panel2.Controls.Add(this.btnLimpiar);
             this.panel2.Controls.Add(this.btnGuardar);
             this.panel2.Controls.Add(this.txtIdRol);
-            this.panel2.Location = new System.Drawing.Point(108, 181);
+            this.panel2.Location = new System.Drawing.Point(162, 194);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1766, 206);
+            this.panel2.Size = new System.Drawing.Size(1318, 195);
             this.panel2.TabIndex = 30;
             // 
             // txtRol
             // 
-            this.txtRol.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtRol.BackColor = System.Drawing.SystemColors.Window;
             this.txtRol.BorderColor = System.Drawing.Color.White;
             this.txtRol.BorderFocusColor = System.Drawing.Color.White;
@@ -308,7 +312,7 @@
             this.txtRol.BorderSize = 2;
             this.txtRol.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRol.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtRol.Location = new System.Drawing.Point(599, 50);
+            this.txtRol.Location = new System.Drawing.Point(421, 50);
             this.txtRol.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtRol.Multiline = false;
             this.txtRol.Name = "txtRol";
@@ -325,7 +329,6 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnModificar.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnModificar.BackgroundColor = System.Drawing.Color.RoyalBlue;
             this.btnModificar.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -337,7 +340,7 @@
             this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.Color.White;
             this.btnModificar.Image = global::Sistema_de_liquidacion.Properties.Resources.cuadrado_de_la_pluma;
-            this.btnModificar.Location = new System.Drawing.Point(1076, 45);
+            this.btnModificar.Location = new System.Drawing.Point(898, 45);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(204, 51);
@@ -351,7 +354,6 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLimpiar.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnLimpiar.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.btnLimpiar.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -363,7 +365,7 @@
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
             this.btnLimpiar.Image = global::Sistema_de_liquidacion.Properties.Resources.escoba;
-            this.btnLimpiar.Location = new System.Drawing.Point(970, 107);
+            this.btnLimpiar.Location = new System.Drawing.Point(799, 104);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(204, 51);
@@ -377,7 +379,6 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnGuardar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnGuardar.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -389,7 +390,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Image = global::Sistema_de_liquidacion.Properties.Resources.disk;
-            this.btnGuardar.Location = new System.Drawing.Point(859, 45);
+            this.btnGuardar.Location = new System.Drawing.Point(681, 45);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(204, 51);
@@ -403,7 +404,6 @@
             // 
             // txtIdRol
             // 
-            this.txtIdRol.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtIdRol.BackColor = System.Drawing.SystemColors.Window;
             this.txtIdRol.BorderColor = System.Drawing.Color.White;
             this.txtIdRol.BorderFocusColor = System.Drawing.Color.White;
@@ -411,7 +411,7 @@
             this.txtIdRol.BorderSize = 2;
             this.txtIdRol.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdRol.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtIdRol.Location = new System.Drawing.Point(341, 50);
+            this.txtIdRol.Location = new System.Drawing.Point(163, 50);
             this.txtIdRol.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtIdRol.Multiline = false;
             this.txtIdRol.Name = "txtIdRol";
@@ -429,36 +429,23 @@
             // 
             // label19
             // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(108, 130);
+            this.label19.Location = new System.Drawing.Point(156, 154);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(195, 32);
             this.label19.TabIndex = 9;
             this.label19.Text = "Detalle del rol";
             // 
-            // lbltbl
-            // 
-            this.lbltbl.AutoSize = true;
-            this.lbltbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.lbltbl.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltbl.ForeColor = System.Drawing.Color.White;
-            this.lbltbl.Location = new System.Drawing.Point(757, 149);
-            this.lbltbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbltbl.Name = "lbltbl";
-            this.lbltbl.Size = new System.Drawing.Size(170, 17);
-            this.lbltbl.TabIndex = 25;
-            this.lbltbl.Text = "No hay registro de roles.";
-            this.lbltbl.Visible = false;
-            // 
             // FrmGestionRol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1529, 827);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -492,17 +479,15 @@
         private RJCodeAdvance.RJControls.RJTextBox txtIdRol;
         private System.Windows.Forms.Label label19;
         private RJCodeAdvance.RJControls.RJTextBox txtRol;
+        private System.Windows.Forms.Label lbltbl;
         private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar;
         private System.Windows.Forms.DataGridViewButtonColumn btnSEliminar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdRol;
         private System.Windows.Forms.DataGridViewTextBoxColumn Rol;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRegistro;
-        private System.Windows.Forms.Label lbltbl;
     }
 }

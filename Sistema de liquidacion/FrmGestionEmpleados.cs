@@ -755,5 +755,9 @@ namespace Sistema_de_liquidacion
             BuscarEmpleado(sender, e);
         }
 
+        private void txtEstado__TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
